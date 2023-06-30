@@ -30,3 +30,5 @@ extra:
     default:
       - latest
       - staging
+plugins:
+  - macros

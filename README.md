@@ -16,14 +16,20 @@ A test of `mkdocs` for hosting the OpenFlight docs
   ```bash
   pip install mike
   ```
+- Install includes plugin to support page partials
+  ```bash
+  pip install mkdocs-macros-plugin
+  ```
 - Ensure correct default branch being used by mike
   ```bash
   mike set-default latest
   ```
-- Run development server
-  ```bash
-  mike serve
-  ```
+
+## Viewing Docs
+
+To view your WIP documentation locally simply use `mkdocs serve` which will update as docs are changed. 
+
+To view the versioned documentation (managed by `mike`) run `mike serve` (note: this will not auto-update as docs are changed and requires redeploying).
 
 ## Writing Docs
 
@@ -46,4 +52,5 @@ mike deploy --push --update-aliases 20XX.Y latest
 
 ## Content Things to Look Into
 
+- Using Page Partials (there's a lot of content we need to re-use so some sort of templating would be essential)
 - Code Annotations (adds pop-ups with notes on commands/info) 
