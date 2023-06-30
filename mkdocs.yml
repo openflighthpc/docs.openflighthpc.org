@@ -1,0 +1,8 @@
+site_name: OpenFlight Knowledgebase
+repo_url: https://github.com/openflighthpc/openflight-docs
+theme: material
+
+extra:
+  version:
+    provider: mike
+    default: stable
