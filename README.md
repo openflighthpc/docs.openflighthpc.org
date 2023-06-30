@@ -16,9 +16,13 @@ A test of `mkdocs` for hosting the OpenFlight docs
   ```bash
   pip install mike
   ```
+- Ensure correct default branch being used by mike
+  ```bash
+  mike set-default latest
+  ```
 - Run development server
   ```bash
-  mkdocs serve
+  mike serve
   ```
 
 ## Writing Docs
@@ -29,6 +33,16 @@ It's worth familiarising with the [available markdown formatting](https://www.mk
 ## Deploying Docs
 
 Using `mike` we can deploy documentation with version tagging... Maybe?
+
+- Deploy WIP data to `staging` 
+```
+mike deploy --push --update-aliases 20XX.Y staging
+```
+
+- Deploy a new stable version of documentation
+```
+mike deploy --push --update-aliases 20XX.Y latest
+```
 
 ## Content Things to Look Into
 
