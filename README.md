@@ -53,4 +53,6 @@ mike deploy --push --update-aliases 20XX.Y latest
 ## Content Things to Look Into
 
 - Using Page Partials (there's a lot of content we need to re-use so some sort of templating would be essential)
+    - Solved with macros extension
 - Code Annotations (adds pop-ups with notes on commands/info) 
+    - See "Admonitions" in material docs

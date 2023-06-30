@@ -2,6 +2,7 @@ site_name: OpenFlight Knowledgebase
 repo_url: https://github.com/openflighthpc/mkdocs-test
 theme:
   name: material
+  logo: assets/images/logo.png
   features:
     - navigation.sections
     - navigation.expand
@@ -31,4 +32,9 @@ extra:
       - latest
       - staging
 plugins:
-  - macros
+  - macros:
+      include_dir: partials
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true 
