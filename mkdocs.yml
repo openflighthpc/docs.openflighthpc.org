@@ -1,5 +1,15 @@
 site_name: OpenFlight Knowledgebase
 repo_url: https://github.com/openflighthpc/mkdocs-test
+nav:
+  - Welcome: index.md
+  - HPC Environment Basics:
+    - hpc-environment-basics/index.md
+  - Flight Solo:
+    - flight-solo/index.md
+    - Cluster Build Methods:
+      - flight-solo/cluster-build-methods/index.md
+      - Example Cluster: flight-solo/cluster-build-methods/example-cluster.md
+      - Choose Your Own Adventure: flight-solo/cluster-build-methods/modular.md
 theme:
   name: material
   logo: assets/images/logo.png
@@ -7,6 +17,7 @@ theme:
     - navigation.sections
     - navigation.expand
     - navigation.indexes # Allows adding overview pages to sections, name them index.md
+    - navigation.tabs
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
