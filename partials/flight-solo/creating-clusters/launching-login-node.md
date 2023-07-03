@@ -8,7 +8,9 @@ Whether creating a standalone or multinode cluster, you will need a login node. 
 
 === ":fontawesome-brands-aws: AWS Imported"
 
+    {% filter indent(width=4) %}
     {% include 'flight-solo/creating-clusters/launching-login-node-awsimported.md' %}
+    {% endfilter %}
 
 === "Openstack"
 
