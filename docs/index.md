@@ -1,4 +1,4 @@
-# Welcome to the OpenFlight Knowledgebase
+# Welcome 
 
 ## What is going on?
 
