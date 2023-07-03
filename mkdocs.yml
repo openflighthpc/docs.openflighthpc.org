@@ -4,6 +4,8 @@ nav:
   - Welcome: index.md
   - HPC Environment Basics:
     - hpc-environment-basics/index.md
+  - Flight Environment:
+    - flight-environment/index.md
   - Flight Solo:
     - flight-solo/index.md
     - Cluster Build Methods:

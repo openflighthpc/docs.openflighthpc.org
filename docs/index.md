@@ -7,3 +7,8 @@ OpenFlight is currently refactoring it's documentation to provide a better user 
 ## When will it be done?
 
 When evaluation of `mkdocs` has determined that this is a suitable solution.
+
+## What else should be in this section?
+
+- Documentation prereqs
+- Where can I get help?
