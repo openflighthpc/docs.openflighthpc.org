@@ -2,7 +2,7 @@
 site_name: OpenFlightHPC
 repo_url: https://github.com/openflighthpc/docs.openflighthpc.org
 nav:
-  - Welcome: index.md
+  - Home: index.md
   - Documentation:
     - docs/index.md
     - Overview:
