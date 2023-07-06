@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block tabs%}
+<div id="header-block" style="display:flex">
+  <a href="{{ base_url }}">
+    <img class="header-image" src="{{ base_url }}/assets/images/logo.png">
+  </a>
+  {{ super() }}
+  <a href="https://alces-flight.com" target="_blank">
+    <img class="header-image" src="{{ base_url }}/assets/images/powered_by.png">
+  </a>
+</div>
+<div id="blue-bar"></div>
+{% endblock %}
+
+{% block outdated %}
+You're not viewing the latest stable version of the documentation.
+<a href="{{ '../' ~ base_url }}">
+  <strong>Click here to go to latest.</strong>
+</a>
+{% endblock %}
