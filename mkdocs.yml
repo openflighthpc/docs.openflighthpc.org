@@ -2,6 +2,8 @@
 site_name: OpenFlightHPC
 repo_url: https://github.com/openflighthpc/docs.openflighthpc.org
 nav:
+  - About:
+    - about/index.md
   - Documentation:
     - docs/index.md
     - Overview:
@@ -227,4 +229,5 @@ markdown_extensions:
   - toc:
       title: On this page
 extra_css: [extra.css]
-
+extra_javascript:
+  - javascripts/extra.js
