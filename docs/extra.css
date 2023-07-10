@@ -70,3 +70,26 @@
   color: white;
 }
 
+.image-container {
+  position: relative;
+}
+
+#slider-link {
+  border: solid orange;
+  position: absolute;
+  height: 2.4rem;
+  z-index: 2;
+}
+
+#slider-link.image1 {
+    top: 75%;
+    left: 8.5%;
+    width: 9.2rem;
+}
+
+#slider-link.image2 {
+  top: 70%;
+  left: 8%;
+  width: 16.5rem;
+}
+
