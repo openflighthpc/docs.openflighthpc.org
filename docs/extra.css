@@ -1,3 +1,7 @@
+body {
+  background-image: url("assets/images/clouds.png") !important;
+  background-size: cover;
+}
 
 .md-main {
   display: flex;
