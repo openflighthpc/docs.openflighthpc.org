@@ -137,3 +137,12 @@ body {
   max-height: 1rem;
   margin-left: 1rem;
 }
+
+[data-md-color-scheme="alces"] {
+  --md-primary-fg-color: #191919;
+  --md-accent-fg-color:  #2693D7;
+}
+
+.md-logo img {
+  height: 2rem !important;
+}
