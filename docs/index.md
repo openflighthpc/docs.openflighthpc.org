@@ -1,15 +1,25 @@
-# Welcome 
+# Welcome to the OpenFlight Knowledgebase 
+
+## What does this cover?
+
+This documentation provides _Open Knowledge_ on HPC. It is designed to cover a range of topics including, but not limited to:
+
+- HPC Concepts
+- Getting Started with Linux in a HPC Environment
+- Creating Research Environments 
+- Performing HPC Workflows 
+- Testing a HPC Environment
 
 ## What is going on?
 
-OpenFlight is currently refactoring it's documentation to provide a better user experience and improve access to the knowledge within.
+OpenFlight is currently refactoring it's documentation to provide a better user experience, expand the content and improve access to the knowledge within.
 
 ## When will it be done?
 
 This will be ready when: 
 
 - [ ] Existing docs migrated
-    * [ ] Documentation Overview
+    * [x] Documentation Overview
     * [ ] General Environment Usage
     * [ ] Flight Environment Usage
     * [ ] HPC Environment Usage
@@ -23,8 +33,5 @@ This will be ready when:
     * [ ] Benchmarking Workflows
     * [ ] Basic HPC Workflow
     * [ ] Expansion & Consistency of Tool Documentation (Installing, Configuring, Using)
+    * [ ] Glossary
 
-## What else should be in this section?
-
-- Documentation prereqs
-- Where can I get help?

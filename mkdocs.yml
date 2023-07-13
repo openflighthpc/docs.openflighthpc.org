@@ -1,7 +1,10 @@
 site_name: OpenFlight Knowledgebase
 repo_url: https://github.com/openflighthpc/mkdocs-test
 nav:
-  - Welcome: index.md
+  - Overview: 
+    - index.md
+    - Prerequisites: overview/prerequisites.md
+    - Where Can I Get Help: overview/get-help.md
   - HPC Environment Basics:
     - hpc-environment-basics/index.md
   - Flight Environment:
@@ -51,7 +54,9 @@ plugins:
   - macros:
       include_dir: partials
 markdown_extensions:
+  - abbr
   - attr_list
+  - def_list
   - md_in_html
   - admonition
   - pymdownx.details
@@ -61,6 +66,9 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
   - pymdownx.tasklist:
       custom_checkbox: true
   - toc:
