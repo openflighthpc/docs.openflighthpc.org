@@ -27,10 +27,10 @@ This will be ready when:
     * [ ] Workflow Examples
     * [ ] Functionality Testing
 - [ ] Additional content added
-    * [ ] HPC Concepts & Guidance (both on-site & cloud)
+    * [x] HPC Concepts & Guidance (both on-site & cloud)
     * [ ] Expansion on Kubernetes Usage
     * [ ] Flight Solo Restructure & Expansion (Getting Started, How It Works, Cluster Build Refactor)
-    * [ ] Benchmarking Workflows
+    * [ ] Benchmarking Workflows (migrate from [here](https://github.com/alces-software/knowledgebase/wiki/Burn-In-Tests))
     * [ ] Basic HPC Workflow
     * [ ] Expansion & Consistency of Tool Documentation (Installing, Configuring, Using)
     * [ ] Glossary

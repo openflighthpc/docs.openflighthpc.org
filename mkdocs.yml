@@ -5,6 +5,16 @@ nav:
     - index.md
     - Prerequisites: overview/prerequisites.md
     - Where Can I Get Help: overview/get-help.md
+  - HPC Concepts:
+    - hpc-concepts/index.md
+    - Network and Hardware: hpc-concepts/network-hardware.md
+    - Infrastructure: hpc-concepts/infrastructure.md
+    - Base System: hpc-concepts/base-system.md
+    - User Management: hpc-concepts/user-management.md
+    - Storage: hpc-concepts/storage.md
+    - Monitoring: hpc-concepts/monitoring.md
+    - HPC Environment: hpc-concepts/hpc-environment.md
+    - Verification: hpc-concepts/verification.md
   - HPC Environment Basics:
     - hpc-environment-basics/index.md
     - Linux Environment Usage:
@@ -36,6 +46,13 @@ nav:
       - Choose Your Own Adventure: flight-solo/cluster-build-methods/modular.md
       - All Methods:
         - SLURM Standalone AWS: flight-solo/cluster-build-methods/slurm-standalone-aws.md
+        - SLURM Multinode AWS: flight-solo/cluster-build-methods/slurm-multinode-aws.md
+        - SLURM Standalone Azure: flight-solo/cluster-build-methods/slurm-standalone-azure.md
+        - SLURM Multinode Azure: flight-solo/cluster-build-methods/slurm-multinode-azure.md
+        - Kubernetes Multinode AWS: flight-solo/cluster-build-methods/kubernetes-multinode-aws.md
+        - Kubernetes Multinode Azure: flight-solo/cluster-build-methods/kubernetes-multinode-azure.md
+        - Jupyter Lab Standalone AWS: flight-solo/cluster-build-methods/jupyter-lab-standalone-aws.md
+        - Jupyter Lab Standalone Azure: flight-solo/cluster-build-methods/jupyter-lab-standalone-azure.md
   - HPC Workflows:
     - hpc-workflows/index.md
 theme:
@@ -77,11 +94,16 @@ markdown_extensions:
   - abbr
   - attr_list
   - def_list
+  - footnotes
   - md_in_html
   - admonition
   - pymdownx.details
   - pymdownx.keys
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true 
   - pymdownx.emoji:
