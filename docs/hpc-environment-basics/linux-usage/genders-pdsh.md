@@ -7,7 +7,7 @@
 **PDSH** provides a CLI tool for performing commands on multiple nodes at once, utilising the data stored in genders. To learn more about using PDSH, read the manual page for the command `man pdsh`.
 
 !!! info
-    OpenFlight has it's own build of PDSH which is explained in further detail in [the documentation](/flight-environment/)
+    OpenFlight has it's own build of PDSH which is explained in further detail in [the documentation](../../flight-environment/tools/flight-pdsh.md)
 
 ## Installing Genders and PDSH
 
@@ -18,7 +18,7 @@ dnf install pdsh genders
 ```
 
 !!! note
-    You will need `sudo` permissions to install packages, see [becoming the root user](/hpc-environment-basics/linux-usage/cli-basics/becoming-root/) for more information
+    You will need `sudo` permissions to install packages, see [becoming the root user](cli-basics/becoming-root.md) for more information
 
 ## Creating a Genders File
 

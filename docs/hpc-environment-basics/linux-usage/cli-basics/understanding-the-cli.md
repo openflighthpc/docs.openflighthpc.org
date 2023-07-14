@@ -7,7 +7,7 @@ Hello World!
 
 - `flight` is the name of the user.
 - `chead1` is the node the user is currently on.
-- `(mycluster1)` is the name of the cluster being used. (This is specific to the [Flight Environment](/flight-enviromment/))
+- `(mycluster1)` is the name of the cluster being used. (This is specific to the [Flight Environment](../../../flight-environment/index.md))
 - `folder` is the directory the user is currently in. If this is a `~` then that means you are in your home directory.
 - `$` indicates whether the user is a root user or normal user (root users see a `#`).
 - `echo Hello World!` is a command that prints out "Hello World!". This is where commands you type will go.
