@@ -20,7 +20,7 @@ This will be ready when:
 
 - [ ] Existing docs migrated
     * [x] Documentation Overview
-    * [ ] General Environment Usage
+    * [x] General Environment Usage
     * [ ] Flight Environment Usage
     * [ ] HPC Environment Usage
     * [ ] Cluster Build Methods
