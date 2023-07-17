@@ -38,6 +38,22 @@ nav:
       - Genders and PDSH: hpc-environment-basics/linux-usage/genders-pdsh.md
   - Flight Environment:
     - flight-environment/index.md
+    - Obtaining Flight Environment:
+      - flight-environment/get-flight/index.md
+      - Installation: flight-environment/get-flight/install.md
+      - Configuration: flight-environment/get-flight/configure.md
+    - Using Flight Environment: 
+      - flight-environment/use-flight/index.md
+      - Basics: flight-environment/use-flight/environment-basics.md
+      - Flight User Suite: 
+        - Flight Desktop: 
+          - flight-environment/use-flight/flight-user-suite/flight-desktop/index.md 
+          - Prepare a Desktop Type: flight-environment/use-flight/flight-user-suite/flight-desktop/prepare.md
+          - Launch a Desktop Session: flight-environment/use-flight/flight-user-suite/flight-desktop/launch.md
+          - Port Forwarding a Desktop Session: flight-environment/use-flight/flight-user-suite/flight-desktop/port-forward.md
+          - Resize a Desktop Session: flight-environment/use-flight/flight-user-suite/flight-desktop/resize.md
+          - Viewing and Terminating Sessions: flight-environment/use-flight/flight-user-suite/flight-desktop/viewing-terminating.md
+          - Securing your Desktop Session: flight-environment/use-flight/flight-user-suite/flight-desktop/secure.md
   - Flight Solo:
     - flight-solo/index.md
     - Cluster Build Methods:
