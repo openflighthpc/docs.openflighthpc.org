@@ -1,6 +1,6 @@
 body {
-  background-image: url("assets/images/clouds.png") !important;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .md-main {
@@ -11,8 +11,9 @@ body {
   width: 100%;
   max-width: 100% !important;
   min-height: 69vh;
-  margin-bottom: 1.5rem;
-  margin-inline: 7rem;
+  margin: 0;
+  display: flex;
+  height: 100%;
 }
 
 .md-main__inner article {
@@ -21,6 +22,24 @@ body {
 
 .md-tabs {
   background-color: #3d3d3d;
+}
+
+.md-sidebar {
+  /*height: 100%;*/
+  flex: 1 1 auto;
+  padding-inline: 1rem;
+  width: 14rem;
+  background-image: linear-gradient(lightgrey, white);
+  top: 0;
+}
+
+.md-content {
+  min-width: 65%;
+}
+
+.md-nav__link, .md-nav__title {
+  background: none !important;
+  box-shadow: none !important;
 }
 
 #header-block {
@@ -97,3 +116,24 @@ body {
   width: 16.5rem;
 }
 
+.footer {
+  display: flex;
+  justify-content: space-between;
+  max-height: 5rem;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+  font-size: large;
+}
+
+.HPC {
+  color: dodgerblue;
+}
+
+#github-logo {
+  max-height: 1rem;
+  margin-left: 1rem;
+}
