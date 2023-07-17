@@ -5,7 +5,7 @@ You can access the login node for your research environment using SSH to connect
 
 When you login to the research environment via SSH, you are automatically placed in your home-directory. This area is shared across all compute nodes in the research environment, and is mounted in the same place on every compute node. Data copied to the research environment or created in your home-directory on the login node is also accessible from all compute nodes.
 
-=== "Linux/Mac"
+=== ":simple-linux: Linux / :simple-apple: Mac"
 
     To access the research environment login node from a Linux or Mac client, use the following command:
     ```bash
@@ -18,7 +18,7 @@ When you login to the research environment via SSH, you are automatically placed
     - `flight` is the username of the user on the research environment
     - `52.50.141.144` is the Access-IP address for the gateway node of the research environment
 
-=== "Windows"
+=== ":simple-windows: Windows"
 
     If you are accessing from a Windows client using the Putty utility, the private key associated with the account will need to be converted to ppk format from pem to be compatible with Putty. This can be done as follows:
 
