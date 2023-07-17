@@ -54,6 +54,16 @@ nav:
           - Resize a Desktop Session: flight-environment/use-flight/flight-user-suite/flight-desktop/resize.md
           - Viewing and Terminating Sessions: flight-environment/use-flight/flight-user-suite/flight-desktop/viewing-terminating.md
           - Securing your Desktop Session: flight-environment/use-flight/flight-user-suite/flight-desktop/secure.md
+        - Flight Env:
+          - flight-environment/use-flight/flight-user-suite/flight-env/index.md
+          - Usage: flight-environment/use-flight/flight-user-suite/flight-env/usage.md
+          - Package Ecosystems:
+            - flight-environment/use-flight/flight-user-suite/flight-env/ecosystems/index.md
+            - Conda: flight-environment/use-flight/flight-user-suite/flight-env/ecosystems/conda.md
+            - Easybuild: flight-environment/use-flight/flight-user-suite/flight-env/ecosystems/easybuild.md
+            - Modules: flight-environment/use-flight/flight-user-suite/flight-env/ecosystems/modules.md
+            - Singularity: flight-environment/use-flight/flight-user-suite/flight-env/ecosystems/singularity.md
+            - Spack: flight-environment/use-flight/flight-user-suite/flight-env/ecosystems/spack.md
   - Flight Solo:
     - flight-solo/index.md
     - Cluster Build Methods:
