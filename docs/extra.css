@@ -35,6 +35,7 @@ body {
 
 .md-content {
   min-width: 65%;
+  max-width: 55rem;
 }
 
 .md-nav__link, .md-nav__title {
@@ -44,6 +45,7 @@ body {
 
 #header-block {
   background-color: #3d3d3d;
+  height: 3.4rem;
 }
 
 #blue-bar {
@@ -54,6 +56,11 @@ body {
 
 .header-image {
   max-height: 2.4rem;
+  margin: 0.5rem;
+}
+
+.header-image .logo {
+  width: 9rem;
 }
 
 #home-container {
@@ -122,7 +129,7 @@ body {
   max-height: 5rem;
 }
 
-.footer-logo {
+.footer-content {
   display: flex;
   align-items: flex-end;
   margin-bottom: 1rem;

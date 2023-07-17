@@ -3,7 +3,7 @@
 {% block tabs%}
 <div id="header-block" style="display:flex">
   <a href="{{ base_url }}">
-    <img class="header-image" src="{{ base_url }}/assets/images/logo.png">
+    <img class="header-image logo" src="{{ base_url }}/{{ config.theme.logo }}">
   </a>
   {{ super() }}
   <a href="https://alces-flight.com" target="_blank">
