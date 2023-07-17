@@ -64,6 +64,11 @@ nav:
             - Modules: flight-environment/use-flight/flight-user-suite/flight-env/ecosystems/modules.md
             - Singularity: flight-environment/use-flight/flight-user-suite/flight-env/ecosystems/singularity.md
             - Spack: flight-environment/use-flight/flight-user-suite/flight-env/ecosystems/spack.md
+        - Flight Silo:
+          - flight-environment/use-flight/flight-user-suite/flight-silo/index.md
+          - Silos: flight-environment/use-flight/flight-user-suite/flight-silo/silos.md
+          - Files: flight-environment/use-flight/flight-user-suite/flight-silo/files.md
+          - Software: flight-environment/use-flight/flight-user-suite/flight-silo/software.md
   - Flight Solo:
     - flight-solo/index.md
     - Cluster Build Methods:
