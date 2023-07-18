@@ -13,7 +13,6 @@ body {
   min-height: 69vh;
   margin: 0;
   display: flex;
-  height: 100%;
 }
 
 .md-main__inner article {
@@ -25,11 +24,11 @@ body {
 }
 
 .md-sidebar {
-  /*height: 100%;*/
+  min-height: 69vh;
   flex: 1 1 auto;
   padding-inline: 1rem;
   width: 14rem;
-  background-image: linear-gradient(lightgrey, white);
+  background-image: linear-gradient(#E3EFF3, white);
   top: 0;
 }
 
