@@ -69,6 +69,13 @@ nav:
           - Silos: flight-environment/use-flight/flight-user-suite/flight-silo/silos.md
           - Files: flight-environment/use-flight/flight-user-suite/flight-silo/files.md
           - Software: flight-environment/use-flight/flight-user-suite/flight-silo/software.md
+      - Flight Web Suite:
+        - flight-environment/use-flight/flight-web-suite/index.md
+        - Setup: flight-environment/use-flight/flight-web-suite/setup.md
+        - Landing Page: flight-environment/use-flight/flight-web-suite/landing-page.md
+        - Console: flight-environment/use-flight/flight-web-suite/console.md
+        - Desktop: flight-environment/use-flight/flight-web-suite/desktop.md
+        - File Manager: flight-environment/use-flight/flight-web-suite/file-manager.md
   - Flight Solo:
     - flight-solo/index.md
     - Cluster Build Methods:
