@@ -37,6 +37,10 @@ body {
   min-width: 65%;
 }
 
+#tabs {
+  display: flex;
+}
+
 .md-nav__link, .md-nav__title {
   background: none !important;
   box-shadow: none !important;
