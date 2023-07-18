@@ -36,6 +36,25 @@ nav:
           - Using Graphical Client: hpc-environment-basics/linux-usage/working-with-data/copying-data/using-graphical-client.md
           - Object Storage for Archiving Data: hpc-environment-basics/linux-usage/working-with-data/copying-data/object-storage-archiving-data.md
       - Genders and PDSH: hpc-environment-basics/linux-usage/genders-pdsh.md
+    - HPC Environment Usage:
+      - hpc-environment-basics/hpc-usage/index.md
+      - Job Schedulers:
+        - hpc-environment-basics/hpc-usage/job-schedulers/index.md
+        - Types of Compute Job: hpc-environment-basics/hpc-usage/job-schedulers/jobs.md
+      - SLURM:
+        - hpc-environment-basics/hpc-usage/slurm/index.md
+        - Running Jobs: 
+          - Interactive Jobs: hpc-environment-basics/hpc-usage/slurm/running-jobs/interactive.md
+          - Batch Jobs: hpc-environment-basics/hpc-usage/slurm/running-jobs/batch.md
+          - Array Jobs: hpc-environment-basics/hpc-usage/slurm/running-jobs/array.md
+          - Providing Job Configuration: hpc-environment-basics/hpc-usage/slurm/running-jobs/job-configuration.md
+          - Dynamic Scheduler Variables: hpc-environment-basics/hpc-usage/slurm/running-jobs/dynamic-vars.md
+          - Requesting More Resources: hpc-environment-basics/hpc-usage/slurm/running-jobs/requesting-resources.md
+        - Using the Scheduler: 
+          - View and Control Jobs: hpc-environment-basics/hpc-usage/slurm/using-scheduler/view-control.md
+          - View Compute Host Status: hpc-environment-basics/hpc-usage/slurm/using-scheduler/host-status.md
+          - View Default Resources: hpc-environment-basics/hpc-usage/slurm/using-scheduler/default_resources.md
+        - Further Documentation: hpc-environment-basics/hpc-usage/slurm/further-docs.md
   - Flight Environment:
     - flight-environment/index.md
     - Obtaining Flight Environment:
