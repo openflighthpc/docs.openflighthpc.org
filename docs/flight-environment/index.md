@@ -47,11 +47,3 @@ The Flight Admin Tools are:
 - **Profile** - Apply configuration identities to hosts in a HPC environment 
 - **PDSH** - OpenFlight's build of PDSH
 
-## What Should Be Here?
-
-This should probably have sections for: 
-
-- General Usage (descriptions of subcommands with usage) 
-    - User Suite
-    - Web Suite
-    - Admin Tools

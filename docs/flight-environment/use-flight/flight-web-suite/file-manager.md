@@ -8,7 +8,7 @@ To start a file manager session for the cluster, select "Manage Files" from the 
 
 ![](img/flight_web_filemanager_files.png)
 
-There are a few options for the file manager, such as, making it _Full Screen_, changing to _Zen Mode_ (terminal focused with less widgets and buttons polluting the screen), and switching to console mode (opening the current directory in [Flight Console](flight_console.md)).
+There are a few options for the file manager, such as, making it _Full Screen_, changing to _Zen Mode_ (terminal focused with less widgets and buttons polluting the screen), and switching to console mode (opening the current directory in [Flight Console](console.md)).
 
 There are several buttons on the top part of the screen, they have been labelled below. All the greyed out buttons (except Bookmarks) can only be used when a file is selected. Additionally, the user can bring up the button menu by right clicking. Right clicking on a particular file or directory will show actions available for that file or directory.
 

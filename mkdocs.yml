@@ -46,6 +46,7 @@ nav:
       - flight-environment/use-flight/index.md
       - Basics: flight-environment/use-flight/environment-basics.md
       - Flight User Suite: 
+        - flight-environment/use-flight/flight-user-suite/index.md
         - Flight Desktop: 
           - flight-environment/use-flight/flight-user-suite/flight-desktop/index.md 
           - Prepare a Desktop Type: flight-environment/use-flight/flight-user-suite/flight-desktop/prepare.md
@@ -76,6 +77,12 @@ nav:
         - Console: flight-environment/use-flight/flight-web-suite/console.md
         - Desktop: flight-environment/use-flight/flight-web-suite/desktop.md
         - File Manager: flight-environment/use-flight/flight-web-suite/file-manager.md
+      - Flight Admin Tools:
+        - flight-environment/use-flight/flight-admin-tools/index.md
+        - Flight Gather: flight-environment/use-flight/flight-admin-tools/gather.md
+        - Flight Hunter: flight-environment/use-flight/flight-admin-tools/hunter.md
+        - Flight Profile: flight-environment/use-flight/flight-admin-tools/profile.md
+        - Flight PDSH: flight-environment/use-flight/flight-admin-tools/pdsh.md
   - Flight Solo:
     - flight-solo/index.md
     - Cluster Build Methods:

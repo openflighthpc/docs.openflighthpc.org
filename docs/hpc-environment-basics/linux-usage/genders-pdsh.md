@@ -7,7 +7,7 @@
 **PDSH** provides a CLI tool for performing commands on multiple nodes at once, utilising the data stored in genders. To learn more about using PDSH, read the manual page for the command `man pdsh`.
 
 !!! info
-    OpenFlight has it's own build of PDSH which is explained in further detail in [the documentation](../../flight-environment/tools/flight-pdsh.md)
+    OpenFlight has it's own build of PDSH which can be [installed here](../../flight-environment/get-flight/install.md#flight-admin-tools) and is explained further on in [the documentation](../../flight-environment/use-flight/flight-admin-tools/pdsh.md)
 
 ## Installing Genders and PDSH
 

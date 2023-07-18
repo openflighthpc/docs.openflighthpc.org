@@ -21,13 +21,14 @@ This will be ready when:
 - [ ] Existing docs migrated
     * [x] Documentation Overview
     * [x] General Environment Usage
-    * [ ] Flight Environment Usage
+    * [x] Flight Environment Usage
     * [ ] HPC Environment Usage
     * [ ] Cluster Build Methods
     * [ ] Workflow Examples
     * [ ] Functionality Testing
 - [ ] Additional content added
     * [x] HPC Concepts & Guidance (both on-site & cloud)
+    * [ ] Flight Service documentation
     * [ ] Expansion on Kubernetes Usage
     * [ ] Flight Solo Restructure & Expansion (Getting Started, How It Works, Cluster Build Refactor)
     * [ ] Benchmarking Workflows (migrate from [here](https://github.com/alces-software/knowledgebase/wiki/Burn-In-Tests))

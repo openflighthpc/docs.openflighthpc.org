@@ -33,7 +33,7 @@ Where the `OPTION` can be:
 
 - `hints`-  Show or hide command hints on login
 - `welcome` - Show or hide the welcome splash screen on login
-- `secondary` - 
+- `secondary` - Toggle whether the flight environment should be loaded in subshells
 - `always` - Toggle whether the flight environment is activated 
 
 Further information can be found with the command `flight info`.
@@ -61,16 +61,4 @@ Generally speaking, configuration files for the flight environment can be found 
     Every flight tool provides a breakdown of the available configuration options and how to set them either through their README or in a `etc/config.yml.ex` file in the source repository. 
 
     For example, available configuration options for version 1.11.3 of flight desktop can be found at [https://github.com/openflighthpc/flight-desktop/blob/1.11.3/etc/config.yml.ex](https://github.com/openflighthpc/flight-desktop/blob/1.11.3/etc/config.yml.ex)
-
-## Flight User Suite
-
-
-
-## Flight Web Suite
-
-Flight Web Suite requires some configuration in order to get it working. 
-
-
-## Flight Admin Tools 
-
 
