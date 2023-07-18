@@ -10,14 +10,14 @@ document.addEventListener('DOMContentLoaded', () => {
        image.classList.remove('1');
        link.classList.add('image2');
        link.classList.remove('image1');
-       link.href = "../docs/flight-environment";
+       link.href = "../flight-environment";
      } else { 
        image.src = "assets/images/slider_1.png";
        image.classList.add('1');
        image.classList.remove('2');
        link.classList.add('image1');
        link.classList.remove('image2');
-       link.href = "../docs/flight-solo";
+       link.href = "../flight-solo";
      }
    });
   };

@@ -13,6 +13,6 @@ title: " "
        src="assets/images/right.png">
   <a id="slider-link"
      class="image1"
-     href="../docs/flight-solo"></a>
+     href="../flight-solo"></a>
 </div>
 

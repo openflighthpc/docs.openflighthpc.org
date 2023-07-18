@@ -1,5 +1,7 @@
 ---
-title: Welcome to the openflightHPC knowledgebase
+hide:
+  - navigation
+  - toc
 ---
 
 <div id="home-container">
