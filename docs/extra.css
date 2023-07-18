@@ -123,6 +123,19 @@ body {
   color: white;
 }
 
+.md-typeset a {
+  transition: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-tabs__link {
+  color: white;
+}
+
 .image-container {
   position: relative;
 }
