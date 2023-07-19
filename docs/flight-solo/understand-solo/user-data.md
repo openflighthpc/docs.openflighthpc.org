@@ -10,6 +10,7 @@ The cloud-init `write_files` directive is used to create the file which is read 
 write_files:
   - content: |
       OPTION="value" # (1)!
+      OPTION2="value2"
     path: /opt/flight/cloudinit.in
     permissions: '0600'
     owner: root:root
