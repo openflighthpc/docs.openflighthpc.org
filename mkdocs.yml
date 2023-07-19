@@ -121,6 +121,7 @@ nav:
     - hpc-workflows/index.md
 theme:
   name: material
+  custom_dir: overrides
   logo: assets/images/logo.png
   features:
     - content.code.annotate
@@ -148,9 +149,7 @@ theme:
 extra:
   version:
     provider: mike
-    default:
-      - latest
-      - staging
+    default: latest
 plugins:
   - macros:
       include_dir: partials

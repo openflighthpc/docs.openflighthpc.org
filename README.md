@@ -38,7 +38,7 @@ It's worth familiarising with the [available markdown formatting](https://www.mk
 
 ## Deploying Docs
 
-Using `mike` we can deploy documentation with version tagging... Maybe?
+Using `mike` we can deploy documentation with version tagging
 
 - Deploy WIP data to `staging` 
 ```
@@ -48,6 +48,11 @@ mike deploy --push --update-aliases 20XX.Y staging
 - Deploy a new stable version of documentation
 ```
 mike deploy --push --update-aliases 20XX.Y latest
+```
+
+- Resetting/removing a version 
+```
+mike delete --push 20XX.Y
 ```
 
 ## Content Things to Look Into
