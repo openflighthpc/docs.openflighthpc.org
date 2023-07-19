@@ -73,6 +73,9 @@ An example of using `answers` to configure a slurm multinode cluster would be:
 flight profile configure --answers '{  "cluster_type": "openflight-slurm-standalone",  "cluster_name": "my-cluster",  "default_username": "flight",  "default_password": "0penfl1ght",  "access_host": "{{ access_host }}"}'
 ```
 
+!!! tip
+    The OpenFlight Cluster Types provided along with Flight Profile attempt to determine sensible defaults which will aid in providing the correct information for configuring the cluster
+
 ---
 
 ### `apply <node,node2...> <identity>`

@@ -65,7 +65,7 @@ Select nodes: (Scroll for more nodes)
   ⬡ compute-node-1.novalocal - 10.151.15.194
   ⬡ compute-node-2.novalocal - 10.151.15.238
 ```
-To parse, select a from the list with the `space` key, and you will be taken to the label editor.
+To parse, select a node from the list with ++space++, and you will be taken to the label editor.
 
 ```bash
 Choose label: login-node.novalocal
@@ -77,7 +77,7 @@ Choose label: login1
 !!! tip
     You can clear the current node name by pressing `down` in the label editor.
 
-When done editing, press the `enter` key to save. The modified node label will appear next to the ip address and original node label.
+When done editing, press ++enter++ to save. The modified node label will appear next to the ip address and original node label.
 ```
 Select nodes: login-node.novalocal - 127.0.0.1 (login1) (Scroll for more nodes)
 ‣ ⬢ login-node.novalocal - 127.0.0.1 (login1)
@@ -85,7 +85,7 @@ Select nodes: login-node.novalocal - 127.0.0.1 (login1) (Scroll for more nodes)
   ⬡ compute-node-2.novalocal - 10.151.15.238
 ```
 
-From this point, you can either hit the `enter` key to finish parsing and process the selected nodes, or continue changing node labels. Either way, you can return to this list by running `flight hunter parse` again.
+From this point, you can either hit the ++enter++ key to finish parsing and process the selected nodes, or continue changing node labels. Either way, you can return to this list by running `flight hunter parse` again.
 
 !!! question
     Do you have many hosts in the buffer to pass at once?

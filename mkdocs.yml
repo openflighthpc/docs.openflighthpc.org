@@ -104,6 +104,14 @@ nav:
         - Flight PDSH: flight-environment/use-flight/flight-admin-tools/pdsh.md
   - Flight Solo:
     - flight-solo/index.md
+    - Understanding Flight Solo:
+      - flight-solo/understand-solo/index.md
+      - User Data: flight-solo/understand-solo/user-data.md
+    - Getting Flight Solo: 
+      - flight-solo/get-solo/index.md
+      - Import to AWS: flight-solo/get-solo/aws.md
+      - Import to Azure: flight-solo/get-solo/azure.md
+      - Import to OpenStack: flight-solo/get-solo/openstack.md
     - Cluster Build Methods:
       - flight-solo/cluster-build-methods/index.md
       - Example Cluster: flight-solo/cluster-build-methods/example-cluster.md
