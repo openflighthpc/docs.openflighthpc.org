@@ -104,6 +104,7 @@ nav:
         - Flight PDSH: flight-environment/use-flight/flight-admin-tools/pdsh.md
   - Flight Solo:
     - flight-solo/index.md
+    - Getting Started: flight-solo/quickstart-guide.md
     - Understanding Flight Solo:
       - flight-solo/understand-solo/index.md
       - User Data: flight-solo/understand-solo/user-data.md
