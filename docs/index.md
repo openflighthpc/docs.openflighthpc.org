@@ -22,7 +22,7 @@ This will be ready when:
     * [x] Documentation Overview
     * [x] General Environment Usage
     * [x] Flight Environment Usage
-    * [ ] HPC Environment Usage
+    * [x] HPC Environment Usage
     * [ ] Cluster Build Methods
     * [ ] Workflow Examples
     * [ ] Functionality Testing
