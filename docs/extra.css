@@ -32,6 +32,33 @@ body {
   top: 0;
 }
 
+@media screen and (max-width: 76.1875em) {
+  [data-md-toggle="drawer"]:checked ~ .md-container .md-sidebar--primary {
+    transform: translateX(14rem);
+  }
+}
+
+@media screen and (max-width: 76.1875em) {
+  .md-sidebar {
+    left: -14rem !important;
+  }
+
+  #header-nav-links {
+    display: none !important;
+  }
+
+  #alces-link {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 59.9375em) {
+  .md-nav__source {
+    display: none;
+  }
+}
+
+
 .md-content {
   min-width: 65%;
 }
@@ -61,8 +88,17 @@ body {
   height: 3.4rem;
 }
 
-#alces-link {
+.md-header__topic {
+  position: relative;
+}
+
+.md-version__current {
+  color: white;
+}
+
+#top-right-link {
   margin-left: auto;
+  width: fit-content;
 }
 
 #blue-bar {

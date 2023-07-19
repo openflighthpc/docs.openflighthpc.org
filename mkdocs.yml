@@ -162,7 +162,9 @@ theme:
     - navigation.tabs.sticky
     - navigation.tabs
     - navigation.top
-  palette:
+    - search.suggest
+    - search.highlight
+  palette:    
     # Palette toggle for automatic mode
     - scheme: alces
       toggle:
@@ -185,7 +187,6 @@ extra:
     provider: mike
     default: latest
 plugins:
-  - search
   - macros:
       include_dir: partials
   - search
@@ -201,7 +202,6 @@ plugins:
       known_words: codespell/known_words.txt
       ignore_code: yes
       min_length: 3
-   
 markdown_extensions:
   - abbr
   - attr_list

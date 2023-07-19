@@ -3,6 +3,8 @@ hide:
   - navigation
   - toc
 title: " "
+search:
+  exclude: true
 ---
 
 <div class="image-container no-tabs">

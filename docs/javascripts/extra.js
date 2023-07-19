@@ -23,7 +23,9 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 });
 
-if (document.querySelector('.no-tabs')) {
-  document.querySelector('#tabs').style.display = 'none';
-}
+document.addEventListener('DOMContentLoaded', () => {
+  if (document.querySelector('.no-tabs')) {
+    document.querySelector('#tabs').style.display = 'none';
+  }
+});
 
