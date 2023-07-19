@@ -1,0 +1,3224 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../gather/">
+      
+      
+        <link rel="next" href="../profile/">
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.17">
+    
+    
+      
+        <title>Flight Hunter - OpenFlight Knowledgebase</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.26e3688c.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ecc896b0.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#flight-hunter" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="OpenFlight Knowledgebase" class="md-header__button md-logo" aria-label="OpenFlight Knowledgebase" data-md-component="logo">
+      
+  <img src="../../../../assets/images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            OpenFlight Knowledgebase
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Flight Hunter
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+            
+              <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_3" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9h-1.9M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69m-9.15 3.96h2.3L12 9l-1.15 3.65Z"/></svg>
+              </label>
+            
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+            
+              <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+              </label>
+            
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_3">
+            
+              <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_2" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+              </label>
+            
+          
+        </form>
+      
+    
+    
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/openflighthpc/mkdocs-test" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../.." class="md-tabs__link">
+        Overview
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../hpc-concepts/" class="md-tabs__link">
+        HPC Concepts
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../hpc-environment-basics/" class="md-tabs__link">
+        HPC Environment Basics
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../" class="md-tabs__link md-tabs__link--active">
+        Flight Environment
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../flight-solo/" class="md-tabs__link">
+        Flight Solo
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../hpc-workflows/" class="md-tabs__link">
+        HPC Workflows
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="OpenFlight Knowledgebase" class="md-nav__button md-logo" aria-label="OpenFlight Knowledgebase" data-md-component="logo">
+      
+  <img src="../../../../assets/images/logo.png" alt="logo">
+
+    </a>
+    OpenFlight Knowledgebase
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/openflighthpc/mkdocs-test" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../..">Overview</a>
+          
+            <label for="__nav_1">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Overview
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../overview/prerequisites/" class="md-nav__link">
+        Prerequisites
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../overview/get-help/" class="md-nav__link">
+        Where Can I Get Help
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../../hpc-concepts/">HPC Concepts</a>
+          
+            <label for="__nav_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          HPC Concepts
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../hpc-concepts/network-hardware/" class="md-nav__link">
+        Network and Hardware
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../hpc-concepts/infrastructure/" class="md-nav__link">
+        Infrastructure
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../hpc-concepts/base-system/" class="md-nav__link">
+        Base System
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../hpc-concepts/user-management/" class="md-nav__link">
+        User Management
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../hpc-concepts/storage/" class="md-nav__link">
+        Storage
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../hpc-concepts/monitoring/" class="md-nav__link">
+        Monitoring
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../hpc-concepts/hpc-environment/" class="md-nav__link">
+        HPC Environment
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../hpc-concepts/verification/" class="md-nav__link">
+        Verification
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../../hpc-environment-basics/">HPC Environment Basics</a>
+          
+            <label for="__nav_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          HPC Environment Basics
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../../hpc-environment-basics/linux-usage/">Linux Environment Usage</a>
+          
+            <label for="__nav_3_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Linux Environment Usage
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../../hpc-environment-basics/linux-usage/cli-basics/">CLI Basics</a>
+          
+            <label for="__nav_3_2_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          CLI Basics
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../hpc-environment-basics/linux-usage/cli-basics/logging-in/" class="md-nav__link">
+        Logging In
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../hpc-environment-basics/linux-usage/cli-basics/understanding-the-cli/" class="md-nav__link">
+        Understanding the CLI
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../hpc-environment-basics/linux-usage/cli-basics/moving-between-hosts/" class="md-nav__link">
+        Moving Between Hosts
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../hpc-environment-basics/linux-usage/cli-basics/becoming-root/" class="md-nav__link">
+        Becoming the Root User
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_3" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../../hpc-environment-basics/linux-usage/working-with-data/">Working with Data and Files</a>
+          
+            <label for="__nav_3_2_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          Working with Data and Files
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../hpc-environment-basics/linux-usage/working-with-data/storage-types/" class="md-nav__link">
+        Storage Types
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../hpc-environment-basics/linux-usage/working-with-data/your-home-directory/" class="md-nav__link">
+        Your Home Directory
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../hpc-environment-basics/linux-usage/working-with-data/copy-between-hosts/" class="md-nav__link">
+        Copying Data Between Hosts
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_3_5" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../../hpc-environment-basics/linux-usage/working-with-data/copying-data/">Copying Data to a HPC Environment</a>
+          
+            <label for="__nav_3_2_3_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_2_3_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_2_3_5">
+          <span class="md-nav__icon md-icon"></span>
+          Copying Data to a HPC Environment
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../hpc-environment-basics/linux-usage/working-with-data/copying-data/using-cli/" class="md-nav__link">
+        Using CLI
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../hpc-environment-basics/linux-usage/working-with-data/copying-data/using-graphical-client/" class="md-nav__link">
+        Using Graphical Client
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../hpc-environment-basics/linux-usage/working-with-data/copying-data/object-storage-archiving-data/" class="md-nav__link">
+        Object Storage for Archiving Data
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../hpc-environment-basics/linux-usage/genders-pdsh/" class="md-nav__link">
+        Genders and PDSH
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../../hpc-environment-basics/hpc-usage/">HPC Environment Usage</a>
+          
+            <label for="__nav_3_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          HPC Environment Usage
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_2" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../../hpc-environment-basics/hpc-usage/job-schedulers/">Job Schedulers</a>
+          
+            <label for="__nav_3_3_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Job Schedulers
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../hpc-environment-basics/hpc-usage/job-schedulers/jobs/" class="md-nav__link">
+        Types of Compute Job
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_3" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../../hpc-environment-basics/hpc-usage/slurm/">SLURM</a>
+          
+            <label for="__nav_3_3_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          SLURM
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_3_2" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_3_2" id="__nav_3_3_3_2_label" tabindex="0">
+          Running Jobs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_3_3_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_3_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Running Jobs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../hpc-environment-basics/hpc-usage/slurm/running-jobs/interactive/" class="md-nav__link">
+        Interactive Jobs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../hpc-environment-basics/hpc-usage/slurm/running-jobs/batch/" class="md-nav__link">
+        Batch Jobs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../hpc-environment-basics/hpc-usage/slurm/running-jobs/array/" class="md-nav__link">
+        Array Jobs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../hpc-environment-basics/hpc-usage/slurm/running-jobs/job-configuration/" class="md-nav__link">
+        Providing Job Configuration
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../hpc-environment-basics/hpc-usage/slurm/running-jobs/dynamic-vars/" class="md-nav__link">
+        Dynamic Scheduler Variables
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../hpc-environment-basics/hpc-usage/slurm/running-jobs/requesting-resources/" class="md-nav__link">
+        Requesting More Resources
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_3_3" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_3_3" id="__nav_3_3_3_3_label" tabindex="0">
+          Using the Scheduler
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_3_3_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_3_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Using the Scheduler
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../hpc-environment-basics/hpc-usage/slurm/using-scheduler/view-control/" class="md-nav__link">
+        View and Control Jobs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../hpc-environment-basics/hpc-usage/slurm/using-scheduler/host-status/" class="md-nav__link">
+        View Compute Host Status
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../hpc-environment-basics/hpc-usage/slurm/using-scheduler/default_resources/" class="md-nav__link">
+        View Default Resources
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../hpc-environment-basics/hpc-usage/slurm/further-docs/" class="md-nav__link">
+        Further Documentation
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../">Flight Environment</a>
+          
+            <label for="__nav_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Flight Environment
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../get-flight/">Obtaining Flight Environment</a>
+          
+            <label for="__nav_4_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          Obtaining Flight Environment
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../get-flight/install/" class="md-nav__link">
+        Installation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../get-flight/configure/" class="md-nav__link">
+        Configuration
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" checked>
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../">Using Flight Environment</a>
+          
+            <label for="__nav_4_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_4_3">
+          <span class="md-nav__icon md-icon"></span>
+          Using Flight Environment
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../environment-basics/" class="md-nav__link">
+        Basics
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_3" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../flight-user-suite/">Flight User Suite</a>
+          
+            <label for="__nav_4_3_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_3_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Flight User Suite
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_3_2" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../flight-user-suite/flight-desktop/">Flight Desktop</a>
+          
+            <label for="__nav_4_3_3_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_3_3_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_3_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Flight Desktop
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../flight-user-suite/flight-desktop/prepare/" class="md-nav__link">
+        Prepare a Desktop Type
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../flight-user-suite/flight-desktop/launch/" class="md-nav__link">
+        Launch a Desktop Session
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../flight-user-suite/flight-desktop/port-forward/" class="md-nav__link">
+        Port Forwarding a Desktop Session
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../flight-user-suite/flight-desktop/resize/" class="md-nav__link">
+        Resize a Desktop Session
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../flight-user-suite/flight-desktop/viewing-terminating/" class="md-nav__link">
+        Viewing and Terminating Sessions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../flight-user-suite/flight-desktop/secure/" class="md-nav__link">
+        Securing your Desktop Session
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_3_3" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../flight-user-suite/flight-env/">Flight Env</a>
+          
+            <label for="__nav_4_3_3_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_3_3_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_3_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Flight Env
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../flight-user-suite/flight-env/usage/" class="md-nav__link">
+        Usage
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_3_3_3" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../flight-user-suite/flight-env/ecosystems/">Package Ecosystems</a>
+          
+            <label for="__nav_4_3_3_3_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_4_3_3_3_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_3_3_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Package Ecosystems
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../flight-user-suite/flight-env/ecosystems/conda/" class="md-nav__link">
+        Conda
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../flight-user-suite/flight-env/ecosystems/easybuild/" class="md-nav__link">
+        Easybuild
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../flight-user-suite/flight-env/ecosystems/modules/" class="md-nav__link">
+        Modules
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../flight-user-suite/flight-env/ecosystems/singularity/" class="md-nav__link">
+        Singularity
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../flight-user-suite/flight-env/ecosystems/spack/" class="md-nav__link">
+        Spack
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_3_4" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../flight-user-suite/flight-silo/">Flight Silo</a>
+          
+            <label for="__nav_4_3_3_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_3_3_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_3_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          Flight Silo
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../flight-user-suite/flight-silo/silos/" class="md-nav__link">
+        Silos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../flight-user-suite/flight-silo/files/" class="md-nav__link">
+        Files
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../flight-user-suite/flight-silo/software/" class="md-nav__link">
+        Software
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_4" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../flight-web-suite/">Flight Web Suite</a>
+          
+            <label for="__nav_4_3_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_3_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          Flight Web Suite
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../flight-web-suite/setup/" class="md-nav__link">
+        Setup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../flight-web-suite/landing-page/" class="md-nav__link">
+        Landing Page
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../flight-web-suite/console/" class="md-nav__link">
+        Console
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../flight-web-suite/desktop/" class="md-nav__link">
+        Desktop
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../flight-web-suite/file-manager/" class="md-nav__link">
+        File Manager
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_5" checked>
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../">Flight Admin Tools</a>
+          
+            <label for="__nav_4_3_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_3_5_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_4_3_5">
+          <span class="md-nav__icon md-icon"></span>
+          Flight Admin Tools
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gather/" class="md-nav__link">
+        Flight Gather
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Flight Hunter
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Flight Hunter
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hunt" class="md-nav__link">
+    Hunt
+  </a>
+  
+    <nav class="md-nav" aria-label="Hunt">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hunt-options" class="md-nav__link">
+    Hunt Options
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#send" class="md-nav__link">
+    Send
+  </a>
+  
+    <nav class="md-nav" aria-label="Send">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#send-options" class="md-nav__link">
+    Send Options
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parse" class="md-nav__link">
+    Parse
+  </a>
+  
+    <nav class="md-nav" aria-label="Parse">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parse-options" class="md-nav__link">
+    Parse options
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-hunter-commands" class="md-nav__link">
+    Other hunter commands
+  </a>
+  
+    <nav class="md-nav" aria-label="Other hunter commands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#autorun" class="md-nav__link">
+    autorun
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dump-buffer" class="md-nav__link">
+    dump-buffer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list" class="md-nav__link">
+    list
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modify-groups-node" class="md-nav__link">
+    modify-groups &lt;node&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modify-label-old-new" class="md-nav__link">
+    modify-label &lt;old&gt; &lt;new&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-node-label" class="md-nav__link">
+    remove-node &lt;label&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rename-group-group-new-name" class="md-nav__link">
+    rename-group &lt;group&gt; &lt;new name&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#show-label" class="md-nav__link">
+    show &lt;label&gt;
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../profile/" class="md-nav__link">
+        Flight Profile
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pdsh/" class="md-nav__link">
+        Flight PDSH
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../../flight-solo/">Flight Solo</a>
+          
+            <label for="__nav_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Flight Solo
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../../flight-solo/cluster-build-methods/">Cluster Build Methods</a>
+          
+            <label for="__nav_5_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_2">
+          <span class="md-nav__icon md-icon"></span>
+          Cluster Build Methods
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../flight-solo/cluster-build-methods/example-cluster/" class="md-nav__link">
+        Example Cluster
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../flight-solo/cluster-build-methods/modular/" class="md-nav__link">
+        Choose Your Own Adventure
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2_4" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_5_2_4" id="__nav_5_2_4_label" tabindex="0">
+          All Methods
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_2_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          All Methods
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../flight-solo/cluster-build-methods/slurm-standalone-aws/" class="md-nav__link">
+        SLURM Standalone AWS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../flight-solo/cluster-build-methods/slurm-multinode-aws/" class="md-nav__link">
+        SLURM Multinode AWS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../flight-solo/cluster-build-methods/slurm-standalone-azure/" class="md-nav__link">
+        SLURM Standalone Azure
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../flight-solo/cluster-build-methods/slurm-multinode-azure/" class="md-nav__link">
+        SLURM Multinode Azure
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../flight-solo/cluster-build-methods/kubernetes-multinode-aws/" class="md-nav__link">
+        Kubernetes Multinode AWS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../flight-solo/cluster-build-methods/kubernetes-multinode-azure/" class="md-nav__link">
+        Kubernetes Multinode Azure
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../flight-solo/cluster-build-methods/jupyter-lab-standalone-aws/" class="md-nav__link">
+        Jupyter Lab Standalone AWS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../flight-solo/cluster-build-methods/jupyter-lab-standalone-azure/" class="md-nav__link">
+        Jupyter Lab Standalone Azure
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../../hpc-workflows/">HPC Workflows</a>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          HPC Workflows
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hunt" class="md-nav__link">
+    Hunt
+  </a>
+  
+    <nav class="md-nav" aria-label="Hunt">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hunt-options" class="md-nav__link">
+    Hunt Options
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#send" class="md-nav__link">
+    Send
+  </a>
+  
+    <nav class="md-nav" aria-label="Send">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#send-options" class="md-nav__link">
+    Send Options
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parse" class="md-nav__link">
+    Parse
+  </a>
+  
+    <nav class="md-nav" aria-label="Parse">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parse-options" class="md-nav__link">
+    Parse options
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-hunter-commands" class="md-nav__link">
+    Other hunter commands
+  </a>
+  
+    <nav class="md-nav" aria-label="Other hunter commands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#autorun" class="md-nav__link">
+    autorun
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dump-buffer" class="md-nav__link">
+    dump-buffer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list" class="md-nav__link">
+    list
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modify-groups-node" class="md-nav__link">
+    modify-groups &lt;node&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modify-label-old-new" class="md-nav__link">
+    modify-label &lt;old&gt; &lt;new&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-node-label" class="md-nav__link">
+    remove-node &lt;label&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rename-group-group-new-name" class="md-nav__link">
+    rename-group &lt;group&gt; &lt;new name&gt;
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#show-label" class="md-nav__link">
+    show &lt;label&gt;
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="flight-hunter">Flight Hunter</h1>
+<p>Flight hunter is a host inventory tool used find and connect to nodes in a compute cluster. It is predominantly used while setting up a cluster.</p>
+<p>Flight hunter's namesake feature is the ability to discover nodes on the local network by hunting. It can also send information between nodes, and can send on startup to a designated server node.</p>
+<h3 id="hunt">Hunt</h3>
+<p>Hunting can be started with the command <code>flight hunter hunt</code>. e.g.
+<div class="highlight"><pre><span></span><code><span class="o">[</span>flight@chead1<span class="w"> </span><span class="o">(</span>mycluster1<span class="o">)</span><span class="w"> </span><span class="o">[</span>login1<span class="o">]</span><span class="w"> </span>~<span class="o">]</span>$<span class="w"> </span>flight<span class="w"> </span>hunter<span class="w"> </span>hunt
+Hunter<span class="w"> </span>running<span class="w"> </span>on<span class="w"> </span>port<span class="w"> </span><span class="m">8888</span><span class="w"> </span>-<span class="w"> </span>Ctrl+C<span class="w"> </span>to<span class="w"> </span>stop
+</code></pre></div></p>
+<p>There are several options that change how <code>hunt</code> works</p>
+<h4 id="hunt-options">Hunt Options</h4>
+<ul>
+<li><code>--allow-existing</code> - Duplicate entries will replace existing ones rather than being rejected.</li>
+<li><code>--port &lt;port&gt;</code> - Overrides the default port to accept on.</li>
+<li><code>--include-self</code> - Sends itself to hunter.</li>
+<li><code>--auth &lt;auth&gt;</code> - Defines a password to use as an authentication key, only incoming senders with the correct auth will be accepted.</li>
+<li><code>--auto-parse &lt;regex&gt;</code> - Automatically parses nodes matching this regex when they are added.</li>
+</ul>
+<p>Hunter also has the ability to automatically apply a profile identity to nodes as soon as they are parsed. This is called <code>auto-apply</code> - it is not a command line option, it must be configured through hunter config files. </p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>All the above options can be set in the Flight Hunter config file located within <code>etc/config.yml</code> in the installation directory (if installed through the package this will be at <code>/opt/flight/opt/hunter/etc/config.yml</code>). For more information on configuring Flight Tools see the <a href="../../../get-flight/configure/#filesystem-structure">configuration document</a></p>
+</div>
+<h2 id="send">Send</h2>
+<p>Sending inventory information to a hunter server can be done with the command <code>flight hunter send</code>. And a message will be displayed on a successful transmission.
+<div class="highlight"><pre><span></span><code><span class="o">[</span>flight@chead1<span class="w"> </span>~<span class="o">]</span>$<span class="w"> </span>flight<span class="w"> </span>hunter<span class="w"> </span>send<span class="w"> </span>--server<span class="w"> </span><span class="m">10</span>.10.0.1
+Successful<span class="w"> </span>transmission
+</code></pre></div></p>
+<h3 id="send-options">Send Options</h3>
+<ul>
+<li><code>--port &lt;port number&gt;</code> - Overrides the default port to send to.</li>
+<li><code>--server &lt;ip address&gt;</code> - Overrides the default server name, useful if the default is not set.</li>
+<li><code>--auth &lt;auth&gt;</code> - Defines a password to use as an authentication key.</li>
+<li><code>--broadcast</code> - Makes send broadcast to all addresses on the default subnet.</li>
+<li><code>--broadcast-address &lt;subnet&gt;</code> - Overrides the default subnet to send to, use if the default subnet was not configured.</li>
+<li><code>--groups &lt;group1,group2,group3...&gt;</code> - Specifies the groups that this nodes should be in.</li>
+<li><code>--label &lt;label&gt;</code> - Defines a label to use when parsing this node.</li>
+<li><code>--prefix &lt;prefix&gt;</code> - Defines a prefix, which will be numbered, and used as a label.</li>
+<li><code>--command &lt;command&gt;</code> - Runs the given console command and sends the output as the payload of the send.</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>All the above options can be set in the Flight Hunter config file located within <code>etc/config.yml</code> in the installation directory (if installed through the package this will be at <code>/opt/flight/opt/hunter/etc/config.yml</code>). For more information on configuring Flight Tools see the <a href="../../../get-flight/configure/#filesystem-structure">configuration document</a></p>
+</div>
+<h2 id="parse">Parse</h2>
+<p>One of hunter's main features is the ability to parse discovered nodes to prepare them for use with other flight tools. A benefit of the parsing feature is applying "labels" to discovered hosts, in ephemeral systems the hostnames may not be ideally formed or of a memorable length so labels make it easier to identify hosts. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>There must be some discovered nodes in the hunter buffer, otherwise there is nothing to parse.</p>
+</div>
+<p>The <code>parse</code> command will generate a list, for example:
+<div class="highlight"><pre><span></span><code><span class="o">[</span>flight@login-node.novalocal<span class="w"> </span>~<span class="o">]</span>$<span class="w"> </span>flight<span class="w"> </span>hunter<span class="w"> </span>parse
+Select<span class="w"> </span>nodes:<span class="w"> </span><span class="o">(</span>Scroll<span class="w"> </span><span class="k">for</span><span class="w"> </span>more<span class="w"> </span>nodes<span class="o">)</span>
+‣<span class="w"> </span>⬡<span class="w"> </span>login-node.novalocal<span class="w"> </span>-<span class="w"> </span><span class="m">127</span>.0.0.1
+<span class="w">  </span>⬡<span class="w"> </span>compute-node-1.novalocal<span class="w"> </span>-<span class="w"> </span><span class="m">10</span>.151.15.194
+<span class="w">  </span>⬡<span class="w"> </span>compute-node-2.novalocal<span class="w"> </span>-<span class="w"> </span><span class="m">10</span>.151.15.238
+</code></pre></div>
+To parse, select a from the list with the <code>space</code> key, and you will be taken to the label editor.</p>
+<p><div class="highlight"><pre><span></span><code>Choose<span class="w"> </span>label:<span class="w"> </span>login-node.novalocal
+</code></pre></div>
+Here, you can edit the label like plain text.
+<div class="highlight"><pre><span></span><code>Choose<span class="w"> </span>label:<span class="w"> </span>login1
+</code></pre></div></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can clear the current node name by pressing <code>down</code> in the label editor.</p>
+</div>
+<p>When done editing, press the <code>enter</code> key to save. The modified node label will appear next to the ip address and original node label.
+<div class="highlight"><pre><span></span><code>Select nodes: login-node.novalocal - 127.0.0.1 (login1) (Scroll for more nodes)
+‣ ⬢ login-node.novalocal - 127.0.0.1 (login1)
+  ⬡ compute-node-1.novalocal - 10.151.15.194
+  ⬡ compute-node-2.novalocal - 10.151.15.238
+</code></pre></div></p>
+<p>From this point, you can either hit the <code>enter</code> key to finish parsing and process the selected nodes, or continue changing node labels. Either way, you can return to this list by running <code>flight hunter parse</code> again.</p>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<p>Do you have many hosts in the buffer to pass at once?</p>
+<p>If the hostnames of these are acceptable or labels/prefixes have been set then the <code>--auto</code> option will allow for bulk parsing of the buffer. Further information on configuring auto-parsing is available in the <a href="https://github.com/openflighthpc/flight-hunter#automatic-parser">Flight Hunter repository</a></p>
+</div>
+<h3 id="parse-options">Parse options</h3>
+<p>There are some additional options that can be used with parse.</p>
+<ul>
+<li><code>--prefix &lt;prefix&gt;</code> - Defines a prefix, which will be numbered, and used as a label.</li>
+<li><code>--start &lt;number&gt;</code> - Defines the start value for the numbering of prefixes.</li>
+<li><code>--auto</code> - Automatically parses everything in the buffer list.</li>
+<li><code>--allow-existing</code> - Duplicate entries will replace existing ones rather than being rejected.</li>
+<li><code>--skip-used-index</code> - If there is already a node with particular label, then entering the a different node with the same label will increase the index to the next available one instead of throwing an error.</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>All the above options can be set in the Flight Hunter config file located within <code>etc/config.yml</code> in the installation directory (if installed through the package this will be at <code>/opt/flight/opt/hunter/etc/config.yml</code>). For more information on configuring Flight Tools see the <a href="../../../get-flight/configure/#filesystem-structure">configuration document</a></p>
+</div>
+<h2 id="other-hunter-commands">Other hunter commands</h2>
+<p>Further commands and features of hunter are covered below</p>
+<hr />
+<h3 id="autorun"><code>autorun</code></h3>
+<p>This command automatically runs either <code>hunt</code> or <code>send</code> based on its configuration.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is used by the hunter service to launch hunter with the correct settings and isn't intended for use by end-users</p>
+</div>
+<hr />
+<h3 id="dump-buffer"><code>dump-buffer</code></h3>
+<p>Drops all nodes in the buffer list.</p>
+<hr />
+<h3 id="list"><code>list</code></h3>
+<p>Shows all nodes in the parsed list of nodes, and has several additional options:</p>
+<ul>
+<li><code>--plain</code> - Displays in a plain format</li>
+<li><code>--by-group</code> - Displays by group.</li>
+<li><code>--buffer</code> - Shows the buffer list instead.</li>
+</ul>
+<hr />
+<h3 id="modify-groups-node"><code>modify-groups &lt;node&gt;</code></h3>
+<p>Allows for adding or removing of groups to a node.</p>
+<ul>
+<li><code>--add &lt;groups&gt;</code> - Adds a group or comma separated list of groups.</li>
+<li><code>--remove &lt;groups&gt;</code> - Removes a group or comma separated list of groups.</li>
+<li><code>--buffer</code> - Modifies groups in the buffer list instead.</li>
+<li><code>--regex</code> - The nodename is parsed as regex instead, and group changes are made to all nodes that match.</li>
+</ul>
+<hr />
+<h3 id="modify-label-old-new"><code>modify-label &lt;old&gt; &lt;new&gt;</code></h3>
+<p>Changes the label of a node from its current one to a new one.</p>
+<hr />
+<h3 id="remove-node-label"><code>remove-node &lt;label&gt;</code></h3>
+<p>Remove a node from the parsed list.</p>
+<ul>
+<li><code>--buffer</code> - Remove from the buffer list, and used the node id instead.</li>
+<li><code>--name</code> - Specify the node by regex matching the hostname instead.</li>
+</ul>
+<hr />
+<h3 id="rename-group-group-new-name"><code>rename-group &lt;group&gt; &lt;new name&gt;</code></h3>
+<p>Renames a group, keeping all the nodes it contains.</p>
+<ul>
+<li><code>--buffer</code> - Uses the buffer list instead.</li>
+</ul>
+<hr />
+<h3 id="show-label"><code>show &lt;label&gt;</code></h3>
+<p>Shows the details of a node, identifying it by label</p>
+<ul>
+<li><code>--buffer</code> - View a node in the buffer list instead, identifying it by id.</li>
+<li><code>--plain</code> - Print in a plain format, more easily machine readable.</li>
+</ul>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["content.code.annotate", "navigation.sections", "navigation.indexes", "navigation.tabs"], "search": "../../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": ["latest", "staging"], "provider": "mike"}}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.b425cdc4.min.js"></script>
+      
+    
+  </body>
+</html>
