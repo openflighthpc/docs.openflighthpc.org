@@ -20,7 +20,7 @@ body {
 }
 
 .md-tabs {
-  background-color: var(--md-primary-fg-color);
+  background-color: var(--header-grey);
 }
 
 .md-sidebar {
@@ -57,7 +57,7 @@ body {
 }
 
 #header-block {
-  background-color: var(--md-primary-fg-color);
+  background-color: var(--header-grey);
   height: 3.4rem;
 }
 
@@ -193,4 +193,5 @@ a {
 :root {
   --alces-blue: #2693D7;
   --alces-blue-dark: #0A6AA6;
+  --header-grey: #191919;
 }
