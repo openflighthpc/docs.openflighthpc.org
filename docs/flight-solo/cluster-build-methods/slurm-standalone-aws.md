@@ -1,6 +1,5 @@
 # SLURM Standalone on AWS
 
-
 ## Launch Login Node
 
 {% include 'flight-solo/creating-clusters/launching-login-node-awsimported.md' %}
