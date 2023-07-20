@@ -39,8 +39,9 @@ body {
 }
 
 @media screen and (max-width: 76.1875em) {
-  .md-sidebar {
+  .md-sidebar--primary {
     left: -14rem !important;
+    display: block !important;
   }
 
   #header-nav-links {
