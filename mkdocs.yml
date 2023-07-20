@@ -162,6 +162,7 @@ extra:
 plugins:
   - macros:
       include_dir: partials
+  - search
 markdown_extensions:
   - abbr
   - attr_list
