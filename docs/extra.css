@@ -36,11 +36,24 @@ body {
   [data-md-toggle="drawer"]:checked ~ .md-container .md-sidebar--primary {
     transform: translateX(14rem);
   }
-}
-
-@media screen and (max-width: 76.1875em) {
+  
   .md-sidebar--primary {
     left: -14rem !important;
+    display: block !important;
+  }
+
+  .md-sidebar--primary .top-level {
+    display: block !important;
+    flex-basis: fit-content;
+    flex-grow: 0;
+  }
+
+  .md-sidebar--primary .top-level li {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  .md-sidebar--primary .alces-link {
     display: block !important;
   }
 
