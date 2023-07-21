@@ -8,7 +8,7 @@ There are a lot of moving parts to Flight Solo so it can seem a little daunting 
 
 **I want to see Flight Solo for myself!**
 
-: The quickest way to get started would be by [launching the AWS Marketplace image](aws-marketplace-launch-guide.md) and logging in and taking a look around 
+: The quickest way to get started would be by [launching the AWS Marketplace image](https://alces-flight.com/solo/aws) and logging in and taking a look around 
 
 **I want to build my own cluster!**
 
