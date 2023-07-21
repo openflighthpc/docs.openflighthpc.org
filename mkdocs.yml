@@ -115,17 +115,20 @@ nav:
       - Import to OpenStack: flight-solo/get-solo/openstack.md
     - Cluster Build Methods:
       - flight-solo/cluster-build-methods/index.md
-      - Example Cluster: flight-solo/cluster-build-methods/example-cluster.md
       - Choose Your Own Adventure: flight-solo/cluster-build-methods/modular.md
-      - All Methods:
+      - General Methods:
         - SLURM Standalone AWS: flight-solo/cluster-build-methods/slurm-standalone-aws.md
-        - SLURM Multinode AWS: flight-solo/cluster-build-methods/slurm-multinode-aws.md
         - SLURM Standalone Azure: flight-solo/cluster-build-methods/slurm-standalone-azure.md
+        - SLURM Standalone OpenStack: flight-solo/cluster-build-methods/slurm-standalone-openstack.md
+        - SLURM Multinode AWS: flight-solo/cluster-build-methods/slurm-multinode-aws.md
         - SLURM Multinode Azure: flight-solo/cluster-build-methods/slurm-multinode-azure.md
+        - SLURM Multinode OpenStack: flight-solo/cluster-build-methods/slurm-multinode-openstack.md
         - Kubernetes Multinode AWS: flight-solo/cluster-build-methods/kubernetes-multinode-aws.md
         - Kubernetes Multinode Azure: flight-solo/cluster-build-methods/kubernetes-multinode-azure.md
+        - Kubernetes Multinode OpenStack: flight-solo/cluster-build-methods/kubernetes-multinode-openstack.md
         - Jupyter Lab Standalone AWS: flight-solo/cluster-build-methods/jupyter-lab-standalone-aws.md
         - Jupyter Lab Standalone Azure: flight-solo/cluster-build-methods/jupyter-lab-standalone-azure.md
+        - Jupyter Lab Standalone OpenStack: flight-solo/cluster-build-methods/jupyter-lab-standalone-openstack.md
   - HPC Workflows:
     - hpc-workflows/index.md
 theme:
@@ -136,6 +139,7 @@ theme:
     - content.code.annotate
     - navigation.sections
     - navigation.indexes # Allows adding overview pages to sections, name them index.md
+    - navigation.tabs.sticky
     - navigation.tabs
   palette:
     # Palette toggle for automatic mode
