@@ -141,6 +141,7 @@ theme:
     - navigation.indexes # Allows adding overview pages to sections, name them index.md
     - navigation.tabs.sticky
     - navigation.tabs
+    - navigation.top
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
