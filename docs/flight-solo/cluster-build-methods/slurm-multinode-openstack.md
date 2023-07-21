@@ -1,4 +1,4 @@
-# Kubernetes Multinode on Azure
+# SLURM Multinode on OpenStack
 
 ## Launch Login Node
 
@@ -8,7 +8,7 @@
 
 ### Deploy
 
-{% include 'flight-solo/creating-clusters/launching-login-node-azure.md' %}
+{% include 'flight-solo/creating-clusters/launching-login-node-openstack.md' %}
 
 ## Launch Compute Nodes
 
@@ -18,12 +18,12 @@
 
 ### Deploy
 
-{% include 'flight-solo/creating-clusters/launching-compute-nodes-azure.md' %}
+{% include 'flight-solo/creating-clusters/launching-compute-nodes-openstack.md' %}
 
 ## General Configuration
 
 {% include 'flight-solo/creating-clusters/general-config.md' %}
 
-## Kubernetes Multinode Configuration
+## SLURM Multinode Configuration
 
-{% include 'flight-solo/creating-clusters/kubernetes-multinode-config.md' %}
+{% include 'flight-solo/creating-clusters/slurm-multinode-config.md' %}

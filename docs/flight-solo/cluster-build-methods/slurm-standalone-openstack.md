@@ -1,8 +1,8 @@
-# SLURM Standalone on Azure
+# SLURM Standalone on OpenStack
 
 ## Launch Login Node
 
-{% include 'flight-solo/creating-clusters/launching-login-node-azure.md' %}
+{% include 'flight-solo/creating-clusters/launching-login-node-openstack.md' %}
 
 ## General Configuration
 
