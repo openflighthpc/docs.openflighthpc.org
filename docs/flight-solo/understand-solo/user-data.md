@@ -45,6 +45,7 @@ The available options for the Flight Solo cloud-init file are as follows.
     ```bash title="Example Usage" 
     AUTH_KEY=banana
     ```
+
 ### `LABEL`
 
 : Sets label to be used for the node in [Flight Hunter](../../flight-environment/use-flight/flight-admin-tools/hunter.md#parse).
