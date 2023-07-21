@@ -23,14 +23,14 @@ This will be ready when:
     * [x] General Environment Usage
     * [x] Flight Environment Usage
     * [x] HPC Environment Usage
-    * [ ] Cluster Build Methods
+    * [x] Cluster Build Methods
     * [ ] Workflow Examples
     * [ ] Functionality Testing
 - [ ] Additional content added
     * [x] HPC Concepts & Guidance (both on-site & cloud)
     * [ ] Flight Service documentation
     * [ ] Expansion on Kubernetes Usage
-    * [ ] Flight Solo Restructure & Expansion (Getting Started, How It Works, Cluster Build Refactor)
+    * [x] Flight Solo Restructure & Expansion (Getting Started, How It Works, Cluster Build Refactor)
     * [ ] Benchmarking Workflows (migrate from [here](https://github.com/alces-software/knowledgebase/wiki/Burn-In-Tests))
     * [ ] Basic HPC Workflow
     * [ ] Expansion & Consistency of Tool Documentation (Installing, Configuring, Using)
