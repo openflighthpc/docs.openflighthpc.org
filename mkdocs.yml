@@ -116,6 +116,9 @@ nav:
     - Cluster Build Methods:
       - flight-solo/cluster-build-methods/index.md
       - Choose Your Own Adventure: flight-solo/cluster-build-methods/modular.md
+      - Workflows: 
+        - flight-solo/cluster-build-methods/workflows/index.md
+        - Kubernetes on AWS with Auto-Applying: flight-solo/cluster-build-methods/workflows/kubernetes-aws-auto-apply.md
       - General Methods:
         - SLURM Standalone AWS: flight-solo/cluster-build-methods/slurm-standalone-aws.md
         - SLURM Standalone Azure: flight-solo/cluster-build-methods/slurm-standalone-azure.md
