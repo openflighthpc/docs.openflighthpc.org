@@ -14,14 +14,14 @@ It's worth checking for centrally-managed client systems that you can install th
 
  - SSH client:
     - Use the built-in `ssh` client for Mac and Linux
-    - For Windows, try [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) or [SmaTTY](http://smartty.sysprogs.com/)<br><br>
+    - For Windows, try [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) or [SmaTTY](http://smartty.sysprogs.com/)
  - Web-browser:
     - Use the built-in Safari browser on Macs
-    - For Linux and Windows, install [Firefox](http://www.mozilla.org/firefox) or [Chrome](https://www.google.com/chrome/browser/desktop/)<br><br>
+    - For Linux and Windows, install [Firefox](http://www.mozilla.org/firefox) or [Chrome](https://www.google.com/chrome/browser/desktop/)
  - VNC (Graphical desktop client):
     - Use the built-in VNC client on Macs
     - For Linux, install "vncviewer" package, or install [RealVNC viewer](https://www.realvnc.com/download/viewer/linux/)
-    - For Windows, install [TurboVNC](https://sourceforge.net/projects/turbovnc/)<br><br>
+    - For Windows, install [TurboVNC](https://sourceforge.net/projects/turbovnc/)
  - Graphical file-transfer tools:
     - For Macs and Linux, install [Cyberduck](http://cyberduck.ch/) or [Filezilla](https://filezilla-project.org/)
     - For Windows, try [WinSCP](https://winscp.net/), [Cyberduck](http://cyberduck.ch/) or [Filezilla](https://filezilla-project.org/)
