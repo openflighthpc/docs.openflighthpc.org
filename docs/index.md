@@ -16,5 +16,17 @@ search:
     <a class="btn button" href="about">FIND OUT MORE</a>
   </div>
 </section>
-<img id="cloud-bar" src="assets/images/cloud_bar.png">
-<div class="spacer"></div>
+<section id="mission-block">
+  <img id="cloud-bar" src="assets/images/cloud_bar.png">
+  <div id="mission-container">
+    <div id="mission-text">
+      <h2> The openflight mission:</h2>
+      <p>
+        The openflight project seeks to provide HPC workflow knowledge 
+        to the community for a range of subjects, applications and workloads 
+        to minimise the skill gaps to utilising HPC systems.
+      </p>
+    </div>
+    <img id="bumcloud" src="assets/images/bumcloud_white.png">
+  </div>
+</section>

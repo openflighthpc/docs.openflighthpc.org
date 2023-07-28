@@ -1,10 +1,4 @@
-html, body {
-  width: 100%;
-  height: 100%;
-}
-
 body {
-  background-size: cover;
   background: linear-gradient(#ECECEC, var(--sky-blue-grey)) no-repeat;
 }
 
@@ -167,10 +161,32 @@ body {
 }
 
 #cloud-bar {
-  position: absolute;
   width: 100%;
-  left: 0;
-  bottom: 0;
+  min-width: 60rem;
+}
+
+#mission-block {
+  height: 50vh;
+  background-color: var(--sky-blue-grey);
+  display: flex;
+  flex-direction: column;
+}
+
+#mission-container {
+  background-image: linear-gradient(#F5FCFF, #9CD7F0);
+  flex-grow: 1;
+  padding-inline: 10vw;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  align-items: center;
+  justify-items: center;
+  column-gap: 5vw;
+}
+
+#bumcloud {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  max-height: 30vh;
 }
 
 .button {
@@ -228,13 +244,6 @@ a {
   width: 16.5rem;
 }
 
-.spacer {
-  height: 50vh;
-  background-color: var(--sky-blue-grey);
-  width:100%;
-  display: block;
-}
-
 #footer-container {
   display: block;
 }
@@ -263,10 +272,6 @@ a {
 
 #cloud-r {
   right: 0;
-}
-
-.HPC {
-  color: var(--alces-blue);
 }
 
 #github-logo {
