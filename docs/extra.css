@@ -8,13 +8,6 @@ body {
   background: linear-gradient(#ECECEC, var(--sky-blue-grey)) no-repeat;
 }
 
-#cloud-bar {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  bottom: 0;
-}
-
 .md-main__inner {
   max-width: 100% !important;
   margin: 0;
@@ -137,37 +130,61 @@ body {
 
 #home-container {
   display: grid;
-  grid-template-columns: 3fr 2fr;
+  column-gap: 5vw;
+  grid-template-columns: 2fr 3fr;
   min-height: 75vh;
   justify-items: center;
-  align-items: center;
-  margin-inline: 5rem;
+  align-items: end;
+  margin-inline: 10vw;
 }
 
 #home-text {
-  flex: 1.2;
+  margin-bottom: 5rem;
+  text-align: end;
+  max-width: 40rem;
 }
 
 #home-header {
   color: var(--md-typeset-color) !important;
-  font-size: 2.5em !important;
-  margin-bottom: 2em;
+  font-size: 3rem !important;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+#home-subheader {
+  color: var(--md-typeset-color) !important;
+  font-size: 1.4rem;
+  margin-top: 0;
+  margin-bottom: 3rem;
+}
+
+.blue-text {
+  color: var(--alces-blue);
 }
 
 #home-image {
-  max-height: 70vh !important;
+  max-height: 40rem !important;
+}
+
+#cloud-bar {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
 }
 
 .button {
   background-color: var(--alces-blue);
   border-radius: 2px;
-  padding: 0.5em;
+  padding: 0.5rem 1rem;
   color: white;
+  font-size: 1.2em;
 }
 
 .button:hover {
   color: white !important;
-  background-color: var(--alces-blue-dark);
+  background-color: var(--alces-blue);
+  filter: brightness(0.8);
   transition: background-color 125ms;
 }
 
@@ -215,7 +232,6 @@ a {
   height: 50vh;
   background-color: var(--sky-blue-grey);
   width:100%;
-  border: solid dodgerblue;
   display: block;
 }
 
@@ -269,7 +285,8 @@ a {
 
 :root {
   --alces-blue: #2693D7;
-  --alces-blue-dark: #0A6AA6;
   --header-grey: #191919;
+  --button-navy: #2B3966;
   --sky-blue-grey: #DCEEF5;
+  --md-typeset-color: #586674
 }
