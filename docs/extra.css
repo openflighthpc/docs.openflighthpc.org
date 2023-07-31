@@ -73,7 +73,7 @@
   width: 100%;
   height: 0.3rem;
   position: sticky;
-  top: 4rem;
+  top: 4.15rem;
   z-index: 4;
 }
 
@@ -293,5 +293,6 @@ a {
   --header-grey: #191919;
   --button-navy: #2B3966;
   --sky-blue-grey: #DCEEF5;
-  --md-typeset-color: #586674
+  --md-typeset-color: #586674;
+  --bs-body-color: #3D3D3D;
 }
