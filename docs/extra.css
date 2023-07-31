@@ -1,10 +1,41 @@
-.md-main__inner {
-  max-width: 100% !important;
+.button {
+  background-color: var(--alces-blue);
+  border-radius: 2px;
+  padding: 0.5rem 1rem;
+  color: white;
+  font-size: 1.2em;
+}
+
+.button:hover {
+  color: white !important;
+  background-color: var(--alces-blue);
+  filter: brightness(0.8);
+  transition: background-color 125ms;
+}
+
+.button:visited {
+  color: white;
+}
+
+.md-typeset a {
+  transition: none;
+}
+
+.blue-text {
+  color: var(--alces-blue);
+}
+
+.md-content {
+  min-width: 65%;
+}
+
+.md-content__inner {
   margin: 0;
 }
 
-.md-tabs {
-  background-color: var(--header-grey);
+.md-main__inner {
+  max-width: 100% !important;
+  margin: 0;
 }
 
 .md-sidebar {
@@ -13,6 +44,10 @@
   width: 14rem;
   background-image: linear-gradient(var(--sky-blue-grey), white);
   top: 4.3rem !important;
+}
+
+.md-sidebar, .md-sidebar__scrollwrap  {
+  overflow: visible;
 }
 
 @media screen and (max-width: 76.1875em) {
@@ -55,38 +90,6 @@
   }
 }
 
-.md-content {
-  min-width: 65%;
-}
-
-.md-content__inner {
-  margin: 0;
-}
-
-#tabs {
-  display: flex;
-  padding-inline: 14rem;
-  background-color: var(--header-grey);
-}
-
-#search-container {
-  z-index: 4;
-}
-
-#blue-bar {
-  background-color: var(--alces-blue);
-  width: 100%;
-  height: 0.3rem;
-  position: sticky;
-  top: 4.15rem;
-  z-index: 1;
-}
-
-.md-nav__link, .md-nav__title {
-  background: none !important;
-  box-shadow: none !important;
-}
-
 #header-nav-links {
   display: flex;
   justify-content: center;
@@ -96,6 +99,11 @@
 #header-nav-links a {
   margin-left: 2rem;
   font-size: 0.7rem;
+}
+
+.md-nav__link, .md-nav__title {
+  background: none !important;
+  box-shadow: none !important;
 }
 
 .md-header__inner {
@@ -131,6 +139,29 @@
   margin: 0.8rem;
 }
 
+#tabs {
+  display: flex;
+  padding-inline: 14rem;
+  background-color: var(--header-grey);
+}
+
+.md-tabs__link {
+  color: white;
+}
+
+#search-container {
+  z-index: 4;
+}
+
+#blue-bar {
+  background-color: var(--alces-blue);
+  width: 100%;
+  height: 0.3rem;
+  position: sticky;
+  top: 4.15rem;
+  z-index: 1;
+}
+
 #home-container {
   background: linear-gradient(#ECECEC, var(--sky-blue-grey)) no-repeat;
   display: grid;
@@ -162,10 +193,6 @@
   margin-bottom: 3rem;
 }
 
-.blue-text {
-  color: var(--alces-blue);
-}
-
 #home-image {
   max-height: 40rem !important;
 }
@@ -193,65 +220,10 @@
   column-gap: 5vw;
 }
 
-#bumcloud {
+#mission-bumcloud {
   margin-top: 1rem;
   margin-bottom: 1rem;
   max-height: 15rem;
-}
-
-.button {
-  background-color: var(--alces-blue);
-  border-radius: 2px;
-  padding: 0.5rem 1rem;
-  color: white;
-  font-size: 1.2em;
-}
-
-.button:hover {
-  color: white !important;
-  background-color: var(--alces-blue);
-  filter: brightness(0.8);
-  transition: background-color 125ms;
-}
-
-.button:visited {
-  color: white;
-}
-
-.md-typeset a {
-  transition: none;
-}
-
-a {
-  text-decoration: none;
-  color: var(--md-default-fg-color--light);
-}
-
-.md-tabs__link {
-  color: white;
-}
-
-.image-container {
-  position: relative;
-}
-
-#slider-link {
-  border: solid orange;
-  position: absolute;
-  height: 2.4rem;
-  z-index: 2;
-}
-
-#slider-link.image1 {
-    top: 75%;
-    left: 8.5%;
-    width: 9.2rem;
-}
-
-#slider-link.image2 {
-  top: 70%;
-  left: 8%;
-  width: 16.5rem;
 }
 
 #footer-container {
@@ -289,11 +261,6 @@ a {
   margin-left: 1rem;
 }
 
-.md-sidebar, .md-sidebar__scrollwrap  {
-  overflow: visible;
-}
-
-
 [data-md-toggle=search]:checked~.md-container .md-search__output {
   box-shadow: 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12), 0 3px 5px -1px rgba(0,0,0,.4);
   opacity: 1;
@@ -314,19 +281,15 @@ a {
 }
 
 [data-md-color-scheme="alces"] {
-  --md-primary-fg-color: #191919;
-  --md-accent-fg-color:  var(--alces-blue);
-}
-
-.md-logo img {
-  height: 2rem !important;
+  --md-primary-fg-color: var(--header-grey);
+  --md-accent-fg-color: var(--alces-blue);
+  --md-typeset-color: var(--alces-grey);
 }
 
 :root {
   --alces-blue: #2693D7;
+  --alces-grey: #586674;
   --header-grey: #191919;
   --button-navy: #2B3966;
   --sky-blue-grey: #DCEEF5;
-  --md-typeset-color: #586674;
-  --bs-body-color: #3D3D3D;
 }
