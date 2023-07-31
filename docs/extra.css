@@ -5,6 +5,7 @@
 
 .md-tabs {
   background-color: var(--header-grey);
+  padding-inline: 14rem;
 }
 
 .md-sidebar {
