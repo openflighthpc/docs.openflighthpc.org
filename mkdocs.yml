@@ -1,156 +1,156 @@
 site_name: OpenFlightHPC
 repo_url: https://github.com/openflighthpc/docs.openflighthpc.org
 nav:
-  - About:
-    - about/index.md
+  - Flight Solo:
+    - solo/index.md
   - Documentation:
     - docs/index.md
     - Overview:
-      - index.md
-      - Prerequisites: overview/prerequisites.md
-      - Where Can I Get Help: overview/get-help.md
+      - docs/index.md
+      - Prerequisites: docs/overview/prerequisites.md
+      - Where Can I Get Help: docs/overview/get-help.md
     - HPC Concepts:
-      - hpc-concepts/index.md
-      - Network and Hardware: hpc-concepts/network-hardware.md
-      - Infrastructure: hpc-concepts/infrastructure.md
-      - Base System: hpc-concepts/base-system.md
-      - User Management: hpc-concepts/user-management.md
-      - Storage: hpc-concepts/storage.md
-      - Monitoring: hpc-concepts/monitoring.md
-      - HPC Environment: hpc-concepts/hpc-environment.md
-      - Verification: hpc-concepts/verification.md
+      - docs/hpc-concepts/index.md
+      - Network and Hardware: docs/hpc-concepts/network-hardware.md
+      - Infrastructure: docs/hpc-concepts/infrastructure.md
+      - Base System: docs/hpc-concepts/base-system.md
+      - User Management: docs/hpc-concepts/user-management.md
+      - Storage: docs/hpc-concepts/storage.md
+      - Monitoring: docs/hpc-concepts/monitoring.md
+      - HPC Environment: docs/hpc-concepts/hpc-environment.md
+      - Verification: docs/hpc-concepts/verification.md
     - HPC Environment Basics:
-      - hpc-environment-basics/index.md
+      - docs/hpc-environment-basics/index.md
       - Linux Environment Usage:
-        - hpc-environment-basics/linux-usage/index.md
+        - docs/hpc-environment-basics/linux-usage/index.md
         - CLI Basics:
-          - hpc-environment-basics/linux-usage/cli-basics/index.md
-          - Logging In: hpc-environment-basics/linux-usage/cli-basics/logging-in.md
-          - Understanding the CLI: hpc-environment-basics/linux-usage/cli-basics/understanding-the-cli.md
-          - Moving Between Hosts: hpc-environment-basics/linux-usage/cli-basics/moving-between-hosts.md
-          - Becoming the Root User: hpc-environment-basics/linux-usage/cli-basics/becoming-root.md
+          - docs/hpc-environment-basics/linux-usage/cli-basics/index.md
+          - Logging In: docs/hpc-environment-basics/linux-usage/cli-basics/logging-in.md
+          - Understanding the CLI: docs/hpc-environment-basics/linux-usage/cli-basics/understanding-the-cli.md
+          - Moving Between Hosts: docs/hpc-environment-basics/linux-usage/cli-basics/moving-between-hosts.md
+          - Becoming the Root User: docs/hpc-environment-basics/linux-usage/cli-basics/becoming-root.md
         - Working with Data and Files:
-          - hpc-environment-basics/linux-usage/working-with-data/index.md
-          - Storage Types: hpc-environment-basics/linux-usage/working-with-data/storage-types.md
-          - Your Home Directory: hpc-environment-basics/linux-usage/working-with-data/your-home-directory.md
-          - Copying Data Between Hosts: hpc-environment-basics/linux-usage/working-with-data/copy-between-hosts.md
+          - docs/hpc-environment-basics/linux-usage/working-with-data/index.md
+          - Storage Types: docs/hpc-environment-basics/linux-usage/working-with-data/storage-types.md
+          - Your Home Directory: docs/hpc-environment-basics/linux-usage/working-with-data/your-home-directory.md
+          - Copying Data Between Hosts: docs/hpc-environment-basics/linux-usage/working-with-data/copy-between-hosts.md
           - Copying Data to a HPC Environment:
-            - hpc-environment-basics/linux-usage/working-with-data/copying-data/index.md
-            - Using CLI: hpc-environment-basics/linux-usage/working-with-data/copying-data/using-cli.md
-            - Using Graphical Client: hpc-environment-basics/linux-usage/working-with-data/copying-data/using-graphical-client.md
-            - Object Storage for Archiving Data: hpc-environment-basics/linux-usage/working-with-data/copying-data/object-storage-archiving-data.md
-        - Genders and PDSH: hpc-environment-basics/linux-usage/genders-pdsh.md
+            - docs/hpc-environment-basics/linux-usage/working-with-data/copying-data/index.md
+            - Using CLI: docs/hpc-environment-basics/linux-usage/working-with-data/copying-data/using-cli.md
+            - Using Graphical Client: docs/hpc-environment-basics/linux-usage/working-with-data/copying-data/using-graphical-client.md
+            - Object Storage for Archiving Data: docs/hpc-environment-basics/linux-usage/working-with-data/copying-data/object-storage-archiving-data.md
+        - Genders and PDSH: docs/hpc-environment-basics/linux-usage/genders-pdsh.md
       - HPC Environment Usage:
-        - hpc-environment-basics/hpc-usage/index.md
+        - docs/hpc-environment-basics/hpc-usage/index.md
         - Job Schedulers:
-          - hpc-environment-basics/hpc-usage/job-schedulers/index.md
-          - Types of Compute Job: hpc-environment-basics/hpc-usage/job-schedulers/jobs.md
+          - docs/hpc-environment-basics/hpc-usage/job-schedulers/index.md
+          - Types of Compute Job: docs/hpc-environment-basics/hpc-usage/job-schedulers/jobs.md
         - SLURM:
-          - hpc-environment-basics/hpc-usage/slurm/index.md
+          - docs/hpc-environment-basics/hpc-usage/slurm/index.md
           - Running Jobs:
-            - Interactive Jobs: hpc-environment-basics/hpc-usage/slurm/running-jobs/interactive.md
-            - Batch Jobs: hpc-environment-basics/hpc-usage/slurm/running-jobs/batch.md
-            - Array Jobs: hpc-environment-basics/hpc-usage/slurm/running-jobs/array.md
-            - Providing Job Configuration: hpc-environment-basics/hpc-usage/slurm/running-jobs/job-configuration.md
-            - Dynamic Scheduler Variables: hpc-environment-basics/hpc-usage/slurm/running-jobs/dynamic-vars.md
-            - Requesting More Resources: hpc-environment-basics/hpc-usage/slurm/running-jobs/requesting-resources.md
+            - Interactive Jobs: docs/hpc-environment-basics/hpc-usage/slurm/running-jobs/interactive.md
+            - Batch Jobs: docs/hpc-environment-basics/hpc-usage/slurm/running-jobs/batch.md
+            - Array Jobs: docs/hpc-environment-basics/hpc-usage/slurm/running-jobs/array.md
+            - Providing Job Configuration: docs/hpc-environment-basics/hpc-usage/slurm/running-jobs/job-configuration.md
+            - Dynamic Scheduler Variables: docs/hpc-environment-basics/hpc-usage/slurm/running-jobs/dynamic-vars.md
+            - Requesting More Resources: docs/hpc-environment-basics/hpc-usage/slurm/running-jobs/requesting-resources.md
           - Using the Scheduler:
-            - View and Control Jobs: hpc-environment-basics/hpc-usage/slurm/using-scheduler/view-control.md
-            - View Compute Host Status: hpc-environment-basics/hpc-usage/slurm/using-scheduler/host-status.md
-            - View Default Resources: hpc-environment-basics/hpc-usage/slurm/using-scheduler/default_resources.md
-          - Further Documentation: hpc-environment-basics/hpc-usage/slurm/further-docs.md
+            - View and Control Jobs: docs/hpc-environment-basics/hpc-usage/slurm/using-scheduler/view-control.md
+            - View Compute Host Status: docs/hpc-environment-basics/hpc-usage/slurm/using-scheduler/host-status.md
+            - View Default Resources: docs/hpc-environment-basics/hpc-usage/slurm/using-scheduler/default_resources.md
+          - Further Documentation: docs/hpc-environment-basics/hpc-usage/slurm/further-docs.md
     - Flight Environment:
-      - flight-environment/index.md
+      - docs/flight-environment/index.md
       - Obtaining Flight Environment:
-        - flight-environment/get-flight/index.md
-        - Installation: flight-environment/get-flight/install.md
-        - Configuration: flight-environment/get-flight/configure.md
+        - docs/flight-environment/get-flight/index.md
+        - Installation: docs/flight-environment/get-flight/install.md
+        - Configuration: docs/flight-environment/get-flight/configure.md
       - Using Flight Environment:
-        - flight-environment/use-flight/index.md
-        - Basics: flight-environment/use-flight/environment-basics.md
+        - docs/flight-environment/use-flight/index.md
+        - Basics: docs/flight-environment/use-flight/environment-basics.md
         - Flight User Suite:
-          - flight-environment/use-flight/flight-user-suite/index.md
+          - docs/flight-environment/use-flight/flight-user-suite/index.md
           - Flight Desktop:
-            - flight-environment/use-flight/flight-user-suite/flight-desktop/index.md
-            - Prepare a Desktop Type: flight-environment/use-flight/flight-user-suite/flight-desktop/prepare.md
-            - Launch a Desktop Session: flight-environment/use-flight/flight-user-suite/flight-desktop/launch.md
-            - Port Forwarding a Desktop Session: flight-environment/use-flight/flight-user-suite/flight-desktop/port-forward.md
-            - Resize a Desktop Session: flight-environment/use-flight/flight-user-suite/flight-desktop/resize.md
-            - Viewing and Terminating Sessions: flight-environment/use-flight/flight-user-suite/flight-desktop/viewing-terminating.md
-            - Securing your Desktop Session: flight-environment/use-flight/flight-user-suite/flight-desktop/secure.md
+            - docs/flight-environment/use-flight/flight-user-suite/flight-desktop/index.md
+            - Prepare a Desktop Type: docs/flight-environment/use-flight/flight-user-suite/flight-desktop/prepare.md
+            - Launch a Desktop Session: docs/flight-environment/use-flight/flight-user-suite/flight-desktop/launch.md
+            - Port Forwarding a Desktop Session: docs/flight-environment/use-flight/flight-user-suite/flight-desktop/port-forward.md
+            - Resize a Desktop Session: docs/flight-environment/use-flight/flight-user-suite/flight-desktop/resize.md
+            - Viewing and Terminating Sessions: docs/flight-environment/use-flight/flight-user-suite/flight-desktop/viewing-terminating.md
+            - Securing your Desktop Session: docs/flight-environment/use-flight/flight-user-suite/flight-desktop/secure.md
           - Flight Env:
-            - flight-environment/use-flight/flight-user-suite/flight-env/index.md
-            - Usage: flight-environment/use-flight/flight-user-suite/flight-env/usage.md
+            - docs/flight-environment/use-flight/flight-user-suite/flight-env/index.md
+            - Usage: docs/flight-environment/use-flight/flight-user-suite/flight-env/usage.md
             - Package Ecosystems:
-              - flight-environment/use-flight/flight-user-suite/flight-env/ecosystems/index.md
-              - Conda: flight-environment/use-flight/flight-user-suite/flight-env/ecosystems/conda.md
-              - Easybuild: flight-environment/use-flight/flight-user-suite/flight-env/ecosystems/easybuild.md
-              - Modules: flight-environment/use-flight/flight-user-suite/flight-env/ecosystems/modules.md
-              - Singularity: flight-environment/use-flight/flight-user-suite/flight-env/ecosystems/singularity.md
-              - Spack: flight-environment/use-flight/flight-user-suite/flight-env/ecosystems/spack.md
+              - docs/flight-environment/use-flight/flight-user-suite/flight-env/ecosystems/index.md
+              - Conda: docs/flight-environment/use-flight/flight-user-suite/flight-env/ecosystems/conda.md
+              - Easybuild: docs/flight-environment/use-flight/flight-user-suite/flight-env/ecosystems/easybuild.md
+              - Modules: docs/flight-environment/use-flight/flight-user-suite/flight-env/ecosystems/modules.md
+              - Singularity: docs/flight-environment/use-flight/flight-user-suite/flight-env/ecosystems/singularity.md
+              - Spack: docs/flight-environment/use-flight/flight-user-suite/flight-env/ecosystems/spack.md
           - Flight Silo:
-            - flight-environment/use-flight/flight-user-suite/flight-silo/index.md
-            - Silos: flight-environment/use-flight/flight-user-suite/flight-silo/silos.md
-            - Files: flight-environment/use-flight/flight-user-suite/flight-silo/files.md
-            - Software: flight-environment/use-flight/flight-user-suite/flight-silo/software.md
+            - docs/flight-environment/use-flight/flight-user-suite/flight-silo/index.md
+            - Silos: docs/flight-environment/use-flight/flight-user-suite/flight-silo/silos.md
+            - Files: docs/flight-environment/use-flight/flight-user-suite/flight-silo/files.md
+            - Software: docs/flight-environment/use-flight/flight-user-suite/flight-silo/software.md
         - Flight Web Suite:
-          - flight-environment/use-flight/flight-web-suite/index.md
-          - Setup: flight-environment/use-flight/flight-web-suite/setup.md
-          - Landing Page: flight-environment/use-flight/flight-web-suite/landing-page.md
-          - Console: flight-environment/use-flight/flight-web-suite/console.md
-          - Desktop: flight-environment/use-flight/flight-web-suite/desktop.md
-          - File Manager: flight-environment/use-flight/flight-web-suite/file-manager.md
+          - docs/flight-environment/use-flight/flight-web-suite/index.md
+          - Setup: docs/flight-environment/use-flight/flight-web-suite/setup.md
+          - Landing Page: docs/flight-environment/use-flight/flight-web-suite/landing-page.md
+          - Console: docs/flight-environment/use-flight/flight-web-suite/console.md
+          - Desktop: docs/flight-environment/use-flight/flight-web-suite/desktop.md
+          - File Manager: docs/flight-environment/use-flight/flight-web-suite/file-manager.md
         - Flight Admin Tools:
-          - flight-environment/use-flight/flight-admin-tools/index.md
-          - Flight Gather: flight-environment/use-flight/flight-admin-tools/gather.md
-          - Flight Hunter: flight-environment/use-flight/flight-admin-tools/hunter.md
-          - Flight Profile: flight-environment/use-flight/flight-admin-tools/profile.md
-          - Flight PDSH: flight-environment/use-flight/flight-admin-tools/pdsh.md
+          - docs/flight-environment/use-flight/flight-admin-tools/index.md
+          - Flight Gather: docs/flight-environment/use-flight/flight-admin-tools/gather.md
+          - Flight Hunter: docs/flight-environment/use-flight/flight-admin-tools/hunter.md
+          - Flight Profile: docs/flight-environment/use-flight/flight-admin-tools/profile.md
+          - Flight PDSH: docs/flight-environment/use-flight/flight-admin-tools/pdsh.md
     - Flight Solo:
-      - flight-solo/index.md
-      - Getting Started: flight-solo/quickstart-guide.md
+      - docs/flight-solo/index.md
+      - Getting Started: docs/flight-solo/quickstart-guide.md
       - Understanding Flight Solo:
-        - flight-solo/understand-solo/index.md
-        - User Data: flight-solo/understand-solo/user-data.md
+        - docs/flight-solo/understand-solo/index.md
+        - User Data: docs/flight-solo/understand-solo/user-data.md
       - Getting Flight Solo:
-        - flight-solo/get-solo/index.md
-        - Import to AWS: flight-solo/get-solo/aws.md
-        - Import to Azure: flight-solo/get-solo/azure.md
-        - Import to OpenStack: flight-solo/get-solo/openstack.md
+        - docs/flight-solo/get-solo/index.md
+        - Import to AWS: docs/flight-solo/get-solo/aws.md
+        - Import to Azure: docs/flight-solo/get-solo/azure.md
+        - Import to OpenStack: docs/flight-solo/get-solo/openstack.md
       - Cluster Build Methods:
-        - flight-solo/cluster-build-methods/index.md
-        - Choose Your Own Adventure: flight-solo/cluster-build-methods/modular.md
+        - docs/flight-solo/cluster-build-methods/index.md
+        - Choose Your Own Adventure: docs/flight-solo/cluster-build-methods/modular.md
         - Workflows:
-          - flight-solo/cluster-build-methods/workflows/index.md
-          - Kubernetes on AWS with Auto-Applying: flight-solo/cluster-build-methods/workflows/kubernetes-aws-auto-apply.md
-          - SLURM Standalone on OpenStack with Auto-Configure: flight-solo/cluster-build-methods/workflows/slurm-openstack-autoconfig.md
+          - docs/flight-solo/cluster-build-methods/workflows/index.md
+          - Kubernetes on AWS with Auto-Applying: docs/flight-solo/cluster-build-methods/workflows/kubernetes-aws-auto-apply.md
+          - SLURM Standalone on OpenStack with Auto-Configure: docs/flight-solo/cluster-build-methods/workflows/slurm-openstack-autoconfig.md
         - General Methods:
-          - SLURM Standalone AWS: flight-solo/cluster-build-methods/slurm-standalone-aws.md
-          - SLURM Standalone Azure: flight-solo/cluster-build-methods/slurm-standalone-azure.md
-          - SLURM Standalone OpenStack: flight-solo/cluster-build-methods/slurm-standalone-openstack.md
-          - SLURM Multinode AWS: flight-solo/cluster-build-methods/slurm-multinode-aws.md
-          - SLURM Multinode Azure: flight-solo/cluster-build-methods/slurm-multinode-azure.md
-          - SLURM Multinode OpenStack: flight-solo/cluster-build-methods/slurm-multinode-openstack.md
-          - Kubernetes Multinode AWS: flight-solo/cluster-build-methods/kubernetes-multinode-aws.md
-          - Kubernetes Multinode Azure: flight-solo/cluster-build-methods/kubernetes-multinode-azure.md
-          - Kubernetes Multinode OpenStack: flight-solo/cluster-build-methods/kubernetes-multinode-openstack.md
-          - Jupyter Lab Standalone AWS: flight-solo/cluster-build-methods/jupyter-lab-standalone-aws.md
-          - Jupyter Lab Standalone Azure: flight-solo/cluster-build-methods/jupyter-lab-standalone-azure.md
-          - Jupyter Lab Standalone OpenStack: flight-solo/cluster-build-methods/jupyter-lab-standalone-openstack.md
+          - SLURM Standalone AWS: docs/flight-solo/cluster-build-methods/slurm-standalone-aws.md
+          - SLURM Standalone Azure: docs/flight-solo/cluster-build-methods/slurm-standalone-azure.md
+          - SLURM Standalone OpenStack: docs/flight-solo/cluster-build-methods/slurm-standalone-openstack.md
+          - SLURM Multinode AWS: docs/flight-solo/cluster-build-methods/slurm-multinode-aws.md
+          - SLURM Multinode Azure: docs/flight-solo/cluster-build-methods/slurm-multinode-azure.md
+          - SLURM Multinode OpenStack: docs/flight-solo/cluster-build-methods/slurm-multinode-openstack.md
+          - Kubernetes Multinode AWS: docs/flight-solo/cluster-build-methods/kubernetes-multinode-aws.md
+          - Kubernetes Multinode Azure: docs/flight-solo/cluster-build-methods/kubernetes-multinode-azure.md
+          - Kubernetes Multinode OpenStack: docs/flight-solo/cluster-build-methods/kubernetes-multinode-openstack.md
+          - Jupyter Lab Standalone AWS: docs/flight-solo/cluster-build-methods/jupyter-lab-standalone-aws.md
+          - Jupyter Lab Standalone Azure: docs/flight-solo/cluster-build-methods/jupyter-lab-standalone-azure.md
+          - Jupyter Lab Standalone OpenStack: docs/flight-solo/cluster-build-methods/jupyter-lab-standalone-openstack.md
     - HPC Workflows:
-      - hpc-workflows/index.md
+      - docs/hpc-workflows/index.md
       - Benchmarking:
-        - HPL: hpc-workflows/hpl.md
-        - IMB: hpc-workflows/imb.md
+        - HPL: docs/hpc-workflows/hpl.md
+        - IMB: docs/hpc-workflows/imb.md
       - HPC Applications:
-        - Bowtie: hpc-workflows/bowtie.md
-        - Hadoop: hpc-workflows/hadoop.md
+        - Bowtie: docs/hpc-workflows/bowtie.md
+        - Hadoop: docs/hpc-workflows/hadoop.md
         - OpenFoam:
-          - hpc-workflows/openfoam/index.md
-          - Install OpenFOAM: hpc-workflows/openfoam/install.md
-          - MPI Workflow: hpc-workflows/openfoam/mpi.md
-          - Simple Workflow: hpc-workflows/openfoam/simple.md
-        - Tensorflow: hpc-workflows/tensorflow.md
+          - docs/hpc-workflows/openfoam/index.md
+          - Install OpenFOAM: docs/hpc-workflows/openfoam/install.md
+          - MPI Workflow: docs/hpc-workflows/openfoam/mpi.md
+          - Simple Workflow: docs/hpc-workflows/openfoam/simple.md
+        - Tensorflow: docs/hpc-workflows/tensorflow.md
 theme:
   name: material
   custom_dir: custom_theme/
