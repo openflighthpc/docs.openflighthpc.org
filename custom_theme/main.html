@@ -3,6 +3,15 @@
 {% block tabs%}
 <div id="tabs">
   {{ super() }}
+
+  <div id="search-container">
+  {% if "material/search" in config.plugins %}
+    <label class="md-header__button md-icon" for="__search">
+      {% include ".icons/material/magnify.svg" %}
+    </label>
+    {% include "partials/search.html" %}
+  {% endif %}
+  </div>
 </div>
 <div id="blue-bar"></div>
 {% endblock %}

@@ -138,16 +138,6 @@
       </div>
     {% endif %}
 
-    <!-- Button to open search modal -->
-    {% if "material/search" in config.plugins %}
-      <label class="md-header__button md-icon" for="__search">
-        {% include ".icons/material/magnify.svg" %}
-      </label>
-
-      <!-- Search interface -->
-      {% include "partials/search.html" %}
-    {% endif %}
-
     <div id="top-right-link">
       <a id="alces-link" href="https://alces-flight.com" target="_blank">
         <img class="header-image" src="{{ base_url }}/assets/images/poweredby_white.png">
