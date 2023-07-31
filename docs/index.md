@@ -20,7 +20,7 @@ search:
   <img id="cloud-bar" src="assets/images/cloud_bar.png">
   <div id="mission-container">
     <div id="mission-text">
-      <h2> The openflight mission:</h2>
+      <h2>The openflight mission:</h2>
       <p>
         The openflight project seeks to provide HPC workflow knowledge 
         to the community for a range of subjects, applications and workloads 
