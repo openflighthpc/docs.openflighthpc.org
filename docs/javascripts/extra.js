@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
   if (document.querySelector('.no-tabs')) {
     document.querySelector('#tabs').style.display = 'none';
+    document.querySelector('.md-content__inner').style.backgroundColor = '#ECECEC';
   }
 });
 

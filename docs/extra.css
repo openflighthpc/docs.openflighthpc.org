@@ -1,7 +1,3 @@
-body {
-  background: linear-gradient(#ECECEC, var(--sky-blue-grey)) no-repeat;
-}
-
 .md-main__inner {
   max-width: 100% !important;
   margin: 0;
@@ -123,13 +119,14 @@ body {
 }
 
 #home-container {
+  background: linear-gradient(#ECECEC, var(--sky-blue-grey)) no-repeat;
   display: grid;
   column-gap: 5vw;
   grid-template-columns: 2fr 3fr;
   min-height: 75vh;
   justify-items: center;
   align-items: end;
-  margin-inline: 10vw;
+  padding-inline: 10vw;
 }
 
 #home-text {
