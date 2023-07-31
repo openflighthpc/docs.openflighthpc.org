@@ -13,7 +13,7 @@ search:
     <h2 id="home-subheader">
       The open source software and expert knowledgebase making high performance computing accessible to all.
     </h2>
-    <a class="button" href="docs">FIND OUT MORE</a>
+    <a class="button" href="#mission-container">FIND OUT MORE</a>
   </div>
 </section>
 <section id="mission-block">
@@ -27,6 +27,6 @@ search:
         to minimise the skill gaps to utilising HPC systems.
       </p>
     </div>
-    <img id="bumcloud" src="assets/images/bumcloud_white.png">
+    <img id="mission-bumcloud" src="assets/images/bumcloud_white.png">
   </div>
 </section>
