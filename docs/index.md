@@ -13,7 +13,7 @@ search:
     <h2 id="home-subheader">
       The open source software and expert knowledgebase making high performance computing accessible to all.
     </h2>
-    <a class="btn button" href="about">FIND OUT MORE</a>
+    <a class="button" href="docs">FIND OUT MORE</a>
   </div>
 </section>
 <section id="mission-block">
