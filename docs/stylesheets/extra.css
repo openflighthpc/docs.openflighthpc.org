@@ -121,6 +121,10 @@ html {
   position: relative;
 }
 
+.md-header__option {
+  margin-inline: 0.8rem;
+}
+
 .md-header {
   box-shadow: none;
   transition: none;
@@ -130,8 +134,10 @@ html {
   color: white;
 }
 
-#top-right-link {
+#top-right-links {
   margin-left: auto;
+  display: flex;
+  align-items: center;
   width: fit-content;
 }
 
@@ -147,8 +153,13 @@ html {
 
 #tabs {
   display: flex;
+  align-items: center;
   padding-inline: 14rem;
   background-color: var(--header-grey);
+}
+
+.md-tabs {
+  min-width: fit-content;
 }
 
 .md-tabs__link {
@@ -263,8 +274,8 @@ html {
 }
 
 #github-logo {
-  max-height: 1.5rem;
-  margin-left: 1rem;
+  max-height: 1.2rem;
+  margin-inline: 0.8rem;
 }
 
 [data-md-color-scheme="alces"] {
