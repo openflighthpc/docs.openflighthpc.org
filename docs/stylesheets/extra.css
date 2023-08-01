@@ -1,3 +1,5 @@
+@import '_search.css';
+
 html {
   scroll-behavior: smooth;
 }
@@ -263,25 +265,6 @@ html {
 #github-logo {
   max-height: 1.5rem;
   margin-left: 1rem;
-}
-
-[data-md-toggle=search]:checked~.md-container .md-search__output {
-  box-shadow: 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12), 0 3px 5px -1px rgba(0,0,0,.4);
-  opacity: 1;
-  overflow: visible;
-  width: auto;
-  right: 0;
-}
-
-[data-md-toggle=search]:checked~.md-container .md-search__overlay {
-  width: 100%;
-  height: 100%;
-  transition: width 0s,height 0s,opacity .25s;
-  opacity: 1;
-}
-
-[data-md-toggle=search]:checked~.md-container .md-search__scrollwrap {
-  max-height: 75vh;
 }
 
 [data-md-color-scheme="alces"] {
