@@ -32,7 +32,7 @@ html {
 }
 
 .md-content {
-  min-width: 65%;
+  flex-basis: 65%;
 }
 
 .md-content__inner {
@@ -47,53 +47,14 @@ html {
 .md-sidebar {
   min-height: 70vh;
   padding-inline: 1rem;
-  width: 14rem;
+  flex-basis: 14rem;
+  flex-shrink: 1;
   background-image: linear-gradient(var(--sky-blue-grey), white);
   top: 4.3rem !important;
 }
 
 .md-sidebar, .md-sidebar__scrollwrap  {
   overflow: visible;
-}
-
-@media screen and (max-width: 76.1875em) {
-  [data-md-toggle="drawer"]:checked ~ .md-container .md-sidebar--primary {
-    transform: translateX(14rem);
-  }
-  
-  .md-sidebar--primary {
-    left: -14rem !important;
-    display: block !important;
-  }
-
-  .md-sidebar--primary .top-level {
-    display: block !important;
-    flex-basis: fit-content;
-    flex-grow: 0;
-  }
-
-  .md-sidebar--primary .top-level li {
-    padding: 0.6rem 0.8rem;
-    font-size: 0.8rem;
-  }
-
-  .md-sidebar--primary .alces-link {
-    display: block !important;
-  }
-
-  #header-nav-links {
-    display: none !important;
-  }
-
-  #alces-link {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 59.9375em) {
-  .md-nav__source {
-    display: none;
-  }
 }
 
 #header-nav-links {
@@ -115,6 +76,10 @@ html {
 .md-header__inner {
   max-width: 100%;
   margin-inline: 0.5rem;
+}
+
+.md-header__title {
+  max-width: fit-content;
 }
 
 .md-header__topic {
@@ -153,6 +118,7 @@ html {
 
 #tabs {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding-inline: 14rem;
   background-color: var(--header-grey);
@@ -276,6 +242,72 @@ html {
 #github-logo {
   max-height: 1.2rem;
   margin-inline: 0.8rem;
+}
+
+@media screen and (max-width: 76.1875em) {
+  [data-md-toggle="drawer"]:checked ~ .md-container .md-sidebar--primary {
+    transform: translateX(14rem);
+  }
+
+  .md-sidebar--primary {
+    left: -14rem !important;
+    display: block !important;
+  }
+
+  .md-sidebar--primary .top-level {
+    display: block !important;
+    flex-basis: fit-content;
+    flex-grow: 0;
+  }
+
+  .md-sidebar--primary .top-level li {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  .md-sidebar--primary .alces-link {
+    display: block !important;
+  }
+
+  #burger {
+    display: none;
+  }
+
+  #tabs {
+    padding-inline: 1rem;
+    min-width: 65%;
+  }
+
+  .md-tabs {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 59.9375em) {
+  .md-nav__source {
+    display: none;
+  }
+
+  #header-nav-links {
+    display: none !important;
+  }
+
+  #top-right-links {
+    display: none !important;
+  }
+
+  #burger {
+    display: inline-block;
+    margin-left: auto;
+  }
+
+  #tabs {
+    padding-right: 1rem;
+  }
+
+  .md-tabs {
+    display: none;
+  }
 }
 
 [data-md-color-scheme="alces"] {

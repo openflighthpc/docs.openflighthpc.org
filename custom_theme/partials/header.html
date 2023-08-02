@@ -46,11 +46,6 @@
       <img class="header-image logo" src="{{ base_url }}/{{ config.theme.logo }}">
     </a>
 
-    <!-- Button to open drawer -->
-    <label class="md-header__button md-icon" for="__drawer">
-      {% include ".icons/material/menu" ~ ".svg" %}
-    </label>
-
     <div id="header-nav-links">
       <a href="{{ base_url }}/solo" style="color:white">
         FLIGHT SOLO
@@ -130,14 +125,19 @@
       </div>
       {% endif %}
 
-      <a href="https://github.com/openflighthpc">
-        <img id="github-logo" src="{{ base_url }}/assets/images/github-mark-white.svg">
+      <a href="https://github.com/openflighthpc" title="Go to openflightHPC Github repo">
+        <img id="github-logo" class="md-header__button" src="{{ base_url }}/assets/images/github-mark-white.svg">
       </a>
 
       <a id="alces-link" href="https://alces-flight.com" target="_blank">
         <img class="header-image" src="{{ base_url }}/assets/images/poweredby_white.png">
       </a>
     </div>
+
+    <!-- Button to open drawer -->
+    <label id="burger" class="md-header__button md-icon" for="__drawer">
+      {% include ".icons/material/menu" ~ ".svg" %}
+    </label>
 
     <!-- Navigation tabs (sticky) -->
     {% if "navigation.tabs.sticky" in features %}
