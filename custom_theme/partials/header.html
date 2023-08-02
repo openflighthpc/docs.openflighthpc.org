@@ -55,7 +55,7 @@
       </a>
     </div>
 
-    <div id="top-right-links">
+    <div class="top-right-links">
 
       <!-- Color palette -->
       {% if config.theme.palette %}
@@ -134,10 +134,22 @@
       </a>
     </div>
 
-    <!-- Button to open drawer -->
-    <label id="burger" class="md-header__button md-icon" for="__drawer">
-      {% include ".icons/material/menu" ~ ".svg" %}
-    </label>
+
+    <div class="top-right-links narrow">
+      <div class="search-container">
+        {% if "material/search" in config.plugins %}
+        <label class="md-header__button md-icon" for="__search">
+          {% include ".icons/material/magnify.svg" %}
+        </label>
+        {% include "partials/search.html" %}
+        {% endif %}
+      </div>
+
+      <!-- Button to open drawer -->
+      <label id="burger" class="md-header__button md-icon" for="__drawer">
+        {% include ".icons/material/menu" ~ ".svg" %}
+      </label>
+    </div>
 
     <!-- Navigation tabs (sticky) -->
     {% if "navigation.tabs.sticky" in features %}

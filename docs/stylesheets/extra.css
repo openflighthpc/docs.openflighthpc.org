@@ -99,11 +99,16 @@ html {
   color: white;
 }
 
-#top-right-links {
+.top-right-links {
   margin-left: auto;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   width: fit-content;
+}
+
+.narrow {
+  display: none;
 }
 
 .md-header__button {
@@ -130,10 +135,6 @@ html {
 
 .md-tabs__link {
   color: white;
-}
-
-#search-container {
-  z-index: 4;
 }
 
 #blue-bar {
@@ -292,13 +293,18 @@ html {
     display: none !important;
   }
 
-  #top-right-links {
+  .top-right-links {
     display: none !important;
+  }
+
+  .narrow {
+    display: flex !important;
   }
 
   #burger {
     display: inline-block;
-    margin-left: auto;
+    margin-left: 2rem;
+    margin-right: 0.8rem;
   }
 
   #tabs {
