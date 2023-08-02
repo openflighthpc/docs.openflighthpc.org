@@ -39,7 +39,7 @@
         DOCUMENTATION
       </a>
     </li>
-   </ul>
+  </ul>
 
   <ul class="md-nav__list" data-md-scrollfix>
     {% for nav_item in nav %}
@@ -48,6 +48,14 @@
       {% include "partials/nav-item.html" %}
     {% endfor %}
   </ul>
+
+  <!-- Version selector -->
+  <div id="version-container" class="md-header__title" data-md-component="header-title">
+    <div class="md-header__ellipsis">
+      <div class="md-header__topic"></div>
+      <div class="md-header__topic" data-md-component="header-topic"></div>
+    </div>
+  </div>
 
   <a class="alces-link" href="https://alces-flight.com" target="_blank" hidden="hidden">
     <img class="header-image" src="{{ base_url }}/assets/images/powered_by.png">

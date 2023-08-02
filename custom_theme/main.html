@@ -2,25 +2,24 @@
 
 {% block tabs%}
 <div id="tabs">
+  <label class="md-header__button md-icon" for="__drawer">
+    {% include ".icons/material/chevron-double-right" ~ ".svg" %}
+  </label>
+
   {{ super() }}
 
   <div class="search-container">
-  {% if "material/search" in config.plugins %}
+    {% if "material/search" in config.plugins %}
     <label class="md-header__button md-icon" for="__search">
       {% include ".icons/material/magnify.svg" %}
     </label>
     {% include "partials/search.html" %}
-  {% endif %}
-  </div>
-
-  <div class="md-header__title" data-md-component="header-title">
-    <div class="md-header__ellipsis">
-      <div class="md-header__topic"></div>
-      <div class="md-header__topic" data-md-component="header-topic"></div>
-    </div>
+    {% endif %}
   </div>
 </div>
+
 <div id="blue-bar"></div>
+
 {% endblock %}
 
 {% block outdated %}
