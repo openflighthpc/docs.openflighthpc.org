@@ -13,7 +13,7 @@ search:
     <h2 id="home-subheader">
       The open source software and expert knowledgebase making high performance computing accessible to all.
     </h2>
-    <a class="button" href="#mission-container">FIND OUT MORE</a>
+    <a class="button big-text" href="#mission-container">FIND OUT MORE</a>
   </div>
 </section>
 <section id="mission-block">
@@ -62,6 +62,19 @@ search:
         </p>
       </div>
       <a class="button" href="docs/flight-solo">LEARN MORE</a>
+    </div>
+  </div>
+</section>
+<section id="ready-block">
+  <div id="ready-container">
+    <h1>Ready to get started?</h1>
+    <p>
+      Begin creating your HPC solution by reading the Openflight documentation 
+      or start creating a cluster with Flight Solo.
+    </p>
+    <div id="ready-buttons">
+      <a class="button" href="docs">GO TO DOCUMENTATION</a>
+      <a class="button" href="solo">GET FLIGHT SOLO</a>
     </div>
   </div>
 </section>

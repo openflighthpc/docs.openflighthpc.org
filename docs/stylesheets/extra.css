@@ -9,7 +9,6 @@ html {
   border-radius: 2px;
   padding: 0.5rem 1rem;
   color: white;
-  font-size: 1.2em;
   width: fit-content;
 }
 
@@ -30,6 +29,10 @@ html {
 
 .blue-text {
   color: var(--alces-blue);
+}
+
+.big-text {
+  font-size: 1.2em;
 }
 
 .md-content {
@@ -270,10 +273,37 @@ html {
 }
 
 .tool .button {
-  font-size: 1em;
   margin-inline: auto;
   margin-top: 3rem;
   margin-bottom: 3rem;
+}
+
+#ready-block {
+  background-color: white;
+  padding-inline: 10vw;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+#ready-container {
+  margin-inline: auto;
+  max-width: 27rem;
+}
+
+#ready-container h1 {
+  margin-bottom: 2rem;
+}
+
+#ready-buttons {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+#ready-buttons .button {
+  margin-inline: 1rem;
 }
 
 #footer-container {
@@ -293,7 +323,7 @@ html {
 }
 
 .cloud {
-  width: 20vw;
+  width: 30vw;
   position: absolute;
   bottom: 0;
 }
@@ -390,6 +420,10 @@ html {
 
   .tool .button {
     margin-top: 1.5rem;
+  }
+
+  #tools-block h1 {
+    text-align: center;
   }
 }
 
