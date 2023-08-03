@@ -10,6 +10,7 @@ html {
   padding: 0.5rem 1rem;
   color: white;
   font-size: 1.2em;
+  width: fit-content;
 }
 
 .button:hover {
@@ -225,6 +226,56 @@ html {
   max-height: 15rem;
 }
 
+#tools-block {
+  background-color: var(--sky-blue-grey);
+  display: flex;
+  flex-direction: column;
+  padding-inline: 10vw;
+  padding-top: 2rem;
+}
+
+#tools-block h1 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+#tools-container {
+  margin: 2rem 0;
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3rem;
+  justify-items: center;
+}
+
+.tool {
+  min-width: 10rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tool img {
+  width: 10rem;
+  margin-inline: auto;
+}
+
+.tool h2 {
+  margin-top: 1rem;
+}
+
+.tool p {
+  margin-top: 3rem;
+}
+
+.tool .button {
+  font-size: 1em;
+  margin-inline: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
 #footer-container {
   display: block;
 }
@@ -330,6 +381,15 @@ html {
 
   .md-tabs {
     display: none;
+  }
+
+  #tools-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .tool .button {
+    margin-top: 1.5rem;
   }
 }
 

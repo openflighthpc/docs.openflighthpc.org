@@ -20,7 +20,7 @@ search:
   <img id="cloud-bar" src="assets/images/cloud_bar.png">
   <div id="mission-container">
     <div id="mission-text">
-      <h2>The openflight mission:</h2>
+      <h1>The openflight mission:</h1>
       <p>
         The openflight project seeks to provide HPC workflow knowledge 
         to the community for a range of subjects, applications and workloads 
@@ -28,5 +28,40 @@ search:
       </p>
     </div>
     <img id="mission-bumcloud" src="assets/images/bumcloud_white.png">
+  </div>
+</section>
+<section id="tools-block">
+  <h1>Open source tools</h1>
+  <div id="tools-container">
+    <div class="tool">
+      <img src="assets/images/user_suite.png">
+      <div>
+        <h2>User suite</h2>
+        <p>
+          Flight User Suite provides CLI tools for accessing your cluster from the command line. 
+        </p>
+      </div>
+      <a class="button" href="docs/flight-environment">LEARN MORE</a>
+    </div>
+    <div class="tool">
+      <img src="assets/images/web_suite.png">
+      <div>
+        <h2>Web suite</h2>
+        <p>
+          Flight Web Suite provides GUI tools for accessing your cluster from within your web browser.
+        </p>
+      </div>
+      <a class="button" href="docs/flight-environment">LEARN MORE</a>
+    </div>
+    <div class="tool">
+      <img src="assets/images/solo_logo.png">
+      <div>
+        <h2>Flight Solo</h2>
+        <p>
+          Flight Solo is a preconfigured image designed to get users into HPC as quickly as possible.
+        </p>
+      </div>
+      <a class="button" href="docs/flight-solo">LEARN MORE</a>
+    </div>
   </div>
 </section>
