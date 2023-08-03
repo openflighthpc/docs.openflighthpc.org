@@ -167,18 +167,31 @@ html {
 
 #home-container {
   background: linear-gradient(#ECECEC, var(--sky-blue-grey)) no-repeat;
-  display: grid;
-  column-gap: 5vw;
-  grid-template-columns: 2fr 3fr;
+  display: flex;
+  justify-content: space-between;
   min-height: 75vh;
-  justify-items: center;
-  align-items: end;
+  align-items: center;
   padding-inline: 10vw;
 }
 
+#home-image-container {
+  display: flex;
+  flex-basis: 40%;
+  justify-content: center;
+  align-items: center;
+}
+
+#home-image-container img {
+  max-height: 30rem !important;
+}
+
 #home-text {
+  flex-basis: 60%;
+  margin-top: 10rem;
   margin-bottom: 5rem;
+  margin-left: 5vw;
   text-align: end;
+  align-self: center;
   max-width: 40rem;
 }
 
@@ -187,6 +200,7 @@ html {
   font-size: 3rem !important;
   font-weight: bold;
   margin-bottom: 1rem;
+  white-space: nowrap;
 }
 
 #home-subheader {
@@ -194,10 +208,6 @@ html {
   font-size: 1.4rem;
   margin-top: 0;
   margin-bottom: 3rem;
-}
-
-#home-image {
-  max-height: 40rem !important;
 }
 
 #cloud-bar {
@@ -407,6 +417,18 @@ html {
 
   .md-tabs {
     display: block;
+  }
+
+  .big-text {
+    font-size: 1em;
+  }
+
+  #home-header {
+    font-size: 2.5rem !important;
+  }
+
+  #home-subheader {
+    font-size: 1.2rem;
   }
 }
 
