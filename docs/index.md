@@ -30,7 +30,7 @@ search:
     <img id="mission-bumcloud" src="assets/images/bumcloud_white.png">
   </div>
 </section>
-<section id="tools-block">
+<section id="tools-block" class="home-block">
   <h1>Open source tools</h1>
   <div id="tools-container">
     <div class="tool">
@@ -63,6 +63,19 @@ search:
       </div>
       <a class="button" href="docs/flight-solo">LEARN MORE</a>
     </div>
+  </div>
+</section>
+<section id="green-block" class="home-block">
+  <div id="green-container">
+<div>
+    <h1>Greener HPC</h1>
+    <p>
+      The project aims to inform the community of methods for defining their 
+      computational requirements. This can reduce computational waste, resulting 
+      in a greener workflow.
+    </p>
+</div>
+<img src="assets/images/green_hpc.png">
   </div>
 </section>
 <section id="ready-block">

@@ -230,14 +230,15 @@ html {
 }
 
 #tools-block {
-  background-color: var(--sky-blue-grey);
+  background-color: #F5FCFF;
   display: flex;
   flex-direction: column;
   padding-inline: 10vw;
   padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
-#tools-block h1 {
+.home-block h1 {
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
@@ -276,6 +277,32 @@ html {
   margin-inline: auto;
   margin-top: 3rem;
   margin-bottom: 3rem;
+}
+
+#green-block {
+  background-image: linear-gradient(#CDEFFF, #EBEBEB);
+  padding-inline: 10vw;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  height: 28rem;
+}
+
+#green-container {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  align-items: center;
+  justify-items: center;
+  height: 100%;
+  max-width: 50rem;
+  margin: auto;
+}
+
+#green-container div {
+  margin: auto;
+}
+
+#green-container img {
+  max-height: 20rem;
 }
 
 #ready-block {
