@@ -326,11 +326,12 @@ html {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 #ready-buttons .button {
-  margin-inline: 1rem;
+  margin-inline: 1vw;
+  margin-top: 0.5rem;
 }
 
 #footer-container {
@@ -451,6 +452,12 @@ html {
 
   #tools-block h1 {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 25em) {
+  #ready-buttons {
+    flex-wrap: wrap;
   }
 }
 
