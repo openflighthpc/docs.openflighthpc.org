@@ -185,6 +185,10 @@ html {
   max-height: 30rem !important;
 }
 
+#home-image-narrow {
+  display: none;
+}
+
 #home-text {
   flex-basis: 60%;
   margin-top: 10rem;
@@ -419,10 +423,6 @@ html {
     display: block;
   }
 
-  .big-text {
-    font-size: 1em;
-  }
-
   #home-header {
     font-size: 2.5rem !important;
   }
@@ -460,6 +460,37 @@ html {
   }
 
   .md-tabs {
+    display: none;
+  }
+
+  #home-container {
+    flex-wrap: wrap-reverse;
+  }
+
+  #home-container div {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  #home-text {
+    margin-top: 2rem;
+    margin-bottom: 0;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #home-text h1, h2 {
+    text-align: center;
+  }
+
+  #home-image-narrow {
+    display: block;
+    max-width: 20rem;
+  }
+
+  #home-image {
     display: none;
   }
 

@@ -9,6 +9,7 @@ search:
 <section id="home-container" class="no-tabs">
   <div id="home-image-container">
     <img id="home-image" src="assets/images/OF_home.png">
+    <img id="home-image-narrow" src="assets/images/OF_home_bottom.png">
   </div>
   <div id="home-text">
     <h1 id="home-header">HPC for <span class="blue-text">everyone</span></h1>
