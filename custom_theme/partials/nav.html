@@ -22,7 +22,7 @@
       aria-label="{{ config.site_name }}"
       data-md-component="logo"
     >
-      {% include "partials/logo.html" %}
+      <img src="{{ base_url }}/assets/images/openflighthpc_grey.png">
     </a>
     {{ config.site_name }}
   </label>
@@ -50,10 +50,9 @@
   </ul>
 
   <!-- Version selector -->
-  <div id="version-container" class="md-header__title" data-md-component="header-title">
+  <div id="version-container" class="md-nav__list md-header__title" data-md-component="header-title">
     <div class="md-header__ellipsis">
-      <div class="md-header__topic"></div>
-      <div class="md-header__topic" data-md-component="header-topic"></div>
+      <div class="md-header__topic">Version: </div>
     </div>
   </div>
 
