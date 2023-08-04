@@ -55,12 +55,12 @@ html {
   flex-shrink: 1;
   background-image: linear-gradient(var(--sky-blue-grey), white);
   top: 4.3rem !important;
+  width: 14rem;
 }
 
 .md-sidebar, .md-sidebar__scrollwrap  {
   overflow: visible;
 }
-
 
 #header-nav-links {
   display: flex;
@@ -71,6 +71,16 @@ html {
 #header-nav-links a {
   margin-left: 2rem;
   font-size: 0.7rem;
+}
+
+.md-nav__title {
+  padding: 0 !important;
+  display: flex;
+  align-items: center;
+}
+
+.md-nav__title a {
+  position: static !important;
 }
 
 .md-nav__link, .md-nav__title {
@@ -417,14 +427,27 @@ html {
     flex-grow: 0;
   }
 
+  .md-sidebar--primary .sub-level {
+    margin-left: 1rem;
+  }
+
   .md-sidebar--primary .top-level li {
     padding: 0.6rem 0.8rem;
     font-size: 0.8rem;
+    font-weight: bold;
   }
 
   .md-sidebar--primary .alces-link {
     display: block !important;
     align-self: center;
+  }
+
+  .md-nav--primary {
+    background-image: linear-gradient(var(--sky-blue-grey), white);
+  }
+
+  .md-nav__list {
+    background-color: transparent !important;
   }
 
   #burger {

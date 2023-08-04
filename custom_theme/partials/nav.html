@@ -24,7 +24,6 @@
     >
       <img src="{{ base_url }}/assets/images/openflighthpc_grey.png">
     </a>
-    {{ config.site_name }}
   </label>
 
   <!-- Render item list -->
@@ -41,7 +40,7 @@
     </li>
   </ul>
 
-  <ul class="md-nav__list" data-md-scrollfix>
+  <ul class="md-nav__list sub-level" data-md-scrollfix>
     {% for nav_item in nav %}
       {% set path = "__nav_" ~ loop.index %}
       {% set level = 1 %}
