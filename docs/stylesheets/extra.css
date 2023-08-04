@@ -74,9 +74,9 @@ html {
 }
 
 .md-nav__title {
-  padding: 0 !important;
+  padding: 0 0.8rem !important;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .md-nav__title a {
@@ -444,6 +444,12 @@ html {
 
   .md-nav--primary {
     background-image: linear-gradient(var(--sky-blue-grey), white);
+  }
+
+  .md-nav-logo {
+    padding: 0 !important;
+    margin: 0 !important;
+    align-self: center;
   }
 
   .md-nav__list {
