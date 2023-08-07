@@ -32,7 +32,7 @@ This will be ready when:
     * [ ] Expansion on Kubernetes Usage
     * [x] Flight Solo Restructure & Expansion (Getting Started, How It Works, Cluster Build Refactor)
     * [ ] Benchmarking Workflows (migrate from [here](https://github.com/alces-software/knowledgebase/wiki/Burn-In-Tests))
-    * [ ] Tensorflow Fashion Workflow Example
+    * [ ] [Tensorflow Fashion Workflow Example](https://github.com/openflighthpc/project-prewarms/blob/main/machine-learning-tensorflow.sh)
     * [ ] Basic HPC Workflow
     * [x] Expansion & Consistency of Tool Documentation (Installing, Configuring, Using)
     * [ ] Glossary
