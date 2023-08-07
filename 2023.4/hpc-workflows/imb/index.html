@@ -9,7 +9,7 @@
       
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../hpl/">
       
       
         <link rel="next" href="../bowtie/">
@@ -3075,6 +3075,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
@@ -3088,6 +3090,20 @@
           Benchmarking
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hpl/" class="md-nav__link">
+        HPL
+      </a>
+    </li>
+  
+
+            
           
             
               
@@ -3427,6 +3443,7 @@
 <h1 id="imb-benchmark-example">IMB Benchmark Example</h1>
 <p>The Intel <abbr title="Message Passing Interface">MPI</abbr> Benchmark provides a tool for testing the parallel execution speed of one to many systems. </p>
 <h2 id="install-imb">Install IMB</h2>
+<p>Installing IMB is outside of the scope of this documentation. Further information can be found by following installation as described <a href="https://www.intel.com/content/www/us/en/docs/mpi-library/user-guide-benchmarks/2021-2/building-intel-r-mpi-benchmarks.html#LINUX-OS">in the Intel documentation</a>. It requires Intel <abbr title="Message Passing Interface">MPI</abbr> to be installed which can be obtained by registering a system with Intel.</p>
 <h2 id="run-benchmark">Run Benchmark</h2>
 <p>To use 64 CPU cores on a <a href="../../hpc-environment-basics/hpc-usage/slurm/">SLURM <abbr title="High Performance Computing">HPC</abbr> environment</a> for a single application, the instruction <code>--ntasks=64</code> can be used.</p>
 <p>The following example shows launching the <strong>Intel Message-passing</strong> <abbr title="Message Passing Interface">MPI</abbr> benchmark across 64 cores on your research environment. This application is launched via the OpenMPI <code>mpirun</code> command - the number of threads and list of hosts are automatically assembled by the scheduler and passed to the <abbr title="Message Passing Interface">MPI</abbr> at runtime. This jobscript loads the <code>apps/imb</code> module before launching the application, which automatically loads the module for <strong>OpenMPI</strong>.</p>
