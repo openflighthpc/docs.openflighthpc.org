@@ -4,7 +4,7 @@ The Intel MPI Benchmark provides a tool for testing the parallel execution speed
 
 ## Install IMB
 
-
+Installing IMB is outside of the scope of this documentation. Further information can be found by following installation as described [in the Intel documentation](https://www.intel.com/content/www/us/en/docs/mpi-library/user-guide-benchmarks/2021-2/building-intel-r-mpi-benchmarks.html#LINUX-OS). It requires Intel MPI to be installed which can be obtained by registering a system with Intel.
 
 ## Run Benchmark 
 
