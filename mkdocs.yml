@@ -136,6 +136,7 @@ nav:
   - HPC Workflows:
     - hpc-workflows/index.md
     - Benchmarking:
+      - HPL: hpc-workflows/hpl.md
       - IMB: hpc-workflows/imb.md
     - HPC Applications:
       - Bowtie: hpc-workflows/bowtie.md
