@@ -1,5 +1,5 @@
 site_name: OpenFlight Knowledgebase
-repo_url: https://github.com/openflighthpc/mkdocs-test
+repo_url: https://github.com/openflighthpc/docs.openflighthpc.org
 nav:
   - Overview: 
     - index.md
