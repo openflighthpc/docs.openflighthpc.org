@@ -1,41 +1,39 @@
 
-To set up a cluster, you will need to [import a Flight Solo image](/cluster_build_methods/get_flight_solo/import_solo_aws/).
+To set up a cluster, you will need to [import a Flight Solo image](../get-solo/index.md).
 
 1. Go the EC2 instance [console](https://eu-west-2.console.aws.amazon.com/ec2/home?region=eu-west-2#Instances:v=3;$case=tags:true%5C,client:false;$regex=tags:false%5C,client:false)
 
-    ![](/images/aws_ec2_console_overview.png)
+    ![](img/aws_ec2_console_overview.png)
 
 1. Click "Launch" to go to the EC2 instance setup page.
 
-    ![](/images/aws_ec2.png)
+    ![](img/aws_ec2.png)
 
 1. Set the number of instances to 1, and name of instance to something descriptive.
 
-    ![](/images/aws_ec2_single_instance.png)
+    ![](img/aws_ec2_single_instance.png)
 
 1. Confirm that the region(top right, next to username) is correct.
 
-    ![](/images/aws_region.png)
+    ![](img/aws_region.png)
 
 1. In the "Application and OS Images" section choose the "My AMIs" tab and select your imported solo AMI.
 
-    ![](/images/aws_ec2_appandOS_myami.png)
+    ![](img/aws_ec2_appandOS_myami.png)
 
 1. In the "Instance type" section, choose the required instance size.
 
-    ![](/images/aws_ec2_instance_type.png)
+    ![](img/aws_ec2_instance_type.png)
 
 1. In the "Keypair" section, select a keypair to use. *It is good practice to use the same keypair for the login and compute nodes.*
 
-    ![](/images/aws_ec2_keypair.png)
+    ![](img/aws_ec2_keypair.png)
 
 1. In the "Network settings" sections, click the "Edit" button to set the network and subnet. **Remember what these are**, as they should be the same **for any associated compute nodes.**
 
+    ![](img/aws_ec2_security.png)
 
-    ![](/images/aws_ec2_security.png)
-
-
-    ![](/images/aws_ec2_security_edit.png)
+    ![](img/aws_ec2_security_edit.png)
 
 
 1. Another thing needed is a security group to associate with all nodes on the cluster. It is recommended to use a security group with rules limiting traffic through:
@@ -56,12 +54,12 @@ To set up a cluster, you will need to [import a Flight Solo image](/cluster_buil
 
         However, here is an example security group that might be used for a Flight Solo cluster:
 
-        ![](/images/aws_security_group_example.png)
+        ![](img/aws_security_group_example.png)
 
 1. After a security group has been made, click "Choose Existing" select it from the drop down menu.
 
 1. In the "Configure Storage" section, allocate as much memory as needed. 8GB is the minimum required for Flight Solo, so it is likely the compute nodes will not need much more than that, as the login node hosts most data.
 
-    ![](/images/aws_ec2_storage.png)
+    ![](img/aws_ec2_storage.png)
 
 1. Finally, click "Launch Instance".

@@ -2,9 +2,4 @@
 title: HPC Environment Basics
 ---
 
-Probably have sections here for:
-
-- General Linux Usage
-- SLURM Env
-- Kubernetes Env
-- Jupyter Lab Env
+The sections here cover the basics about using Linux within the context of a HPC environment along with additional guidance on common HPC cluster resource managers.

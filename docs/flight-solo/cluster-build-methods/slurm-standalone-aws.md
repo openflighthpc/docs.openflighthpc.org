@@ -1,14 +1,24 @@
 # SLURM Standalone on AWS
 
-
 ## Launch Login Node
 
-{% include 'flight-solo/creating-clusters/launching-login-node-awsimported.md' %}
+=== "AWS Marketplace"
+
+    {% filter indent(width=4) %}
+    {% include 'flight-solo/creating-clusters/launching-login-node-awsimported.md' %}
+    {% endfilter %}
+
+=== "AWS Imported" 
+
+    {% filter indent(width=4) %}
+    {% include 'flight-solo/creating-clusters/launching-login-node-awsmarketplace.md' %}
+    {% endfilter %}
+
 
 ## General Configuration
 
-Include the general hunter parsing stuff here
+{% include 'flight-solo/creating-clusters/general-config.md' %}
 
 ## SLURM Standalone Configuration
 
-Include the SLURM cluster setup stuff here 
+{% include 'flight-solo/creating-clusters/slurm-standalone-config.md' %}
