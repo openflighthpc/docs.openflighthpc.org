@@ -135,6 +135,17 @@ nav:
         - Jupyter Lab Standalone OpenStack: flight-solo/cluster-build-methods/jupyter-lab-standalone-openstack.md
   - HPC Workflows:
     - hpc-workflows/index.md
+    - Benchmarking:
+      - IMB: hpc-workflows/imb.md
+    - HPC Applications:
+      - Bowtie: hpc-workflows/bowtie.md
+      - Hadoop: hpc-workflows/hadoop.md
+      - OpenFoam: 
+        - hpc-workflows/openfoam/index.md
+        - Install OpenFOAM: hpc-workflows/openfoam/install.md
+        - MPI Workflow: hpc-workflows/openfoam/mpi.md
+        - Simple Workflow: hpc-workflows/openfoam/simple.md
+      - Tensorflow: hpc-workflows/tensorflow.md
 theme:
   name: material
   custom_dir: overrides
