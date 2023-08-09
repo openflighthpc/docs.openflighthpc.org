@@ -4,6 +4,8 @@ A test of `mkdocs` for hosting the OpenFlight docs
 
 ## Setup
 
+### Linux Machine/VM
+
 - Install mkdocs 
   ```bash
   pip install mkdocs
@@ -25,6 +27,57 @@ A test of `mkdocs` for hosting the OpenFlight docs
   mike set-default latest
   ```
 
+### Container
+- Prerequisite
+  `docker and docker-compose`
+
+- Start the application
+  ```bash
+  # To run in foregorund
+  cd docs.openflighthpc.org
+  docker compose up
+  
+  # To run in background
+  cd docs.openflighthpc.org
+  docker compose up -d 
+  ```
+
+- Stop the application
+  ```bash
+  # Stop foregrond app
+  stop the process using ctrl+c
+  
+  # Stop background app
+  cd docs.openflighthpc.org
+  docker compose down
+  ```
+
+- Access application
+  ```bash
+  http://<machine_ip>:8000
+  ```
+  
+- Run application on a different port
+  ```bash
+  vi docker-compose.yml
+  version: '3'
+  services:
+    mkdocs:
+      image: danghpc/mkdocs-image:latest
+      ports:
+        - "<set-port-no>:8000"
+      volumes:
+        - .:/app/
+    
+    # save the file and run docker-compose up 
+  ```
+
+## Build Dockerfile
+- Run the command to build docker image
+```bash
+  cd docs.openflighthpc.org
+  docker build -t <repo-name>/<image-name>:<tag> . 
+  ```
 ## Viewing Docs
 
 To view your WIP documentation locally simply use `mkdocs serve` which will update as docs are changed. 
