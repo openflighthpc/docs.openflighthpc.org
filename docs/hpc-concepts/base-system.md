@@ -38,6 +38,6 @@ For more information regarding network package managers and application deployme
 ## Additional Considerations and Questions
 
 - How will applications outside of the repositories be installed?
-- Will the application need to be useable by all nodes in the HPC network? (e.g. an NFS export for apps may solve the issue of multiple installations)
+- Will the application need to be usable by all nodes in the HPC network? (e.g. an NFS export for apps may solve the issue of multiple installations)
 - How will new package versions be installed when the HPC environment being maintained in the future?
 - How will you create and maintain a consistent software environment on all nodes over time?

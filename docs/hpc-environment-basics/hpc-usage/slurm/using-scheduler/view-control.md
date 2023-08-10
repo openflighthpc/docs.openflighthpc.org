@@ -17,7 +17,7 @@ Starting running on host node01
 Finished running - goodbye from node01
 ```
 
-Your job runs on whatever node the scheduler can find which is available for use - you can try submitting a bunch of jobs at the same time, and using the `squeue` command to see where they run. The scheduler is likely to spread them around over different nodes (if you have multiple nodes). The login node is not included in your research environment for scheduling purposes - jobs submitted to the scheduler will only be run on your research environment compute nodes. You can use the `scancel <job-ID>` command to delete a job you’ve submitted, whether it’s running or still in the queued state.
+Your job runs on whatever node the scheduler can find which is available for use - you can try submitting a bunch of jobs at the same time, and using the `squeue` command to see where they run. The scheduler is likely to spread them around over different nodes (if you have multiple nodes). The login node is not included in your research environment for scheduling purposes - jobs submitted to the scheduler will only be run on your research environment compute nodes. You can use the `scancel <job-ID>` command to delete a job you've submitted, whether it's running or still in the queued state.
 
 ```bash
 [flight@chead1 (mycluster1) ~]$ sbatch simplejobscript.sh

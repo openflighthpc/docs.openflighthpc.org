@@ -63,7 +63,7 @@ The available options for the Flight Solo cloud-init file are as follows.
     ```
 
     !!! note
-        This option is superceded by `LABEL` if both are provided
+        This option is superseded by `LABEL` if both are provided
 
 ### `AUTOPARSEMATCH`
 
@@ -79,7 +79,7 @@ The available options for the Flight Solo cloud-init file are as follows.
 
 ### `SHAREPUBKEY`
 
-: If set to true then this node will share the root user’s pub ssh key over the local network on port 1234. This means that any solo images with `SERVER` set to this node will attempt to grab its public key to allow root SSH between your cluster.
+: If set to true then this node will share the root user's pub ssh key over the local network on port 1234. This means that any solo images with `SERVER` set to this node will attempt to grab its public key to allow root SSH between your cluster.
 
     ```bash title="Example Usage"
     SHAREPUBKEY=true

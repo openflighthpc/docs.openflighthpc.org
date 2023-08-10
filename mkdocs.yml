@@ -188,6 +188,12 @@ plugins:
       minify_html: true
       minify_js: true
       minify_css: true
+  - spellcheck:
+      backends:
+        - codespell:  # or nested configs
+            dictionaries: [clear, rare, informal, usage, code, names]
+      known_words: codespell/known_words.txt
+   
 markdown_extensions:
   - abbr
   - attr_list

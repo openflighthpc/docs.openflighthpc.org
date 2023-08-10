@@ -35,7 +35,7 @@ Application types that are `unverified` need to be prepared before they can be s
 
 ## Preparing a Type
 
-To prepare a new session type, use the command `flight desktop prepare <type>` (preparing will automatically install any required application and support files, if these dependencies have been installed manually then a desktop session can be checked for verfication with `flight desktop verify <type>`). Once enabled, users can start a new session using the command `flight desktop start <type>`.
+To prepare a new session type, use the command `flight desktop prepare <type>` (preparing will automatically install any required application and support files, if these dependencies have been installed manually then a desktop session can be checked for verification with `flight desktop verify <type>`). Once enabled, users can start a new session using the command `flight desktop start <type>`.
 
 !!! note
     The `prepare` command is only available to the `root` user as it requires installation of packages

@@ -42,7 +42,7 @@ When you login to the research environment via SSH, you are automatically placed
 
     ![](img/putty.png)
 
-    The first time you connect to your research environment, you will be prompted to accept a new server SSH hostkey. This happens because you’ve never logged in to your research environment before - it should only happen the first time you login; click **OK** to accept the warning. Once connected to the research environment, you should be logged in to the research environment login node as your user.
+    The first time you connect to your research environment, you will be prompted to accept a new server SSH hostkey. This happens because you've never logged in to your research environment before - it should only happen the first time you login; click **OK** to accept the warning. Once connected to the research environment, you should be logged in to the research environment login node as your user.
 
     ![](img/firstlogin.png)
 
