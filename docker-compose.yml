@@ -1,0 +1,8 @@
+version: '3'
+services:
+  mkdocs:
+    image: danghpc/mkdocs-image:latest
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app/
