@@ -184,7 +184,10 @@ plugins:
   - macros:
       include_dir: partials
   - search
-
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
 markdown_extensions:
   - abbr
   - attr_list
