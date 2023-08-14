@@ -1,6 +1,6 @@
 # Submitting an Array Job
 
-A common workload is having a large number of jobs to run which basically do the same thing, aside perhaps from having different input data. You could generate a job-script for each of them and submit it, but that’s not very convenient - especially if you have many hundreds or thousands of tasks to complete. Such jobs are known as **task arrays** - an [embarrassingly parallel](https://en.wikipedia.org/wiki/Embarrassingly_parallel) job will often fit into this category.
+A common workload is having a large number of jobs to run which basically do the same thing, aside perhaps from having different input data. You could generate a job-script for each of them and submit it, but that's not very convenient - especially if you have many hundreds or thousands of tasks to complete. Such jobs are known as **task arrays** - an [embarrassingly parallel](https://en.wikipedia.org/wiki/Embarrassingly_parallel) job will often fit into this category.
 
 A convenient way to run such jobs on a research environment is to use a task array, using the `-a [array_spec] | --array=[array_spec]` directive. Your job-script can then use the pseudo environment variables created by the scheduler to refer to data used by each task in the job. The following job-script uses the `$SLURM_ARRAY_TASK_ID`/`%a` variable to echo its current task ID to an output file:
 

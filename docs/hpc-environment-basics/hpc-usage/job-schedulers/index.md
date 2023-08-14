@@ -21,7 +21,7 @@ When a new job is submitted by a user, the research environment scheduler softwa
 
 ## Why use a Scheduler?
 
-Good question. A job-scheduler is often used as a control mechanism to make sure that users don’t unfairly monopolise the valuable compute resources. In extreme cases, the scheduler may be wielded by system administrators to force “good behaviour” in a shared environment, and can feel like an imposition to research environment users.
+Good question. A job-scheduler is often used as a control mechanism to make sure that users don't unfairly monopolise the valuable compute resources. In extreme cases, the scheduler may be wielded by system administrators to force “good behaviour” in a shared environment, and can feel like an imposition to research environment users.
 
 However, a job-scheduler can still be a useful tool for a research environment rather than just a control mechanism:
 

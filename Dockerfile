@@ -5,7 +5,8 @@ FROM python:3.9-slim
 WORKDIR /app
 
 # Install MkDocs, MkDocs Material theme, and MkDocs Macros plugin
-RUN pip install --no-cache-dir --upgrade pip &&  pip install --no-cache-dir mkdocs mkdocs-material mkdocs-minify-plugin mkdocs-macros-plugin && \
+RUN apt-get update && \
+    apt-get install -y gcc g++ && pip install --no-cache-dir --upgrade pip &&  pip install --no-cache-dir mkdocs mkdocs-material mkdocs-minify-plugin mkdocs-macros-plugin codespell symspellpy mkdocs-spellcheck[codespell] && \
     rm -rf /var/lib/apt/lists/*  # Clean up package manager cache
 
 # Expose the MkDocs development server port (default: 8000)

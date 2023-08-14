@@ -1,8 +1,8 @@
 # What is the Flight Environment?
 
-The Flight Environment generally encompasses the tools in the OpenFlight project. 
+The Flight Environment generally encompasses the tools in the OpenFlight project.
 
-The tools developed by OpenFlight are designed to work independently but are more powerful when used in conjuction with one another as they each aim to address small areas of HPC environment usage. 
+The tools developed by OpenFlight are designed to work independently but are more powerful when used in conjunction with one another as they each aim to address small areas of HPC environment usage. 
 
 The Flight Environment broadly consists of:
 

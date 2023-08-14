@@ -1,6 +1,6 @@
 Linux automatically places users in their home-directory when they login to a node. By default, Linux will create your home-directory under the `/home/` directory, named `flight` (`/home/flight`). However, on some systems the home directory location may differ.
 
-The Linux command line will accept the `~` (tilde) symbol as a substitute for the currently logged-in users’ home-directory. The environment variable `$HOME` is also set to this value by default. Hence, the following three commands are all equivalent when logged in as the user flight:
+The Linux command line will accept the `~` (tilde) symbol as a substitute for the currently logged-in user's home-directory. The environment variable `$HOME` is also set to this value by default. Hence, the following three commands are all equivalent when logged in as the user flight:
 
 - `ls /home/flight`
 - `ls ~`

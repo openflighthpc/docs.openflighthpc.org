@@ -23,9 +23,9 @@ Alternatively, the `srun` command can also be executed from an interactive deskt
 !!! warning
     Running X applications from a compute node may not work due to missing X libraries on the compute node, these can be installed from an SSH session into a compute node with `sudo yum groupinstall "X Window System"`
 
-When you’ve finished running your application in your interactive session, simply type `logout`, `exit`, or press ++ctrl+d++ to exit the interactive job.
+When you've finished running your application in your interactive session, simply type `logout`, `exit`, or press ++ctrl+d++ to exit the interactive job.
 
-If the job-scheduler could not satisfy the resource you’ve requested for your interactive job (e.g. all your available compute nodes are busy running other jobs), it will report back after a few seconds with an error:
+If the job-scheduler could not satisfy the resource you've requested for your interactive job (e.g. all your available compute nodes are busy running other jobs), it will report back after a few seconds with an error:
 
 ```bash
 [flight@chead1 (mycluster1) ~]$ srun --pty /bin/bash
