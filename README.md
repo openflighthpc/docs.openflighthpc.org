@@ -22,6 +22,14 @@ A test of `mkdocs` for hosting the OpenFlight docs
   ```bash
   pip install mkdocs-macros-plugin
   ```
+- Install minify plugin
+  ```bash
+  pip install mkdocs-minify-plugin
+  ```
+- Install spellcheck plugin
+  ```bash
+  pip install mkdocs-spellcheck[all]
+  ```
 - Ensure correct default branch being used by mike
   ```bash
   mike set-default latest
