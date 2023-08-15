@@ -9,11 +9,12 @@ This section details the various commands used to manage silos, files and softwa
 Use `flight silo type avail` to list all available platform types. e.g.
 ```bash
 [flight@chead1 ~]$ flight silo type avail
-┌──────┬───────────────────────────────┬──────────┐
-│ Name │ Description                   │ Prepared │
-├──────┼───────────────────────────────┼──────────┤
-│ aws  │ Amazon Simple Storage Service │ false    │
-└──────┴───────────────────────────────┴──────────┘
+┌───────────┬───────────────────────────────┬──────────┐
+│ Name      │ Description                   │ Prepared │
+├───────────┼───────────────────────────────┼──────────┤
+│ aws       │ Amazon Simple Storage Service │ true     │
+│ openstack │ Openstack Swift Storage       │ true     │
+└───────────┴───────────────────────────────┴──────────┘
 ```
 
 Types are not prepared by default. To prepare a type you must [become a root user](../../environment-basics.md#activate-the-flight-environment), and then do `flight silo type prepare <type>`. e.g.
