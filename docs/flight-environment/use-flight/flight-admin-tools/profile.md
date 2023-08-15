@@ -80,9 +80,10 @@ flight profile configure --answers '{  "cluster_type": "openflight-slurm-standal
 
 ### `apply <node,node2...> <identity>`
 
-Applies an identity to one or more nodes. e.g. `flight profile apply node01,node02` or `flight profile apply node01`
+Applies an identity to one or more nodes. e.g. `flight profile apply node01,node02` or `flight profile apply node01`. If an identity's dependencies are not met then the application of the identity to the node will become queued until requirements are satisfied typoeda. Stayrt 
 
 - `--force` - Overwrite the identity of a node that has already been applied to.
+- `--remove-on-shutdown` - Adds a systemd hook to the node which will trigger removal from the cluster on shutdown if the node's identity supports removal.
 
 !!! tip
     You can select multiple nodes at once by writing a comma separated list, or with square bracket expansion (like [genders syntax](../../../hpc-environment-basics/linux-usage/genders-pdsh.md#creating-a-genders-file)). For example, `apply node[01-02] compute` would apply `compute` to `node01` and `node02`
@@ -98,6 +99,12 @@ Lists the available cluster types.
 ### `clean <node>`
 
 Removes the data for one or more nodes that failed application or removal from appearing in the list of profile accessible nodes. This means the node will show as `available`.
+
+---
+
+### `dequeue <node>`
+
+Removes a node from the apply queue.
 
 ---
 
