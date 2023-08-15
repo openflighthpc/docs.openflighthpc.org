@@ -194,6 +194,8 @@ plugins:
         - codespell:  # or nested configs
             dictionaries: [clear, rare, informal, usage, code, names]
       known_words: codespell/known_words.txt
+      ignore_code: yes
+      min_length: 3
    
 markdown_extensions:
   - abbr
