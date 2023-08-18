@@ -43,7 +43,7 @@ Further information can be found with the command `flight info`.
 
 ### Filesystem Structure
 
-When installed from the packages, the Flight Enviromment stores everything under `/opt/flight` (referenced as the `flight_ROOT`). This directory mirrors the [Linux Filesystem Hierarchy Standard](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard). 
+When installed from the packages, the Flight Environment stores everything under `/opt/flight` (referenced as the `flight_ROOT`). This directory mirrors the [Linux Filesystem Hierarchy Standard](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard). 
 
 Briefly, the `flight_ROOT` consists of: 
 
