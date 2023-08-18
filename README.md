@@ -5,23 +5,23 @@ A test of `mkdocs` for hosting the OpenFlight docs
 ## Setup
 
 ### Linux Machine/VM
+- Prerequisite
+  `gcc, g++, python3 and python-pip`
 
-- Install mkdocs 
+- Create python virtualenv and activate virtualenv
   ```bash
-  pip install mkdocs
+  cd docs.openflighthpc.org
+  python3 -m venv venv
+  source venv/bin/activate
   ```
-- Install mkdocs material theme (provides versioning and extensible features) 
-  ```bash
-  pip install mkdocs-material
-  ```
-- Install mike version manager (allows multiple versions of documentation to exist) 
-  ```bash
-  pip install mike
-  ```
-- Install includes plugin to support page partials
-  ```bash
-  pip install mkdocs-macros-plugin
-  ```
+
+-  Install dependencies
+   ```bash
+   cd docs.openflighthpc.org
+   pip install --upgrade pip
+   pip install -r requirments.txt
+   ```
+
 - Ensure correct default branch being used by mike
   ```bash
   mike set-default latest
@@ -74,11 +74,17 @@ A test of `mkdocs` for hosting the OpenFlight docs
 
 ## Build Dockerfile
 - Run the command to build docker image
-```bash
+  ```bash
   cd docs.openflighthpc.org
   docker build -t <repo-name>/<image-name>:<tag> . 
   ```
 ## Viewing Docs
+
+If using python virtualenv, then source the environemnt.
+  ```bash
+  cd docs.openflighthpc.org
+  source venv/bin/activate
+  ```
 
 To view your WIP documentation locally simply use `mkdocs serve` which will update as docs are changed. 
 
