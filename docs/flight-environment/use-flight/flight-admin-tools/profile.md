@@ -80,7 +80,7 @@ flight profile configure --answers '{  "cluster_type": "openflight-slurm-standal
 
 ### `apply <node,node2...> <identity>`
 
-Applies an identity to one or more nodes. e.g. `flight profile apply node01,node02` or `flight profile apply node01`. If an identity's dependencies are not met then the application of the identity to the node will become queued until requirements are satisfied typoeda. Stayrt 
+Applies an identity to one or more nodes. e.g. `flight profile apply node01,node02` or `flight profile apply node01`. If an identity's dependencies are not met then the application of the identity to the node will become queued until requirements are satisfied.
 
 - `--force` - Overwrite the identity of a node that has already been applied to.
 - `--remove-on-shutdown` - Adds a systemd hook to the node which will trigger removal from the cluster on shutdown if the node's identity supports removal.
