@@ -69,8 +69,8 @@ The available options for the Flight Solo cloud-init file are as follows.
 
 : Sets the regex for auto-parse rules in the [Flight Hunter](../../flight-environment/use-flight/flight-admin-tools/hunter.md#hunt) server. 
 
-    ```bash title="Example Usage 1 - Match any incoming hostnames including 'mydomain'" 
-    AUTOPARSEMATCH=mydomain
+    ```bash title="Example Usage 1 - Match any incoming hostnames including 'example-domain'" 
+    AUTOPARSEMATCH=example-domain
     ```
 
     ```bash title="Example Usage 2 - Parse all hosts that make it into the buffer" 
