@@ -9,7 +9,7 @@
 
     ![](img/aws_continue_configure.png)
 
-4. Configure region, software version (if unsure use the latest), and fulfillment option (if unsure use the default). Then click "Continue to Launch". **Make sure the region is the same for all nodes to be used in a cluster.**
+4. Configure region, software version (if unsure use the latest), and fulfilment option (if unsure use the default). Then click "Continue to Launch". **Make sure the region is the same for all nodes to be used in a cluster.**
 
     ![](img/aws_continue_launch.png)
 
