@@ -8,7 +8,7 @@ It solves the problem in Double-Precision (64bit) arithmetic, which quickly stre
 
 - Ensure that all System Event Logs are clear before commencing running of Memtester - you can use `service ipmi start && ipmitool -c 'sel clear'` to clear these logs.
 - **Infiniband Only** - Ensure that the `ibcheckerrors` and `ibclearerrors` commands are used to check for any current errors and clear any previous errors reported on the Fabric.
-- Calculate the correct settings for the HPL.dat file with the HPL Calculator at http://hpl-calculator.sourceforge.net/ - Recommended settings are an NB size of 192 and a Memory usage of 88%.
+- Calculate the correct settings for the HPL.dat file with [the HPL Calculator](http://hpl-calculator.sourceforge.net/) - Recommended settings are an NB size of 192 and a Memory usage of 88%.
 - Use a Grid Shape (PxQ) with as close to "square" as possible, making Q slightly larger than P.
 - For systems using an MPI version of 1.8.x or higher, ensure that the `mpirun` line includes the "--bind-to-core" parameter.
 - **Infiniband Only** - Use the `ibcheckerrors` command to ensure that there are no issues with the fabric reported after running the HPL benchmark.
