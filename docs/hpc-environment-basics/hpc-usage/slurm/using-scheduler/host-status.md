@@ -24,7 +24,7 @@ The `sinfo -Nl` output will show (from left-to-right):
 - The detected number of CPUs (including hyper-threaded cores)
 - The number of sockets, cores and threads per node
 - The amount of memory in MB per node
-- The amount of disk space in MB available to the /tmp partition per node
+- The amount of disk space in MB available to the `/tmp` partition per node
 - The scheduler weighting
 
 Using the command `sinfo` without ` -Nl` will display only some information and in a different order.
