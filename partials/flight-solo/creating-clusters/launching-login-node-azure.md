@@ -19,7 +19,7 @@ To set up a cluster, you will need to [import a Flight Solo image](../get-solo/i
     1. Set *Resource Group* to your desired resource group (where the vm will be kept after creation).
     1. Set *Virtual machine name* to any suitable name. (`-` does not work in a name)
     1. Set *Image* to the imported Flight Solo Image.
-        1. It may be necessary to open the dropdown and/or see all images in order to find the imported image.
+        1. It may be necessary to open the drop-down and/or see all images in order to find the imported image.
             ![](img/azure_createvm_image_dropdown.png)
         1. Scroll down to see more options
             ![](img/azure_createvm_basics2.png)
@@ -40,7 +40,7 @@ To set up a cluster, you will need to [import a Flight Solo image](../get-solo/i
     ![](img/azure_createvm_networking.png)
 
     1. Set *Virtual Network* or create a new one by pressing "Create new" and setting a name. **Remember what this is for if you create compute nodes.**
-    1. Set *Subnet* to one of the options in the dropdown menu, if it isn't already set. **Remember what this is for if you create compute nodes.**
+    1. Set *Subnet* to one of the options in the drop-down menu, if it isn't already set. **Remember what this is for if you create compute nodes.**
     1. Set *Public IP* to an existing public IP or create a new one by pressing "Create new" and setting a name.
     1. Set *NIC network security group* to "Advanced", and press "Create new" to create a new security group.
         ![](img/azure_createvm_networking_newsg.png)

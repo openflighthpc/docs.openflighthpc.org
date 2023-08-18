@@ -17,7 +17,7 @@
     1. Set *Resource Group* to the **same as the login node** 
     1. Set *Virtual machine name* to any suitable name.
     1. Set *Image* to the imported Flight Solo Image.
-        1. It may be necessary to open the dropdown and/or see all images in order to find the imported image.
+        1. It may be necessary to open the drop-down and/or see all images in order to find the imported image.
             ![](img/azure_createvm_image_dropdown.png)
         1. Scroll down to see more options
             ![](img/azure_createvm_basics2.png)
