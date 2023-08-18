@@ -20,7 +20,7 @@
 
 ### Create VM Import Policy
 
-1. Create a vmimport policy file to enable vm import operations. Make a file called `trust-policy.json` with these contents:
+1. Create a `vmimport` policy file to enable vm import operations. Make a file called `trust-policy.json` with these contents:
 
     ```json
     {
@@ -40,12 +40,12 @@
     }
     ```
 
-1. Create a role from the vmimport policy file.
+1. Create a role from the `vmimport` policy file.
     ```bash
     aws iam create-role --role-name vmimport --assume-role-policy-document "file://trust-policy.json"
     ```
 
-1. Create a bucket association with the vmimport role in a file called `role-policy.json`, replacing `<bucketname>` with the name of your S3 bucket.
+1. Create a bucket association with the `vmimport` role in a file called `role-policy.json`, replacing `<bucketname>` with the name of your S3 bucket.
     ```json
     {
     "Version": "2012-10-17",
