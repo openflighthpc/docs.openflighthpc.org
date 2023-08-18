@@ -37,7 +37,7 @@ Dependencies must be managed across all nodes of the cluster, and over time as t
 
 ### Reproducibility
 
-It is important that your users receive a consistent, long-term service from your HPC cluster to allow them to rely on results from applications run at different points in your clusters' lifecycle. Consider the following questions when designing your application management system:
+It is important that your users receive a consistent, long-term service from your HPC cluster to allow them to rely on results from applications run at different points in your clusters' life cycle. Consider the following questions when designing your application management system:
 
 - How can I install new applications quickly and easily for users?
 - What test plans have I created to ensure that applications run in the same way across all cluster nodes?
