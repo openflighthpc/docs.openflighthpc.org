@@ -5,7 +5,7 @@ This workflow demonstrates the creation of a multinode Kubernetes cluster on AWS
 ## Prepare Network
 
 1. Create a VPC with
-    1. Name: kubecluster1
+    1. Name: `kubecluster1`
 1. In "VPC and More"
     1. IPv4 Subnet Block: 10.10.0.0/16
     1. Number of Availability Zones: 1
@@ -13,9 +13,9 @@ This workflow demonstrates the creation of a multinode Kubernetes cluster on AWS
     1. Private Subnets: 0
     1. VPC Endpoints: None
 1. Create a Security Group with
-    1. Name: kubecluster1-sg
-    1. Description: "Security group for kubecluster1 cluster"
-    1. VPC: kubecluster
+    1. Name: `kubecluster1-sg`
+    1. Description: "Security group for `kubecluster1` cluster"
+    1. VPC: `kubecluster1`
 1. Inbound Rules
     1. "SSH" from "Anywhere-IPv4"
     1. "HTTP" from "Anywhere-IPv4"
@@ -29,8 +29,9 @@ Launch the Flight Solo image in AWS marketplace
 1. Select "Launch from EC2"
 1. Instance Type: t3.2xlarge
 1. Click "Edit" on Network Settings and
-1. VPC: kubecluster1Auto-assign public IP: Enable
-1. Select existing security group: kubecluster1-sg
+1. VPC: `kubecluster1`
+1. Auto-assign public IP: Enable
+1. Select existing security group: `kubecluster1-sg`
 1. Set root volume size to at least 20GB
 1. Under Advanced Details -> User Data, add this:
     ```yaml
@@ -91,7 +92,7 @@ Launch the Flight Solo image in AWS marketplace
         1. Auto-assign public IP: Disable
         1. Select existing security group: kubecluster1-sg
     1. Set root volume size to at least 20GB
-    1. Under Advanced Details -> User Data (replace `LOGIN_SERVER_IPV4_PRIVATE_ADDRESS` with the IP of the login node, this can be found with ip addr on that system)
+    1. Under Advanced Details -> User Data (replace `LOGIN_SERVER_IPV4_PRIVATE_ADDRESS` with the IP of the login node, this can be found with `ip addr` on that system)
         ```yaml
         #cloud-config
         write_files:
