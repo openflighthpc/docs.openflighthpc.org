@@ -1,6 +1,6 @@
 # Flight Silo Overview 
 
-Flight Silo allows users to connect to "silos" - cloud storage systems designed primarily to distribute software and projects, with more general file storage also available. Silo comes pre-installed as part of the User Suite included with Flight Solo.
+Flight Silo allows users to connect to "silos" - cloud storage systems designed primarily to distribute software and projects, with more general file storage also available. Silo comes installed as part of the User Suite included with Flight Solo.
 
 This section details the various commands used to manage silos, files and software.
 
