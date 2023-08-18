@@ -60,5 +60,5 @@ Generally speaking, configuration files for the flight environment can be found 
 !!! tip
     Every flight tool provides a breakdown of the available configuration options and how to set them either through their README or in a `etc/config.yml.ex` file in the source repository. 
 
-    For example, available configuration options for version 1.11.3 of flight desktop can be found at [https://github.com/openflighthpc/flight-desktop/blob/1.11.3/etc/config.yml.ex](https://github.com/openflighthpc/flight-desktop/blob/1.11.3/etc/config.yml.ex)
+    For example, available configuration options for version 1.11.3 of flight desktop can be found in [the Flight Desktop GitHub repo](https://github.com/openflighthpc/flight-desktop/blob/1.11.3/etc/config.yml.ex)
 
