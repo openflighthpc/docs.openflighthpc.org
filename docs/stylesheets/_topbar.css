@@ -59,11 +59,12 @@ header {
 }
 
 #tabs {
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: center;
     padding-inline: 14rem;
     background-color: var(--header-grey);
+    z-index: 3;
 }
 
 .md-tabs {
