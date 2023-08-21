@@ -1,3 +1,4 @@
 #tabs {
     display: none;
+    z-index: 3;
 }
