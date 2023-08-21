@@ -42,6 +42,7 @@ html {
 
 .md-content__inner {
   margin: 0;
+  padding-inline: 1.2rem;
 }
 
 .md-main__inner {
@@ -51,6 +52,12 @@ html {
 
 .narrow {
   display: none;
+}
+
+@media screen and (min-width: 76.25em) {
+  .md-content__inner {
+    margin: 0 !important;
+  }
 }
 
 @media screen and (max-width: 59.9375em) {

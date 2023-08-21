@@ -6,7 +6,7 @@ search:
   exclude: true
 ---
 
-<section id="home-container" class="no-tabs">
+<section id="home-container" class="home-block no-tabs">
   <div id="home-image-container">
     <img id="home-image" src="assets/images/OF_home.png">
     <img id="home-image-narrow" src="assets/images/OF_home_bottom.png">
@@ -19,7 +19,7 @@ search:
     <a class="button big-text" href="#mission-container">FIND OUT MORE</a>
   </div>
 </section>
-<section id="mission-block">
+<section id="mission-block" class="home-block">
   <img id="cloud-bar" src="assets/images/cloud_bar.png">
   <div id="mission-container">
     <div id="mission-text">
@@ -81,7 +81,7 @@ search:
 <img src="assets/images/green_hpc.png">
   </div>
 </section>
-<section id="ready-block">
+<section id="ready-block" class="home-block">
   <div id="ready-container">
     <h1>Ready to get started?</h1>
     <p>
