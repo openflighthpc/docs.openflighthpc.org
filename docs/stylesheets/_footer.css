@@ -12,7 +12,7 @@
     z-index: 1;
     justify-content: center;
     align-items: center;
-    height: 4rem;
+    height: 5rem;
     width: 100%;
     background-color: white;
 }
@@ -24,6 +24,7 @@
 
 .cloud {
     width: 20vw;
+    min-width: 15rem;
     position: absolute;
     bottom: 0;
 }
@@ -38,4 +39,18 @@
 
 #cloud-r {
     right: 0;
+}
+
+@media screen and (max-width: 59.9375em) {
+    #cloud-l.parting-cloud {
+        content: url('../assets/images/low_cloud_l.png');
+    }
+
+    #cloud-r.parting-cloud {
+        content: url('../assets/images/low_cloud_r.png');
+    }
+
+    .footer-logo {
+        display: none;
+    }
 }
