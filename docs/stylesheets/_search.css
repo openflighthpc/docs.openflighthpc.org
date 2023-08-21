@@ -60,6 +60,10 @@
 }
 
 @media screen and (max-width: 76.1875em) {
+    [data-md-toggle=search]:checked~.md-container #tabs {
+        justify-content: space-between;
+    }
+
     [data-md-toggle="search"]:checked~.md-container .md-search__form {
         color: var(--md-default-fg-color);
         background-color: var(--md-default-bg-color);
