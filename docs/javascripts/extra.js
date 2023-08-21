@@ -1,5 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
   renderTabs();
+  if (!document.querySelector('.no-tabs')) {
+    document.querySelector('#docs-footer').style.display = 'block';
+  }
 });
 
 window.addEventListener('resize', () => {
