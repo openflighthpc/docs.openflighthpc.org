@@ -1,5 +1,5 @@
 #home-container {
-    background: linear-gradient(#ECECEC, var(--sky-blue-grey)) no-repeat;
+    background: linear-gradient(white, var(--home-sky-dark)) no-repeat;
     display: flex;
     justify-content: space-between;
     min-height: 75vh;
@@ -54,7 +54,7 @@
 
 #mission-block {
     height: 30rem;
-    background-color: var(--sky-blue-grey);
+    background-color: var(--home-sky-dark);
     display: flex;
     flex-direction: column;
 }

@@ -4,9 +4,3 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.search-container').style.display = 'none';
   }
 });
-
-document.addEventListener('DOMContentLoaded', () => {
-  if (document.querySelector('#home-container')) {
-    document.querySelector('.md-content__inner').style.backgroundColor = '#ECECEC';
-  }
-});
