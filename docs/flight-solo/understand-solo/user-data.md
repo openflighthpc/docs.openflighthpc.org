@@ -35,7 +35,7 @@ The available options for the Flight Solo cloud-init file are as follows.
 : Set the broadcast address which [Flight Hunter](../../flight-environment/use-flight/flight-admin-tools/hunter.md#send) will send to. 
 
     ```bash title="Example Usage" 
-    BROADCAST_ADDRESS=10.10.255.255 # (2)!
+    BROADCAST_ADDRESS=10.10.255.255
     ```
 
 ### `AUTH_KEY`
