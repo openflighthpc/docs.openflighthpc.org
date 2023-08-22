@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   renderTabs();
-  if (!document.querySelector('.no-tabs')) {
-    document.querySelector('#docs-footer').style.display = 'block';
+  if (!document.querySelector('.no-footer')) {
+    document.querySelector('#footer').style.display = 'block';
   }
 });
 

@@ -1,25 +1,5 @@
-#docs-footer {
+#footer {
     display: none;
-}
-
-#footer-container {
-    display: block;
-}
-
-.footer {
-    display: flex;
-    position: relative;
-    z-index: 1;
-    justify-content: center;
-    align-items: center;
-    height: 5rem;
-    width: 100%;
-    background-color: white;
-}
-
-.footer-logo {
-    max-height: 2rem;
-    margin: 1rem 0.4rem 0.4rem;
 }
 
 .cloud {
@@ -39,18 +19,4 @@
 
 #cloud-r {
     right: 0;
-}
-
-@media screen and (max-width: 59.9375em) {
-    #cloud-l.parting-cloud {
-        content: url('../assets/images/low_cloud_l.png');
-    }
-
-    #cloud-r.parting-cloud {
-        content: url('../assets/images/low_cloud_r.png');
-    }
-
-    .footer-logo {
-        display: none;
-    }
 }

@@ -6,7 +6,7 @@ search:
   exclude: true
 ---
 
-<section id="home-container" class="home-block no-tabs">
+<section id="home-container" class="home-block no-tabs no-footer">
   <div id="home-image-container">
     <img id="home-image" src="assets/images/OF_home.png">
     <img id="home-image-narrow" src="assets/images/OF_home_bottom.png">

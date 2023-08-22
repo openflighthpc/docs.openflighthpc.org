@@ -1,0 +1,36 @@
+.solo-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100vw;
+}
+
+.solo-content {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.solo-container h1,p {
+    margin-bottom: 3rem;
+    margin-top: 0;
+}
+
+.solo-card-container {
+    display: flex;
+    justify-content: center;
+}
+
+.solo-card {
+    border: solid lightgrey 1px;
+    border-radius: 2px;
+    margin-inline: 1rem;
+    height: 15rem;
+    width: 15rem;
+}

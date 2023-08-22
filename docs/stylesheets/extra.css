@@ -2,6 +2,7 @@
 @import '_topbar.css';
 @import '_nav.css';
 @import '_home.css';
+@import '_solo.css';
 @import '_footer.css';
 
 html {
@@ -75,7 +76,7 @@ html {
 :root {
   --alces-blue: #2693D7;
   --alces-grey: #586674;
-  --header-grey: #212121;
+  --header-grey: #191919;
   --button-navy: #2B3966;
   --sky-blue-grey: #DCEEF5;
   --home-sky-dark: #E1F2FA;
