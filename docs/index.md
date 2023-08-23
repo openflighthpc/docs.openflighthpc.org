@@ -18,14 +18,14 @@ OpenFlight is currently refactoring it's documentation to provide a better user 
 
 This will be ready when: 
 
-- [ ] Existing docs migrated
+- [x] Existing docs migrated
     * [x] Documentation Overview
     * [x] General Environment Usage
     * [x] Flight Environment Usage
     * [x] HPC Environment Usage
     * [x] Cluster Build Methods
     * [x] Workflow Examples
-    * [ ] Functionality Testing
+    * [x] Functionality Testing
 - [ ] Additional content added
     * [x] HPC Concepts & Guidance (both on-site & cloud)
     * [ ] Flight Service documentation
