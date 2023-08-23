@@ -1,4 +1,4 @@
-1. Put the IP/FQDN used in configuration into your browser to access the [Flight Web Suite](../../flight-environment/use-flight/flight-web-suite/). It should look something like this:
+1. Put the IP/FQDN used in configuration into your browser to access the [Flight Web Suite](../../flight-environment/use-flight/flight-web-suite/index.md). It should look something like this:
     ![](img/websuite_home_jupyter.png)
 
 1. Under "Quick Access" click on "Jupyter" and enter the password set during configuration when requested; it will only need to be entered the first time you connect.
