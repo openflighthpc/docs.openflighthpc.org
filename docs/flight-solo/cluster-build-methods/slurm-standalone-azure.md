@@ -11,3 +11,7 @@
 ## SLURM Standalone Configuration
 
 {% include 'flight-solo/creating-clusters/slurm-standalone-config.md' %}
+
+## Verifying Functionality
+
+{% include 'flight-solo/creating-clusters/slurm-testing.md' %}

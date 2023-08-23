@@ -47,3 +47,7 @@
 ## SLURM Multinode Configuration
 
 {% include 'flight-solo/creating-clusters/slurm-multinode-config.md' %}
+
+## Verifying Functionality
+
+{% include 'flight-solo/creating-clusters/slurm-testing.md' %}
