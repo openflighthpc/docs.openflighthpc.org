@@ -63,7 +63,7 @@
 
     ![](img/aws_ec2_userdata.png)
 
-    1. Write a cloud init script in the user data section, see [here](/cluster_build_methods/user_data/) for details:
+    1. Write a cloud init script in the user data section, see [here](../understand-solo/user-data.md) for details:
 
     1. To get the information necessary for the cloud init script. Go to the [EC2 console](https://eu-west-2.console.aws.amazon.com/ec2/v2/home?region=eu-west-2#Instances:). **Make sure your region is set to the one used for login and compute nodes.**
 

@@ -56,7 +56,7 @@ To set up a cluster:
     ![](img/openstack_associate_ip.png)
 
 
-1. Click on the down arrow at the end of the instance row. This will bring up a drop down menu.
+1. Click on the down arrow at the end of the instance row. This will bring up a drop-down menu.
 
 1. Select "Associate Floating IP", this will make the ip management window pop up.
 
@@ -66,7 +66,7 @@ To set up a cluster:
 
     1. To use an existing floating IP:
 
-        1. Open the IP Address drop down menu.
+        1. Open the IP Address drop-down menu.
 
             ![](img/openstack_manage_ips_dropdown.png)
 
@@ -76,7 +76,7 @@ To set up a cluster:
 
     1. To allocate a new floating IP:
 
-        1. Click the "+" next to the dropdown arrow to open the allocation menu.
+        1. Click the "+" next to the drop-down arrow to open the allocation menu.
 
             ![](img/openstack_manage_ips_new.png)
 

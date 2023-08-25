@@ -47,3 +47,7 @@
 ## Kubernetes Multinode Configuration
 
 {% include 'flight-solo/creating-clusters/kubernetes-multinode-config.md' %}
+
+## Verifying Functionality
+
+{% include 'flight-solo/creating-clusters/kubernetes-testing.md' %}

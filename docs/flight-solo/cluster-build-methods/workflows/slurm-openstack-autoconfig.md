@@ -9,7 +9,7 @@ This workflow demonstrates the creation of a standalone slurm cluster on Opensta
 Preparing the network, router and subnet is out of scope for this documentation, so it is assumed that this is already done. See the [Openstack documentation](https://docs.openstack.org/install-guide/launch-instance.html#create-virtual-networks) for more information.
 
 1. Create a Security Group with
-    1. Name: autostandalone1-sg
+    1. Name: `autostandalone1-sg`
     1. Description: "Security group for automatic standalone cluster"
     1. Ingress Rules
         1. "SSH",  remote: "CIDR", CIDR: "`0.0.0.0/0`"
@@ -18,7 +18,7 @@ Preparing the network, router and subnet is out of scope for this documentation,
         1. "All TCP", remote: "Security Group",  from this security group
         1. "All UDP", remote: "Security Group",  from this security group
 1. Create a keypair with
-    1. Key Pair Name: autostandalone-key
+    1. Key Pair Name: `autostandalone-key`
     1. Key Type: SSH Key
 
 ## Launch the instance

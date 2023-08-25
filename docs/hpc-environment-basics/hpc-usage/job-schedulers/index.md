@@ -30,4 +30,4 @@ However, a job-scheduler can still be a useful tool for a research environment r
 3. It can help prevent accidentally over-allocating CPUs or memory, which could lead to nodes failing.
 4. It can help bring discipline to the environment, providing a consistent method to replicate the running of jobs in different environments.
 
-Your research environment comes with a job-scheduler pre-installed, ready for you to start using. The scheduler uses very few resources when idle, so you can choose to use it if you find it useful, or run jobs manually across your research environment if you prefer.
+Your research environment comes with a job-scheduler installed, ready for you to start using. The scheduler uses very few resources when idle, so you can choose to use it if you find it useful, or run jobs manually across your research environment if you prefer.

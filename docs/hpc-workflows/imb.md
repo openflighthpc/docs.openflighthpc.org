@@ -10,7 +10,7 @@ Installing IMB is outside of the scope of this documentation. Further informatio
 
 To use 64 CPU cores on a [SLURM HPC environment](../hpc-environment-basics/hpc-usage/slurm/index.md) for a single application, the instruction `--ntasks=64` can be used.
 
-The following example shows launching the **Intel Message-passing** MPI benchmark across 64 cores on your research environment. This application is launched via the OpenMPI `mpirun` command - the number of threads and list of hosts are automatically assembled by the scheduler and passed to the MPI at runtime. This jobscript loads the `apps/imb` module before launching the application, which automatically loads the module for **OpenMPI**.
+The following example shows launching the **Intel Message-passing** MPI benchmark across 64 cores on your research environment. This application is launched via the OpenMPI `mpirun` command - the number of threads and list of hosts are automatically assembled by the scheduler and passed to the MPI at runtime. This job script loads the `apps/imb` module before launching the application, which automatically loads the module for **OpenMPI**.
 
 ```bash
 #!/bin/bash -l

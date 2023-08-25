@@ -14,8 +14,8 @@ These topics are covered in more detail below.
 
 The hardware environment will generally be one of two setups, metal or cloud.
 
-- **Metal** - Metal environments are those which are composed of on-site systems in a datacenter which are usually running 24/7.
-- **Cloud** - Cloud environments are systems hosted in a third-party datacenter (or on-premise private cloud) and are usually ephemeral systems that are being created and destroyed on demand.
+- **Metal** - Metal environments are those which are composed of on-site systems in a data center which are usually running 24/7.
+- **Cloud** - Cloud environments are systems hosted in a third-party data center (or on-premise private cloud) and are usually ephemeral systems that are being created and destroyed on demand.
 - **Metal/Cloud Hybrid** - A hybrid environment usually consists of a core metal configuration that uses cloud as an overflow for additional capacity at times of high utilisation.
 
 A hardware environment is mainly focussed on the location, capacity and permanence of the HPC platform and does not directly determine the hardware that will be used in the various systems.
@@ -72,7 +72,7 @@ node01.pri.cluster1.compute.estate
 Which can be broken down as follows:
 
   - `node01` - The hostname of the system
-  - `pri` - The network that the interface of the system is sat on (in this case, pri = primary)
+  - `pri` - The network that the interface of the system is sat on (in this case, `pri` = primary)
   - `cluster1` - The cluster that `node01` is a part of
   - `compute` - The subdomain of the greater network that `cluster1` is a part of
   - `estate` - The top level domain
@@ -110,11 +110,11 @@ The below questions should be considered when designing the network and hardware
     - Are they memory intensive?
     - Is interconnect heavily relied upon for computations?
 
-[^1]: For more information on RAID arrays see [https://en.wikipedia.org/wiki/RAID](https://en.wikipedia.org/wiki/RAID)
+[^1]: For more information on RAID arrays see [the Wikipedia page](https://en.wikipedia.org/wiki/RAID)
 
 ## Recommendations
 
-Below are some different recommendations for hardware and network design. These can vary depending on the number of users and quanttity of systems within the HPC platform.
+Below are some different recommendations for hardware and network design. These can vary depending on the number of users and quantity of systems within the HPC platform.
 
 ### Hardware Recommendations
 

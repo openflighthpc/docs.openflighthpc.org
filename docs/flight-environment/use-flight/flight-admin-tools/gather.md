@@ -1,6 +1,6 @@
 # Flight Gather
 
-Flight Gather collects system information into a parseable YAML format. 
+Flight Gather collects system information into a processable YAML format. 
 
 Data collected by Flight Gather: 
 

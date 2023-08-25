@@ -37,5 +37,5 @@ ment/use-flight/flight-user-suite/flight-desktop/index.md)).
 3. In the window that opens, scroll down to "Mesh parts" and select all the boxes, then click apply
     ![](img/openfoam_parafoam_1.png)
 
-4. Next, change the display to 'U' in the dropdown menu, click play to change the timestamp and then click and drag to rotate the subject
+4. Next, change the display to 'U' in the drop-down menu, click play to change the timestamp and then click and drag to rotate the subject
     ![](img/openfoam_parafoam_2.png)

@@ -1,6 +1,6 @@
 # Bowtie Workflow Example
 
-Bowtie is a sequencing toolset for aligning sets of DNA into large genomes.
+Bowtie is a sequencing tool-set for aligning sets of DNA into large genomes.
 
 ## Workflow
 

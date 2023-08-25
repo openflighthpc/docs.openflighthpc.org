@@ -3,7 +3,7 @@
 
 With HPC environments typically combining multiple hosts there comes the requirement to be able to share user data quickly between the available resources. Due to this, HPC environments usually have some sort of shared storage solution.
 
-The shared storage solution can share user home directories between all the nodes, create shared mountpoints for a project or department and even provide redundancy by using resillient storage back-ends. 
+The shared storage solution can share user home directories between all the nodes, create shared mount-points for a project or department and even provide redundancy by using resilient storage back-ends. 
 
 ## Local Scratch 
 

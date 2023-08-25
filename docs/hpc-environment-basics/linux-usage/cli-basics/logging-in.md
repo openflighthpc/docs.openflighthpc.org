@@ -22,7 +22,7 @@ When you login to the research environment via SSH, you are automatically placed
 
     If you are accessing from a Windows client using the Putty utility, the private key associated with the account will need to be converted to ppk format from pem to be compatible with Putty. This can be done as follows:
 
-    - Open PuTTYgen (this will already be installed on your system if Putty was installed using .msi and not launched from the .exe - if you do not think you have this, download putty-installer from [here](http://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
+    - Open PuTTYgen (this will already be installed on your system if Putty was installed using `.msi` and not launched from the `.exe` - if you do not think you have this, download putty-installer from [here](http://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
 
     - Select Conversions -> Import Key
 
@@ -42,7 +42,7 @@ When you login to the research environment via SSH, you are automatically placed
 
     ![](img/putty.png)
 
-    The first time you connect to your research environment, you will be prompted to accept a new server SSH hostkey. This happens because you've never logged in to your research environment before - it should only happen the first time you login; click **OK** to accept the warning. Once connected to the research environment, you should be logged in to the research environment login node as your user.
+    The first time you connect to your research environment, you will be prompted to accept a new server SSH host-key. This happens because you've never logged in to your research environment before - it should only happen the first time you login; click **OK** to accept the warning. Once connected to the research environment, you should be logged in to the research environment login node as your user.
 
     ![](img/firstlogin.png)
 

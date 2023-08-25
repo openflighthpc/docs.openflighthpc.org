@@ -12,7 +12,7 @@ Usually a HPC environment will have a "login" or "gateway" node which is the ent
 
 === ":simple-windows: Windows"
 
-    Windows users can download and install the [pscp](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) command to perform the same operation (you may need your .pem key in .ppk format, see [connecting from Windows with Putty](/hpc-environment-basics/linux-usage/cli-basics/logging-in/)):
+    Windows users can download and install the [pscp](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) command to perform the same operation (you may need your .pem key in .ppk format, see [connecting from Windows with Putty](../../cli-basics/logging-in.md)):
 
     ```bash
     pscp -i mykeyfile.ppk mydata.zip flight@52.48.62.34:/home/flight/ # (1)!

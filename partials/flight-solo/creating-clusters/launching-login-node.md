@@ -87,7 +87,7 @@ Whether creating a standalone or multinode cluster, you will need a login node. 
 
     ### To allocate a new floating IP:
 
-    14. Click the "+" next to the dropdown arrow to open the allocation menu.
+    14. Click the "+" next to the drop-down arrow to open the allocation menu.
 
     ![](/images/openstack_manage_ips_new.png)
 
@@ -120,7 +120,7 @@ Whether creating a standalone or multinode cluster, you will need a login node. 
         - Set *Resource Group* to your desired resource group (where the vm will be kept after creation).
         - Set *Virtual machine name* to any suitable name. (`-` does not work in a name)
         - Set *Image* to the imported Flight Solo Image.
-            It may be necessary to open the dropdown and/or see all images in order to find the imported image.
+            It may be necessary to open the drop-down and/or see all images in order to find the imported image.
     ![](/images/azure_createvm_image_dropdown.png)
         Scroll down to see more options
     ![](/images/azure_createvm_basics2.png)
@@ -138,7 +138,7 @@ Whether creating a standalone or multinode cluster, you will need a login node. 
     6. Go on to the networking tab and fill out the necessary options.
     ![](/images/azure_createvm_networking.png)
         - Set *Virtual Network* or create a new one by pressing "Create new" and setting a name. **Remember what this is for if you create compute nodes.**
-        - Set *Subnet* to one of the options in the dropdown menu, if it isn't already set. **Remember what this is for if you create compute nodes.**
+        - Set *Subnet* to one of the options in the drop-down menu, if it isn't already set. **Remember what this is for if you create compute nodes.**
         - Set *Public IP* to an existing public IP or create a new one by pressing "Create new" and setting a name.
         - Set *NIC network security group* to "Advanced", and press "Create new" to create a new security group.
     ![](/images/azure_createvm_networking_newsg.png)

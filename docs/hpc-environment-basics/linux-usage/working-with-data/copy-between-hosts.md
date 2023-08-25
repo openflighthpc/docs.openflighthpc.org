@@ -6,6 +6,6 @@ If necessary, users can use the `scp` command to copy files between nodes like:
 scp node01:/tmp/myfile.txt . # (1)!
 ```
 
-1. Copy the file `myfile.txt` stored under `/tmp/` on `node01` to the cwd (`.`) of this host
+1. Copy the file `myfile.txt` stored under `/tmp/` on `node01` to the `cwd` (`.`) of this host
 
 Alternatively, users could login to a host that has unshared data on and copy the data back to the shared filesystem.
