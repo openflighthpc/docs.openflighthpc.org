@@ -11,25 +11,44 @@ search:
   <div class="md-sidebar md-sidebar--primary"></div>
   <div class="solo-content">
     <h1>Flight Solo</h1>
-    <p>
+    <p id="solo-main-text">
       Flight Solo provides a preloaded, HPC-ready, platform-agnostic 
       image approach to deploying HPC resources.
     </p>
     <div class="solo-card-container">
       <a class="solo-card"
          href="../docs/flight-solo">
-        <h2>Read the docs</h2>
+        <img id="docs-icon"
+             class="solo-icon"
+             src="assets/images/docs.png">
+        <h2 class="card-text">Read the docs</h2>
+        <p class="card-text">
+          Find out how to start using Flight Solo by reading the openflight documentation.
+        </p>
       </a>
       <a class="solo-card"
          href="https://aws.amazon.com/marketplace/pp/prodview-q5u533n6b34oc?sr=0-1&ref_=beagle&applicationId=AWSMPContessa"
          target="_blank"
       >
-        <h2>AWS</h2>
+        <img id="aws-icon" 
+             class="solo-icon"
+             src="../assets/images/solo_logo.png">
+        <h2 class="card-text">AWS</h2>
+        <p class="card-text">
+          Go to AWS marketplace and start a Flight Solo instance.
+        </p>
       </a>
-      <a class="solo-card" href="https://repo.openflighthpc.org/?prefix=images/FlightSolo/"
+      <a class="solo-card" 
+         href="https://repo.openflighthpc.org/?prefix=images/FlightSolo/"
          target="_blank"
       >
-        <h2>Download</h2>
+        <img id="download-icon" 
+             class="solo-icon"
+             src="assets/images/download.png">
+        <h2 class="card-text">Download</h2>
+        <p class="card-text">
+          Download the Flight Solo image from the Openflight repository.
+        </p>
       </a>
     </div>
   </div>

@@ -20,7 +20,7 @@
     margin-top: 4rem;
 }
 
-.solo-container p {
+#solo-main-text {
     margin-bottom: 3rem;
     margin-inline: 0.8rem;
     text-align: center;
@@ -37,16 +37,35 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: solid #E1E1E1 1px;
+    background-color: #D4F0FD;
     border-radius: 2px;
     margin: 1rem;
     height: 15rem;
     width: 15rem;
+    padding: 1rem;
+}
+
+.card-text {
+    margin: 0;
+    color: var(--alces-grey);
 }
 
 .solo-card h2 {
-    margin: 0;
-    color: var(--alces-grey);
+    margin-top: 0.5rem;
+}
+
+.solo-card p {
+    height: 4rem;
+    text-align: center;
+}
+
+.solo-card img {
+    height: 5rem;
+}
+
+.solo-card:hover {
+    background-color: #E8F8FF;
+    transition: background-color 0.5s;
 }
 
 @media screen and (max-width: 59.9375em) {
