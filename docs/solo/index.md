@@ -11,10 +11,13 @@ search:
   <div class="md-sidebar md-sidebar--primary"></div>
   <div class="solo-content">
     <h1>Flight Solo</h1>
-    <p id="solo-main-text">
-      Flight Solo provides a preloaded, HPC-ready, platform-agnostic 
-      image approach to deploying HPC resources.
-    </p>
+    <div id="solo-main-text">
+      <p>
+Flight Solo is a preloaded, HPC-ready, platform-agnostic image approach to deploying HPC resources. 
+The Flight Solo image provides a personal High Performance Computing (HPC) environment for research and scientific 
+computing.
+      </p>
+    </div>
     <div class="solo-card-container">
       <a class="solo-card"
          href="../docs/flight-solo">

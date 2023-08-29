@@ -24,6 +24,8 @@
     margin-bottom: 3rem;
     margin-inline: 0.8rem;
     text-align: center;
+    font-size: 0.9rem;
+    max-width: 41rem;
 }
 
 .solo-card-container {
