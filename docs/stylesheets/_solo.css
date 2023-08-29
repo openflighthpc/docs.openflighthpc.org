@@ -33,11 +33,20 @@
 }
 
 .solo-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border: solid #E1E1E1 1px;
     border-radius: 2px;
     margin: 1rem;
     height: 15rem;
     width: 15rem;
+}
+
+.solo-card h2 {
+    margin: 0;
+    color: var(--alces-grey);
 }
 
 @media screen and (max-width: 59.9375em) {
