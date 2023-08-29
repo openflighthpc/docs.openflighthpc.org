@@ -155,7 +155,6 @@ theme:
     - content.code.annotate
     - navigation.sections
     - navigation.indexes # Allows adding overview pages to sections, name them index.md
-    - navigation.tabs.sticky
     - navigation.tabs
     - navigation.top
     - search.suggest
