@@ -133,7 +133,7 @@
 }
 
 #green-block {
-    background-image: linear-gradient(#CDEFFF, #EBEBEB);
+    background-image: linear-gradient(var(--light-blue), #EBEBEB);
     padding-inline: 10vw;
     padding-top: 2rem;
     padding-bottom: 2rem;
