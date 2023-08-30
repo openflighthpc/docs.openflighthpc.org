@@ -10,19 +10,20 @@ search:
 <div class="solo-container no-tabs">
   <div class="md-sidebar md-sidebar--primary"></div>
   <div class="solo-content">
-    <h1>Flight Solo</h1>
+    <h1>
+      Flight Solo
+    </h1>
     <div id="solo-main-text">
       <p>
-Flight Solo is a preloaded, HPC-ready, platform-agnostic image approach to deploying HPC resources. 
-The Flight Solo image provides a personal High Performance Computing (HPC) environment for research and scientific 
-computing.
+        Flight Solo is a preloaded, HPC-ready, platform-agnostic image approach to deploying HPC resources. 
+        The Flight Solo image provides a personal High Performance Computing (HPC) environment for research and scientific 
+        computing.
       </p>
     </div>
     <div class="solo-card-container">
       <a class="solo-card"
          href="../docs/flight-solo">
-        <img id="docs-icon"
-             class="solo-icon"
+        <img class="solo-icon"
              src="assets/images/docs.png">
         <h2 class="card-text">Read the docs</h2>
         <p class="card-text">
@@ -33,8 +34,7 @@ computing.
          href="https://aws.amazon.com/marketplace/pp/prodview-q5u533n6b34oc?sr=0-1&ref_=beagle&applicationId=AWSMPContessa"
          target="_blank"
       >
-        <img id="aws-icon" 
-             class="solo-icon"
+        <img class="solo-icon"
              src="../assets/images/solo_logo.png">
         <h2 class="card-text">AWS</h2>
         <p class="card-text">
@@ -45,8 +45,7 @@ computing.
          href="https://repo.openflighthpc.org/?prefix=images/FlightSolo/"
          target="_blank"
       >
-        <img id="download-icon" 
-             class="solo-icon"
+        <img class="solo-icon"
              src="assets/images/download.png">
         <h2 class="card-text">Download</h2>
         <p class="card-text">
