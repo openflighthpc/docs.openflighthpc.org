@@ -8,8 +8,8 @@
     width: 14rem;
 }
 
-.md-sidebar, .md-sidebar__scrollwrap  {
-    overflow: visible;
+.md-sidebar__inner {
+    height: 100%;
 }
 
 .md-nav__title {
