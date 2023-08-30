@@ -13,7 +13,7 @@ html {
   background-color: var(--alces-blue);
   border-radius: 2px;
   padding: 0.5rem 1rem;
-  color: white;
+  color: white !important;
   width: fit-content;
   transition: none !important;
 }
@@ -26,7 +26,7 @@ html {
 }
 
 .button:visited {
-  color: white;
+  color: white !important;
 }
 
 .blue-text {
