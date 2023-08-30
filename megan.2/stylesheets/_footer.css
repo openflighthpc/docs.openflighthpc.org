@@ -1,0 +1,22 @@
+#footer {
+    display: none;
+}
+
+.cloud {
+    width: 20vw;
+    min-width: 15rem;
+    position: absolute;
+    bottom: 0;
+}
+
+.parting-cloud {
+    width: 35vw;
+}
+
+#cloud-l {
+    left: 0;
+}
+
+#cloud-r {
+    right: 0;
+}
