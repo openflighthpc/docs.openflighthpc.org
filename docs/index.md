@@ -44,7 +44,7 @@ search:
           Flight User Suite provides CLI tools for accessing your cluster from the command line. 
         </p>
       </div>
-      <a class="button" href="docs/flight-environment">LEARN MORE</a>
+      <a class="button" href="docs/flight-environment/use-flight/flight-user-suite">LEARN MORE</a>
     </div>
     <div class="tool">
       <img src="assets/images/web_suite.png">
@@ -54,7 +54,7 @@ search:
           Flight Web Suite provides GUI tools for accessing your cluster from within your web browser.
         </p>
       </div>
-      <a class="button" href="docs/flight-environment">LEARN MORE</a>
+      <a class="button" href="docs/flight-environment/use-flight/flight-web-suite">LEARN MORE</a>
     </div>
     <div class="tool">
       <img src="assets/images/solo_logo.png">
@@ -64,7 +64,7 @@ search:
           Flight Solo is a preconfigured image designed to get users into HPC as quickly as possible.
         </p>
       </div>
-      <a class="button" href="docs/flight-solo">LEARN MORE</a>
+      <a class="button" href="solo">LEARN MORE</a>
     </div>
   </div>
 </section>
