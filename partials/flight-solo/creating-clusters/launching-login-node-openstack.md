@@ -6,7 +6,21 @@ Before setting up a cluster on Openstack, there are several required prerequisit
 - Your own keypair
 - A network
 - A router
-- A security group that allows traffic through ports 22, 80, 8888, 443 and 5900-5903
+- A security group that allows traffic is given below
+
+| Protocol   |      Direction      |  CIDR | Port Range |
+|:----------:|:-------------:|:------:|:------:|
+| any | egress | 0.0.0.0/0  | any |
+| any | ingress  |   virtual machine's cidr | any|
+| icmp | ingress |  0.0.0.0/0 | any |
+| ssh | ingress |  0.0.0.0/0 | 22 |
+| tcp | ingress |  0.0.0.0/0 | 80 |
+| tcp | ingress |  0.0.0.0/0 | 443 |
+| tcp | ingress |  0.0.0.0/0 | 5900-5903 |
+| tcp | ingress |  0.0.0.0/0 | 8888 |
+
+!!! note
+    The "virtual machine's CIDR" refers to the CIDR used to create virtual machines. For instance, consider a network with a subnet having CIDR 11.11.11.0/24 is used to create virutal machines for the cluster. In this case, the virtual machine's CIDR should be set to 11.11.11.0/24.
 
 The documentation includes instructions for [importing an image to Openstack](../get-solo/openstack.md), and guides for setting up the other prerequisites can be found in the [Openstack documentation](https://docs.openstack.org)
 
