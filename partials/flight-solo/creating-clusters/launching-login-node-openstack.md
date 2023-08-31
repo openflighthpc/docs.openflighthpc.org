@@ -10,17 +10,18 @@ Before setting up a cluster on Openstack, there are several required prerequisit
 
 | Protocol   |      Direction      |  CIDR | Port Range |
 |:----------:|:-------------:|:------:|:------:|
-| any | egress | 0.0.0.0/0  | any |
-| any | ingress  |   virtual machine's cidr | any|
-| icmp | ingress |  0.0.0.0/0 | any |
-| ssh | ingress |  0.0.0.0/0 | 22 |
-| tcp | ingress |  0.0.0.0/0 | 80 |
-| tcp | ingress |  0.0.0.0/0 | 443 |
-| tcp | ingress |  0.0.0.0/0 | 5900-5903 |
-| tcp | ingress |  0.0.0.0/0 | 8888 |
+| Any | egress | 0.0.0.0/0  | any |
+| Any | ingress  |   virtual machine's cidr | any|
+| ICMP | ingress |  0.0.0.0/0 | any |
+| SSH | ingress |  0.0.0.0/0 | 22 |
+| TCP | ingress |  0.0.0.0/0 | 80 |
+| TCP | ingress |  0.0.0.0/0 | 443 |
+| TCP | ingress |  0.0.0.0/0 | 5900-5903 |
+| TCP | ingress |  0.0.0.0/0 | 8888 |
 
 !!! note
-    The "virtual machine's CIDR" refers to the CIDR used to create virtual machines. For instance, consider a network with a subnet having CIDR 11.11.11.0/24 is used to create virutal machines for the cluster. In this case, the virtual machine's CIDR should be set to 11.11.11.0/24.
+    The "Virtual Network CIDR" is the subnet and netmask for the network that the nodes are using. For example, a node on the 11.11.11.0 network with a netmask of 255.255.255.0 would have a network CIDR of 11.11.11.0/24.
+
 
 The documentation includes instructions for [importing an image to Openstack](../get-solo/openstack.md), and guides for setting up the other prerequisites can be found in the [Openstack documentation](https://docs.openstack.org)
 
