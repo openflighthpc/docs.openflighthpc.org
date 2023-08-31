@@ -11,7 +11,7 @@ Before setting up a cluster on Openstack, there are several required prerequisit
 | Protocol   |      Direction      |  CIDR | Port Range |
 |:----------:|:-------------:|:------:|:------:|
 | Any | egress | 0.0.0.0/0  | any |
-| Any | ingress  |   virtual machine's cidr | any|
+| Any | ingress  |   Virtual Network CIDR | any|
 | ICMP | ingress |  0.0.0.0/0 | any |
 | SSH | ingress |  0.0.0.0/0 | 22 |
 | TCP | ingress |  0.0.0.0/0 | 80 |
