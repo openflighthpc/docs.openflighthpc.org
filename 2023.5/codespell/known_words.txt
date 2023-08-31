@@ -96,3 +96,4 @@ ldconfig
 uptime
 tmp
 systemd
+cidr
