@@ -79,6 +79,8 @@
         left: -14rem !important;
         top: 0 !important;
         display: block !important;
+        max-height: 100vh;
+        position: fixed;
     }
 
     .md-sidebar--primary .top-level {

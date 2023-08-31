@@ -4,9 +4,10 @@
 
 .cloud {
     width: 20vw;
-    min-width: 15rem;
+    min-width: 17rem;
     position: absolute;
     bottom: 0;
+    height: auto;
 }
 
 .parting-cloud {
