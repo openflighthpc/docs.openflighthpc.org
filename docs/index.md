@@ -96,8 +96,8 @@ search:
 </section>
 <div id="footer-container" class="home-block">
   <div class="footer">
-    <img id="cloud-l" class="cloud parting-cloud" src="assets/images/parting_cloud_l.png">
+    <img id="cloud-l" class="cloud parting-cloud" src="assets/images/parting_cloud_l.svg">
     <img class="footer-logo" src="assets/images//openflighthpc_grey.png">
-    <img id="cloud-r" class="cloud parting-cloud" src="assets/images/parting_cloud_r.png">
+    <img id="cloud-r" class="cloud parting-cloud" src="assets/images/parting_cloud_r.svg">
   </div>
 </div>
