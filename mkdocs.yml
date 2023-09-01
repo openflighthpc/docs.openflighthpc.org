@@ -150,7 +150,7 @@ nav:
 theme:
   name: material
   custom_dir: custom_theme/
-  logo: assets/images/openflighthpc_logo.png
+  logo: assets/images/openflighthpc_white.svg
   features:
     - content.code.annotate
     - navigation.sections

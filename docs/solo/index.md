@@ -35,7 +35,7 @@ search:
          target="_blank"
       >
         <img class="solo-icon"
-             src="../assets/images/solo_logo.png">
+             src="../assets/images/solo_logo.svg">
         <h2 class="card-text">AWS</h2>
         <p class="card-text">
           Go to AWS marketplace and start a Flight Solo instance.

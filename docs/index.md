@@ -20,7 +20,7 @@ search:
   </div>
 </section>
 <section id="mission-block" class="home-block">
-  <img id="cloud-bar" src="assets/images/cloud_bar.png">
+  <img id="cloud-bar" src="assets/images/cloud_bar.svg">
   <div id="mission-container">
     <div id="mission-text">
       <h1>The openflight mission:</h1>
@@ -30,14 +30,14 @@ search:
         to minimise the skill gaps to utilising HPC systems.
       </p>
     </div>
-    <img id="mission-bumcloud" src="assets/images/bumcloud_white.png">
+    <img id="mission-bumcloud" src="assets/images/bumcloud_white.svg">
   </div>
 </section>
 <section id="tools-block" class="home-block">
   <h1>Open source tools</h1>
   <div id="tools-container">
     <div class="tool">
-      <img src="assets/images/user_suite.png">
+      <img src="assets/images/user_suite.svg">
       <div>
         <h2>User suite</h2>
         <p>
@@ -47,7 +47,7 @@ search:
       <a class="button" href="docs/flight-environment/use-flight/flight-user-suite">LEARN MORE</a>
     </div>
     <div class="tool">
-      <img src="assets/images/web_suite.png">
+      <img src="assets/images/web_suite.svg">
       <div>
         <h2>Web suite</h2>
         <p>
@@ -57,7 +57,7 @@ search:
       <a class="button" href="docs/flight-environment/use-flight/flight-web-suite">LEARN MORE</a>
     </div>
     <div class="tool">
-      <img src="assets/images/solo_logo.png">
+      <img src="assets/images/solo_logo.svg">
       <div>
         <h2>Flight Solo</h2>
         <p>
@@ -78,7 +78,7 @@ search:
       in a greener workflow.
     </p>
 </div>
-<img src="assets/images/green_hpc.png">
+<img src="assets/images/green_hpc_2.svg">
   </div>
 </section>
 <section id="ready-block" class="home-block">
@@ -97,7 +97,7 @@ search:
 <div id="footer-container" class="home-block">
   <div class="footer">
     <img id="cloud-l" class="cloud parting-cloud" src="assets/images/parting_cloud_l.svg">
-    <img class="footer-logo" src="assets/images//openflighthpc_grey.png">
+    <img class="footer-logo" src="assets/images/openflighthpc_grey.svg">
     <img id="cloud-r" class="cloud parting-cloud" src="assets/images/parting_cloud_r.svg">
   </div>
 </div>

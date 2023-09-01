@@ -74,6 +74,7 @@
     margin-top: 1rem;
     margin-bottom: 1rem;
     max-height: 15rem;
+    width: 100%;
 }
 
 #tools-block {
@@ -204,11 +205,16 @@
 }
 
 .footer-logo {
-    max-height: 2rem;
-    margin: 1rem 0.4rem 0.4rem;
+    align-self: flex-end;
+    max-height: 2.2rem;
+    margin-bottom: 0.6rem;
 }
 
 @media screen and (max-width: 76.1875em) {
+    html, body {
+        overflow-x: hidden;
+    }
+
     #home-header {
         font-size: 2.5rem !important;
     }
@@ -307,11 +313,11 @@
     }
 
     #cloud-l.parting-cloud {
-        content: url('../assets/images/low_cloud_l.png');
+        content: url('../assets/images/low_cloud_l.svg');
     }
 
     #cloud-r.parting-cloud {
-        content: url('../assets/images/low_cloud_r.png');
+        content: url('../assets/images/low_cloud_r.svg');
     }
 
     .footer-logo {
