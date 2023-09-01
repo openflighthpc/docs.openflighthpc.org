@@ -241,7 +241,7 @@
         align-items: center;
     }
 
-    #home-text h1, h2 {
+    #home-text h1, #home-text h2 {
         text-align: center;
     }
 
