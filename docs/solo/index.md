@@ -30,7 +30,7 @@ search:
         >
         <h2 class="card-text">Read the docs</h2>
         <p class="card-text">
-          Find out how to start using Flight Solo by reading the openflight documentation.
+          Find out how to start using Flight Solo by reading the Openflight documentation.
         </p>
       </a>
       <a class="solo-card"
