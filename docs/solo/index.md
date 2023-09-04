@@ -24,7 +24,7 @@ search:
       <a class="solo-card"
          href="../docs/flight-solo">
         <img 
-          alt="Documentation icon"
+          alt=""
           class="solo-icon"
           src="assets/images/docs.png"
         >
@@ -38,7 +38,7 @@ search:
          target="_blank"
       >
         <img 
-          alt="Flight Solo icon"
+          alt=""
           class="solo-icon"
           src="../assets/images/solo_logo.svg"
         >
@@ -52,7 +52,7 @@ search:
          target="_blank"
       >
         <img 
-          alt="Download icon"
+          alt=""
           class="solo-icon"
           src="assets/images/download.png"
         >

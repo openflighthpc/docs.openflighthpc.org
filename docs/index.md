@@ -10,12 +10,12 @@ search:
   <div id="home-image-container">
     <img
       id="home-image" 
-      alt="Openflight HPC providing cloud computing solutions" 
+      alt="" 
       src="assets/images/OF_home.png"
     >
     <img 
       id="home-image-narrow" 
-      alt="Openflight HPC providing cloud computing solutions" 
+      alt="" 
       src="assets/images/OF_home_bottom.png"
     >
   </div>
@@ -30,7 +30,7 @@ search:
 <section id="mission-block" class="home-block">
   <img 
     id="cloud-bar" 
-    alt="Layer of white clouds"
+    alt=""
     src="assets/images/cloud_bar.svg"
   >
   <div id="mission-container">
@@ -44,7 +44,7 @@ search:
     </div>
     <img 
       id="mission-bumcloud" 
-      alt="The Openflight bumcloud"
+      alt=""
       src="assets/images/bumcloud_white.svg"
     >
   </div>
@@ -54,7 +54,7 @@ search:
   <div id="tools-container">
     <div class="tool">
       <img 
-        alt="User suite icon"
+        alt=""
         src="assets/images/user_suite.svg"
       >
       <div>
@@ -67,7 +67,7 @@ search:
     </div>
     <div class="tool">
       <img 
-        alt="Web suite icon"
+        alt=""
         src="assets/images/web_suite.svg"
       >
       <div>
@@ -80,7 +80,7 @@ search:
     </div>
     <div class="tool">
       <img 
-        alt="Flight Solo icon"
+        alt=""
         src="assets/images/solo_logo.svg"
       >
       <div>
@@ -95,16 +95,16 @@ search:
 </section>
 <section id="green-block" class="home-block">
   <div id="green-container">
-<div>
-    <h1>Greener HPC</h1>
-    <p>
-      The project aims to inform the community of methods for defining their 
-      computational requirements. This can reduce computational waste, resulting 
-      in a greener workflow.
-    </p>
-</div>
-<img alt="Green HPC"
-     src="assets/images/green_hpc.svg">
+    <div>
+        <h1>Greener HPC</h1>
+        <p>
+          The project aims to inform the community of methods for defining their 
+          computational requirements. This can reduce computational waste, resulting 
+          in a greener workflow.
+        </p>
+    </div>
+    <img alt=""
+         src="assets/images/green_hpc.svg">
   </div>
 </section>
 <section id="ready-block" class="home-block">
@@ -124,17 +124,17 @@ search:
   <div class="footer">
     <img 
       id="cloud-l" 
-      alt="Parting cloud"
+      alt=""
       class="cloud parting-cloud" src="assets/images/parting_cloud_l.svg"
     >
     <img 
-      alt="Openflight HPC logo"
+      alt=""
       class="footer-logo" 
       src="assets/images/openflighthpc_grey.svg"
     >
     <img 
       id="cloud-r" 
-      alt="Parting cloud"
+      alt=""
       class="cloud parting-cloud" src="assets/images/parting_cloud_r.svg"
     >
   </div>

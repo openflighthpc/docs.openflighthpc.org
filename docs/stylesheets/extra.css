@@ -71,11 +71,13 @@ html {
   --md-primary-fg-color: var(--header-grey);
   --md-accent-fg-color: var(--alces-blue);
   --md-typeset-color: var(--alces-grey);
+  --md-default-fg-color--light: var(--title-grey);
 }
 
 :root {
   --alces-blue: #2693D7;
-  --alces-grey: #586674;
+  --alces-grey: #4e5a66;
+  --title-grey: #687888;
   --header-grey: #191919;
   --button-navy: #2B3966;
   --sky-blue-grey: #DCEEF5;

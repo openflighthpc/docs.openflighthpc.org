@@ -1,3 +1,7 @@
+---
+  title: "Documentation"
+---
+
 # Welcome to the OpenFlight Knowledgebase
 
 OpenFlight is currently refactoring it's documentation to provide a better user experience, expand the content and improve access to the knowledge within.
