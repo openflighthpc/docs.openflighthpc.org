@@ -159,24 +159,6 @@ theme:
     - navigation.top
     - search.suggest
     - search.highlight
-  palette:    
-    # Palette toggle for automatic mode
-    - scheme: alces
-      toggle:
-        icon: material/brightness-auto
-        name: Switch to light mode
-
-    # Palette toggle for light mode
-    - scheme: alces
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-
-    # Palette toggle for dark mode
-    - scheme: alces
-      toggle:
-        icon: material/brightness-4
-        name: Switch to system preference
 extra:
   version:
     provider: mike
