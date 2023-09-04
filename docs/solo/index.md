@@ -65,3 +65,4 @@ search:
   </div>
   <div class="md-sidebar md-sidebar--secondary"></div>
 </div>
+<div class="md-header__topic"></div>
