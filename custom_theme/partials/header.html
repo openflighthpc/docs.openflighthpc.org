@@ -43,7 +43,9 @@
             aria-label="{{ config.site_name }}"
             data-md-component="logo"
     >
-      <img class="header-image logo" src="{{ base_url }}/{{ config.theme.logo }}">
+      <img alt="Openflight HPC"
+           class="header-image logo"
+           src="{{ base_url }}/{{ config.theme.logo }}">
     </a>
 
     <div id="header-nav-links">
@@ -126,11 +128,16 @@
       {% endif %}
 
       <a href="https://github.com/openflighthpc" title="Go to openflightHPC Github repo" target="_blank">
-        <img id="github-logo" class="md-header__button" src="{{ base_url }}/assets/images/github-mark-white.svg">
+        <img id="github-logo"
+             alt="Github logo"
+             class="md-header__button"
+             src="{{ base_url }}/assets/images/github-mark-white.svg">
       </a>
 
       <a id="alces-link" href="https://alces-flight.com" target="_blank">
-        <img class="header-image" src="{{ base_url }}/assets/images/poweredby_white.svg">
+        <img alt="Powered by Alces Flight Ltd"
+             class="header-image"
+             src="{{ base_url }}/assets/images/poweredby_white.svg">
       </a>
     </div>
 

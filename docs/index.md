@@ -8,8 +8,16 @@ search:
 
 <section id="home-container" class="home-block no-tabs no-footer">
   <div id="home-image-container">
-    <img id="home-image" src="assets/images/OF_home.png">
-    <img id="home-image-narrow" src="assets/images/OF_home_bottom.png">
+    <img
+      id="home-image" 
+      alt="Openflight HPC providing cloud computing solutions" 
+      src="assets/images/OF_home.png"
+    >
+    <img 
+      id="home-image-narrow" 
+      alt="Openflight HPC providing cloud computing solutions" 
+      src="assets/images/OF_home_bottom.png"
+    >
   </div>
   <div id="home-text">
     <h1 id="home-header">HPC for <span class="blue-text">everyone</span></h1>
@@ -20,7 +28,11 @@ search:
   </div>
 </section>
 <section id="mission-block" class="home-block">
-  <img id="cloud-bar" src="assets/images/cloud_bar.svg">
+  <img 
+    id="cloud-bar" 
+    alt="Layer of white clouds"
+    src="assets/images/cloud_bar.svg"
+  >
   <div id="mission-container">
     <div id="mission-text">
       <h1>The openflight mission:</h1>
@@ -30,14 +42,21 @@ search:
         to minimise the skill gaps to utilising HPC systems.
       </p>
     </div>
-    <img id="mission-bumcloud" src="assets/images/bumcloud_white.svg">
+    <img 
+      id="mission-bumcloud" 
+      alt="The Openflight bumcloud"
+      src="assets/images/bumcloud_white.svg"
+    >
   </div>
 </section>
 <section id="tools-block" class="home-block">
   <h1>Open source tools</h1>
   <div id="tools-container">
     <div class="tool">
-      <img src="assets/images/user_suite.svg">
+      <img 
+        alt="User suite icon"
+        src="assets/images/user_suite.svg"
+      >
       <div>
         <h2>User suite</h2>
         <p>
@@ -47,7 +66,10 @@ search:
       <a class="button" href="docs/flight-environment/use-flight/flight-user-suite">LEARN MORE</a>
     </div>
     <div class="tool">
-      <img src="assets/images/web_suite.svg">
+      <img 
+        alt="Web suite icon"
+        src="assets/images/web_suite.svg"
+      >
       <div>
         <h2>Web suite</h2>
         <p>
@@ -57,7 +79,10 @@ search:
       <a class="button" href="docs/flight-environment/use-flight/flight-web-suite">LEARN MORE</a>
     </div>
     <div class="tool">
-      <img src="assets/images/solo_logo.svg">
+      <img 
+        alt="Flight Solo icon"
+        src="assets/images/solo_logo.svg"
+      >
       <div>
         <h2>Flight Solo</h2>
         <p>
@@ -78,7 +103,8 @@ search:
       in a greener workflow.
     </p>
 </div>
-<img src="assets/images/green_hpc_2.svg">
+<img alt="Green HPC"
+     src="assets/images/green_hpc.svg">
   </div>
 </section>
 <section id="ready-block" class="home-block">
@@ -96,8 +122,20 @@ search:
 </section>
 <div id="footer-container" class="home-block">
   <div class="footer">
-    <img id="cloud-l" class="cloud parting-cloud" src="assets/images/parting_cloud_l.svg">
-    <img class="footer-logo" src="assets/images/openflighthpc_grey.svg">
-    <img id="cloud-r" class="cloud parting-cloud" src="assets/images/parting_cloud_r.svg">
+    <img 
+      id="cloud-l" 
+      alt="Parting cloud"
+      class="cloud parting-cloud" src="assets/images/parting_cloud_l.svg"
+    >
+    <img 
+      alt="Openflight HPC logo"
+      class="footer-logo" 
+      src="assets/images/openflighthpc_grey.svg"
+    >
+    <img 
+      id="cloud-r" 
+      alt="Parting cloud"
+      class="cloud parting-cloud" src="assets/images/parting_cloud_r.svg"
+    >
   </div>
 </div>
