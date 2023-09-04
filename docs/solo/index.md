@@ -11,7 +11,11 @@ search:
   <div class="md-sidebar md-sidebar--primary"></div>
   <div class="solo-content">
     <h1>
-      Flight Solo
+      <img 
+        alt="Flight Solo" 
+        class="header-image"
+        src="../assets/images/solo_title.svg"
+      >
     </h1>
     <div id="solo-main-text">
       <p>
