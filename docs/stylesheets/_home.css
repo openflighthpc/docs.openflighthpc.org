@@ -241,8 +241,12 @@
         align-items: center;
     }
 
-    #home-text h1, #home-text h2 {
+    #home-header, #home-text h2 {
         text-align: center;
+    }
+
+    #home-text {
+        z-index: 2;
     }
 
     #home-subheader {
@@ -251,8 +255,10 @@
 
     #home-image-narrow {
         display: block;
-        width: 80vw;
+        width: 75vw;
         max-width: 20rem;
+        position: relative;
+        top: -2rem;
     }
 
     #home-image {

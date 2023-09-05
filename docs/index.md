@@ -16,7 +16,7 @@ search:
     <img 
       id="home-image-narrow" 
       alt="" 
-      src="assets/images/OF_home_bottom.png"
+      src="assets/images/OF_home_narrow.png"
     >
   </div>
   <div id="home-text">
