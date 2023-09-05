@@ -239,18 +239,19 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    #home-header, #home-text h2 {
         text-align: center;
-    }
-
-    #home-text {
         z-index: 2;
     }
 
+    #home-header {
+        font-size: 2rem !important;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
     #home-subheader {
-        margin-bottom: 2.5rem;
+        font-size: 1.1rem !important;
+        margin-bottom: 1rem;
     }
 
     #home-image-narrow {
