@@ -6,6 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
   if (document.querySelector('.no-tabs')) {
     document.querySelector('.md-nav__list.sub-level').style.display = 'none';
     document.getElementById('version-container').style.display = 'none';
+  } else {
+    document.querySelector('.md-banner--warning').style.display = 'block';
   }
   if (document.querySelector('.solo-container')) {
     populateNav();

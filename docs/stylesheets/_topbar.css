@@ -58,6 +58,10 @@ header {
     margin: 0.8rem;
 }
 
+.md-banner--warning {
+    display: none;
+}
+
 #tabs {
     display: none;
     justify-content: space-between;
