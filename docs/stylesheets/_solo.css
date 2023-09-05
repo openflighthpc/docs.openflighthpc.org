@@ -73,7 +73,7 @@
 }
 
 .solo-card:hover img {
-    filter: brightness(2) saturate(4);
+    filter: brightness(0) invert(1);
 }
 
 .solo-card:hover h2, .solo-card:hover p {

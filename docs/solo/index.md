@@ -14,7 +14,7 @@ search:
       <img 
         alt="Flight Solo" 
         class="header-image"
-        src="../assets/images/solo_title.svg"
+        src="assets/images/solo_title.svg"
       >
     </h1>
     <div id="solo-main-text">
@@ -30,7 +30,7 @@ search:
         <img 
           alt=""
           class="solo-icon"
-          src="assets/images/docs.png"
+          src="assets/images/docs.svg"
         >
         <h2 class="card-text">Read the docs</h2>
         <p class="card-text">
@@ -58,7 +58,7 @@ search:
         <img 
           alt=""
           class="solo-icon"
-          src="assets/images/download.png"
+          src="assets/images/download.svg"
         >
         <h2 class="card-text">Download</h2>
         <p class="card-text">
