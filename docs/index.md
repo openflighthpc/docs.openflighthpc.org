@@ -35,9 +35,9 @@ search:
   >
   <div id="mission-container">
     <div id="mission-text">
-      <h1>The openflight mission:</h1>
+      <h1>The OpenFlight mission:</h1>
       <p>
-        The openflight project seeks to provide HPC workflow knowledge 
+        The OpenFlight project seeks to provide HPC workflow knowledge 
         to the community for a range of subjects, applications and workloads 
         to minimise the skill gaps to utilising HPC systems.
       </p>
@@ -111,7 +111,7 @@ search:
   <div id="ready-container">
     <h1>Ready to get started?</h1>
     <p>
-      Begin creating your HPC solution by reading the Openflight documentation 
+      Begin creating your HPC solution by reading the OpenFlight documentation 
       or start creating a cluster with Flight Solo.
     </p>
     <div id="ready-buttons">

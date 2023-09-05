@@ -50,7 +50,7 @@ function populateNav() {
             data-md-component="logo"
             style="display: block;"
           >
-            <img alt="Openflight HPC"
+            <img alt="OpenFlight HPC"
                  src="../assets/images/openflighthpc_grey.svg">
           </a>
         </label>

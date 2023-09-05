@@ -34,7 +34,7 @@ search:
         >
         <h2 class="card-text">Read the docs</h2>
         <p class="card-text">
-          Find out how to start using Flight Solo by reading the Openflight documentation.
+          Find out how to start using Flight Solo by reading the OpenFlight documentation.
         </p>
       </a>
       <a class="solo-card"
@@ -62,7 +62,7 @@ search:
         >
         <h2 class="card-text">Download</h2>
         <p class="card-text">
-          Download the Flight Solo image from the Openflight repository.
+          Download the Flight Solo image from the OpenFlight repository.
         </p>
       </a>
     </div>
