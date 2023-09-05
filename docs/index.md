@@ -6,17 +6,12 @@ search:
   exclude: true
 ---
 
-<section id="home-container" class="home-block no-tabs no-footer">
+<section id="landing-block" class="home-block no-tabs no-footer">
   <div id="home-image-container">
     <img
       id="home-image" 
       alt="" 
       src="assets/images/OF_home.png"
-    >
-    <img 
-      id="home-image-narrow" 
-      alt="" 
-      src="assets/images/OF_home_narrow.png"
     >
   </div>
   <div id="home-text">
@@ -27,12 +22,14 @@ search:
     <a class="button big-text" href="#mission-container">FIND OUT MORE</a>
   </div>
 </section>
-<section id="mission-block" class="home-block">
-  <img 
+<section id="cloud-block" class="home-block">
+<img
     id="cloud-bar" 
     alt=""
     src="assets/images/cloud_bar.svg"
   >
+</section>
+<section class="home-block">
   <div id="mission-container">
     <div id="mission-text">
       <h1>The OpenFlight mission:</h1>
@@ -95,7 +92,7 @@ search:
 </section>
 <section id="green-block" class="home-block">
   <div id="green-container">
-    <div>
+    <div id="green-text">
         <h1>Greener HPC</h1>
         <p>
           The project aims to inform the community of methods for defining their 
@@ -103,8 +100,10 @@ search:
           in a greener workflow.
         </p>
     </div>
-    <img alt=""
-         src="assets/images/green_hpc.svg">
+    <img
+      alt=""
+      src="assets/images/green_hpc.svg"
+    >
   </div>
 </section>
 <section id="ready-block" class="home-block">
@@ -120,8 +119,8 @@ search:
     </div>
   </div>
 </section>
-<div id="footer-container" class="home-block">
-  <div class="footer">
+<div id="home-footer-block" class="home-block footer">
+  <div id="home-footer-container">
     <img 
       id="cloud-l" 
       alt=""
@@ -129,7 +128,7 @@ search:
     >
     <img 
       alt=""
-      class="footer-logo" 
+      id="home-footer-logo"
       src="assets/images/openflighthpc_grey.svg"
     >
     <img 
