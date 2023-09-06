@@ -3,7 +3,7 @@
     align-items: center;
     position: relative;
     left: -1.2rem;
-    top: -1.2rem;
+    top: -1rem;
     width: 100vw;
     min-height: 75vh;
 }
@@ -80,6 +80,12 @@
     color: white;
 }
 
+@media screen and (max-width: 76.25em) {
+    #solo-sidebar {
+        position: static;
+    }
+}
+
 @media screen and (max-width: 59.9375em) {
     .solo-container {
         background-image: linear-gradient(var(--sky-blue-grey), white);
@@ -92,5 +98,9 @@
 
     #solo-main-text {
         margin-bottom: 0;
+    }
+
+    #solo-sidebar {
+        position: fixed;
     }
 }

@@ -2,7 +2,7 @@
     min-height: 75vh;
     padding-inline: 1rem;
     flex-basis: 14rem;
-    flex-shrink: 1;
+    flex-shrink: 2;
     background-image: linear-gradient(var(--sky-blue-grey), white);
     top: 4.3rem !important;
     width: 14rem;

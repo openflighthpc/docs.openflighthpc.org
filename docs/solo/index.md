@@ -8,7 +8,7 @@ search:
 ---
 
 <div class="solo-container no-tabs">
-  <div class="md-sidebar md-sidebar--primary"></div>
+  <div id="solo-sidebar" class="md-sidebar md-sidebar--primary"></div>
   <div class="solo-content">
     <h1>
       <img 
