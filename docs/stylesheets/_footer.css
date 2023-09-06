@@ -1,5 +1,9 @@
-#footer {
+#footer-container {
     display: none;
+}
+
+.footer {
+    height: 4rem !important;
 }
 
 .cloud {
