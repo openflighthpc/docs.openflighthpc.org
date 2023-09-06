@@ -136,7 +136,7 @@
         width: 100%;
         margin-top: 1.2rem;
         flex-grow: 0;
-        flex-basis: var(--header-height);
+        flex-basis: 5rem;
     }
 
     #version-container .md-header__topic {
