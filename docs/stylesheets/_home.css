@@ -26,7 +26,7 @@
 }
 
 #home-image {
-    max-height: 35rem !important;
+    max-height: 33rem !important;
 }
 
 #home-text {
@@ -243,7 +243,7 @@
     }
 
     #home-image {
-        content: url('../assets/images/OF_home_narrow.png');
+        content: url('../assets/images/OF_home_narrow.svg');
         display: block;
         width: 75vw;
         max-width: 20rem;

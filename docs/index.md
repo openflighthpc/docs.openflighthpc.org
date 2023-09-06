@@ -11,7 +11,7 @@ search:
     <img
       id="home-image" 
       alt="" 
-      src="assets/images/OF_home.png"
+      src="assets/images/OF_home.svg"
     >
   </div>
   <div id="home-text">
