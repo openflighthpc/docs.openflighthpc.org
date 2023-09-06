@@ -152,8 +152,7 @@
 
 #ready-block {
     background-color: white;
-    padding-top: 1rem;
-    padding-bottom: 2rem;
+    padding: 1rem var(--home-inline-padding) 2rem;
     text-align: center;
 }
 
