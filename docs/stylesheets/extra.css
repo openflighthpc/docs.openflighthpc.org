@@ -67,13 +67,6 @@ html {
   }
 }
 
-[data-md-color-scheme="alces"] {
-  --md-primary-fg-color: var(--header-grey);
-  --md-accent-fg-color: var(--alces-blue);
-  --md-typeset-color: var(--alces-grey);
-  --md-default-fg-color--light: var(--title-grey);
-}
-
 :root {
   --alces-blue: #2693D7;
   --alces-grey: #4e5a66;
@@ -83,4 +76,8 @@ html {
   --sky-blue-grey: #DCEEF5;
   --light-blue: #CDEFFF;
   --home-sky-dark: #E1F2FA;
+  --md-primary-fg-color: var(--header-grey);
+  --md-accent-fg-color: var(--alces-blue);
+  --md-typeset-color: var(--alces-grey);
+  --md-default-fg-color--light: var(--title-grey);
 }
