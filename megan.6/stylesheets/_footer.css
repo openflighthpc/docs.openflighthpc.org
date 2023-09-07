@@ -1,0 +1,34 @@
+#footer-container {
+    display: none;
+}
+
+.footer {
+    height: 4rem !important;
+}
+
+.cloud {
+    width: 20vw;
+    min-width: 17rem;
+    position: absolute;
+    bottom: 0;
+    height: auto;
+    display: block;
+}
+
+.parting-cloud {
+    width: 35vw;
+}
+
+#cloud-l {
+    left: 0;
+}
+
+#cloud-r {
+    right: 0;
+}
+
+@media screen and (max-width: 76.1875em) {
+    .footer {
+        height: 6rem !important;
+    }
+}
