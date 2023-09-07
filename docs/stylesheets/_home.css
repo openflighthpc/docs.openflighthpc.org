@@ -15,7 +15,7 @@
     justify-content: space-between;
     min-height: 75vh;
     align-items: center;
-    padding-inline: var(--home-inline-padding);
+    padding: 1.5rem var(--home-inline-padding);
 }
 
 #home-image-container {
@@ -31,7 +31,7 @@
 
 #home-text {
     flex-basis: 60%;
-    margin: 10rem 0 5rem 5vw;
+    margin: 8.5rem 0 3.5rem 5vw;
     text-align: end;
     align-self: center;
     max-width: 40rem;
@@ -198,12 +198,17 @@
         overflow-x: hidden;
     }
 
+    #home-text {
+        margin: 5rem 0 2rem 2vw;
+    }
+
     #home-header {
         font-size: 2.5rem !important;
     }
 
     #home-subheader {
         font-size: 1.2rem;
+        margin-bottom: 2rem;
     }
 }
 
@@ -214,7 +219,9 @@
     }
 
     #landing-block {
-        flex-wrap: wrap-reverse;
+        flex-direction: column-reverse;
+        min-height: auto;
+        padding-bottom: 0.5rem;
     }
 
     #landing-block div {
@@ -248,7 +255,7 @@
         width: 75vw;
         max-width: 20rem;
         position: relative;
-        top: -2rem;
+        top: -1rem;
     }
 
     #mission-block {
@@ -303,6 +310,12 @@
 @media screen and (max-width: 25em) {
     #ready-buttons {
         flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-height: 50em) {
+    #landing-block {
+        padding-top: 0;
     }
 }
 
