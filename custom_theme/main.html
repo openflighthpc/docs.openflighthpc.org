@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block tabs%}
+<div id="tabs">
+  <label class="md-header__button md-icon" for="__drawer">
+    {% include ".icons/material/chevron-double-right" ~ ".svg" %}
+  </label>
+
+  {{ super() }}
+
+  <div class="search-container">
+    {% if "material/search" in config.plugins %}
+    <label class="md-header__button md-icon" for="__search">
+      {% include ".icons/material/magnify.svg" %}
+    </label>
+    {% include "partials/search.html" %}
+    {% endif %}
+  </div>
+</div>
+
+<label id="search-overlay" class="md-search__overlay" for="__search"></label>
+
+<div id="blue-bar"></div>
+
+{% endblock %}
+
+{% block outdated %}
+You're not viewing the latest stable version of the documentation.
+<a href="{{ '../' ~ base_url }}">
+  <strong>Click here to go to latest.</strong>
+</a>
+{% endblock %}
