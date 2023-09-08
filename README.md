@@ -101,12 +101,12 @@ Using `mike` we can deploy documentation with version tagging
 
 - Deploy WIP data to `staging` 
 ```
-mike deploy --push --update-aliases 20XX.Y staging
+mike deploy --push --no-redirect --update-aliases 20XX.Y staging
 ```
 
 - Deploy a new stable version of documentation
 ```
-mike deploy --push --update-aliases 20XX.Y latest
+mike deploy --push --no-redirect --update-aliases 20XX.Y latest
 ```
 
 - Removing staging tag upon release to latest 
