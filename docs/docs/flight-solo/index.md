@@ -13,11 +13,3 @@ Built on EL8, loaded with the [Flight Environment](../flight-environment/index.m
 - Proof-of-concept cloud HPC environments
 - Evaluating the Flight Environment
 
-## What Should Be Here?
-
-This should contain: 
-
-- Cluster Build Methods // Creating Clusters with Flight Solo
-    - Tidied up a bit to be easier to navigate reference (see modular page)
-- Cluster Build Workflows 
-    - Example with specific use-cases / user-data (connected to running workflows add the end) 
