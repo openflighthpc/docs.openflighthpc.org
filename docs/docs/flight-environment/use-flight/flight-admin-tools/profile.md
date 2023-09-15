@@ -197,7 +197,7 @@ Profile can automatically apply an identity to a node with the auto-apply config
 
 ## Auto-remove
 
-Profile can automatically remove nodes when they are shutdown, additionally it can remove them from the hunter inventory when they are successfully removed. This setup, coupled with auto-apply, can create a cluster that dynamically grows and shrinks with an autoscaling group on various cloud platforms. 
+Profile can automatically remove nodes when they are shutdown, additionally it can remove them from the hunter inventory when they are successfully removed. This setup, coupled with auto-apply, can create a cluster that dynamically grows and shrinks with an auto-scaling group on various cloud platforms. 
 
 ### Setup Auto-remove
 
@@ -213,7 +213,4 @@ Profile can automatically remove nodes when they are shutdown, additionally it c
     ```
 
 Now when a node has an identity applied to it then the service to automatically trigger removal on shutdown will be added to it. Further to this, when the node is successfully removed then the corresponding hunter entry will also be removed. 
-
-
-
 
