@@ -38,6 +38,10 @@ When `flight profile configure` is run, the user will be guided through a series
           "cluster_name": "my-cluster",
           "nfs_server": "login1",
           "slurm_server": "login1",
+          "ipa_use": "true",
+          "ipa_server": "infra01",
+          "ipa_domain": "cluster.example.com",
+          "secure_admin_password": "MySecurePassword",
           "default_username": "flight",
           "default_password": "0penfl1ght",
           "access_host": "51.104.217.61",
@@ -84,6 +88,7 @@ Applies an identity to one or more nodes. e.g. `flight profile apply node01,node
 
 - `--force` - Overwrite the identity of a node that has already been applied to.
 - `--remove-on-shutdown` - Adds a systemd hook to the node which will trigger removal from the cluster on shutdown if the node's identity supports removal.
+- `--wait` - Don't background the process of removal 
 
 !!! tip
     You can select multiple nodes at once by writing a comma separated list, or with square bracket expansion (like [genders syntax](../../../hpc-environment-basics/linux-usage/genders-pdsh.md#creating-a-genders-file)). For example, `apply node[01-02] compute` would apply `compute` to `node01` and `node02`
@@ -144,6 +149,7 @@ Removes the identity of a node, so that it is no longer works as part of the clu
 
 - `--remove-hunter-entry` - Also remove it from the hunter list.
 - `--force` - Bypass restrictions on using `remove` on a node.
+- `--wait` - Don't background the process of removal 
 
 !!! note
     `remove` is limited to only some identities, so not all identities can be removed.
@@ -188,4 +194,26 @@ Profile can automatically apply an identity to a node with the auto-apply config
         ```
 3. Restart the hunter service with `flight service restart hunter`.
     - Alternatively, you can stop the hunter service with `flight service stop hunter` and then run `flight hunter hunt`.
+
+## Auto-remove
+
+Profile can automatically remove nodes when they are shutdown, additionally it can remove them from the hunter inventory when they are successfully removed. This setup, coupled with auto-apply, can create a cluster that dynamically grows and shrinks with an autoscaling group on various cloud platforms. 
+
+### Setup Auto-remove
+
+1. Open the file `/opt/flight/opt/hunter/etc/config.yml`
+
+    !!! note
+        You will need to have [root user permissions](../../../hpc-environment-basics/linux-usage/cli-basics/becoming-root.md) to edit this config file.
+
+1. Add the following lines:
+    ```yaml
+    remove_on_shutdown: true
+    remove_hunter_entry: true
+    ```
+
+Now when a node has an identity applied to it then the service to automatically trigger removal on shutdown will be added to it. Further to this, when the node is successfully removed then the corresponding hunter entry will also be removed. 
+
+
+
 
