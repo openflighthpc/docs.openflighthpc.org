@@ -101,6 +101,8 @@ There are some additional options that can be used with parse.
 - `--auto` - Automatically parses everything in the buffer list.
 - `--allow-existing` - Duplicate entries will replace existing ones rather than being rejected.
 - `--skip-used-index` - If there is already a node with particular label, then entering the a different node with the same label will increase the index to the next available one instead of throwing an error.
+- `--dry-run` - Print the generated node labels without actually parsing any nodes
+- `--default-label` - Set what the default label for a node should be if no label/prefix has been provided (either in the node presets or on the parse CLI). This can be one of `short` (use the short hostname of the node), `long` (use the FQDN of the node) and `blank` (do not generate any label) 
 
 !!! tip
     All the above options can be set in the Flight Hunter config file located within `etc/config.yml` in the installation directory (if installed through the package this will be at `/opt/flight/opt/hunter/etc/config.yml`). For more information on configuring Flight Tools see the [configuration document](../../get-flight/configure.md#filesystem-structure)
