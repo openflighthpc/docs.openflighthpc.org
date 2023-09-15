@@ -38,7 +38,7 @@ When `flight profile configure` is run, the user will be guided through a series
           "cluster_name": "my-cluster",
           "nfs_server": "login1",
           "slurm_server": "login1",
-          "ipa_use": "true",
+          "ipa_use": "false",
           "ipa_server": "infra01",
           "ipa_domain": "cluster.example.com",
           "secure_admin_password": "MySecurePassword",
