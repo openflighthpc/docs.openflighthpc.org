@@ -63,6 +63,11 @@ function populateNav() {
             </a>
           </li>
           <li>
+            <a href="../workshop">
+              FLIGHT WORKSHOP
+            </a>
+          </li>
+          <li>
             <a href="../docs">
               DOCUMENTATION
             </a>
