@@ -3,6 +3,7 @@
 @import '_nav.css';
 @import '_home.css';
 @import '_solo.css';
+@import '_workshop.css';
 @import '_footer.css';
 
 html {
@@ -49,6 +50,13 @@ html {
 .md-main__inner {
   max-width: 100% !important;
   margin: 0;
+}
+
+.full-width-container {
+  position: relative;
+  left: -1.2rem;
+  top: -1rem;
+  width: 100vw;
 }
 
 .narrow {

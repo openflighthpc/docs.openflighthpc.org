@@ -1,0 +1,8 @@
+.workshop-header {
+    background-image: linear-gradient(var(--sky-blue-grey), #ECF5F8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 11.5rem;
+}

@@ -7,7 +7,7 @@ search:
   exclude: true
 ---
 
-<div class="solo-container no-tabs">
+<div class="solo-container full-width-container no-tabs">
   <div id="solo-sidebar" class="md-sidebar md-sidebar--primary"></div>
   <div class="solo-content">
     <h1>
