@@ -59,6 +59,11 @@
     font-size: 0.9rem;
 }
 
+.template-back-link {
+    align-self: flex-start;
+    color: var(--alces-grey) !important;
+}
+
 @media screen and (max-width: 59.9375em) {
     #workshop {
         padding: 1rem;
@@ -66,5 +71,10 @@
 
     .workshop-header {
         padding-inline: 1rem;
+    }
+
+    .template-back-link {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 }
