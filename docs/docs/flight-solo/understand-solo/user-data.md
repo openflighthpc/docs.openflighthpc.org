@@ -79,7 +79,7 @@ The available options for the Flight Solo cloud-init file are as follows.
 
 ### `SHAREPUBKEY`
 
-: If set to true then this node will share the root user's pub ssh key over the local network on port 1234. This means that any solo images with `SERVER` set to this node will attempt to grab its public key to allow root SSH between your cluster.
+: If set then this node will share the root user's pub ssh key over the local network on port 1234. This means that any solo images with `SERVER` set to this node will attempt to grab its public key to allow root SSH between your cluster.
 
     ```bash title="Example Usage"
     SHAREPUBKEY=true
@@ -114,3 +114,11 @@ The available options for the Flight Solo cloud-init file are as follows.
 
     !!! note
         Many of these relate to command line options that are explained in more detail in the [Flight Hunter documentation](../../flight-environment/use-flight/flight-admin-tools/hunter.md).
+
+### `AUTOREMOVE`
+
+: If set then this will set automatic removal of nodes from `hunter` and `profile` upon shutdown. This is especially beneficial for auto-scaling scenarios where a node shutting down usually means the resource is being destroyed and therefore tidying it from the cluster environment is required.
+
+    ```bash title="Example Usage"
+    AUTOREMOVE=true
+    ```
