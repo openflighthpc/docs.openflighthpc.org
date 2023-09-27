@@ -7,6 +7,8 @@ search:
   exclude: true
 ---
 
+<script src="https://kit.fontawesome.com/5d76af6daa.js" crossorigin="anonymous"></script>
+
 <div class="no-tabs full-width-container">
   <div class="workshop-header">
     <h1>{{ title }}</h1>
@@ -24,11 +26,26 @@ search:
       src="../assets/images/template-icons/slurm_team.svg"
     >
     <ul class="template-stats card-text">
-      <li> U: &nbsp;&nbsp; 1 - 10 </li>
-      <li> L: &nbsp;&nbsp; 1 - 3 months </li>
-      <li> S: &nbsp;&nbsp; 1TB </li>
-      <li> E: &nbsp;&nbsp; $10 / day </li>
-      <li> C: &nbsp;&nbsp; Low </li>
+      <li> 
+        <i class="template-stats-icon fa-solid fa-users"></i>
+        <span> 1 - 10 </span>
+      </li>
+      <li> 
+        <i class="template-stats-icon fa-regular fa-clock"></i> 
+        <span> 1 - 3 months </span>
+      </li>
+      <li> 
+        <i class="template-stats-icon fa-solid fa-database"></i> 
+        <span> 1TB </span>
+      </li>
+      <li> 
+        <i class="template-stats-icon fa-solid fa-credit-card"></i> 
+        <span> $10 / day </span>
+      </li>
+      <li> 
+        <i class="template-stats-icon fa-solid fa-dumbbell"></i> 
+        <span> Low </span>
+      </li>
     </ul>
   </a>
 </div>
