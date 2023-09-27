@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     height: 11.5rem;
+    padding-inline: 2.5rem;
 }
 
 .workshop-header p {
@@ -16,6 +17,7 @@
     grid-template-columns: repeat(auto-fill, minmax(17.5rem, 1fr));
     grid-gap: 1rem;
     justify-content: space-between;
+    justify-items: center;
     padding: 2.5rem;
 }
 
@@ -29,6 +31,7 @@
     column-gap: 2rem;
     row-gap: 0.5rem;
     margin: 0 !important;
+    max-width: 24rem;
 }
 
 .template-header {
@@ -54,4 +57,14 @@
     margin-bottom: 0.3rem !important;
     font-weight: 300;
     font-size: 0.9rem;
+}
+
+@media screen and (max-width: 59.9375em) {
+    #workshop {
+        padding: 1rem;
+    }
+
+    .workshop-header {
+        padding-inline: 1rem;
+    }
 }

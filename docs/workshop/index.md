@@ -9,14 +9,14 @@ search:
 
 <div class="no-tabs full-width-container">
   <div class="workshop-header">
-    <h1>The Flight Workshop</h1>
+    <h1>{{ title }}</h1>
     <p>
       Choose from our selection of free templates to start building a cluster using your private cloud resources.
     </p>
   </div>
 </div>
 <div id="workshop" class="full-width-container">
-  <a class="card template-card" href="#">
+  <a class="card template-card" href="slurm-team-edition">
     <h2 class="template-header card-text">SLURM: Team Edition</h2>
     <img 
       alt=""
