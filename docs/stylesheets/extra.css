@@ -63,6 +63,37 @@ html {
   display: none;
 }
 
+.card {
+  border-radius: 2px;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: white;
+  border: solid var(--light-blue) 1px;
+}
+
+.card:hover {
+  background-color: var(--alces-blue);
+  border: solid var(--alces-blue) 1px;
+  transition: background-color 0.5s, border 0.5s, filter 0.5s;
+}
+
+.card:hover img {
+  filter: brightness(0) invert(1);
+}
+
+.card:hover .card-text {
+  color: white;
+}
+
+.card-text {
+  margin: 0 !important;
+  color: var(--alces-grey);
+}
+
+.card h2 {
+  margin-top: 0.5rem;
+}
+
 @media screen and (min-width: 76.25em) {
   .md-content__inner {
     margin: 0 !important;
