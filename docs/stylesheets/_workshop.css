@@ -72,7 +72,7 @@
 
 @media screen and (max-width: 59.9375em) {
     #workshop {
-        padding: 1rem;
+        padding: 0.5rem;
     }
 
     .workshop-header {
@@ -82,5 +82,19 @@
     .template-back-link {
         margin-top: 1rem;
         margin-bottom: 1rem;
+    }
+
+    .template-card {
+        grid-gap: 1rem;
+    }
+
+    .template-icon {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 25em) {
+    #workshop {
+        grid-template-columns: 1fr;
     }
 }
