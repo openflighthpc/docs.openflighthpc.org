@@ -12,7 +12,7 @@ search:
 <div class="no-tabs full-width-container">
   <div class="workshop-header">
     <h1>{{ title }}</h1>
-    <p>
+    <p class="tagline">
       Choose from our selection of free templates to start building a cluster using your private cloud resources.
     </p>
   </div>
@@ -25,27 +25,32 @@ search:
       class="template-icon"
       src="../assets/images/template-icons/slurm_team.svg"
     >
-    <ul class="template-stats card-text">
-      <li> 
-        <i class="template-stats-icon fa-solid fa-users" title="Number of users"></i>
-        <span> 1 - 10 </span>
-      </li>
-      <li> 
-        <i class="template-stats-icon fa-solid fa-clock" title="Lifetime"></i> 
-        <span> 1 - 3 months </span>
-      </li>
-      <li> 
-        <i class="template-stats-icon fa-solid fa-database" title="Storage"></i> 
-        <span> 1TB </span>
-      </li>
-      <li> 
-        <i class="template-stats-icon fa-solid fa-credit-card" title="Estimated running costs"></i> 
-        <span> $10 / day </span>
-      </li>
-      <li> 
-        <i class="template-stats-icon fa-solid fa-dumbbell" title="Capability"></i> 
-        <span> Low </span>
-      </li>
-    </ul>
+    <div>
+      <ul class="template-stats card-text">
+        <li> 
+          <i class="template-stats-icon fa-solid fa-users" title="Number of users"></i>
+          <span> 1 - 10 </span>
+        </li>
+        <li> 
+          <i class="template-stats-icon fa-solid fa-clock" title="Lifetime"></i> 
+          <span> 1 - 3 months </span>
+        </li>
+        <li> 
+          <i class="template-stats-icon fa-solid fa-database" title="Storage"></i> 
+          <span> 1TB </span>
+        </li>
+        <li> 
+          <i class="template-stats-icon fa-solid fa-credit-card" title="Estimated running costs"></i> 
+          <span> $10 / day </span>
+        </li>
+        <li> 
+          <i class="template-stats-icon fa-solid fa-dumbbell" title="Capability"></i> 
+          <span> Low </span>
+        </li>
+      </ul>
+      <span class="template-tagline tagline">
+        A small collaborative environment, great for teams running short projects. 
+      </span>
+    </div>
   </a>
 </div>

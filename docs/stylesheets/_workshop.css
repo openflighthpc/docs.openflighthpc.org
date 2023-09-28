@@ -65,6 +65,19 @@
     width: 1rem;
 }
 
+.template-tagline {
+    display: none;
+    color: white;
+}
+
+.template-card:hover .template-tagline {
+    display: inherit;
+}
+
+.template-card:hover .template-stats {
+    display: none;
+}
+
 .template-back-link {
     align-self: flex-start;
     color: var(--alces-grey) !important;

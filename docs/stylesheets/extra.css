@@ -63,6 +63,10 @@ html {
   display: none;
 }
 
+.tagline {
+  font-size: 0.85rem;
+}
+
 .card {
   border-radius: 2px;
   margin: 1rem;
