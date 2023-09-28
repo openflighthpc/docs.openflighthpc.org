@@ -18,5 +18,16 @@ search:
   </div>
 </div>
 <div id="workshop" class="full-width-container">
-  {% include "templates/template-card.html" %}
+  {% with title="SLURM: Team Edition", 
+          num_users="1 - 10", 
+          lifetime="1 - 3 months",
+          storage="1TB", 
+          cost="$10 / day",
+          capability="Low",
+          icon="slurm_team.svg",
+          tagline="A small collaborative environment, great for teams running short projects.",
+          link="slurm-team-edition"
+  %}
+    {% include "templates/template-card.html" %}
+  {% endwith %}
 </div>

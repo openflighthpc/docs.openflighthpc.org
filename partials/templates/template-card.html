@@ -1,35 +1,35 @@
-<a class="card template-card" href="slurm-team-edition">
-  <h2 class="template-header card-text">SLURM: Team Edition</h2>
+<a class="card template-card" href="{{ link }}">
+  <h2 class="template-header card-text">{{ title }}</h2>
   <img
     alt=""
     class="template-icon"
-    src="{{ config.site_url }}/assets/images/template-icons/slurm_team.svg"
+    src="{{ config.site_url }}/assets/images/template-icons/{{ icon }}"
   >
   <div>
     <ul class="template-stats card-text">
       <li>
         <i class="template-stats-icon fa-solid fa-users" title="Number of users"></i>
-        <span> 1 - 10 </span>
+        <span> {{ num_users }} </span>
       </li>
       <li>
         <i class="template-stats-icon fa-solid fa-clock" title="Lifetime"></i>
-        <span> 1 - 3 months </span>
+        <span> {{ lifetime }} </span>
       </li>
       <li>
         <i class="template-stats-icon fa-solid fa-database" title="Storage"></i>
-        <span> 1TB </span>
+        <span> {{ storage }} </span>
       </li>
       <li>
         <i class="template-stats-icon fa-solid fa-credit-card" title="Estimated running costs"></i>
-        <span> $10 / day </span>
+        <span> {{ cost }} </span>
       </li>
       <li>
         <i class="template-stats-icon fa-solid fa-dumbbell" title="Capability"></i>
-        <span> Low </span>
+        <span> {{ capability }} </span>
       </li>
     </ul>
     <span class="template-tagline tagline">
-      A small collaborative environment, great for teams running short projects.
+      {{ tagline }}
     </span>
   </div>
 </a>
