@@ -154,6 +154,7 @@ theme:
   favicon: assets/images/bumcloud.svg
   features:
     - content.code.annotate
+    - content.code.copy
     - navigation.sections
     - navigation.indexes # Allows adding overview pages to sections, name them index.md
     - navigation.tabs

@@ -121,18 +121,39 @@
 }
 
 .template-content .filename {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--sky-blue-grey) !important;
+    color: var(--md-code-fg-color);
     border-bottom: none !important;
+    padding-top: 0.4rem !important;
+    padding-bottom: 0.4rem !important;
+    margin: 0 !important;
+}
+
+.template-content .filename:hover {
+    background-color: var(--alces-blue) !important;
+    color: white !important;
+}
+
+.template-content .filename:visited {
+    color: var(--md-code-fg-color);
+}
+
+.template-content .filename img {
+    height: 1.8rem;
+    display: block;
+}
+
+.template-content pre {
+    margin-top: 2px;
 }
 
 .template-content code {
     background-image: linear-gradient(var(--sky-blue-grey), #ECF5F8);
     max-height: 10rem;
     overflow: auto;
-}
-
-.template-content pre {
-    margin-top: 2px;
 }
 
 @media screen and (max-width: 59.9375em) {

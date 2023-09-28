@@ -55,13 +55,23 @@ search:
         </li>
       </ul>
     </div>
-  
     <h2>Download</h2>
     <p class="tagline">
       Start building your cluster by downloading the Slurm: team edition template.
     </p>
     <div class="highlight">
-      <span class="filename">slurm-team-edition.yml</span>
+      <a 
+        title="Download slurm-team-edition.yml"
+        href="{{ config.site_url }}/assets/templates/slurm-team-edition.yml" 
+        class="filename card link"
+        download
+      >
+        <span class="tagline">slurm-team-edition.yml</span>
+        <img 
+          alt=""
+          src="{{ config.site_url }}/solo/assets/images/download.svg"
+        >
+      </a>
     </div>
 
 ```
