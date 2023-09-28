@@ -10,9 +10,13 @@ search:
 <script src="https://kit.fontawesome.com/5d76af6daa.js" crossorigin="anonymous"></script>
 
 <div class="no-tabs full-width-container">
-  <div class="workshop-header">
-    <h1>{{ title }}</h1>
-    <p class="tagline">
+  <div class="workshop-header workshop-main-header">
+    <img
+      alt="Flight Warehouse"
+      class="template-icon"
+      src="{{ config.site_url }}/assets/images/warehouse.svg"
+    >
+    <p class="workshop-tagline tagline">
       Choose from our selection of free templates to start building a cluster using your private cloud resources.
     </p>
   </div>
@@ -38,8 +42,9 @@ search:
           capability="Medium",
           icon="big_data.svg",
           tagline="Enough power and storage for crunching your big datasets.",
-          link="slurm-team-edition"
+          link="big_data"
   %}
     {% include "templates/template-card.html" %}
   {% endwith %}
 </div>
+<h1></h1>
