@@ -120,6 +120,21 @@
     margin: 2rem auto 3rem !important;
 }
 
+.template-content .filename {
+    background-color: var(--sky-blue-grey) !important;
+    border-bottom: none !important;
+}
+
+.template-content code {
+    background-image: linear-gradient(var(--sky-blue-grey), #ECF5F8);
+    max-height: 10rem;
+    overflow: auto;
+}
+
+.template-content pre {
+    margin-top: 2px;
+}
+
 @media screen and (max-width: 59.9375em) {
     #warehouse {
         padding: 0.5rem;

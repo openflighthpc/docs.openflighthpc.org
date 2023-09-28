@@ -25,44 +25,47 @@ search:
     </div>
   </div>
 
-<div class="template-content">
-  <div class="stats-card card">
-    <ul class="template-stats card-text">
-      <li>
-        <i class="template-stats-icon fa-solid fa-users"></i>
-        <strong>Number of users:</strong>
-        <span> {{ num_users }} </span>
-      </li>
-      <li>
-        <i class="template-stats-icon fa-solid fa-clock" title="Lifetime"></i>
-        <strong>Lifetime:</strong>
-        <span> {{ lifetime }} </span>
-      </li>
-      <li>
-        <i class="template-stats-icon fa-solid fa-database" title="Storage"></i>
-        <strong>Storage:</strong>
-        <span> {{ storage }} </span>
-      </li>
-      <li>
-        <i class="template-stats-icon fa-solid fa-credit-card" title="Estimated running costs"></i>
-        <strong>Estimated running costs:</strong>
-        <span> {{ cost }} </span>
-      </li>
-      <li>
-        <i class="template-stats-icon fa-solid fa-dumbbell" title="Capability"></i>
-        <strong>Capability:</strong>
-        <span> {{ capability }} </span>
-      </li>
-    </ul>
-  </div>
+  <div class="template-content">
+    <div class="stats-card card">
+      <ul class="template-stats card-text">
+        <li>
+          <i class="template-stats-icon fa-solid fa-users"></i>
+          <strong>Number of users:</strong>
+          <span> {{ num_users }} </span>
+        </li>
+        <li>
+          <i class="template-stats-icon fa-solid fa-clock" title="Lifetime"></i>
+          <strong>Lifetime:</strong>
+          <span> {{ lifetime }} </span>
+        </li>
+        <li>
+          <i class="template-stats-icon fa-solid fa-database" title="Storage"></i>
+          <strong>Storage:</strong>
+          <span> {{ storage }} </span>
+        </li>
+        <li>
+          <i class="template-stats-icon fa-solid fa-credit-card" title="Estimated running costs"></i>
+          <strong>Estimated running costs:</strong>
+          <span> {{ cost }} </span>
+        </li>
+        <li>
+          <i class="template-stats-icon fa-solid fa-dumbbell" title="Capability"></i>
+          <strong>Capability:</strong>
+          <span> {{ capability }} </span>
+        </li>
+      </ul>
+    </div>
+  
+    <h2>Download</h2>
+    <p class="tagline">
+      Start building your cluster by downloading the Slurm: team edition template.
+    </p>
+    <div class="highlight">
+      <span class="filename">slurm-team-edition.yml</span>
+    </div>
 
-  <h2>Download</h2>
-  <p class="tagline">
-    Start building your cluster by downloading the Slurm: team edition template.
-  </p>
-
-```azure title="slurm-team-edition.yml"
-  {% include "warehouse/templates/slurm-team-edition.yml" %}
 ```
-</div>
+{% include "warehouse/templates/slurm-team-edition.yml" %}
+```
+  </div>
 </div>
