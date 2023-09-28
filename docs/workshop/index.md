@@ -27,23 +27,23 @@ search:
     >
     <ul class="template-stats card-text">
       <li> 
-        <i class="template-stats-icon fa-solid fa-users"></i>
+        <i class="template-stats-icon fa-solid fa-users" title="Number of users"></i>
         <span> 1 - 10 </span>
       </li>
       <li> 
-        <i class="template-stats-icon fa-regular fa-clock"></i> 
+        <i class="template-stats-icon fa-solid fa-clock" title="Lifetime"></i> 
         <span> 1 - 3 months </span>
       </li>
       <li> 
-        <i class="template-stats-icon fa-solid fa-database"></i> 
+        <i class="template-stats-icon fa-solid fa-database" title="Storage"></i> 
         <span> 1TB </span>
       </li>
       <li> 
-        <i class="template-stats-icon fa-solid fa-credit-card"></i> 
+        <i class="template-stats-icon fa-solid fa-credit-card" title="Estimated running costs"></i> 
         <span> $10 / day </span>
       </li>
       <li> 
-        <i class="template-stats-icon fa-solid fa-dumbbell"></i> 
+        <i class="template-stats-icon fa-solid fa-dumbbell" title="Capability"></i> 
         <span> Low </span>
       </li>
     </ul>
