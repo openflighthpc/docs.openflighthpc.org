@@ -32,7 +32,7 @@ search:
 <section id="mission-block" class="home-block">
   <div id="mission-text">
     <h1>The OpenFlight mission:</h1>
-    <p>
+    <p class="tagline">
       The OpenFlight project seeks to provide HPC workflow knowledge 
       to the community for a range of subjects, applications and workloads 
       to minimise the skill gaps to utilising HPC systems.
@@ -92,7 +92,7 @@ search:
   <div id="green-container">
     <div id="green-text">
       <h1>Greener HPC</h1>
-      <p>
+      <p class="tagline">
         The project aims to inform the community of methods for defining their 
         computational requirements. This can reduce computational waste, resulting 
         in a greener workflow.
@@ -107,7 +107,7 @@ search:
 <section id="ready-block" class="home-block">
   <div id="ready-container">
     <h1>Ready to get started?</h1>
-    <p>
+    <p class="tagline">
       Begin creating your HPC solution by reading the OpenFlight documentation 
       or start creating a cluster with Flight Solo.
     </p>

@@ -20,7 +20,6 @@
     margin-bottom: 3rem;
     margin-inline: 0.8rem;
     text-align: center;
-    font-size: 0.9rem;
     max-width: 41rem;
 }
 
@@ -42,6 +41,7 @@
 .solo-card p {
     height: 4rem;
     text-align: center;
+    margin-top: 0.5rem !important;
 }
 
 .solo-card img {

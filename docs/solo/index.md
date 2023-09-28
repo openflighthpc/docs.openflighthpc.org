@@ -17,7 +17,7 @@ search:
         src="assets/images/solo_title.svg"
       >
     </h1>
-    <div id="solo-main-text">
+    <div id="solo-main-text" class="tagline">
       <p>
         Flight Solo is a preloaded, HPC-ready, platform-agnostic image approach to deploying HPC resources. 
         The Flight Solo image provides a personal High Performance Computing (HPC) environment for research and scientific 
