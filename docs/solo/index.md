@@ -25,7 +25,7 @@ search:
       </p>
     </div>
     <div class="solo-card-container">
-      <a class="solo-card card"
+      <a class="solo-card card link"
          href="../docs/flight-solo">
         <img 
           alt=""
@@ -37,7 +37,7 @@ search:
           Find out how to start using Flight Solo by reading the OpenFlight documentation.
         </p>
       </a>
-      <a class="solo-card card"
+      <a class="solo-card card link"
          href="https://aws.amazon.com/marketplace/pp/prodview-q5u533n6b34oc?sr=0-1&ref_=beagle&applicationId=AWSMPContessa"
          target="_blank"
       >
@@ -51,7 +51,7 @@ search:
           Go to AWS marketplace and start a Flight Solo instance.
         </p>
       </a>
-      <a class="solo-card card" 
+      <a class="solo-card card link" 
          href="https://repo.openflighthpc.org/?prefix=images/FlightSolo/"
          target="_blank"
       >

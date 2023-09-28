@@ -74,6 +74,10 @@
     font-size: 0.9rem;
 }
 
+.template-stats li:last-child {
+    margin-bottom: 0 !important;
+}
+
 .template-stats-icon {
     margin-right: 0.5rem;
     color: var(--alces-blue);
@@ -103,6 +107,13 @@
 .template-title {
     max-width: 20rem;
     margin-left: 1rem;
+}
+
+.stats-card {
+    min-width: fit-content;
+    width: 20%;
+    padding: 1.5rem 2rem !important;
+    margin: 2rem auto !important;
 }
 
 @media screen and (max-width: 59.9375em) {

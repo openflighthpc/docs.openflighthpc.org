@@ -75,17 +75,17 @@ html {
   border: solid var(--light-blue) 1px;
 }
 
-.card:hover {
+.card.link:hover {
   background-color: var(--alces-blue);
   border: solid var(--alces-blue) 1px;
   transition: background-color 0.5s, border 0.5s, filter 0.5s;
 }
 
-.card:hover img {
+.card.link:hover img {
   filter: brightness(0) invert(1);
 }
 
-.card:hover .card-text {
+.card.link:hover .card-text {
   color: white;
 }
 
