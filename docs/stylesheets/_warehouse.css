@@ -109,11 +109,15 @@
     margin-left: 1rem;
 }
 
+.template-content {
+    padding-inline: 15rem;
+}
+
 .stats-card {
     min-width: fit-content;
     width: 20%;
     padding: 1.5rem 2rem !important;
-    margin: 2rem auto !important;
+    margin: 2rem auto 3rem !important;
 }
 
 @media screen and (max-width: 59.9375em) {

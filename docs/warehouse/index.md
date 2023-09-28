@@ -32,7 +32,7 @@ search:
           tagline="A small collaborative environment, great for teams running short projects.",
           link="slurm-team-edition"
   %}
-    {% include "templates/template-card.html" %}
+    {% include "warehouse/template-card.html" %}
   {% endwith %}
   {% with title="Big data: Bootstrap", 
           num_users="1", 
@@ -44,7 +44,7 @@ search:
           tagline="Enough power and storage for crunching your big datasets.",
           link="big_data"
   %}
-    {% include "templates/template-card.html" %}
+    {% include "warehouse/template-card.html" %}
   {% endwith %}
 </div>
 <h1></h1>

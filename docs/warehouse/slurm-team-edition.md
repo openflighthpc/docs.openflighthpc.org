@@ -25,6 +25,7 @@ search:
     </div>
   </div>
 
+<div class="template-content">
   <div class="stats-card card">
     <ul class="template-stats card-text">
       <li>
@@ -55,4 +56,13 @@ search:
     </ul>
   </div>
 
+  <h2>Download</h2>
+  <p class="tagline">
+    Start building your cluster by downloading the Slurm: team edition template.
+  </p>
+
+```azure title="slurm-team-edition.yml"
+  {% include "warehouse/templates/slurm-team-edition.yml" %}
+```
+</div>
 </div>
