@@ -63,8 +63,8 @@ function populateNav() {
             </a>
           </li>
           <li>
-            <a href="../workshop">
-              FLIGHT WORKSHOP
+            <a href="../warehouse">
+              FLIGHT WAREHOUSE
             </a>
           </li>
           <li>

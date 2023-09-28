@@ -2,7 +2,7 @@
 hide:
   - navigation
   - toc
-title: "Flight Workshop"
+title: "Flight Warehouse"
 search:
   exclude: true
 ---
@@ -10,18 +10,18 @@ search:
 <script src="https://kit.fontawesome.com/5d76af6daa.js" crossorigin="anonymous"></script>
 
 <div class="no-tabs full-width-container">
-  <div class="workshop-header workshop-main-header">
+  <div class="warehouse-header warehouse-main-header">
     <img
       alt="Flight Warehouse"
       class="template-icon"
       src="{{ config.site_url }}/assets/images/warehouse.svg"
     >
-    <p class="workshop-tagline tagline">
+    <p class="warehouse-tagline tagline">
       Choose from our selection of free templates to start building a cluster using your private cloud resources.
     </p>
   </div>
 </div>
-<div id="workshop" class="full-width-container">
+<div id="warehouse" class="full-width-container">
   {% with title="SLURM: Team Edition", 
           num_users="1 - 10", 
           lifetime="1 - 3 months",

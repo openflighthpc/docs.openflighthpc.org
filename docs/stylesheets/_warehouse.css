@@ -1,4 +1,4 @@
-.workshop-header {
+.warehouse-header {
     background-image: linear-gradient(var(--sky-blue-grey), #ECF5F8);
     display: flex;
     justify-content: center;
@@ -8,27 +8,27 @@
     position: relative;
 }
 
-.workshop-main-header {
+.warehouse-main-header {
     flex-direction: column;
 }
 
-.workshop-main-header p {
+.warehouse-main-header p {
     max-width: 24rem;
 }
 
-.workshop-header h1 {
+.warehouse-header h1 {
     margin-bottom: 0.5rem;
 }
 
-.workshop-header p {
+.warehouse-header p {
     margin: 0;
 }
 
-.workshop-tagline {
+.warehouse-tagline {
     text-align: center;
 }
 
-#workshop {
+#warehouse {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(17.5rem, 1fr));
     grid-gap: 1rem;
@@ -107,11 +107,11 @@
 }
 
 @media screen and (max-width: 59.9375em) {
-    #workshop {
+    #warehouse {
         padding: 0.5rem;
     }
 
-    .workshop-header {
+    .warehouse-header {
         padding-inline: 1rem;
     }
 
@@ -130,7 +130,7 @@
 }
 
 @media screen and (max-width: 25em) {
-    #workshop {
+    #warehouse {
         grid-template-columns: 1fr;
     }
 }

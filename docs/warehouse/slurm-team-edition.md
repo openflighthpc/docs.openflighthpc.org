@@ -8,7 +8,7 @@ search:
 ---
 
 <div class="no-tabs full-width-container">
-  <div class="workshop-header">
+  <div class="warehouse-header">
     <a class="template-back-link" href="javascript:history.back()">< Back</a>
     <img
       alt=""
