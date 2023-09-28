@@ -30,4 +30,16 @@ search:
   %}
     {% include "templates/template-card.html" %}
   {% endwith %}
+  {% with title="Big data: Bootstrap", 
+          num_users="1", 
+          lifetime="6 - 12 months",
+          storage="5TB", 
+          cost="$15 / day",
+          capability="Medium",
+          icon="big_data.svg",
+          tagline="Enough power and storage for crunching your big datasets.",
+          link="slurm-team-edition"
+  %}
+    {% include "templates/template-card.html" %}
+  {% endwith %}
 </div>
