@@ -12,6 +12,6 @@
 1. Download the Flight Solo OpenStack image [here](https://repo.openflighthpc.org/?prefix=images/FlightSolo/)
 1. Upload the image
     ```bash
-    openstack image save --format raw --min-disk 10 --min-ram 2048 --file /path/to/Flight_Solo_VERSION_generic-cloudinit.raw Flight_Solo_VERSION_generic-cloudinit
+    openstack image create --disk-format raw --min-disk 10 --min-ram 2048 --file /path/to/Flight_Solo_VERSION_generic-cloudinit.raw Flight_Solo_VERSION_generic-cloudinit
     ```
 
