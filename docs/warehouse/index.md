@@ -28,7 +28,7 @@ search:
           storage="1TB", 
           cost="$10 / day",
           capability="Low",
-          icon="slurm_team.svg",
+          icon="slurm-team-edition.svg",
           tagline="A small collaborative environment, great for teams running short projects.",
           link="slurm-team-edition"
   %}

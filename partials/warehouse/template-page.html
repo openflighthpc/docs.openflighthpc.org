@@ -6,13 +6,11 @@
     <img
       alt=""
       class="template-icon"
-      src="{{ config.site_url }}/assets/images/template-icons/slurm_team.svg"
+      src="{{ config.site_url }}/assets/images/template-icons/{{ id }}.svg"
     >
     <div class="template-title">
       <h1>{{ title }}</h1>
-      <p>
-        A small collaborative environment, great for teams running short projects.
-      </p>
+      <p>{{ tagline }}</p>
     </div>
   </div>
 
@@ -52,12 +50,12 @@
     </p>
     <div class="highlight">
       <a
-        title="Download slurm-team-edition.yml"
-        href="{{ config.site_url }}/assets/templates/slurm-team-edition.yml"
+        title="Download {{ id }}.yml"
+        href="{{ config.site_url }}/assets/templates/{{ id }}.yml"
         class="filename card link"
         download
       >
-        <span class="tagline card-text">slurm-team-edition.yml</span>
+        <span class="tagline card-text">{{ id }}.yml</span>
         <img
           alt=""
           src="{{ config.site_url }}/solo/assets/images/download.svg"
@@ -65,9 +63,8 @@
       </a>
     </div>
 ```
-{% include "warehouse/templates/slurm-team-edition.yml" %}
+{% include "warehouse/templates/" + id + ".yml" %}
 ```
-
     <h1>Launch</h1>
   </div>
 </div>
