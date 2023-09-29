@@ -19,7 +19,7 @@ There are 3 different ways you can install OpenFOAM, each with varying levels of
         pdsh -g all 'sudo dnf install -y openmpi'
         ```
 
-    1. Source the OpenFOAM environment and run a basic test. Make sure to change the source file path to the location of your installation.
+    1. Source the OpenFOAM environment and run a basic test. Make sure to change the source file path to the location of your installation. **Note that the `module` command will not be available to a shell session existing before the installation, logout and back in for it to be present** 
         ```bash
         module load mpi
         source apps/OpenFOAM/22.12/etc/bashrc
