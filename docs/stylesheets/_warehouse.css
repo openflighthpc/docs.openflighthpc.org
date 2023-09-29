@@ -117,7 +117,11 @@
     min-width: fit-content;
     width: 20%;
     padding: 1.5rem 2rem !important;
-    margin: 2rem auto 3rem !important;
+    margin: 2rem auto 0 !important;
+}
+
+.template-content h2 {
+    margin-top: 3rem;
 }
 
 .template-content .filename {
