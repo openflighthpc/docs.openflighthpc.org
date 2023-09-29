@@ -6,7 +6,8 @@ Before setting up a cluster on Openstack, there are several required prerequisit
 - Your own keypair
 - A network
 - A router
-- A security group that allows traffic is given below
+    - With an interface both on the External Gateway network and an Internal Interface on the previously created network
+- A security group that allows traffic is given below (if creating the security group through the web interface then the "Any" protocol will need to be 3 separate rules for "All ICMP", "All TCP" and "All UDP")
 
 | Protocol   |      Direction      |  CIDR | Port Range |
 |:----------:|:-------------:|:------:|:------:|
