@@ -76,7 +76,7 @@ html {
 }
 
 .card.link:hover {
-  background-color: var(--alces-blue);
+  background-color: var(--alces-blue) !important;
   border: solid var(--alces-blue) 1px;
   transition: background-color 0.5s, border 0.5s, filter 0.5s;
 }

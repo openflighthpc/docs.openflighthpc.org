@@ -132,11 +132,6 @@
     margin: 0 !important;
 }
 
-.template-content .filename:hover {
-    background-color: var(--alces-blue) !important;
-    color: white !important;
-}
-
 .template-content .filename:visited {
     color: var(--md-code-fg-color);
 }

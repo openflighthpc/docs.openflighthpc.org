@@ -66,7 +66,7 @@ search:
         class="filename card link"
         download
       >
-        <span class="tagline">slurm-team-edition.yml</span>
+        <span class="tagline card-text">slurm-team-edition.yml</span>
         <img 
           alt=""
           src="{{ config.site_url }}/solo/assets/images/download.svg"
