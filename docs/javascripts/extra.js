@@ -16,6 +16,12 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  if (document.querySelector('.template-content')) {
+    document.querySelector('.md-content__inner').style.paddingInline = '15rem';
+  }
+});
+
 window.addEventListener('resize', () => {
   renderTabs();
   renderNav();

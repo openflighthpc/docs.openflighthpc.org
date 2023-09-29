@@ -9,10 +9,6 @@ search:
 
 {% include "warehouse/template-page.html" %}
 
-
-## Launch
-
-
 {% include "warehouse/docs/slurm-team-edition.md" %}
 
 

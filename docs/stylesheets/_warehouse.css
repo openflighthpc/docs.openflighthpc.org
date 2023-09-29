@@ -97,6 +97,10 @@
     display: none;
 }
 
+.template-page-header {
+    left: -15rem !important;
+}
+
 .template-back-link {
     position: absolute;
     top: 1.5rem;
@@ -109,10 +113,6 @@
     margin-left: 1rem;
 }
 
-.template-content {
-    padding-inline: 15rem;
-}
-
 .stats-card {
     min-width: fit-content;
     width: 20%;
@@ -120,7 +120,7 @@
     margin: 2rem auto 0 !important;
 }
 
-.template-content h2 {
+.template-content h1 {
     margin-top: 3rem;
 }
 
