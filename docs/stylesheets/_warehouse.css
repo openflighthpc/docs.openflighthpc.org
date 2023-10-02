@@ -43,7 +43,7 @@
         [row2-start] "icon stats" 5fr [row2-end]
         / 1fr 1fr;
     align-items: center;
-    column-gap: 2rem;
+    column-gap: 1.5rem;
     row-gap: 0.5rem;
     margin: 0 !important;
     max-width: 24rem;
@@ -68,6 +68,8 @@
 }
 
 .template-stats li {
+    display: grid;
+    grid-template-columns: 2rem auto;
     margin-left: 0 !important;
     margin-bottom: 0.3rem !important;
     font-weight: 300;
@@ -81,7 +83,8 @@
 .template-stats-icon {
     margin-right: 0.5rem;
     color: var(--alces-blue);
-    width: 1rem;
+    justify-self: center;
+    align-self: center;
 }
 
 .template-tagline {
