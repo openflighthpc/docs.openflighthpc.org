@@ -23,28 +23,10 @@ search:
   </div>
 </div>
 <div id="warehouse" class="full-width-container">
-  {% with title="SLURM: Team Edition", 
-          num_users="1 - 10", 
-          lifetime="1 - 3 months",
-          storage="1TB", 
-          cost="$10 / day",
-          capability="Low",
-          icon="slurm-team-edition.svg",
-          tagline="A small collaborative environment, great for teams running short projects.",
-          link="slurm-team-edition"
-  %}
+  {% with id="slurm-team-edition" %}
     {% include "warehouse/template-card.html" %}
   {% endwith %}
-  {% with title="Big data: Bootstrap", 
-          num_users="1", 
-          lifetime="6 - 12 months",
-          storage="5TB", 
-          cost="$15 / day",
-          capability="Medium",
-          icon="big_data.svg",
-          tagline="Enough power and storage for crunching your big datasets.",
-          link="big_data"
-  %}
+  {% with id="big-data" %}
     {% include "warehouse/template-card.html" %}
   {% endwith %}
 </div>

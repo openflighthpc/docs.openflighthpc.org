@@ -26,19 +26,26 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.md-content__inner').style.paddingInline = '15rem';
 
     let templateID = document.getElementById('template-content').dataset.template;
-    inputInfo(templateID);
+    inputInfo(templateID, document);
+  }
+
+  if (document.querySelector('#warehouse')) {
+    const cards = document.getElementsByClassName('template-card');
+    for (let i = 0; i < cards.length; i++) {
+      inputInfo(cards[i].id, cards[i]);
+    }
   }
 });
 
-function inputInfo(templateID) {
+function inputInfo(templateID, container) {
   const templateInfo = data[templateID];
-  let titles = document.getElementsByClassName('template-title');
+  let titles = container.getElementsByClassName('template-title');
   for (let i = 0; i < titles.length; i++) {
     titles[i].innerHTML = templateInfo['title'];
   }
   const keys = Object.keys(templateInfo);
   for (let i = 0; i < keys.length; i++) {
-    let el = document.getElementById(keys[i]);
+    let el = container.querySelector(`.${keys[i]}`);
     if (el !== null) {
       el.innerHTML = templateInfo[keys[i]];
     }

@@ -1,35 +1,33 @@
-<a class="card template-card link" href="{{ link }}" id="{{ link }}">
-  <h2 class="template-header card-text">{{ title }}</h2>
+<a class="card template-card link" href="{{ id }}" id="{{ id }}">
+  <h2 class="template-title card-text"></h2>
   <img
     alt=""
     class="template-icon"
-    src="{{ config.site_url }}/assets/images/template-icons/{{ icon }}"
+    src="{{ config.site_url }}/assets/images/template-icons/{{ id }}.svg"
   >
   <div>
     <ul class="template-stats card-text">
       <li>
         <i class="template-stats-icon fa-solid fa-users" title="Number of users"></i>
-        <span> {{ num_users }} </span>
+        <span class="num_users"></span>
       </li>
       <li>
         <i class="template-stats-icon fa-solid fa-clock" title="Lifetime"></i>
-        <span> {{ lifetime }} </span>
+        <span class="lifetime"></span>
       </li>
       <li>
         <i class="template-stats-icon fa-solid fa-database" title="Storage"></i>
-        <span> {{ storage }} </span>
+        <span class="storage"></span>
       </li>
       <li>
         <i class="template-stats-icon fa-solid fa-credit-card" title="Estimated running costs"></i>
-        <span> {{ cost }} </span>
+        <span class="cost"></span>
       </li>
       <li>
         <i class="template-stats-icon fa-solid fa-dumbbell" title="Capability"></i>
-        <span> {{ capability }} </span>
+        <span class="capability"></span>
       </li>
     </ul>
-    <span class="template-tagline tagline">
-      {{ tagline }}
-    </span>
+    <span class="template-tagline tagline"></span>
   </div>
 </a>

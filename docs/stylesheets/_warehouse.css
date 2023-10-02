@@ -49,7 +49,7 @@
     max-width: 24rem;
 }
 
-.template-header {
+.template-card .template-title {
     grid-area: header;
     text-align: center;
     margin: 0 !important;
