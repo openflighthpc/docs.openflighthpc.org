@@ -1,4 +1,5 @@
 <script src="https://kit.fontawesome.com/5d76af6daa.js" crossorigin="anonymous"></script>
+<script src="{{ config.site_url }}/javascripts/warehouse.js"></script>
 
 <div class="no-tabs">
   <div class="warehouse-header template-page-header full-width-container">
@@ -8,55 +9,55 @@
       class="template-icon"
       src="{{ config.site_url }}/assets/images/template-icons/{{ id }}.svg"
     >
-    <div class="template-title">
-      <h1>{{ title }}</h1>
-      <p>{{ tagline }}</p>
+    <div class="template-title-container">
+      <h1 class="template-title"></h1>
+      <p id="tagline"></p>
     </div>
   </div>
 
-  <div class="template-content">
+  <div id="template-content" data-template="{{ id }}">
     <div class="stats-card card">
       <ul class="template-stats card-text">
         <li>
           <i class="template-stats-icon fa-solid fa-users"></i>
           <div>
             <strong>Number of users:</strong>
-            <span> {{ num_users }} </span>
+            <span id="num_users"></span>
           </div>
         </li>
         <li>
           <i class="template-stats-icon fa-solid fa-clock" title="Lifetime"></i>
           <div>
             <strong>Lifetime:</strong>
-            <span> {{ lifetime }} </span>
+            <span id="lifetime"></span>
           </div>
         </li>
         <li>
           <i class="template-stats-icon fa-solid fa-database" title="Storage"></i>
           <div>
             <strong>Storage:</strong>
-            <span> {{ storage }} </span>
+            <span id="storage"></span>
           </div>
         </li>
         <li>
           <i class="template-stats-icon fa-solid fa-credit-card" title="Estimated running costs"></i>
           <div>
             <strong>Estimated running costs:</strong>
-            <span> {{ cost }} </span>
+            <span id="cost"></span>
           </div>
         </li>
         <li>
           <i class="template-stats-icon fa-solid fa-dumbbell" title="Capability"></i>
           <div>
             <strong>Capability:</strong>
-            <span> {{ capability }} </span>
+            <span id="capability"> {{ capability }} </span>
           </div>
         </li>
       </ul>
     </div>
     <h1>Download</h1>
     <p class="tagline">
-      Start building your cluster by downloading the {{ title }} template.
+      Start building your cluster by downloading the <span class="template-title"></span> template.
     </p>
     <div class="highlight">
       <a

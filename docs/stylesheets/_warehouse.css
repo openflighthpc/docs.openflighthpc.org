@@ -110,7 +110,7 @@
     left: 2.5rem;
 }
 
-.template-title {
+.template-title-container {
     max-width: 20rem;
     margin-left: 1rem;
 }
@@ -122,7 +122,7 @@
     margin: 2rem auto 0 !important;
 }
 
-.template-content h1 {
+#template-content h1 {
     margin-top: 3rem;
     margin-bottom: 1rem;
 }
@@ -140,7 +140,7 @@
     background-image: linear-gradient(var(--sky-blue-grey), #ECF5F8);
 }
 
-.template-content .filename {
+#template-content .filename {
     display: flex !important;
     justify-content: space-between;
     align-items: center;
@@ -150,16 +150,16 @@
     margin: 0 !important;
 }
 
-.template-content .filename:visited {
+#template-content .filename:visited {
     color: var(--md-code-fg-color);
 }
 
-.template-content .filename img {
+#template-content .filename img {
     height: 1.8rem;
     display: block;
 }
 
-.template-content code {
+#template-content code {
     max-height: 10rem;
 }
 

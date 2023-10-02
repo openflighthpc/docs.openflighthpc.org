@@ -8,6 +8,7 @@ search:
 ---
 
 <script src="https://kit.fontawesome.com/5d76af6daa.js" crossorigin="anonymous"></script>
+<script src="{{ config.site_url }}/javascripts/warehouse.js"></script>
 
 <div class="no-tabs full-width-container">
   <div class="warehouse-header warehouse-main-header">
