@@ -22,8 +22,6 @@ html {
 .button:hover {
   color: white !important;
   background-color: var(--alces-blue);
-  filter: brightness(0.8);
-  transition: background-color 125ms;
 }
 
 .button:visited {
@@ -79,6 +77,7 @@ html {
   background-color: var(--alces-blue) !important;
   border: solid var(--alces-blue) 1px;
   transition: background-color 0.5s, border 0.5s, filter 0.5s;
+  filter: none !important;
 }
 
 .card.link:hover img {
@@ -100,6 +99,14 @@ html {
 
 .md-typeset :target {
   --md-scroll-margin: 4.3rem;
+}
+
+.md-typeset a {
+  color: var(--alces-blue);
+}
+
+.md-typeset a:hover {
+  filter: brightness(0.8);
 }
 
 @media screen and (min-width: 76.25em) {
