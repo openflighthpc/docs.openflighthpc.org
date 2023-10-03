@@ -139,11 +139,6 @@
     margin-right: 0.5rem;
 }
 
-#template-content h1 {
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-}
-
 .md-typeset .filename {
     background-color: var(--sky-blue-grey) !important;
     border-bottom: none !important;
