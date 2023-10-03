@@ -6,7 +6,7 @@ const data =
       "lifetime": "1 - 3 months",
       "storage": "1TB",
       "cost": "$10 / day",
-      "capability": "Low",
+      "capability": 1,
       "tagline": "A small collaborative environment, great for teams running short projects."
     },
     "big-data": {
@@ -16,7 +16,7 @@ const data =
       "lifetime": "6 - 12 months",
       "storage": "5TB",
       "cost": "$15 / day",
-      "capability": "Medium",
+      "capability": 2,
       "tagline": "Enough power and storage for crunching your big datasets."
     },
     "container-cruncher-small": {
@@ -26,10 +26,12 @@ const data =
       "lifetime": "1 - 3 months",
       "storage": "100GB",
       "cost": "$10 / day",
-      "capability": "Low",
+      "capability": 1,
       "tagline": "A small single-user Kubernetes environment, suitable for evaluating workflows and running a few microservices."
     }
   };
+
+const capabilityAlt = ["Low", "Medium", "High"];
 
 document.addEventListener('DOMContentLoaded', () => {
   if (document.querySelector('#template-content')) {
@@ -57,7 +59,20 @@ function inputInfo(templateID, container) {
   for (let i = 0; i < keys.length; i++) {
     let el = container.querySelector(`.${keys[i]}`);
     if (el !== null) {
-      el.innerHTML = templateInfo[keys[i]];
+      if (keys[i] === 'capability') {
+        setCapability(templateInfo, container);
+      } else {
+        el.innerHTML = templateInfo[keys[i]];
+      }
     }
   }
+}
+
+function setCapability(templateInfo, container) {
+  const musclyArms = container.getElementsByClassName('muscly-arm');
+  const capability = templateInfo['capability'];
+  for (let i = 0; i < capability; i++) {
+    musclyArms[i].style.filter = "brightness(1) saturate(1)";
+  }
+  container.querySelector('.capability .muscly-arm-container').setAttribute('aria-label', capabilityAlt[capability - 1]);
 }
