@@ -139,6 +139,11 @@
     margin-right: 0.5rem;
 }
 
+.tooltip {
+    color: var(--alces-blue);
+    cursor: help;
+}
+
 .md-typeset .filename {
     background-color: var(--sky-blue-grey) !important;
     border-bottom: none !important;

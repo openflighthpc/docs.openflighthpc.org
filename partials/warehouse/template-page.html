@@ -26,30 +26,38 @@
           </div>
         </li>
         <li>
-          <i class="template-stats-icon fa-solid fa-clock" title="Lifetime"></i>
+          <i class="template-stats-icon fa-solid fa-clock"></i>
           <div>
             <strong>Lifetime:</strong>
             <span class="lifetime"></span>
           </div>
         </li>
         <li>
-          <i class="template-stats-icon fa-solid fa-database" title="Storage"></i>
+          <i class="template-stats-icon fa-solid fa-database"></i>
           <div>
             <strong>Storage:</strong>
             <span class="storage"></span>
           </div>
         </li>
         <li>
-          <i class="template-stats-icon fa-solid fa-credit-card" title="Estimated running costs"></i>
+          <i class="template-stats-icon fa-solid fa-credit-card"></i>
           <div>
-            <strong>Estimated running costs:</strong>
+            <strong>
+              Estimated running costs<sup
+              class="tooltip"
+              title="Estimated running costs based on our internal cloud platform - yours may vary based on hardware configuration and energy prices for your private cloud server.">?</sup>:
+            </strong>
             <span class="cost"></span>
           </div>
         </li>
         <li>
-          <i class="template-stats-icon fa-solid fa-dumbbell" title="Capability"></i>
+          <i class="template-stats-icon fa-solid fa-dumbbell"></i>
           <div class="muscly-arm-container">
-            <strong class="capability-label">Capability:</strong>
+            <strong class="capability-label">
+              Capability<sup
+                class="tooltip"
+                title="Indicates the strength of the cluster in terms of scale of the service. This is a combination of recommended users, lifetime, storage and compute capacity.">?</sup>:
+            </strong>
             <span class="capability">
               {% include "warehouse/muscly-arms.html" %}
             </span>
