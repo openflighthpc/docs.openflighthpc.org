@@ -29,5 +29,8 @@ search:
   {% with id="big-data" %}
     {% include "warehouse/template-card.html" %}
   {% endwith %}
+  {% with id="container-cruncher-small" %}
+    {% include "warehouse/template-card.html" %}
+  {% endwith %}
 </div>
 <h1></h1>

@@ -18,6 +18,16 @@ const data =
       "cost": "$15 / day",
       "capability": "Medium",
       "tagline": "Enough power and storage for crunching your big datasets."
+    },
+    "container-cruncher-small": {
+      "id": "container-cruncher-small",
+      "title": "Container Cruncher (small)",
+      "num_users": "1",
+      "lifetime": "1 - 3 months",
+      "storage": "100GB",
+      "cost": "$10 / day",
+      "capability": "Low",
+      "tagline": "A small single-user Kubernetes environment, suitable for evaluating workflows and running a few microservices."
     }
   };
 

@@ -87,9 +87,10 @@
     align-self: center;
 }
 
-.template-tagline {
+.template-card .template-tagline {
     display: none;
     color: white;
+    font-size: 0.75rem;
 }
 
 .template-card:hover .template-tagline {
