@@ -80,7 +80,7 @@ html {
   filter: none !important;
 }
 
-.card.link:hover img {
+.card.link:hover img, .card.link:hover i {
   filter: brightness(0) invert(1);
 }
 

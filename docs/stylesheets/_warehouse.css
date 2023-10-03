@@ -170,9 +170,10 @@
     color: var(--md-code-fg-color);
 }
 
-#template-content .filename img {
-    height: 1.8rem;
+#template-content .filename i {
     display: block;
+    font-size: 1rem;
+    color: var(--alces-grey);
 }
 
 #template-content code {
