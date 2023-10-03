@@ -130,7 +130,6 @@
 
 .muscly-arm {
     max-height: 0.9rem;
-    display: block;
     filter: brightness(1.8) saturate(0.2);
     margin-right: 0.3rem;
 }
