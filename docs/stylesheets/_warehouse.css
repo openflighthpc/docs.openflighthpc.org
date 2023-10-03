@@ -11,16 +11,17 @@
     flex-direction: column;
 }
 
-.warehouse-main-header p {
-    max-width: 24rem;
-}
-
 .warehouse-header h1 {
     margin-bottom: 0.5rem;
 }
 
 .warehouse-header p {
     margin: 0;
+}
+
+.warehouse-main-header p {
+    max-width: 24rem;
+    margin-top: 0.3rem;
 }
 
 .warehouse-tagline {
