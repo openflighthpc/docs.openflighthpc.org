@@ -1,5 +1,5 @@
-const data =
-  { "slurm-team-edition": {
+const data = [
+    {
       "id": "slurm-team-edition",
       "title": "SLURM: Team Edition",
       "num_users": "1 - 10",
@@ -9,7 +9,7 @@ const data =
       "capability": 1,
       "tagline": "A small collaborative environment, great for teams running short projects."
     },
-    "big-data": {
+    {
       "id": "big-data",
       "title": "Big data: Bootstrap",
       "num_users": "1",
@@ -19,7 +19,7 @@ const data =
       "capability": 2,
       "tagline": "Enough power and storage for crunching your big datasets."
     },
-    "container-cruncher-small": {
+    {
       "id": "container-cruncher-small",
       "title": "Container Cruncher (small)",
       "num_users": "1",
@@ -29,7 +29,7 @@ const data =
       "capability": 1,
       "tagline": "A small single-user Kubernetes environment, suitable for evaluating workflows and running a few microservices."
     }
-  };
+  ];
 
 const capabilityAlt = ["Low", "Medium", "High"];
 
@@ -38,39 +38,45 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.md-content__inner').style.paddingInline = '15rem';
 
     let templateID = document.getElementById('template-content').dataset.template;
-    inputInfo(templateID, document);
+    inputData(data.find(template => template.id === templateID), document);
   }
 
   if (document.querySelector('#warehouse')) {
-    const cards = document.getElementsByClassName('template-card');
-    for (let i = 0; i < cards.length; i++) {
-      inputInfo(cards[i].id, cards[i]);
+    const blankCard = document.getElementById('blank-template-card');
+    for (let i = 0; i < data.length; i++) {
+      let templateCard = blankCard.cloneNode(true);
+      let id = data[i].id;
+      templateCard.id = id;
+      templateCard.href = id;
+      templateCard.style.display = 'grid';
+      templateCard.querySelector('img').src = `../assets/images/template-icons/${id}.svg`;
+      inputData(data[i], templateCard);
+      document.getElementById('warehouse').append(templateCard);
     }
   }
 });
 
-function inputInfo(templateID, container) {
-  const templateInfo = data[templateID];
+function inputData(templateData, container) {
   let titles = container.getElementsByClassName('template-title');
   for (let i = 0; i < titles.length; i++) {
-    titles[i].innerHTML = templateInfo['title'];
+    titles[i].innerHTML = templateData['title'];
   }
-  const keys = Object.keys(templateInfo);
+  const keys = Object.keys(templateData);
   for (let i = 0; i < keys.length; i++) {
     let el = container.querySelector(`.${keys[i]}`);
     if (el !== null) {
       if (keys[i] === 'capability') {
-        setCapability(templateInfo, container);
+        setCapability(templateData, container);
       } else {
-        el.innerHTML = templateInfo[keys[i]];
+        el.innerHTML = templateData[keys[i]];
       }
     }
   }
 }
 
-function setCapability(templateInfo, container) {
+function setCapability(templateData, container) {
   const musclyArms = container.getElementsByClassName('muscly-arm');
-  const capability = templateInfo['capability'];
+  const capability = templateData['capability'];
   for (let i = 0; i < capability; i++) {
     musclyArms[i].style.filter = "brightness(1) saturate(1)";
   }

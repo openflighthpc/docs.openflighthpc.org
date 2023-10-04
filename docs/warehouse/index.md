@@ -22,15 +22,7 @@ search:
     </p>
   </div>
 </div>
-<div id="warehouse" class="full-width-container">
-  {% with id="slurm-team-edition" %}
-    {% include "warehouse/template-card.html" %}
-  {% endwith %}
-  {% with id="big-data" %}
-    {% include "warehouse/template-card.html" %}
-  {% endwith %}
-  {% with id="container-cruncher-small" %}
-    {% include "warehouse/template-card.html" %}
-  {% endwith %}
+<div id="warehouse">
+  {% include "warehouse/template-card.html" %}
 </div>
 <h1></h1>

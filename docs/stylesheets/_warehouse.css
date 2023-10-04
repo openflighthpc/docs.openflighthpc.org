@@ -34,7 +34,7 @@
     grid-gap: 1rem;
     justify-content: space-between;
     justify-items: center;
-    padding: 2.5rem;
+    padding: 1.3rem;
 }
 
 .template-card {
@@ -48,6 +48,10 @@
     row-gap: 0.5rem;
     margin: 0 !important;
     max-width: 24rem;
+}
+
+#blank-template-card {
+    display: none;
 }
 
 .template-card .template-title {
