@@ -8,14 +8,14 @@ search:
 ---
 
 <script src="https://kit.fontawesome.com/5d76af6daa.js" crossorigin="anonymous"></script>
-<script src="{{ config.site_url }}/javascripts/warehouse.js"></script>
+<script src="../javascripts/warehouse.js"></script>
 
 <div class="no-tabs full-width-container">
   <div class="warehouse-header warehouse-main-header">
     <img
       alt="Flight Warehouse"
       class="template-icon"
-      src="{{ config.site_url }}/assets/images/warehouse.svg"
+      src="../assets/images/warehouse.svg"
     >
     <p class="warehouse-tagline tagline">
       Choose from our selection of free templates to start building a cluster using your private cloud resources.
