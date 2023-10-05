@@ -151,12 +151,27 @@ function addFilterDropdowns() {
     let dropdown = filter.querySelector('.dropdown-container');
     filter.addEventListener('click', () => {
       if (dropdown.offsetParent === null) {
+        hideAllDropdowns();
         dropdown.style.display = "block";
         chevron.style.rotate = "180deg";
       } else {
-        dropdown.style.display = "none";
-        chevron.style.rotate = "0deg";
+        hideDropdown(dropdown, chevron);
       }
     });
+  }
+
+  function hideAllDropdowns() {
+    for (let i = 0; i < filters.length; i++) {
+      let filter = filters[i];
+      let dropdown = filter.querySelector('.dropdown-container');
+      if (dropdown.offsetParent !== null) {
+        hideDropdown(dropdown, filter.querySelector('.fa-chevron-down'))
+      }
+    }
+  }
+
+  function hideDropdown(dropdown, chevron) {
+    dropdown.style.display = "none";
+    chevron.style.rotate = "0deg";
   }
 }
