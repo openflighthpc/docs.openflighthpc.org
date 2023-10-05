@@ -36,9 +36,28 @@ const data = [
 
 const filterData = [
   {
+    "name": "Number of users",
     "filter": "max_num_users",
+    "icon": "fa-users",
     "options": ['Single user', 'Multiple users'],
-    "thresholds": [1]
+  },
+  {
+    "name": "Lifetime",
+    "filter": "lifetime",
+    "icon": "fa-clock",
+    "options": ['< 6 months', '6 - 12 months', '1+ years'],
+  },
+  {
+    "name": "Storage",
+    "filter": "storage",
+    "icon": "fa-database",
+    "options": ['< 1TB', '1 - 5TB', '5+ TB'],
+  },
+  {
+    "name": "Estimated cost",
+    "filter": "cost",
+    "icon": "fa-credit-card",
+    "options": ['Free', '< $10 per day', '$10+ per day'],
   }
 ]
 
@@ -53,34 +72,25 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   if (document.querySelector('#warehouse')) {
-    const blankCard = document.getElementById('blank-template-card');
-    for (let i = 0; i < data.length; i++) {
-      let templateCard = blankCard.cloneNode(true);
-      let id = data[i].id;
-      templateCard.id = id;
-      templateCard.href = id;
-      templateCard.style.display = 'grid';
-      templateCard.querySelector('img').src = `../assets/images/template-icons/${id}.svg`;
-      inputData(data[i], templateCard);
-      document.getElementById('warehouse').append(templateCard);
-    }
-
-    let filters = document.getElementsByClassName('filter-container');
-    for (let i = 0; i < filters.length; i++) {
-      let chevron = filters[i].querySelector('.fa-chevron-down');
-      let dropdown = filters[i].querySelector('.dropdown-container');
-      chevron.addEventListener('click', () => {
-        if (dropdown.offsetParent === null) {
-          dropdown.style.display = "block";
-          chevron.style.rotate = "180deg";
-        } else {
-          dropdown.style.display = "none";
-          chevron.style.rotate = "0deg";
-        }
-      });
-    }
+    addCards();
+    addFilters();
+    addFilterDropdowns();
   }
 });
+
+function addCards() {
+  const blankCard = document.getElementById('blank-template-card');
+  for (let i = 0; i < data.length; i++) {
+    let templateCard = blankCard.cloneNode(true);
+    let id = data[i].id;
+    templateCard.id = id;
+    templateCard.href = id;
+    templateCard.style.display = 'grid';
+    templateCard.querySelector('img').src = `../assets/images/template-icons/${id}.svg`;
+    inputData(data[i], templateCard);
+    document.getElementById('warehouse').append(templateCard);
+  }
+}
 
 function inputData(templateData, container) {
   let titles = container.getElementsByClassName('template-title');
@@ -109,4 +119,44 @@ function setCapability(templateData, container) {
   container.querySelector('.capability .muscly-arm-container').setAttribute('aria-label', capabilityAlt[capability - 1]);
 }
 
+function addFilters() {
+  const blankFilter = document.getElementById('blank-filter-container');
+  for (let i = 0; i < filterData.length; i++) {
+    let filter = blankFilter.cloneNode(true);
+    let data = filterData[i];
+    filter.querySelector('.template-stats-icon').classList.add(data['icon']);
+    filter.querySelector('.filter span').innerHTML = data['name'];
+    let dropdown = filter.querySelector('.dropdown-options');
+    let options = data['options'];
+    for (let i = 0; i < options.length; i++) {
+      let option = `
+        <label class="dropdown-option" for="${data['filter']}-${i}">
+          <input type="checkbox" id="${data['filter']}-${i}">
+          ${options[i]}
+        </label>
+        <br>
+      `;
+      dropdown.innerHTML += option;
+    }
+    filter.style.display = 'inherit';
+    document.getElementById('filter-bar').append(filter);
+  }
+}
 
+function addFilterDropdowns() {
+  let filters = document.getElementsByClassName('filter-container');
+  for (let i = 0; i < filters.length; i++) {
+    let filter = filters[i];
+    let chevron = filter.querySelector('.fa-chevron-down');
+    let dropdown = filter.querySelector('.dropdown-container');
+    chevron.addEventListener('click', () => {
+      if (dropdown.offsetParent === null) {
+        dropdown.style.display = "block";
+        chevron.style.rotate = "180deg";
+      } else {
+        dropdown.style.display = "none";
+        chevron.style.rotate = "0deg";
+      }
+    });
+  }
+}

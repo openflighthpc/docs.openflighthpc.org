@@ -29,17 +29,19 @@
     text-align: center;
 }
 
-.filter-bar {
+#filter-bar {
     background-color: var(--sky-blue-grey);
     display: flex;
     padding-inline: 2.5rem;
     font-weight: 300;
-
 }
 
 .filter-container {
     position: relative;
+}
 
+#blank-filter-container {
+    display: none;
 }
 
 .filter {
@@ -58,7 +60,6 @@
 .filter .fa-chevron-down {
     color: #C2DFF1;
     padding: 0.5rem;
-    cursor: pointer;
 }
 
 .dropdown-container {
@@ -91,12 +92,14 @@
 
 .dropdown-option {
     line-height: 1.5rem;
+    white-space: nowrap;
 }
 
 .dropdown .button {
     margin-top: 0.4rem;
     align-self: center;
     padding: 0.3rem 1rem !important;
+    white-space: nowrap;
 }
 
 #warehouse {
