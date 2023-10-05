@@ -51,6 +51,7 @@
     margin: 0.3rem 0.5rem 0.3rem 0;
     background-color: white;
     padding-left: 0.5rem;
+    cursor: pointer;
 }
 
 .filter span {

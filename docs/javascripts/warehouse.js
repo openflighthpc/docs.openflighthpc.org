@@ -149,7 +149,7 @@ function addFilterDropdowns() {
     let filter = filters[i];
     let chevron = filter.querySelector('.fa-chevron-down');
     let dropdown = filter.querySelector('.dropdown-container');
-    chevron.addEventListener('click', () => {
+    filter.addEventListener('click', () => {
       if (dropdown.offsetParent === null) {
         dropdown.style.display = "block";
         chevron.style.rotate = "180deg";
