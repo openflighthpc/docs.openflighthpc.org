@@ -29,6 +29,30 @@
     text-align: center;
 }
 
+.filter-container {
+    background-color: var(--sky-blue-grey);
+    display: flex;
+    padding-inline: 2.5rem;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    height: 1.8rem;
+    margin: 0.3rem 0.5rem 0.3rem 0;
+    background-color: white;
+    padding: 0.5rem;
+}
+
+.filter span {
+    font-weight: 300;
+}
+
+.filter .fa-chevron-down {
+    color: #C2DFF1;
+    margin-left: 0.5rem;
+}
+
 #warehouse {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(17.5rem, 1fr));
