@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
       let chevron = filters[i].querySelector('.fa-chevron-down');
       let dropdown = filters[i].querySelector('.dropdown-container');
       chevron.addEventListener('click', () => {
-        if (dropdown.style.display === "none") {
+        if (dropdown.offsetParent === null) {
           dropdown.style.display = "block";
           chevron.style.rotate = "180deg";
         } else {

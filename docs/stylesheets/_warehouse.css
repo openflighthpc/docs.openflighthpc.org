@@ -48,7 +48,7 @@
     height: 1.8rem;
     margin: 0.3rem 0.5rem 0.3rem 0;
     background-color: white;
-    padding: 0.5rem;
+    padding-left: 0.5rem;
 }
 
 .filter span {
@@ -57,7 +57,8 @@
 
 .filter .fa-chevron-down {
     color: #C2DFF1;
-    margin-left: 0.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
 }
 
 .dropdown-container {
