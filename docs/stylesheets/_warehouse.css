@@ -29,10 +29,17 @@
     text-align: center;
 }
 
-.filter-container {
+.filter-bar {
     background-color: var(--sky-blue-grey);
     display: flex;
     padding-inline: 2.5rem;
+    font-weight: 300;
+
+}
+
+.filter-container {
+    position: relative;
+
 }
 
 .filter {
@@ -51,6 +58,44 @@
 .filter .fa-chevron-down {
     color: #C2DFF1;
     margin-left: 0.5rem;
+}
+
+.dropdown-container {
+    display: none;
+}
+
+.connector {
+    position: absolute;
+    background-color: white;
+    top: 2.1rem;
+    left: -1px;
+    width: calc(100% - 0.5rem + 2px);
+    height: calc(0.9rem + 1px);
+    z-index: 2;
+    border-inline: solid var(--sky-blue-grey) 1px;
+}
+
+.dropdown {
+    position: absolute;
+    left: -1px;
+    top: 3rem;
+    display: flex;
+    flex-direction: column;
+    min-width: calc(100% - 0.5rem + 2px);
+    padding: 0.5rem;
+    background-color: white;
+    border: solid var(--sky-blue-grey) 1px;
+    border-radius: 2px;
+}
+
+.dropdown-option {
+    line-height: 1.5rem;
+}
+
+.dropdown .button {
+    margin-top: 0.4rem;
+    align-self: center;
+    padding: 0.3rem 1rem !important;
 }
 
 #warehouse {

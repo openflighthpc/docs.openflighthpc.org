@@ -21,7 +21,7 @@ search:
       Choose from our selection of free templates to start building a cluster using your private cloud resources.
     </p>
   </div>
-  <div class="filter-container">
+  <div class="filter-bar">
     {% include "warehouse/filter-dropdown.html" %}
   </div>
 </div>

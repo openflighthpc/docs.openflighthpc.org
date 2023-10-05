@@ -3,6 +3,7 @@ const data = [
       "id": "slurm-team-edition",
       "title": "SLURM: Team Edition",
       "num_users": "1 - 10",
+      "max_num_users": 10,
       "lifetime": "1 - 3 months",
       "storage": "1TB",
       "cost": "$10 / day",
@@ -13,6 +14,7 @@ const data = [
       "id": "big-data",
       "title": "Big data: Bootstrap",
       "num_users": "1",
+      "max_num_users": 1,
       "lifetime": "6 - 12 months",
       "storage": "5TB",
       "cost": "$15 / day",
@@ -23,6 +25,7 @@ const data = [
       "id": "container-cruncher-small",
       "title": "Container Cruncher (small)",
       "num_users": "1",
+      "max_num_users": 1,
       "lifetime": "1 - 3 months",
       "storage": "100GB",
       "cost": "$10 / day",
@@ -30,6 +33,14 @@ const data = [
       "tagline": "A small single-user Kubernetes environment, suitable for evaluating workflows and running a few microservices."
     }
   ];
+
+const filterData = [
+  {
+    "filter": "max_num_users",
+    "options": ['Single user', 'Multiple users'],
+    "thresholds": [1]
+  }
+]
 
 const capabilityAlt = ["Low", "Medium", "High"];
 
@@ -52,6 +63,21 @@ document.addEventListener('DOMContentLoaded', () => {
       templateCard.querySelector('img').src = `../assets/images/template-icons/${id}.svg`;
       inputData(data[i], templateCard);
       document.getElementById('warehouse').append(templateCard);
+    }
+
+    let filters = document.getElementsByClassName('filter-container');
+    for (let i = 0; i < filters.length; i++) {
+      let chevron = filters[i].querySelector('.fa-chevron-down');
+      let dropdown = filters[i].querySelector('.dropdown-container');
+      chevron.addEventListener('click', () => {
+        if (dropdown.style.display === "none") {
+          dropdown.style.display = "block";
+          chevron.style.rotate = "180deg";
+        } else {
+          dropdown.style.display = "none";
+          chevron.style.rotate = "0deg";
+        }
+      });
     }
   }
 });
@@ -82,3 +108,5 @@ function setCapability(templateData, container) {
   }
   container.querySelector('.capability .muscly-arm-container').setAttribute('aria-label', capabilityAlt[capability - 1]);
 }
+
+
