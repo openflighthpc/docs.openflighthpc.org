@@ -1,6 +1,7 @@
 .warehouse-header {
     background-image: linear-gradient(var(--sky-blue-grey), #ECF5F8);
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 2rem 2.5rem;
@@ -106,8 +107,12 @@
     display: none;
 }
 
+.template-page-padding {
+    padding-inline: min(15rem, 16.7vw) !important;
+}
+
 .template-page-header {
-    left: -15rem !important;
+    left: max(-15rem, -16.7vw) !important;
 }
 
 .template-back-link {
@@ -187,16 +192,43 @@
 
 @media screen and (max-width: 59.9375em) {
     #warehouse {
-        padding: 0.5rem;
+        padding: 0;
     }
 
     .warehouse-header {
-        padding-inline: 1rem;
+        padding-inline: 0.8rem;
+        text-align: center;
+    }
+
+    .template-page-padding {
+        padding-inline: 0.8rem !important;
+    }
+
+    .template-page-header {
+        left: -0.8rem !important;
     }
 
     .template-back-link {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
+        margin-bottom: 0;
+        position: relative;
+        top: -1rem;
+        left: 0;
+        width: 100%;
+    }
+
+    .template-title-container {
+        margin-left: 0;
+    }
+
+    .stats-card {
+        min-width: fit-content;
+        width: 20%;
+        padding: 1rem 1rem !important;
+        margin: 0 auto !important;
+    }
+
+    .template-stats li {
+        font-size: 0.8rem;
     }
 
     .template-card {
@@ -204,7 +236,7 @@
     }
 
     .template-icon {
-        margin-left: 0;
+        margin-inline: 0;
     }
 }
 

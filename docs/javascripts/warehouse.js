@@ -35,7 +35,7 @@ const capabilityAlt = ["Low", "Medium", "High"];
 
 document.addEventListener('DOMContentLoaded', () => {
   if (document.querySelector('#template-content')) {
-    document.querySelector('.md-content__inner').style.paddingInline = '15rem';
+    document.querySelector('.md-content__inner').classList.add('template-page-padding');
 
     let templateID = document.getElementById('template-content').dataset.template;
     inputData(data.find(template => template.id === templateID), document);
