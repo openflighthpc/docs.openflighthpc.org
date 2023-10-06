@@ -161,7 +161,7 @@ function addFilters() {
             class="checkbox"
             data-number="${i}"
             data-type="${filterType}"
-            onclick="applyFilters(this)"
+            onclick="applyFilters()"
           >
           ${options[i]}
         </label>
@@ -209,8 +209,17 @@ function addFilterDropdowns() {
   }
 }
 
-function applyFilters(cb) {
-  const passed = templatesThatPassFilterGroup(cb);
+function applyFilters() {
+  let passed = [];
+  for (let i = 0; i < filterData.length; i++) {
+    const filterGroup = document.getElementById(`${filterData[i]['filter']}-filter-container`);
+    const passedGroup = templatesThatPassFilterGroup(filterGroup);
+    if (i === 0) {
+      passed = passedGroup;
+    } else {
+      passed = passed.filter(template => passedGroup.includes(template));
+    }
+  }
   for (let i = 0; i < data.length; i++) {
     let id = data[i].id;
     let template = document.getElementById(id);
@@ -221,9 +230,8 @@ function applyFilters(cb) {
     }
   }
 
-  function templatesThatPassFilterGroup(cb) {
-    const filter = document.getElementById(`${cb.dataset.type}-filter-container`);
-    const checkboxes = Array.from(filter.querySelectorAll(`.checkbox`));
+  function templatesThatPassFilterGroup(filterGroup) {
+    const checkboxes = Array.from(filterGroup.querySelectorAll(`.checkbox`));
     const selected = checkboxes.filter(checkbox => checkbox.checked);
     let passed = [];
     if (selected.length === checkboxes.length || selected.length === 0) {
