@@ -2,8 +2,7 @@ const data = [
     {
       "id": "slurm-team-edition",
       "title": "SLURM: Team Edition",
-      "num_users": "1 - 10",
-      "max_num_users": 10,
+      "num_users": [1, 10],
       "lifetime": "1 - 3 months",
       "storage": "1TB",
       "cost": "$10 / day",
@@ -13,8 +12,7 @@ const data = [
     {
       "id": "big-data",
       "title": "Big data: Bootstrap",
-      "num_users": "1",
-      "max_num_users": 1,
+      "num_users": [2],
       "lifetime": "6 - 12 months",
       "storage": "5TB",
       "cost": "$15 / day",
@@ -24,8 +22,7 @@ const data = [
     {
       "id": "container-cruncher-small",
       "title": "Container Cruncher (small)",
-      "num_users": "1",
-      "max_num_users": 1,
+      "num_users": [1],
       "lifetime": "1 - 3 months",
       "storage": "100GB",
       "cost": "$10 / day",
@@ -37,10 +34,9 @@ const data = [
 const filterData = [
   {
     "name": "Number of users",
-    "filter": "max_num_users",
+    "filter": "num_users",
     "icon": "fa-users",
     "options": ['Single user', 'Multiple users'],
-    "thresholds": [2],
   },
   {
     "name": "Lifetime",
@@ -102,8 +98,10 @@ function inputData(templateData, container) {
   for (let i = 0; i < keys.length; i++) {
     let el = container.querySelector(`.${keys[i]}`);
     if (el !== null) {
-      if (keys[i] === 'capability') {
-        setCapability(templateData, container);
+      if (keys[i] === 'num_users') {
+        setNumUsers(templateData['num_users'], el);
+      } else if (keys[i] === 'capability') {
+        setCapability(templateData['capability'], container);
       } else {
         el.innerHTML = templateData[keys[i]];
       }
@@ -111,9 +109,16 @@ function inputData(templateData, container) {
   }
 }
 
-function setCapability(templateData, container) {
+function setNumUsers(numUsers, el) {
+  if (numUsers.length > 1) {
+    el.innerHTML = numUsers.join(' - ');
+  } else {
+    el.innerHTML = numUsers;
+  }
+}
+
+function setCapability(capability, container) {
   const musclyArms = container.getElementsByClassName('muscly-arm');
-  const capability = templateData['capability'];
   for (let i = 0; i < capability; i++) {
     musclyArms[i].style.filter = "brightness(1) saturate(1)";
   }
@@ -215,17 +220,14 @@ function applyFilters(cb) {
   }
 
   function templatesThatPassFilter(cb) {
-    const id = cb.id.split('-');
-    const filterNum = Number(id.pop());
-    const filterType = id.join('-');
-    const filterThresholds = filterData.find(data => data['filter'] === filterType)['thresholds'];
-    let filterThreshold;
-    if (filterNum === filterThresholds.length) {
-      filterThreshold = filterThresholds[filterThresholds.length - 1];
-      return data.filter(template => template[filterType] > filterThreshold).map(template => template.id);
-    } else {
-      filterThreshold = filterThresholds[filterNum];
-      return data.filter(template => template[filterType] <= filterThreshold).map(template => template.id);
+    const filterNum = Number(cb.dataset.number);
+    const filterType = cb.dataset.type;
+    if (filterType === "num_users") {
+      if (filterNum === 0) {
+        return data.filter(template => template['num_users'].includes(1)).map(template => template.id);
+      } else {
+        return data.filter(template => template['num_users'].some(val => val > 1)).map(template => template.id);
+      }
     }
   }
 }
