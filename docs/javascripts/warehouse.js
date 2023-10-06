@@ -2,8 +2,8 @@ const data = [
     {
       "id": "slurm-team-edition",
       "title": "SLURM: Team Edition",
-      "num_users": [1, 10],
-      "lifetime": "1 - 3 months",
+      "num_users": 10,
+      "lifetime": 3,
       "storage": "1TB",
       "cost": "$10 / day",
       "capability": 1,
@@ -12,8 +12,8 @@ const data = [
     {
       "id": "big-data",
       "title": "Big data: Bootstrap",
-      "num_users": [2],
-      "lifetime": "6 - 12 months",
+      "num_users": 1,
+      "lifetime": 12,
       "storage": "5TB",
       "cost": "$15 / day",
       "capability": 2,
@@ -22,8 +22,8 @@ const data = [
     {
       "id": "container-cruncher-small",
       "title": "Container Cruncher (small)",
-      "num_users": [1],
-      "lifetime": "1 - 3 months",
+      "num_users": 1,
+      "lifetime": 3,
       "storage": "100GB",
       "cost": "$10 / day",
       "capability": 1,
@@ -37,24 +37,26 @@ const filterData = [
     "filter": "num_users",
     "icon": "fa-users",
     "options": ['Single user', 'Multiple users'],
+    "thresholds": [1],
   },
   {
-    "name": "Lifetime",
+    "name": "Max lifetime",
     "filter": "lifetime",
     "icon": "fa-clock",
-    "options": ['< 6 months', '6 - 12 months', '1+ years'],
+    "options": ['Up to 6 months', '6 - 12 months', 'Over 1 year'],
+    "thresholds": [6, 12],
   },
   {
     "name": "Storage",
     "filter": "storage",
     "icon": "fa-database",
-    "options": ['< 1TB', '1 - 5TB', '5+ TB'],
+    "options": ['< 1TB', '1 - 5TB', '+ 5TB'],
   },
   {
     "name": "Estimated cost",
     "filter": "cost",
     "icon": "fa-credit-card",
-    "options": ['Free', '< $10 per day', '$10+ per day'],
+    "options": ['Free', '< $10 per day', '+ $10 per day'],
   }
 ]
 
@@ -100,6 +102,8 @@ function inputData(templateData, container) {
     if (el !== null) {
       if (keys[i] === 'num_users') {
         setNumUsers(templateData['num_users'], el);
+      } else if (keys[i] === 'lifetime') {
+        setLifetime(templateData['lifetime'], el);
       } else if (keys[i] === 'capability') {
         setCapability(templateData['capability'], container);
       } else {
@@ -115,6 +119,19 @@ function setNumUsers(numUsers, el) {
   } else {
     el.innerHTML = numUsers;
   }
+}
+
+function setLifetime(lifetime, el) {
+  if (lifetime >= 12) {
+    const years = Math.floor(lifetime/12);
+    el.innerHTML = `${years} ${pluralize(years, 'year')}`;
+  } else {
+    el.innerHTML = `${lifetime} ${pluralize(lifetime, 'month')}`;
+  }
+}
+
+function pluralize(num, noun) {
+  return `${noun}${num > 1 ? "s" : ""}`;
 }
 
 function setCapability(capability, container) {
@@ -222,12 +239,17 @@ function applyFilters(cb) {
   function templatesThatPassFilter(cb) {
     const filterNum = Number(cb.dataset.number);
     const filterType = cb.dataset.type;
-    if (filterType === "num_users") {
-      if (filterNum === 0) {
-        return data.filter(template => template['num_users'].includes(1)).map(template => template.id);
-      } else {
-        return data.filter(template => template['num_users'].some(val => val > 1)).map(template => template.id);
-      }
+    const filterThresholds = filterData.find(data => data['filter'] === filterType)['thresholds'];
+    let filterThreshold;
+    if (filterNum === 0) {
+      filterThreshold = filterThresholds[filterNum];
+      return data.filter(template => template[filterType] <= filterThreshold).map(template => template.id);
+    } else if (filterNum === filterThresholds.length) {
+      filterThreshold = filterThresholds[filterThresholds.length - 1];
+      return data.filter(template => template[filterType] > filterThreshold).map(template => template.id);
+    } else {
+      filterThreshold = filterThresholds.slice(filterNum - 1, filterNum + 1);
+      return data.filter(template => template[filterType] > filterThreshold[0] && template[filterType] <= filterThreshold[1]).map(template => template.id);
     }
   }
 }
