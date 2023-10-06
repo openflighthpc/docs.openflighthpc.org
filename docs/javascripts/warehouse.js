@@ -40,6 +40,7 @@ const filterData = [
     "filter": "max_num_users",
     "icon": "fa-users",
     "options": ['Single user', 'Multiple users'],
+    "thresholds": [2],
   },
   {
     "name": "Lifetime",
@@ -129,9 +130,17 @@ function addFilters() {
     let dropdown = filter.querySelector('.dropdown-options');
     let options = data['options'];
     for (let i = 0; i < options.length; i++) {
+      let filterType = data['filter'];
       let option = `
-        <label class="dropdown-option" for="${data['filter']}-${i}">
-          <input type="checkbox" id="${data['filter']}-${i}">
+        <label class="dropdown-option" for="${filterType}-${i}">
+          <input
+            type="checkbox"
+            id="${filterType}-${i}"
+            class="checkbox"
+            data-number="${i}"
+            data-type="${filterType}"
+            onclick="applyFilters(this)"
+          >
           ${options[i]}
         </label>
         <br>
@@ -139,6 +148,8 @@ function addFilters() {
       dropdown.innerHTML += option;
     }
     filter.style.display = 'inherit';
+    filter.id = `${data['filter']}-filter-container`;
+    filter.classList.add('filter-container');
     document.getElementById('filter-bar').append(filter);
   }
 }
@@ -149,7 +160,7 @@ function addFilterDropdowns() {
     let filter = filters[i];
     let chevron = filter.querySelector('.fa-chevron-down');
     let dropdown = filter.querySelector('.dropdown-container');
-    filter.addEventListener('click', () => {
+    filter.querySelector('.filter').addEventListener('click', () => {
       if (dropdown.offsetParent === null) {
         hideAllDropdowns();
         dropdown.style.display = "block";
@@ -173,5 +184,48 @@ function addFilterDropdowns() {
   function hideDropdown(dropdown, chevron) {
     dropdown.style.display = "none";
     chevron.style.rotate = "0deg";
+  }
+}
+
+function applyFilters(cb) {
+  const passed = templatesThatPassFilterGroup(cb);
+  for (let i = 0; i < data.length; i++) {
+    let id = data[i].id;
+    let template = document.getElementById(id);
+    if (template.offsetParent === null && passed.includes(id)) {
+      template.style.display = "grid";
+    } else if (template.offsetParent !== null && !passed.includes(id)) {
+      template.style.display = "none";
+    }
+  }
+
+  function templatesThatPassFilterGroup(cb) {
+    const filter = document.getElementById(`${cb.dataset.type}-filter-container`);
+    const checkboxes = Array.from(filter.querySelectorAll(`.checkbox`));
+    const selected = checkboxes.filter(checkbox => checkbox.checked);
+    let passed = [];
+    if (selected.length === checkboxes.length || selected.length === 0) {
+      passed = data.map(template => template.id);
+    } else {
+      for (let i = 0; i < selected.length; i++) {
+        passed = passed.concat(templatesThatPassFilter(selected[i]));
+      }
+    }
+    return passed;
+  }
+
+  function templatesThatPassFilter(cb) {
+    const id = cb.id.split('-');
+    const filterNum = Number(id.pop());
+    const filterType = id.join('-');
+    const filterThresholds = filterData.find(data => data['filter'] === filterType)['thresholds'];
+    let filterThreshold;
+    if (filterNum === filterThresholds.length) {
+      filterThreshold = filterThresholds[filterThresholds.length - 1];
+      return data.filter(template => template[filterType] > filterThreshold).map(template => template.id);
+    } else {
+      filterThreshold = filterThresholds[filterNum];
+      return data.filter(template => template[filterType] <= filterThreshold).map(template => template.id);
+    }
   }
 }
