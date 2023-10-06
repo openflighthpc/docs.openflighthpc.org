@@ -1,4 +1,4 @@
-const data = [
+const templateData = [
     {
       "id": "slurm-team-edition",
       "title": "SLURM: Team Edition",
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.md-content__inner').classList.add('template-page-padding');
 
     let templateID = document.getElementById('template-content').dataset.template;
-    inputData(data.find(template => template.id === templateID), document);
+    inputData(templateData.find(template => template.id === templateID), document);
   }
 
   if (document.querySelector('#warehouse')) {
@@ -79,14 +79,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function addCards() {
   const blankCard = document.getElementById('blank-template-card');
-  for (let i = 0; i < data.length; i++) {
+  for (let i = 0; i < templateData.length; i++) {
     let templateCard = blankCard.cloneNode(true);
-    let id = data[i].id;
+    let id = templateData[i].id;
     templateCard.id = id;
     templateCard.href = id;
     templateCard.style.display = 'grid';
     templateCard.querySelector('img').src = `../assets/images/template-icons/${id}.svg`;
-    inputData(data[i], templateCard);
+    inputData(templateData[i], templateCard);
     document.getElementById('warehouse').append(templateCard);
   }
 }
@@ -220,8 +220,8 @@ function applyFilters() {
       passed = passed.filter(template => passedGroup.includes(template));
     }
   }
-  for (let i = 0; i < data.length; i++) {
-    let id = data[i].id;
+  for (let i = 0; i < templateData.length; i++) {
+    let id = templateData[i].id;
     let template = document.getElementById(id);
     if (template.offsetParent === null && passed.includes(id)) {
       template.style.display = "grid";
@@ -235,7 +235,7 @@ function applyFilters() {
     const selected = checkboxes.filter(checkbox => checkbox.checked);
     let passed = [];
     if (selected.length === checkboxes.length || selected.length === 0) {
-      passed = data.map(template => template.id);
+      passed = templateData.map(template => template.id);
     } else {
       for (let i = 0; i < selected.length; i++) {
         passed = passed.concat(templatesThatPassFilter(selected[i]));
@@ -251,13 +251,13 @@ function applyFilters() {
     let filterThreshold;
     if (filterNum === 0) {
       filterThreshold = filterThresholds[filterNum];
-      return data.filter(template => template[filterType] <= filterThreshold).map(template => template.id);
+      return templateData.filter(template => template[filterType] <= filterThreshold).map(template => template.id);
     } else if (filterNum === filterThresholds.length) {
       filterThreshold = filterThresholds[filterThresholds.length - 1];
-      return data.filter(template => template[filterType] > filterThreshold).map(template => template.id);
+      return templateData.filter(template => template[filterType] > filterThreshold).map(template => template.id);
     } else {
       filterThreshold = filterThresholds.slice(filterNum - 1, filterNum + 1);
-      return data.filter(template => template[filterType] > filterThreshold[0] && template[filterType] <= filterThreshold[1]).map(template => template.id);
+      return templateData.filter(template => template[filterType] > filterThreshold[0] && template[filterType] <= filterThreshold[1]).map(template => template.id);
     }
   }
 }
