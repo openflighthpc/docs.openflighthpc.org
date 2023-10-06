@@ -13,8 +13,8 @@ search:
 
 ## Launch Instructions
 
-_This template requires that you have access to an OpenStack Private Cloud Environment which has the latest 
-[Flight Solo](../../docs/flight-solo/get-solo) image available._
+_This template requires that you have access to an OpenStack Private Cloud Environment which has the latest
+[Flight Solo](../docs/flight-solo/get-solo/index.md) image available._
 
 1. Download the template provided above
 2. Inspect the parameters within the template to ensure they match desired inputs 
@@ -73,7 +73,7 @@ To add a new user:
    ```
 
 Once the user has successfully logged in, they will need to set a password for themselves to be able to access the 
-[Flight Web Suite](../../docs/flight-environment/use-flight/flight-web-suite). This can be done by them running `kinit newuser`, 
+[Flight Web Suite](../docs/flight-environment/use-flight/flight-web-suite/index.md). This can be done by them running `kinit newuser`, 
 entering their temporary password and then following the prompts to set a new one.
 
 For more information on managing users, see the 
@@ -84,15 +84,15 @@ For more information on managing users, see the
 ### Accessing System
 
 The IP address of the `gateway1` node should be shared with you by the system administrator for this cluster. 
-Once received, see the [HPC Environment Basics guide to Logging In](../../docs/hpc-environment-basics/linux-usage/cli-basics/logging-in).
+Once received, see the [HPC Environment Basics guide to Logging In](../docs/hpc-environment-basics/linux-usage/cli-basics/logging-in.md).
 
 You administrator should have shared a temporary password with you, this is used to authenticate you to set your own 
-password which will allow you access to the [Flight Web Suite](../../docs/flight-environment/use-flight/flight-web-suite).
+password which will allow you access to the [Flight Web Suite](../docs/flight-environment/use-flight/flight-web-suite/index.md).
 
 ### Copying Data Across
 
 The IP address of the `gateway1` node should be shared with you by the system administrator for this cluster. 
-Once received, see the [HPC Environment Basics guide to Working with Data and Files](../../docs/hpc-environment-basics/linux-usage/working-with-data/).
+Once received, see the [HPC Environment Basics guide to Working with Data and Files](../docs/hpc-environment-basics/linux-usage/working-with-data/index.md).
 
 The cluster has shared storage configured for the following directories:
 
@@ -103,5 +103,5 @@ and therefore should not be used for project data
 - `/opt/service`: For admin data and shared system configuration scripts
 - `/opt/site`: For any other shared data or information on the cluster or site
 
-Additionally, data can be copied to the cluster using the [Flight File Manager](../../docs/flight-environment/use-flight/flight-web-suite/file-manager)
+Additionally, data can be copied to the cluster using the [Flight File Manager](../docs/flight-environment/use-flight/flight-web-suite/file-manager.md)
 in Flight Web Suite.
