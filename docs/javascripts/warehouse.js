@@ -111,35 +111,35 @@ function inputData(templateData, container) {
       }
     }
   }
-}
 
-function setNumUsers(numUsers, el) {
-  if (numUsers.length > 1) {
-    el.innerHTML = numUsers.join(' - ');
-  } else {
-    el.innerHTML = numUsers;
+  function setNumUsers(numUsers, el) {
+    if (numUsers.length > 1) {
+      el.innerHTML = numUsers.join(' - ');
+    } else {
+      el.innerHTML = numUsers;
+    }
   }
-}
 
-function setLifetime(lifetime, el) {
-  if (lifetime >= 12) {
-    const years = Math.floor(lifetime/12);
-    el.innerHTML = `${years} ${pluralize(years, 'year')}`;
-  } else {
-    el.innerHTML = `${lifetime} ${pluralize(lifetime, 'month')}`;
+  function setLifetime(lifetime, el) {
+    if (lifetime >= 12) {
+      const years = Math.floor(lifetime/12);
+      el.innerHTML = `${years} ${pluralize(years, 'year')}`;
+    } else {
+      el.innerHTML = `${lifetime} ${pluralize(lifetime, 'month')}`;
+    }
   }
-}
 
-function pluralize(num, noun) {
-  return `${noun}${num > 1 ? "s" : ""}`;
-}
-
-function setCapability(capability, container) {
-  const musclyArms = container.getElementsByClassName('muscly-arm');
-  for (let i = 0; i < capability; i++) {
-    musclyArms[i].style.filter = "brightness(1) saturate(1)";
+  function pluralize(num, noun) {
+    return `${noun}${num > 1 ? "s" : ""}`;
   }
-  container.querySelector('.capability .muscly-arm-container').setAttribute('aria-label', capabilityAlt[capability - 1]);
+
+  function setCapability(capability, container) {
+    const musclyArms = container.getElementsByClassName('muscly-arm');
+    for (let i = 0; i < capability; i++) {
+      musclyArms[i].style.filter = "brightness(1) saturate(1)";
+    }
+    container.querySelector('.capability .muscly-arm-container').setAttribute('aria-label', capabilityAlt[capability - 1]);
+  }
 }
 
 function addFilters() {
