@@ -4,7 +4,7 @@ const templateData = [
       "title": "SLURM: Team Edition",
       "num_users": 10,
       "lifetime": 3,
-      "storage": "1TB",
+      "storage": 1000,
       "cost": "$10 / day",
       "capability": 1,
       "tagline": "A small collaborative environment, great for teams running short projects."
@@ -14,7 +14,7 @@ const templateData = [
       "title": "Big data: Bootstrap",
       "num_users": 1,
       "lifetime": 12,
-      "storage": "5TB",
+      "storage": 5000,
       "cost": "$15 / day",
       "capability": 2,
       "tagline": "Enough power and storage for crunching your big datasets."
@@ -24,7 +24,7 @@ const templateData = [
       "title": "Container Cruncher (small)",
       "num_users": 1,
       "lifetime": 3,
-      "storage": "100GB",
+      "storage": 100,
       "cost": "$10 / day",
       "capability": 1,
       "tagline": "A small single-user Kubernetes environment, suitable for evaluating workflows and running a few microservices."
@@ -50,7 +50,8 @@ const filterData = [
     "name": "Storage",
     "filter": "storage",
     "icon": "fa-database",
-    "options": ['< 1TB', '1 - 5TB', '+ 5TB'],
+    "options": ['Up to 1TB', '1 - 5TB', 'Over 5TB'],
+    "thresholds": [1000, 5000],
   },
   {
     "name": "Estimated cost",
@@ -104,6 +105,8 @@ function inputData(templateData, container) {
         setNumUsers(templateData['num_users'], el);
       } else if (keys[i] === 'lifetime') {
         setLifetime(templateData['lifetime'], el);
+      } else if (keys[i] === 'storage') {
+        setStorage(templateData['storage'], el);
       } else if (keys[i] === 'capability') {
         setCapability(templateData['capability'], container);
       } else {
@@ -131,6 +134,15 @@ function inputData(templateData, container) {
 
   function pluralize(num, noun) {
     return `${noun}${num > 1 ? "s" : ""}`;
+  }
+
+  function setStorage(gb, el) {
+    if (gb >= 1000) {
+      const tb = Math.round(gb * 10 / 1000) / 10;
+      el.innerHTML = `${tb}TB`;
+    } else {
+      el.innerHTML = `${gb}GB`;
+    }
   }
 
   function setCapability(capability, container) {
@@ -257,7 +269,7 @@ function applyFilters() {
       return templateData.filter(template => template[filterType] > filterThreshold).map(template => template.id);
     } else {
       filterThreshold = filterThresholds.slice(filterNum - 1, filterNum + 1);
-      return templateData.filter(template => template[filterType] > filterThreshold[0] && template[filterType] <= filterThreshold[1]).map(template => template.id);
+      return templateData.filter(template => template[filterType] >= filterThreshold[0] && template[filterType] <= filterThreshold[1]).map(template => template.id);
     }
   }
 }
