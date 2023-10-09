@@ -2,32 +2,32 @@ const templateData = [
     {
       "id": "slurm-team-edition",
       "title": "SLURM: Team Edition",
-      "num_users": 10,
-      "lifetime": 3,
-      "storage": 1000,
-      "cost": "$10 / day",
-      "capability": 1,
-      "tagline": "A small collaborative environment, great for teams running short projects."
+      "tagline": "A small collaborative environment, great for teams running short projects.",
+      "num_users": 10, // maximum number of users
+      "lifetime": 3,   // maximum recommended lifetime (months)
+      "storage": 1000, // storage (GB)
+      "cost": "$10 / day", // estimated running costs ($ per day)
+      "capability": 1, // number of muscly arms (1-3)
     },
     {
       "id": "big-data",
       "title": "Big data: Bootstrap",
+      "tagline": "Enough power and storage for crunching your big datasets.",
       "num_users": 1,
       "lifetime": 12,
       "storage": 5000,
       "cost": "$15 / day",
       "capability": 2,
-      "tagline": "Enough power and storage for crunching your big datasets."
     },
     {
       "id": "container-cruncher-small",
       "title": "Container Cruncher (small)",
+      "tagline": "A small single-user Kubernetes environment, suitable for evaluating workflows and running a few microservices.",
       "num_users": 1,
       "lifetime": 3,
       "storage": 100,
       "cost": "$10 / day",
       "capability": 1,
-      "tagline": "A small single-user Kubernetes environment, suitable for evaluating workflows and running a few microservices."
     }
   ];
 
