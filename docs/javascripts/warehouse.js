@@ -1,35 +1,35 @@
 const templateData = [
-    {
-      "id": "slurm-team-edition",
-      "title": "SLURM: Team Edition",
-      "tagline": "A small collaborative environment, great for teams running short projects.",
-      "num_users": 10, // maximum number of users
-      "lifetime": 3,   // maximum recommended lifetime (months)
-      "storage": 1000, // storage (GB)
-      "cost": 10,      // estimated running costs ($ per day)
-      "capability": 1, // number of muscly arms (1-3)
-    },
-    {
-      "id": "big-data",
-      "title": "Big data: Bootstrap",
-      "tagline": "Enough power and storage for crunching your big datasets.",
-      "num_users": 1,
-      "lifetime": 12,
-      "storage": 5000,
-      "cost": 15,
-      "capability": 2,
-    },
-    {
-      "id": "container-cruncher-small",
-      "title": "Container Cruncher (small)",
-      "tagline": "A small single-user Kubernetes environment, suitable for evaluating workflows and running a few microservices.",
-      "num_users": 1,
-      "lifetime": 3,
-      "storage": 100,
-      "cost": 10,
-      "capability": 1,
-    }
-  ];
+  {
+    "id": "slurm-team-edition",
+    "title": "SLURM: Team Edition",
+    "tagline": "A small collaborative environment, great for teams running short projects.",
+    "num_users": 10, // maximum number of users
+    "lifetime": 3,   // maximum recommended lifetime (months)
+    "storage": 1000, // storage (GB)
+    "cost": 10,      // estimated running costs ($ per day)
+    "capability": 1, // number of muscly arms (1-3)
+  },
+  {
+    "id": "big-data",
+    "title": "Big data: Bootstrap",
+    "tagline": "Enough power and storage for crunching your big datasets.",
+    "num_users": 1,
+    "lifetime": 12,
+    "storage": 5000,
+    "cost": 15,
+    "capability": 2,
+  },
+  {
+    "id": "container-cruncher-small",
+    "title": "Container Cruncher (small)",
+    "tagline": "A small single-user Kubernetes environment, suitable for evaluating workflows and running a few microservices.",
+    "num_users": 1,
+    "lifetime": 3,
+    "storage": 100,
+    "cost": 10,
+    "capability": 1,
+  }
+];
 
 const filterData = [
   {
@@ -71,7 +71,7 @@ const filterData = [
     "thresholds": [1, 2],
     "hover": "Indicates the strength of the cluster in terms of scale of the service. This is a combination of recommended users, lifetime, storage and compute capacity.",
   }
-]
+];
 
 const capabilityAlt = ["Low", "Medium", "High"];
 
@@ -151,7 +151,7 @@ function inputData(templateData, container) {
 
   function setLifetime(lifetime, el) {
     if (lifetime >= 12) {
-      const years = Math.floor(lifetime/12);
+      const years = Math.floor(lifetime / 12);
       el.innerHTML = `${years} ${pluralize(years, 'year')}`;
     } else {
       el.innerHTML = `${lifetime} ${pluralize(lifetime, 'month')}`;
