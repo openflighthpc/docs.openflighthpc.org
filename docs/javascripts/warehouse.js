@@ -277,6 +277,7 @@ function applyFilters() {
       template.style.display = "none";
     }
   }
+  renderNoTemplatesMessage(passed.length);
 
   function templatesThatPassFilterGroup(filterGroup) {
     const checkboxes = Array.from(filterGroup.querySelectorAll(`.checkbox`));
@@ -309,6 +310,15 @@ function applyFilters() {
         return templateData.filter(template => template['capability'] === 2).map(template => template.id);
       }
       return templateData.filter(template => template[filterType] >= filterThreshold[0] && template[filterType] <= filterThreshold[1]).map(template => template.id);
+    }
+  }
+
+  function renderNoTemplatesMessage(numPassed) {
+    const noTemplatesMessage = document.getElementById('no-templates-message');
+    if (numPassed === 0) {
+      noTemplatesMessage.style.display = "block";
+    } else {
+      noTemplatesMessage.style.display = "none";
     }
   }
 }

@@ -24,6 +24,9 @@ search:
   <div id="filter-bar">
     {% include "warehouse/filter-dropdown.html" %}
   </div>
+  <p id="no-templates-message">
+    No templates found, please try different filter parameters.
+  </p>
 </div>
 <div id="warehouse">
   {% include "warehouse/template-card.html" %}
