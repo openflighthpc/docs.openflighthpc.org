@@ -28,7 +28,9 @@ search:
     <a onclick="clearAllFilters()">
       Clear filters
     </a>
+    <div id="current-filters"></div>
   </div>
+  {% include "warehouse/current-filter.html" %}
   <p id="no-templates-message">
     No templates found, please try different filter parameters.
   </p>

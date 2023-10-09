@@ -118,6 +118,32 @@
     display: none;
     margin-left: 2.5rem;
     margin-top: 0.8rem;
+    font-size: 0.7rem;
+}
+
+#current-filters {
+    display: flex;
+}
+
+.current-filter {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.current-filter .filter-name {
+    margin-right: 0.3rem;
+    font-weight: 300;
+}
+
+.current-filter i {
+    position: relative;
+    top: 1px;
+    z-index: -1;
+}
+
+#blank-current-filter {
+    display: none;
 }
 
 #no-templates-message {

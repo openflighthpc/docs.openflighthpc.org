@@ -28,7 +28,7 @@ const templateData = [
     "storage": 100,
     "cost": 10,
     "capability": 1,
-  }
+  },
 ];
 
 const filterData = [
@@ -70,7 +70,7 @@ const filterData = [
     "options": [1, 2, 3],
     "thresholds": [1, 2],
     "hover": "Indicates the strength of the cluster in terms of scale of the service. This is a combination of recommended users, lifetime, storage and compute capacity.",
-  }
+  },
 ];
 
 const capabilityAlt = ["Low", "Medium", "High"];
@@ -255,7 +255,7 @@ function addFilterDropdowns() {
       let filter = filters[i];
       let dropdown = filter.querySelector('.dropdown-container');
       if (dropdown.offsetParent !== null) {
-        hideDropdown(dropdown, filter.querySelector('.fa-chevron-down'))
+        hideDropdown(dropdown, filter.querySelector('.fa-chevron-down'));
       }
     }
   }
@@ -303,16 +303,30 @@ function applyFilters() {
     }
   }
   renderNoTemplatesMessage(passed.length);
-  renderClearFiltersButton()
+  renderFilterInfo();
 
-  function renderClearFiltersButton() {
+  function renderFilterInfo() {
     const checkboxes = Array.from(document.querySelectorAll(`#filter-bar .checkbox`));
     const selected = checkboxes.filter(checkbox => checkbox.checked);
-    const clearAllButton = document.getElementById('filter-info');
-    if (selected.length > 0) {
-      clearAllButton.style.display = "flex";
+    const numFilters = selected.length;
+    const filterInfo = document.getElementById('filter-info');
+    const currentFilters = document.getElementById('current-filters');
+    const blankFilterInfo = document.getElementById('blank-current-filter');
+    currentFilters.innerHTML = "";
+    if (numFilters > 0) {
+      for (let i = 0; i < numFilters; i++) {
+        let filter = blankFilterInfo.cloneNode(true);
+        let cb = selected[i];
+        const filterNum = Number(cb.dataset.number);
+        const filterType = cb.dataset.type;
+        let options = filterData.find(x => x['filter'] === filterType)['options'];
+        filter.querySelector('.filter-name').innerHTML = filterOptions(filterType, options)[filterNum];
+        filter.style.display = "flex";
+        currentFilters.append(filter);
+      }
+      filterInfo.style.display = "flex";
     } else {
-      clearAllButton.style.display = "none";
+      filterInfo.style.display = "none";
     }
   }
 
