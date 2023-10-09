@@ -59,6 +59,13 @@ const filterData = [
     "icon": "fa-credit-card",
     "options": ['Free', 'Up to $10 per day', 'Over $10 per day'],
     "thresholds": [0, 10],
+  },
+  {
+    "name": "Capability",
+    "filter": "capability",
+    "icon": "fa-dumbbell",
+    "options": [1, 2, 3],
+    "thresholds": [1, 2],
   }
 ]
 
@@ -165,9 +172,9 @@ function addFilters() {
     filter.querySelector('.template-stats-icon').classList.add(data['icon']);
     filter.querySelector('.filter span').innerHTML = data['name'];
     let dropdown = filter.querySelector('.dropdown-options');
-    let options = data['options'];
+    let filterType = data['filter'];
+    let options = filterOptions(filterType, data['options']);
     for (let i = 0; i < options.length; i++) {
-      let filterType = data['filter'];
       let option = `
         <label class="dropdown-option" for="${filterType}-${i}">
           <input
@@ -189,6 +196,24 @@ function addFilters() {
     filter.classList.add('filter-container');
     document.getElementById('filter-bar').append(filter);
   }
+}
+
+function filterOptions(filterType, filterOptions) {
+  if (filterType === 'capability') {
+    let numOptions = filterOptions.length;
+    let options = new Array(numOptions);
+    const musclyArm = document.querySelector('.muscly-arm').cloneNode(true);
+    musclyArm.style.filter = "brightness(1) saturate(1)";
+    const musclyArmHTML = musclyArm.outerHTML;
+    for (let i = 1; i <= numOptions; i++) {
+      options[i - 1] = "";
+      for (let j = 1; j <= i; j++) {
+        options[i - 1] += musclyArmHTML;
+      }
+    }
+    return options;
+  }
+  return filterOptions;
 }
 
 function addFilterDropdowns() {
@@ -272,6 +297,9 @@ function applyFilters() {
       return templateData.filter(template => template[filterType] > filterThreshold).map(template => template.id);
     } else {
       filterThreshold = filterThresholds.slice(filterNum - 1, filterNum + 1);
+      if (filterType === 'capability') {
+        return templateData.filter(template => template['capability'] === 2).map(template => template.id);
+      }
       return templateData.filter(template => template[filterType] >= filterThreshold[0] && template[filterType] <= filterThreshold[1]).map(template => template.id);
     }
   }

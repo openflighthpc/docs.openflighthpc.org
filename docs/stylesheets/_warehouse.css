@@ -94,6 +94,16 @@
 .dropdown-option {
     line-height: 1.5rem;
     white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+}
+
+.dropdown-option input {
+    margin-right: 0.3rem;
+}
+
+.dropdown-option .muscly-arm {
+    margin-right: 0.2rem;
 }
 
 .dropdown .button {
