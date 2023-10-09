@@ -6,7 +6,7 @@ const templateData = [
       "num_users": 10, // maximum number of users
       "lifetime": 3,   // maximum recommended lifetime (months)
       "storage": 1000, // storage (GB)
-      "cost": "$10 / day", // estimated running costs ($ per day)
+      "cost": 10,      // estimated running costs ($ per day)
       "capability": 1, // number of muscly arms (1-3)
     },
     {
@@ -16,7 +16,7 @@ const templateData = [
       "num_users": 1,
       "lifetime": 12,
       "storage": 5000,
-      "cost": "$15 / day",
+      "cost": 15,
       "capability": 2,
     },
     {
@@ -26,7 +26,7 @@ const templateData = [
       "num_users": 1,
       "lifetime": 3,
       "storage": 100,
-      "cost": "$10 / day",
+      "cost": 10,
       "capability": 1,
     }
   ];
@@ -57,7 +57,8 @@ const filterData = [
     "name": "Estimated cost",
     "filter": "cost",
     "icon": "fa-credit-card",
-    "options": ['Free', '< $10 per day', '+ $10 per day'],
+    "options": ['Free', 'Up to $10 per day', 'Over $10 per day'],
+    "thresholds": [0, 10],
   }
 ]
 
@@ -107,6 +108,8 @@ function inputData(templateData, container) {
         setLifetime(templateData['lifetime'], el);
       } else if (keys[i] === 'storage') {
         setStorage(templateData['storage'], el);
+      } else if (keys[i] === 'cost') {
+        el.innerHTML = `$${templateData['cost']} / day`;
       } else if (keys[i] === 'capability') {
         setCapability(templateData['capability'], container);
       } else {
