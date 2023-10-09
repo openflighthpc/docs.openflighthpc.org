@@ -38,6 +38,7 @@ const filterData = [
     "icon": "fa-users",
     "options": ['Single user', 'Multiple users'],
     "thresholds": [1],
+    "hover": "Maximum number of users",
   },
   {
     "name": "Max lifetime",
@@ -45,6 +46,7 @@ const filterData = [
     "icon": "fa-clock",
     "options": ['Up to 6 months', '6 - 12 months', 'Over 1 year'],
     "thresholds": [6, 12],
+    "hover": "Maximum recommended lifetime",
   },
   {
     "name": "Storage",
@@ -59,6 +61,7 @@ const filterData = [
     "icon": "fa-credit-card",
     "options": ['Free', 'Up to $10 per day', 'Over $10 per day'],
     "thresholds": [0, 10],
+    "hover": "Estimated running costs based on our internal cloud platform - yours may vary based on hardware configuration and energy prices for your private cloud server.",
   },
   {
     "name": "Capability",
@@ -66,6 +69,7 @@ const filterData = [
     "icon": "fa-dumbbell",
     "options": [1, 2, 3],
     "thresholds": [1, 2],
+    "hover": "Indicates the strength of the cluster in terms of scale of the service. This is a combination of recommended users, lifetime, storage and compute capacity.",
   }
 ]
 
@@ -183,6 +187,7 @@ function addFilters() {
     let data = filterData[i];
     filter.querySelector('.template-stats-icon').classList.add(data['icon']);
     filter.querySelector('.filter span').innerHTML = data['name'];
+    filter.title = (data['hover'] !== undefined) ? data['hover'] : data['name'];
     let dropdown = filter.querySelector('.dropdown-options');
     let filterType = data['filter'];
     let options = filterOptions(filterType, data['options']);
