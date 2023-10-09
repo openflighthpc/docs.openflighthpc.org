@@ -86,6 +86,18 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+document.addEventListener('click', (e) => {
+  let filters = document.getElementsByClassName('filter-container');
+  for (let i = 0; i < filters.length; i++) {
+    let filter = filters[i];
+    let chevron = filter.querySelector('.fa-chevron-down');
+    let dropdown = filter.querySelector('.dropdown-container');
+    if (!filter.contains(e.target)) {
+      hideDropdown(dropdown, chevron);
+    }
+  }
+});
+
 function addCards() {
   const blankCard = document.getElementById('blank-template-card');
   for (let i = 0; i < templateData.length; i++) {
@@ -242,11 +254,11 @@ function addFilterDropdowns() {
       }
     }
   }
+}
 
-  function hideDropdown(dropdown, chevron) {
-    dropdown.style.display = "none";
-    chevron.style.rotate = "0deg";
-  }
+function hideDropdown(dropdown, chevron) {
+  dropdown.style.display = "none";
+  chevron.style.rotate = "0deg";
 }
 
 function clearFiltersFromGroup(button) {
