@@ -114,6 +114,18 @@
     cursor: pointer;
 }
 
+#filter-info {
+    display: none;
+    margin-left: 2.5rem;
+    margin-top: 1rem;
+}
+
+#no-templates-message {
+    display: none;
+    text-align: center;
+    margin-top: 4rem;
+}
+
 #warehouse {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(17.5rem, 1fr));
@@ -121,12 +133,6 @@
     justify-content: space-between;
     justify-items: center;
     padding: 1.3rem;
-}
-
-#no-templates-message {
-    display: none;
-    text-align: center;
-    margin-top: 4rem;
 }
 
 .template-card {

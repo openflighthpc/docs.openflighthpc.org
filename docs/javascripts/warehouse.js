@@ -249,8 +249,16 @@ function addFilterDropdowns() {
   }
 }
 
-function clearFilters(button) {
-  let filterCheckboxes = button.parentNode.querySelectorAll('.dropdown-options input');
+function clearFiltersFromGroup(button) {
+  clearFilters(button.parentNode);
+}
+
+function clearAllFilters() {
+  clearFilters(document);
+}
+
+function clearFilters(container) {
+  let filterCheckboxes = container.querySelectorAll('.dropdown-options input');
   for (let i = 0; i < filterCheckboxes.length; i++) {
     filterCheckboxes[i].checked = false;
   }
@@ -278,6 +286,18 @@ function applyFilters() {
     }
   }
   renderNoTemplatesMessage(passed.length);
+  renderClearFiltersButton()
+
+  function renderClearFiltersButton() {
+    const checkboxes = Array.from(document.querySelectorAll(`#filter-bar .checkbox`));
+    const selected = checkboxes.filter(checkbox => checkbox.checked);
+    const clearAllButton = document.getElementById('filter-info');
+    if (selected.length > 0) {
+      clearAllButton.style.display = "flex";
+    } else {
+      clearAllButton.style.display = "none";
+    }
+  }
 
   function templatesThatPassFilterGroup(filterGroup) {
     const checkboxes = Array.from(filterGroup.querySelectorAll(`.checkbox`));

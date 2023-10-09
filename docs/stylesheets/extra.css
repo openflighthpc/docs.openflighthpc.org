@@ -103,6 +103,7 @@ html {
 
 .md-typeset a {
   color: var(--alces-blue);
+  cursor: pointer;
 }
 
 .md-typeset a:hover {

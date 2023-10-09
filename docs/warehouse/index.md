@@ -24,6 +24,11 @@ search:
   <div id="filter-bar">
     {% include "warehouse/filter-dropdown.html" %}
   </div>
+  <div id="filter-info">
+    <a onclick="clearAllFilters()">
+      Clear filters
+    </a>
+  </div>
   <p id="no-templates-message">
     No templates found, please try different filter parameters.
   </p>
