@@ -249,6 +249,14 @@ function addFilterDropdowns() {
   }
 }
 
+function clearFilters(button) {
+  let filterCheckboxes = button.parentNode.querySelectorAll('.dropdown-options input');
+  for (let i = 0; i < filterCheckboxes.length; i++) {
+    filterCheckboxes[i].checked = false;
+  }
+  applyFilters();
+}
+
 function applyFilters() {
   let passed = [];
   for (let i = 0; i < filterData.length; i++) {
