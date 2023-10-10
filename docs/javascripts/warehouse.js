@@ -266,6 +266,11 @@ function hideDropdown(dropdown, chevron) {
   chevron.style.rotate = "0deg";
 }
 
+function clearSingleFilter(button) {
+  document.getElementById(button.parentNode.dataset.filterId).checked = false;
+  applyFilters();
+}
+
 function clearFiltersFromGroup(button) {
   clearFilters(button.parentNode);
 }
@@ -321,6 +326,8 @@ function applyFilters() {
         const filterType = cb.dataset.type;
         let options = filterData.find(x => x['filter'] === filterType)['options'];
         filter.querySelector('.filter-name').innerHTML = filterOptions(filterType, options)[filterNum];
+        filter.id = "";
+        filter.dataset.filterId = cb.id;
         filter.style.display = "flex";
         currentFilters.append(filter);
       }
