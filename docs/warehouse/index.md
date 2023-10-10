@@ -25,10 +25,10 @@ search:
     {% include "warehouse/filter-dropdown.html" %}
   </div>
   <div id="filter-info">
+    <div id="current-filters"></div>
     <a onclick="clearAllFilters()">
       Clear filters
     </a>
-    <div id="current-filters"></div>
   </div>
   {% include "warehouse/current-filter.html" %}
   <p id="no-templates-message">
