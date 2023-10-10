@@ -174,7 +174,7 @@ function inputData(templateData, container) {
   function setCapability(capability, container) {
     const musclyArms = container.getElementsByClassName('muscly-arm');
     for (let i = 0; i < capability; i++) {
-      musclyArms[i].style.filter = "brightness(1) saturate(1)";
+      musclyArms[i].style.filter = "brightness(1)";
     }
     container.querySelector('.capability .muscly-arm-container').setAttribute('aria-label', capabilityAlt[capability - 1]);
   }
@@ -220,7 +220,7 @@ function filterOptions(filterType, filterOptions) {
     let numOptions = filterOptions.length;
     let options = new Array(numOptions);
     const musclyArm = document.querySelector('.muscly-arm').cloneNode(true);
-    musclyArm.style.filter = "brightness(1) saturate(1)";
+    musclyArm.style.filter = "brightness(1)";
     const musclyArmHTML = musclyArm.outerHTML;
     for (let i = 1; i <= numOptions; i++) {
       options[i - 1] = "";
