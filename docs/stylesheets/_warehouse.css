@@ -61,6 +61,7 @@
 .filter .fa-chevron-down {
     color: #C2DFF1;
     padding: 0.5rem;
+    margin-left: auto;
 }
 
 .dropdown-container {
@@ -74,7 +75,7 @@
     left: -1px;
     width: calc(100% - 0.5rem + 2px);
     height: calc(0.9rem + 1px);
-    z-index: 2;
+    z-index: 3;
     border-inline: solid var(--sky-blue-grey) 1px;
 }
 
@@ -89,6 +90,7 @@
     background-color: white;
     border: solid var(--sky-blue-grey) 1px;
     border-radius: 2px;
+    z-index: 2;
 }
 
 .dropdown-option {
@@ -314,6 +316,42 @@
 
 #template-content code {
     max-height: 10rem;
+}
+
+@media screen and (max-width: 76.25em) {
+    #filter-bar {
+        padding-inline: 1rem;
+        padding-top: 0.4rem;
+        padding-bottom: 0.4rem;
+        flex-direction: column;
+    }
+
+    .filter-container {
+        width: 100%;
+    }
+
+    .filter {
+        width: 100%;
+        height: 2.3rem;
+        margin-right: 0;
+    }
+
+    .filter .template-stats-icon {
+        margin-right: 0.6rem;
+    }
+
+    .connector {
+        display: none;
+        /*position: static;*/
+    }
+
+    .dropdown {
+        width: 100%;
+        position: relative;
+        top: -0.5rem;
+        left: 0;
+        border: none;
+    }
 }
 
 @media screen and (max-width: 59.9375em) {

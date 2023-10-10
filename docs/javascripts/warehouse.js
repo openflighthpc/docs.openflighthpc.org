@@ -208,7 +208,7 @@ function addFilters() {
       `;
       dropdown.innerHTML += option;
     }
-    filter.style.display = 'inherit';
+    filter.style.display = 'block';
     filter.id = `${data['filter']}-filter-container`;
     filter.classList.add('filter-container');
     document.getElementById('filter-bar').append(filter);
