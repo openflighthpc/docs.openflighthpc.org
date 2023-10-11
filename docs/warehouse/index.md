@@ -27,6 +27,11 @@ search:
       <i class="fa-solid fa-chevron-down"></i>
     </div>
     <div id="filter-dropdowns-container">
+      <div id="narrow-screen-filter-title-container">
+        <h2 class="title">
+          Filters
+        </h2>
+      </div>
       {% include "warehouse/filter-dropdown.html" %}
       <div id="narrow-screen-button-container">
         <div id="clear-filters-button" class="button" onclick="clearAndHideFilters()">

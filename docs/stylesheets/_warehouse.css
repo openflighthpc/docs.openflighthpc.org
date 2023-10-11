@@ -40,6 +40,20 @@
     display: flex;
 }
 
+#narrow-screen-filter-title-container {
+    display: none;
+    position: relative;
+    top: -0.4rem;
+    left: -1rem;
+    width: 100vw;
+    background-color: var(--sky-blue-grey);
+    margin-bottom: 1rem;
+}
+
+#narrow-screen-filter-title-container .title {
+    margin: 1rem auto;
+}
+
 .filter-container {
     position: relative;
 }
@@ -371,7 +385,7 @@
         border: none;
     }
 
-    #narrow-screen-filter-button {
+    #narrow-screen-filter-button, #narrow-screen-filter-title-container {
         display: flex;
     }
 
@@ -441,7 +455,6 @@
 
     .template-card {
         grid-gap: 1rem;
-        width: 17.5rem;
     }
 
     .template-card .template-tagline {
