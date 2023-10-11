@@ -42,6 +42,13 @@ search:
         </div>
       </div>
     </div>
+    <div id="sort-container">
+      <span>Sort by</span>
+      <div class="filter" onclick="sortCards()">
+        <span>Name (A - Z)</span>
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
+    </div>
   </div>
   <div id="filter-info">
     <div id="current-filters">

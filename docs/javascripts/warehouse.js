@@ -189,6 +189,18 @@ function inputData(templateData, container) {
   }
 }
 
+function sortCards() {
+  const cards = document.getElementById('warehouse');
+
+  [...cards.children]
+    .sort((a, b) => getTitle(a) > getTitle(b) ? 1 : -1)
+    .forEach(node => cards.appendChild(node));
+
+  function getTitle(card) {
+    return card.querySelector(`.template-title`).innerHTML;
+  }
+}
+
 function addFilters() {
   const blankFilter = document.getElementById('blank-filter-container');
   for (let i = 0; i < filterData.length; i++) {

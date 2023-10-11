@@ -177,6 +177,16 @@
     display: none;
 }
 
+#sort-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+#sort-container > span {
+    margin-right: 0.5rem;
+}
+
 #no-templates-message {
     display: none;
     text-align: center;
