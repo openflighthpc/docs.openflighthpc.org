@@ -117,19 +117,21 @@
 
 #filter-info {
     display: none;
-    margin-left: 2.5rem;
-    margin-top: 0.8rem;
+    margin: 0.8rem 2.5rem 0;
     font-size: 0.7rem;
+    flex-wrap: wrap;
 }
 
 #current-filters {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .current-filter {
     display: flex;
     align-items: center;
     margin-right: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .current-filter .filter-name {
@@ -391,6 +393,10 @@
         color: var(--alces-blue) !important;
         border: solid var(--alces-blue) 1px;
         background-color: white;
+    }
+
+    #filter-info {
+        margin-inline: 1.2rem;
     }
 
     #warehouse {
