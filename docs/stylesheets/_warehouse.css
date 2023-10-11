@@ -196,9 +196,9 @@
         / 1fr 1fr;
     align-items: center;
     column-gap: 1.2rem;
-    row-gap: 0.5rem;
+    row-gap: 0.3rem;
     margin: 0 !important;
-    max-width: 24rem;
+    width: 100%;
     min-height: 14.2rem;
 }
 
@@ -214,8 +214,10 @@
 
 .template-icon {
     grid-area: icon;
-    margin: 0.5rem;
+    margin: 0.5rem 0 0.5rem 0.5rem;
+    justify-self: end;
     max-height: 7.5rem;
+    max-width: calc(100% - 0.5rem) !important;
 }
 
 .template-stats {
@@ -463,6 +465,12 @@
 
     .template-icon {
         margin-inline: 0;
+    }
+}
+
+@media screen and (max-width: 48em) {
+    .template-card {
+        width: 17.5rem;
     }
 }
 
