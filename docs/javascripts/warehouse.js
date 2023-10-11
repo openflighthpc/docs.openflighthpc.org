@@ -102,6 +102,15 @@ document.addEventListener('click', (e) => {
   }
 });
 
+window.addEventListener('resize', () => {
+  if (narrowScreen()) {
+    hideFilters();
+  } else {
+    showFilters();
+
+  }
+});
+
 function addCards() {
   const blankCard = document.getElementById('blank-template-card');
   for (let i = 0; i < templateData.length; i++) {
@@ -211,7 +220,7 @@ function addFilters() {
     filter.style.display = 'block';
     filter.id = `${data['filter']}-filter-container`;
     filter.classList.add('filter-container');
-    document.getElementById('filter-bar').append(filter);
+    document.getElementById('filter-dropdowns-container').append(filter);
   }
 }
 
@@ -379,4 +388,12 @@ function applyFilters() {
       noTemplatesMessage.style.display = "none";
     }
   }
+}
+
+function showFilters() {
+  document.getElementById('filter-dropdowns-container').style.display = "flex";
+}
+
+function hideFilters() {
+  document.getElementById('filter-dropdowns-container').style.display = "none";
 }

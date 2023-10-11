@@ -36,6 +36,10 @@
     font-weight: 300;
 }
 
+#filter-dropdowns-container {
+    display: flex;
+}
+
 .filter-container {
     position: relative;
 }
@@ -109,7 +113,6 @@
     align-self: center;
     padding: 0.3rem 1rem !important;
     white-space: nowrap;
-    cursor: pointer;
 }
 
 #filter-info {
@@ -147,6 +150,10 @@
 }
 
 #blank-current-filter {
+    display: none;
+}
+
+#narrow-screen-filter-button, #narrow-screen-button-container {
     display: none;
 }
 
@@ -318,12 +325,22 @@
     max-height: 10rem;
 }
 
-@media screen and (max-width: 76.25em) {
+@media screen and (max-width: 59.9375em) {
     #filter-bar {
-        padding-inline: 1rem;
-        padding-top: 0.4rem;
-        padding-bottom: 0.4rem;
+        padding: 0.2rem 1.2rem;
+    }
+
+    #filter-dropdowns-container {
+        display: none;
+        padding: 0.4rem 1rem;
         flex-direction: column;
+        background-color: var(--sky-blue-grey);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 5;
     }
 
     .filter-container {
@@ -342,7 +359,6 @@
 
     .connector {
         display: none;
-        /*position: static;*/
     }
 
     .dropdown {
@@ -352,9 +368,15 @@
         left: 0;
         border: none;
     }
-}
 
-@media screen and (max-width: 59.9375em) {
+    #narrow-screen-filter-button {
+        display: flex;
+    }
+
+    #narrow-screen-button-container {
+        display: flex;
+    }
+
     #warehouse {
         padding: 0;
     }

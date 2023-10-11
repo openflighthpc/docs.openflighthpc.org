@@ -22,7 +22,18 @@ search:
     </p>
   </div>
   <div id="filter-bar">
-    {% include "warehouse/filter-dropdown.html" %}
+    <div id="narrow-screen-filter-button" class="filter" onclick="showFilters()">
+      <span>Filters</span>
+      <i class="fa-solid fa-chevron-down"></i>
+    </div>
+    <div id="filter-dropdowns-container">
+      {% include "warehouse/filter-dropdown.html" %}
+      <div id="narrow-screen-button-container">
+        <div class="button narrow-screen-button" onclick="hideFilters()">
+          APPLY
+        </div>
+      </div>
+    </div>
   </div>
   <div id="filter-info">
     <div id="current-filters"></div>

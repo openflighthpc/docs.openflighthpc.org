@@ -17,6 +17,7 @@ html {
   color: white !important;
   width: fit-content;
   transition: none !important;
+  cursor: pointer;
 }
 
 .button:hover {
