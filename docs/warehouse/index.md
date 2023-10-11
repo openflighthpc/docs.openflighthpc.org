@@ -29,7 +29,10 @@ search:
     <div id="filter-dropdowns-container">
       {% include "warehouse/filter-dropdown.html" %}
       <div id="narrow-screen-button-container">
-        <div class="button narrow-screen-button" onclick="hideFilters()">
+        <div id="clear-filters-button" class="button" onclick="clearAndHideFilters()">
+          CLEAR ALL
+        </div>
+        <div class="button" onclick="hideFilters()">
           APPLY
         </div>
       </div>

@@ -374,7 +374,22 @@
     }
 
     #narrow-screen-button-container {
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 0.5rem;
+        order: 2;
+        margin-top: auto;
+        margin-bottom: 1rem;
+        font-weight: 400;
+    }
+
+    #narrow-screen-button-container .button {
+        width: 100%;
+    }
+
+    #clear-filters-button {
+        color: var(--alces-blue) !important;
+        background-color: white;
     }
 
     #warehouse {

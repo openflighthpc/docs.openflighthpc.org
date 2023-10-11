@@ -397,3 +397,8 @@ function showFilters() {
 function hideFilters() {
   document.getElementById('filter-dropdowns-container').style.display = "none";
 }
+
+function clearAndHideFilters() {
+  clearAllFilters();
+  hideFilters();
+}
