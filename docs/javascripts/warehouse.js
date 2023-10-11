@@ -326,7 +326,8 @@ function applyFilters() {
     const filterInfo = document.getElementById('filter-info');
     const currentFilters = document.getElementById('current-filters');
     const blankFilterInfo = document.getElementById('blank-current-filter');
-    currentFilters.innerHTML = "";
+    const clearButton = document.getElementById('filter-info-clear-button');
+    currentFilters.innerHTML = clearButton.outerHTML;
     if (numFilters > 0) {
       for (let i = 0; i < numFilters; i++) {
         let filter = blankFilterInfo.cloneNode(true);

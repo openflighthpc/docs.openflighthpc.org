@@ -165,6 +165,10 @@
     margin-right: 0.1rem;
 }
 
+#filter-info-clear-button {
+    order: 2;
+}
+
 #blank-current-filter {
     display: none;
 }
