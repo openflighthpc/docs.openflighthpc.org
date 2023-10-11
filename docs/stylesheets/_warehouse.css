@@ -334,7 +334,7 @@
         display: none;
         padding: 0.4rem 1rem;
         flex-direction: column;
-        background-color: var(--sky-blue-grey);
+        background-color: white;
         position: fixed;
         top: 0;
         left: 0;
@@ -389,6 +389,7 @@
 
     #clear-filters-button {
         color: var(--alces-blue) !important;
+        border: solid var(--alces-blue) 1px;
         background-color: white;
     }
 
