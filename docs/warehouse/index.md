@@ -42,6 +42,7 @@ search:
         </div>
       </div>
     </div>
+    <span class="sort-label">Sort by</span>
     <div id="sort-container" class="filter-container">
       <div class="filter">
         <span></span>
