@@ -188,12 +188,31 @@ function inputData(templateData, container) {
   }
 }
 
-function sortCards(selected) {
-  const cards = document.getElementById('warehouse');
+function sortCards(selected, sortFunction) {
+  const cardContainer = document.getElementById('warehouse');
   const sortContainer = document.querySelector('#sort-container');
-  [...cards.children]
-    .sort((a, b) => getTitle(a) > getTitle(b) ? 1 : -1)
-    .forEach(node => cards.appendChild(node));
+  const cards = [...cardContainer.children];
+  cards.splice(
+    cards.indexOf(
+      cards.find(card => card.id === 'blank-template-card')
+    ),
+  1);
+  const sortFunctions = [];
+  sortFunctions['nameAsc'] = function(a, b) {
+    return getTitle(a) > getTitle(b) ? 1 : -1;
+  };
+  sortFunctions['nameDesc'] = function(a, b) {
+    return getTitle(a) < getTitle(b) ? 1 : -1;
+  };
+  sortFunctions['costAsc'] = function(a, b) {
+    return getCost(a) > getCost(b) ? 1 : -1;
+  };
+  sortFunctions['costDesc'] = function(a, b) {
+    return getCost(a) < getCost(b) ? 1 : -1;
+  };
+  cards
+    .sort((a, b) => sortFunctions[sortFunction](a, b))
+    .forEach(node => cardContainer.appendChild(node));
   sortContainer.querySelector('.filter span').innerHTML = selected.innerHTML;
   hideDropdown(
     sortContainer.querySelector('.dropdown-container'),
@@ -202,6 +221,10 @@ function sortCards(selected) {
 
   function getTitle(card) {
     return card.querySelector(`.template-title`).innerHTML;
+  }
+
+  function getCost(card) {
+    return templateData.find(template => template['id'] === card.id)['cost'];
   }
 }
 

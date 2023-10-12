@@ -51,10 +51,18 @@ search:
         <div class="connector"></div>
         <div class="dropdown">
           <div class="dropdown-options">
-            <div class="dropdown-option" onclick="sortCards(this)">Name (A - Z)</div><br>
-            <div class="dropdown-option" onclick="sortCards(this)">Name (Z - A)</div>
-            <div class="dropdown-option" onclick="sortCards(this)">Estimated costs (low to high)</div>
-            <div class="dropdown-option" onclick="sortCards(this)">Estimated costs (high to low)</div>
+            <div class="dropdown-option" onclick="sortCards(this, 'nameAsc')">
+              Name (A - Z)
+            </div><br>
+            <div class="dropdown-option" onclick="sortCards(this, 'nameDesc')">
+              Name (Z - A)
+            </div>
+            <div class="dropdown-option" onclick="sortCards(this, 'costAsc')">
+              Estimated costs (low to high)
+            </div>
+            <div class="dropdown-option" onclick="sortCards(this, 'costDesc')">
+              Estimated costs (high to low)
+            </div>
           </div>
         </div>
       </div>
