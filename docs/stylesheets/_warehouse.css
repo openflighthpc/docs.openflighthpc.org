@@ -151,6 +151,10 @@
     font-weight: 400;
 }
 
+#sort-container .dropdown-option:hover {
+    color: #84D5F8;
+}
+
 #filter-info {
     display: none;
     margin: 0.8rem 2.5rem 0;
