@@ -51,7 +51,7 @@ search:
         <div class="connector"></div>
         <div class="dropdown">
           <div class="dropdown-options">
-            <div id="default-sort-option" class="dropdown-option" onclick="sortCards(this)">
+            <div id="default-sort-option" class="dropdown-option selected" onclick="sortCards(this)">
               Recommended
             </div>
             <div class="dropdown-option" onclick="sortCards(this, 'nameAsc')">

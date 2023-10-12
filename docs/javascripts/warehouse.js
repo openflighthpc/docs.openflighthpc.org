@@ -228,6 +228,11 @@ function sortCards(selected, sortOption) {
       .forEach(node => cardContainer.appendChild(node));
   }
   sortContainer.querySelector('.filter span').innerHTML = selected.innerHTML;
+  const previouslySelected = sortContainer.querySelector('.dropdown-option.selected');
+  if (previouslySelected !== selected) {
+    previouslySelected.classList.remove('selected');
+    selected.classList.add('selected');
+  }
   hideDropdown(
     sortContainer.querySelector('.dropdown-container'),
     sortContainer.querySelector('.fa-chevron-down')

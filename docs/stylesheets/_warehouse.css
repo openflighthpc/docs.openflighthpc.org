@@ -146,6 +146,11 @@
     cursor: pointer;
 }
 
+#sort-container .selected {
+    color: var(--alces-blue);
+    font-weight: 400;
+}
+
 #filter-info {
     display: none;
     margin: 0.8rem 2.5rem 0;
