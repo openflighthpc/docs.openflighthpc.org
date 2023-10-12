@@ -42,11 +42,21 @@ search:
         </div>
       </div>
     </div>
-    <div id="sort-container">
-      <span>Sort by</span>
-      <div class="filter" onclick="sortCards()">
-        <span>Name (A - Z)</span>
+    <div id="sort-container" class="filter-container">
+      <div class="filter">
+        <span>Sort by...</span>
         <i class="fa-solid fa-chevron-down"></i>
+      </div>
+      <div class="dropdown-container">
+        <div class="connector"></div>
+        <div class="dropdown">
+          <div class="dropdown-options">
+            <div class="dropdown-option" onclick="sortCards(this)">Name (A - Z)</div><br>
+            <div class="dropdown-option" onclick="sortCards(this)">Name (Z - A)</div>
+            <div class="dropdown-option" onclick="sortCards(this)">Estimated costs (low to high)</div>
+            <div class="dropdown-option" onclick="sortCards(this)">Estimated costs (high to low)</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

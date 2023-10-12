@@ -107,7 +107,6 @@ window.addEventListener('resize', () => {
     hideFilters();
   } else {
     showFilters();
-
   }
 });
 
@@ -189,12 +188,17 @@ function inputData(templateData, container) {
   }
 }
 
-function sortCards() {
+function sortCards(selected) {
   const cards = document.getElementById('warehouse');
-
+  const sortContainer = document.querySelector('#sort-container');
   [...cards.children]
     .sort((a, b) => getTitle(a) > getTitle(b) ? 1 : -1)
     .forEach(node => cards.appendChild(node));
+  sortContainer.querySelector('.filter span').innerHTML = selected.innerHTML;
+  hideDropdown(
+    sortContainer.querySelector('.dropdown-container'),
+    sortContainer.querySelector('.fa-chevron-down')
+  );
 
   function getTitle(card) {
     return card.querySelector(`.template-title`).innerHTML;

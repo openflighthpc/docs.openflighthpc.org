@@ -116,6 +116,7 @@
     white-space: nowrap;
     display: inline-flex;
     align-items: center;
+    width: 100%;
 }
 
 .dropdown-option input {
@@ -127,6 +128,22 @@
     align-self: center;
     padding: 0.3rem 1rem !important;
     white-space: nowrap;
+}
+
+#sort-container {
+    width: 13rem;
+}
+
+#sort-container .filter {
+    width: 100%;
+}
+
+#sort-container .dropdown {
+    width: calc(100% - 0.5rem + 2px);
+}
+
+#sort-container .dropdown-option {
+    cursor: pointer;
 }
 
 #filter-info {
@@ -181,10 +198,6 @@
     display: flex;
     align-items: center;
     margin-left: auto;
-}
-
-#sort-container > span {
-    margin-right: 0.5rem;
 }
 
 #no-templates-message {
