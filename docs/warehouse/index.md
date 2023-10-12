@@ -44,13 +44,16 @@ search:
     </div>
     <div id="sort-container" class="filter-container">
       <div class="filter">
-        <span>Sort by...</span>
+        <span></span>
         <i class="fa-solid fa-chevron-down"></i>
       </div>
       <div class="dropdown-container">
         <div class="connector"></div>
         <div class="dropdown">
           <div class="dropdown-options">
+            <div id="default-sort-option" class="dropdown-option" onclick="sortCards(this)">
+              Recommended
+            </div>
             <div class="dropdown-option" onclick="sortCards(this, 'nameAsc')">
               Name (A - Z)
             </div><br>

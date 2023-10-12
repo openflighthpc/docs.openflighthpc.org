@@ -8,6 +8,7 @@ const templateData = [
     "storage": 1000, // storage (GB)
     "cost": 10,      // estimated running costs ($ per day)
     "capability": 1, // number of muscly arms (1-3)
+    "sort_priority": 1, // defines 'recommended' sort order, e.g. 1 has first priority and appears first
   },
   {
     "id": "big-data",
@@ -18,6 +19,7 @@ const templateData = [
     "storage": 5000,
     "cost": 15,
     "capability": 2,
+    "sort_priority": 3,
   },
   {
     "id": "container-cruncher-small",
@@ -28,6 +30,7 @@ const templateData = [
     "storage": 100,
     "cost": 10,
     "capability": 1,
+    "sort_priority": 2,
   },
 ];
 
@@ -122,6 +125,7 @@ function addCards() {
     inputData(templateData[i], templateCard);
     document.getElementById('warehouse').append(templateCard);
   }
+  sortCards(document.getElementById('default-sort-option'));
 }
 
 function inputData(templateData, container) {
@@ -197,22 +201,27 @@ function sortCards(selected, sortFunction) {
       cards.find(card => card.id === 'blank-template-card')
     ),
   1);
-  const sortFunctions = [];
-  sortFunctions['nameAsc'] = function(a, b) {
-    return getTitle(a) > getTitle(b) ? 1 : -1;
-  };
-  sortFunctions['nameDesc'] = function(a, b) {
-    return getTitle(a) < getTitle(b) ? 1 : -1;
-  };
-  sortFunctions['costAsc'] = function(a, b) {
-    return getCost(a) > getCost(b) ? 1 : -1;
-  };
-  sortFunctions['costDesc'] = function(a, b) {
-    return getCost(a) < getCost(b) ? 1 : -1;
-  };
   cards
-    .sort((a, b) => sortFunctions[sortFunction](a, b))
+    .sort((a, b) => getSortPriority(a) > getSortPriority(b) ? 1 : -1)
     .forEach(node => cardContainer.appendChild(node));
+  if (sortFunction !== undefined) {
+    const sortFunctions = [];
+    sortFunctions['nameAsc'] = function(a, b) {
+      return getTitle(a) > getTitle(b) ? 1 : -1;
+    };
+    sortFunctions['nameDesc'] = function(a, b) {
+      return getTitle(a) < getTitle(b) ? 1 : -1;
+    };
+    sortFunctions['costAsc'] = function(a, b) {
+      return getCost(a) > getCost(b) ? 1 : -1;
+    };
+    sortFunctions['costDesc'] = function(a, b) {
+      return getCost(a) < getCost(b) ? 1 : -1;
+    };
+    cards
+      .sort((a, b) => sortFunctions[sortFunction](a, b))
+      .forEach(node => cardContainer.appendChild(node));
+  }
   sortContainer.querySelector('.filter span').innerHTML = selected.innerHTML;
   hideDropdown(
     sortContainer.querySelector('.dropdown-container'),
@@ -225,6 +234,10 @@ function sortCards(selected, sortFunction) {
 
   function getCost(card) {
     return templateData.find(template => template['id'] === card.id)['cost'];
+  }
+
+  function getSortPriority(card) {
+    return templateData.find(template => template['id'] === card.id)['sort_priority'];
   }
 }
 
