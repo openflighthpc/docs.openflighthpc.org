@@ -192,7 +192,7 @@ function inputData(templateData, container) {
   }
 }
 
-function sortCards(selected, sortFunction) {
+function sortCards(selected, sortOption) {
   const cardContainer = document.getElementById('warehouse');
   const sortContainer = document.querySelector('#sort-container');
   const cards = [...cardContainer.children];
@@ -202,24 +202,29 @@ function sortCards(selected, sortFunction) {
     ),
   1);
   cards
-    .sort((a, b) => getSortPriority(a) > getSortPriority(b) ? 1 : -1)
+    .sort((a, b) => getProperty(a, 'sort_priority') > getProperty(b, 'sort_priority') ? 1 : -1)
     .forEach(node => cardContainer.appendChild(node));
-  if (sortFunction !== undefined) {
-    const sortFunctions = [];
-    sortFunctions['nameAsc'] = function(a, b) {
-      return getTitle(a) > getTitle(b) ? 1 : -1;
-    };
-    sortFunctions['nameDesc'] = function(a, b) {
-      return getTitle(a) < getTitle(b) ? 1 : -1;
-    };
-    sortFunctions['costAsc'] = function(a, b) {
-      return getCost(a) > getCost(b) ? 1 : -1;
-    };
-    sortFunctions['costDesc'] = function(a, b) {
-      return getCost(a) < getCost(b) ? 1 : -1;
-    };
+  if (sortOption !== undefined) {
+    let sortFunction;
+    if (sortOption === 'nameAsc') {
+      sortFunction = function(a, b) {
+        return getProperty(a, 'title') > getProperty(b, 'title') ? 1 : -1;
+      };
+    } else if (sortOption === 'nameDesc') {
+      sortFunction = function(a, b) {
+        return getProperty(a, 'title') < getProperty(b, 'title') ? 1 : -1;
+      };
+    } else if (sortOption === 'costAsc') {
+      sortFunction = function(a, b) {
+        return getProperty(a, 'cost') > getProperty(b, 'cost') ? 1 : -1;
+      };
+    } else if (sortOption === 'costDesc') {
+      sortFunction = function(a, b) {
+        return getProperty(a, 'cost') < getProperty(b, 'cost') ? 1 : -1;
+      };
+    }
     cards
-      .sort((a, b) => sortFunctions[sortFunction](a, b))
+      .sort((a, b) => sortFunction(a, b))
       .forEach(node => cardContainer.appendChild(node));
   }
   sortContainer.querySelector('.filter span').innerHTML = selected.innerHTML;
@@ -228,16 +233,8 @@ function sortCards(selected, sortFunction) {
     sortContainer.querySelector('.fa-chevron-down')
   );
 
-  function getTitle(card) {
-    return card.querySelector(`.template-title`).innerHTML;
-  }
-
-  function getCost(card) {
-    return templateData.find(template => template['id'] === card.id)['cost'];
-  }
-
-  function getSortPriority(card) {
-    return templateData.find(template => template['id'] === card.id)['sort_priority'];
+  function getProperty(card, property) {
+    return templateData.find(template => template['id'] === card.id)[property];
   }
 }
 
