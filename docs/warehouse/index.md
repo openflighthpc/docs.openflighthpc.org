@@ -55,10 +55,10 @@ search:
               Recommended
             </div>
             <div class="dropdown-option" onclick="sortCards(this, 'nameAsc')">
-              Name (A - Z)
+              Name (A &rarr; Z)
             </div><br>
             <div class="dropdown-option" onclick="sortCards(this, 'nameDesc')">
-              Name (Z - A)
+              Name (Z &larr; A)
             </div>
             <div class="dropdown-option" onclick="sortCards(this, 'costAsc')">
               Estimated costs (low to high)
