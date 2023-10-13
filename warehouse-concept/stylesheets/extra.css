@@ -14,9 +14,11 @@ html {
   background-color: var(--alces-blue);
   border-radius: 2px;
   padding: 0.5rem 1rem;
+  text-align: center;
   color: white !important;
   width: fit-content;
   transition: none !important;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -103,6 +105,7 @@ html {
 
 .md-typeset a {
   color: var(--alces-blue);
+  cursor: pointer;
 }
 
 .md-typeset a:hover {
