@@ -62,10 +62,10 @@ search:
               Name (Z &larr; A)
             </div>
             <div class="dropdown-option" onclick="sortCards(this, 'costAsc')">
-              Estimated costs (low to high)
+              Est. costs &nbsp;&uarr;
             </div>
             <div class="dropdown-option" onclick="sortCards(this, 'costDesc')">
-              Estimated costs (high to low)
+              Est. costs &nbsp;&darr;
             </div>
           </div>
         </div>

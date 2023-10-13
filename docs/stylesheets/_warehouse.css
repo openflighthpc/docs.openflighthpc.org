@@ -136,7 +136,7 @@
 #sort-container {
     display: flex;
     align-items: center;
-    width: 13rem;
+    width: 8rem;
 }
 
 .sort-label {
@@ -385,6 +385,9 @@
 @media screen and (max-width: 59.9375em) {
     #filter-bar {
         padding: 0.2rem 1.2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 0.5rem;
     }
 
     #filter-dropdowns-container {
@@ -406,7 +409,6 @@
 
     .filter {
         width: 100%;
-        height: 2.3rem;
         margin: 0;
     }
 
@@ -414,16 +416,25 @@
         margin-right: 0.6rem;
     }
 
-    .connector {
+    .connector:not(#sort-container .connector) {
         display: none;
     }
 
-    .dropdown {
+    .dropdown:not(#sort-container .dropdown) {
         width: 100%;
         position: relative;
         top: -0.5rem;
         left: 0;
         border: none;
+    }
+
+    #sort-container .connector {
+        top: 1.8rem;
+    }
+
+    #sort-container .dropdown {
+        font-size: 0.6rem;
+        top: 1.8rem;
     }
 
     #narrow-screen-filter-button, #narrow-screen-filter-title-container {
@@ -442,6 +453,15 @@
 
     #narrow-screen-button-container .button {
         width: 100%;
+    }
+
+    #sort-container {
+        display: block;
+        width: 100%;
+    }
+
+    .sort-label {
+        display: none;
     }
 
     #clear-filters-button {
