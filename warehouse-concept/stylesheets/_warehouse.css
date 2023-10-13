@@ -470,6 +470,11 @@
         width: 100%;
     }
 
+    .disable-scrolling{
+        height: 100%;
+        overflow: hidden;
+    }
+
     #sort-container {
         display: block;
     }
