@@ -106,7 +106,12 @@ document.addEventListener('click', (e) => {
 });
 
 window.addEventListener('resize', () => {
-  if (narrowScreen()) {
+  const em = Number(
+    getComputedStyle(document.querySelector('.filter span'))
+      .fontSize
+      .replace('px', '')
+  );
+  if (window.innerWidth <= 74.5 * em) {
     hideFilters();
   } else {
     showFilters();

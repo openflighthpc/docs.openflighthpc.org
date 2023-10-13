@@ -32,7 +32,6 @@
 #filter-bar {
     background-color: var(--sky-blue-grey);
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     gap: 0.5rem;
     padding-inline: 2.5rem;
@@ -42,6 +41,7 @@
 #filter-dropdowns-container {
     display: flex;
     gap: 0.5rem;
+    margin-right: 0.5rem;
 }
 
 #narrow-screen-filter-title-container {
@@ -137,7 +137,7 @@
 #sort-container {
     display: flex;
     align-items: center;
-    width: 10rem;
+    width: 12rem;
     margin-inline-start: auto;
 }
 
@@ -155,7 +155,7 @@
     left: unset;
     right: -1px;
     min-width: fit-content;
-    width: calc(100% - 0.5rem + 2px);
+    width: calc(100% + 2px);
 }
 
 #sort-container .dropdown-option {
@@ -389,7 +389,7 @@
     max-height: 10rem;
 }
 
-@media screen and (max-width: 59.9375em) {
+@media screen and (max-width: 74.5em) {
     #filter-bar {
         padding: 0.2rem 0.8rem;
         display: grid;
@@ -412,6 +412,8 @@
 
     .filter-container {
         width: 100%;
+        max-width: 30rem;
+        margin-inline: auto;
     }
 
     .filter {
