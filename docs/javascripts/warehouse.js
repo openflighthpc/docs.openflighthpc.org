@@ -452,10 +452,12 @@ function applyFilters() {
 
 function showFilters() {
   document.getElementById('filter-dropdowns-container').style.display = "flex";
+  document.body.classList.add("disable-scrolling");
 }
 
 function hideFilters() {
   document.getElementById('filter-dropdowns-container').style.display = "none";
+  document.body.classList.remove("disable-scrolling");
 }
 
 function clearAndHideFilters() {
