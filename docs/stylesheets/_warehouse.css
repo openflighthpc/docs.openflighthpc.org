@@ -32,6 +32,7 @@
 #filter-bar {
     background-color: var(--sky-blue-grey);
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 0.5rem;
     padding-inline: 2.5rem;
@@ -107,7 +108,7 @@
     display: flex;
     flex-direction: column;
     min-width: calc(100% + 2px);
-    padding: 0.5rem;
+    padding: calc(0.5rem + 2px);
     background-color: white;
     border: solid var(--sky-blue-grey) 1px;
     border-radius: 2px;
@@ -136,10 +137,7 @@
 #sort-container {
     display: flex;
     align-items: center;
-    width: 8rem;
-}
-
-.sort-label {
+    width: 10rem;
     margin-inline-start: auto;
 }
 
@@ -147,7 +145,16 @@
     width: 100%;
 }
 
+#sort-container .filter span {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
 #sort-container .dropdown {
+    left: unset;
+    right: -1px;
+    min-width: fit-content;
     width: calc(100% - 0.5rem + 2px);
 }
 
@@ -384,9 +391,9 @@
 
 @media screen and (max-width: 59.9375em) {
     #filter-bar {
-        padding: 0.2rem 1.2rem;
+        padding: 0.2rem 0.8rem;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         column-gap: 0.5rem;
     }
 
@@ -428,13 +435,18 @@
         border: none;
     }
 
+    #sort-container {
+        width: 100%;
+    }
+
     #sort-container .connector {
         top: 1.8rem;
+        height: calc(0.5rem + 1px);
     }
 
     #sort-container .dropdown {
         font-size: 0.6rem;
-        top: 1.8rem;
+        top: 2.3rem;
     }
 
     #narrow-screen-filter-button, #narrow-screen-filter-title-container {
@@ -443,8 +455,9 @@
 
     #narrow-screen-button-container {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         column-gap: 0.5rem;
+        min-width: 0;
         order: 2;
         margin-top: auto;
         margin-bottom: 1rem;
@@ -457,11 +470,6 @@
 
     #sort-container {
         display: block;
-        width: 100%;
-    }
-
-    .sort-label {
-        display: none;
     }
 
     #clear-filters-button {
@@ -481,6 +489,7 @@
     .warehouse-header {
         padding-inline: 0.8rem;
         text-align: center;
+        flex-direction: column;
     }
 
     .template-page-padding {

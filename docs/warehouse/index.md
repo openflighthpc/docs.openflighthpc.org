@@ -42,8 +42,7 @@ search:
         </div>
       </div>
     </div>
-    <span class="sort-label">Sort by</span>
-    <div id="sort-container" class="filter-container">
+ <div id="sort-container" class="filter-container">
       <div class="filter">
         <span></span>
         <i class="fa-solid fa-chevron-down"></i>
@@ -62,10 +61,10 @@ search:
               Name (Z &larr; A)
             </div>
             <div class="dropdown-option" onclick="sortCards(this, 'costAsc')">
-              Est. costs &nbsp;&uarr;
+              Estimated costs (low to high)
             </div>
             <div class="dropdown-option" onclick="sortCards(this, 'costDesc')">
-              Est. costs &nbsp;&darr;
+              Estimated costs (high to low)
             </div>
           </div>
         </div>
