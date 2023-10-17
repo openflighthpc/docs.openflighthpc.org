@@ -104,15 +104,17 @@ document.addEventListener('click', (e) => {
 });
 
 window.addEventListener('resize', () => {
-  const em = Number(
-    getComputedStyle(document.querySelector('.filter span'))
-      .fontSize
-      .replace('px', '')
-  );
-  if (window.innerWidth <= 74.5 * em) {
-    hideFilters();
-  } else {
-    showFilters();
+  if (document.getElementById('blank-template-card') !== null) {
+    const em = Number(
+      getComputedStyle(document.querySelector('.filter span'))
+        .fontSize
+        .replace('px', '')
+    );
+    if (window.innerWidth <= 74.5 * em) {
+      hideFilters();
+    } else {
+      showFilters();
+    }
   }
 });
 
