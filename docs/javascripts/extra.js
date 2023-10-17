@@ -85,6 +85,39 @@ function populateNav() {
   `;
 }
 
+function stopFocusOnVersions() {
+  const versionItems = document.querySelectorAll('.md-version__link');
+  for (let i = 0; i < versionItems.length; i++) {
+    versionItems[i].addEventListener('focus', (e) => {
+        versionItems[i].blur();
+    });
+  }
+}
+
+waitForElm('.md-version').then(() => {
+  stopFocusOnVersions();
+});
+
+function waitForElm(selector) {
+  return new Promise(resolve => {
+    if (document.querySelector(selector)) {
+      return resolve(document.querySelector(selector));
+    }
+
+    const observer = new MutationObserver(mutations => {
+      if (document.querySelector(selector)) {
+        observer.disconnect();
+        resolve(document.querySelector(selector));
+      }
+    });
+
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true
+    });
+  });
+}
+
 function narrowScreen() {
   return document.querySelector('.top-right-links .search-container').offsetParent;
 }
