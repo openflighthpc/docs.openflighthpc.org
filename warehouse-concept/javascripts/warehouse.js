@@ -97,24 +97,24 @@ document.addEventListener('click', (e) => {
   let filters = document.getElementsByClassName('filter-container');
   for (let i = 0; i < filters.length; i++) {
     let filter = filters[i];
-    let chevron = filter.querySelector('.fa-chevron-down');
-    let dropdown = filter.querySelector('.dropdown-container');
     if (!filter.contains(e.target)) {
-      hideDropdown(dropdown, chevron);
+      hideDropdown(filter);
     }
   }
 });
 
 window.addEventListener('resize', () => {
-  const em = Number(
-    getComputedStyle(document.querySelector('.filter span'))
-      .fontSize
-      .replace('px', '')
-  );
-  if (window.innerWidth <= 74.5 * em) {
-    hideFilters();
-  } else {
-    showFilters();
+  if (document.getElementById('blank-template-card') !== null) {
+    const em = Number(
+      getComputedStyle(document.querySelector('.filter span'))
+        .fontSize
+        .replace('px', '')
+    );
+    if (window.innerWidth <= 74.5 * em) {
+      hideFilters();
+    } else {
+      showFilters();
+    }
   }
 });
 
@@ -238,10 +238,7 @@ function sortCards(selected, sortOption) {
     previouslySelected.classList.remove('selected');
     selected.classList.add('selected');
   }
-  hideDropdown(
-    sortContainer.querySelector('.dropdown-container'),
-    sortContainer.querySelector('.fa-chevron-down')
-  );
+  hideDropdown(sortContainer);
 
   function getProperty(card, property) {
     return templateData.find(template => template['id'] === card.id)[property];
@@ -313,7 +310,7 @@ function addFilterDropdowns() {
         dropdown.style.display = "block";
         chevron.style.rotate = "180deg";
       } else {
-        hideDropdown(dropdown, chevron);
+        hideDropdown(filter);
       }
     });
   }
@@ -323,13 +320,15 @@ function addFilterDropdowns() {
       let filter = filters[i];
       let dropdown = filter.querySelector('.dropdown-container');
       if (dropdown.offsetParent !== null) {
-        hideDropdown(dropdown, filter.querySelector('.fa-chevron-down'));
+        hideDropdown(filter);
       }
     }
   }
 }
 
-function hideDropdown(dropdown, chevron) {
+function hideDropdown(container) {
+  const dropdown = container.querySelector('.dropdown-container');
+  const chevron = container.querySelector('.fa-chevron-down')
   dropdown.style.display = "none";
   chevron.style.rotate = "0deg";
 }
