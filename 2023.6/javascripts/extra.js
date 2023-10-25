@@ -30,10 +30,13 @@ function renderTabs() {
 }
 
 function renderNav() {
-  if (narrowScreen()) {
-    document.querySelector('#solo-drawer').style.display = 'block';
-  } else {
-    document.querySelector('#solo-drawer').style.display = 'none';
+  const soloDrawer = document.querySelector('#solo-drawer');
+  if (soloDrawer) {
+    if (narrowScreen()) {
+      soloDrawer.style.display = 'block';
+    } else {
+      soloDrawer.style.display = 'none';
+    }
   }
 }
 
@@ -60,6 +63,11 @@ function populateNav() {
           <li>
             <a href="../solo">
               FLIGHT SOLO
+            </a>
+          </li>
+          <li>
+            <a href="../warehouse">
+              FLIGHT WAREHOUSE
             </a>
           </li>
           <li>
