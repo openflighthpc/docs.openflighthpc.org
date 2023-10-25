@@ -10,6 +10,10 @@
         - Cluster name: The name of the cluster.
         - NFS server: The hostname or flight-hunter label of the node that will act as the NFS server.
         - SLURM server: The hostname or flight-hunter label of the node that will act as the SLURM server.
+        - Setup Multi User Environment with IPA?: Boolean value to determine whether to configure a multi-user environment with IPA.
+        - IPA server: The short hostname (or flight-hunter label) for the node to be used as the IPA server.
+        - IPA domain: The domain for the IPA server to use.
+        - IPA secure admin password: The password to be used by the `admin` user of the IPA installation to manage the server.
         - Default user: The user that you log in with.
         - Set user password: Set a password to be used for the chosen default user.
         - IP or FQDN for Web Access: As described [here](../../flight-environment/use-flight/flight-web-suite/setup.md#setting-domain-name), this could be the public IP or public hostname.

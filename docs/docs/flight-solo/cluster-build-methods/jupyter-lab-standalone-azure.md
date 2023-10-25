@@ -11,3 +11,7 @@
 ## Jupyter Lab Standalone Configuration
 
 {% include 'flight-solo/creating-clusters/jupyter-lab-standalone-config.md' %}
+
+## Verifying Functionality
+
+{% include 'flight-solo/creating-clusters/jupyter-lab-testing.md' %}

@@ -7,7 +7,6 @@ A convenient way to run such jobs on a research environment is to use a task arr
 ```bash
 #!/bin/bash -l
 #SBATCH --job-name=array
-#SBATCH -D /home/%u
 #SBATCH --output=output.array.%A.%a
 #SBATCH --array=1-1000
 echo "I am $SLURM_ARRAY_TASK_ID from job $SLURM_ARRAY_JOB_ID"

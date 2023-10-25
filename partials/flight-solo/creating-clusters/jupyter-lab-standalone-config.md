@@ -25,4 +25,4 @@
         You can watch the progress of the application with `flight profile view login1 --watch`
 
 !!! success
-    Congratulations, you've now created a Jupyter Lab Standalone environment! Learn more about Kubernetes in [their documentation](https://jupyterlab.readthedocs.io/en/stable/index.html).
+    Congratulations, you've now created a Jupyter Lab Standalone environment! Learn more about Jupyter Lab in [their documentation](https://jupyterlab.readthedocs.io/en/stable/index.html).

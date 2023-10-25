@@ -19,9 +19,12 @@ search:
     </h1>
     <div id="solo-main-text">
       <p>
-        Flight Solo is a preloaded, HPC-ready, platform-agnostic image approach to deploying HPC resources. 
+        Flight Solo is an HPC-ready, platform-agnostic image approach to deploying HPC resources. 
         The Flight Solo image provides a personal High Performance Computing (HPC) environment for research and scientific 
         computing.
+      </p>
+      <p>
+        Compatible with on-demand, reserved and spot instances, Flight Solo rapidly delivers a whole HPC software environment, ready to go and complete with job scheduler, applications and remote desktop service. Multiple software application frameworks are available for use including SPack, Easybuild and Conda containing many hundreds of different programs, libraries, compilers and MPIs. Data management tools for POSIX and S3 object storage are also included to help users transfer files and manage storage resources.
       </p>
     </div>
     <div class="solo-card-container">

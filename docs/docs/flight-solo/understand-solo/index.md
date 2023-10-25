@@ -2,13 +2,13 @@
 
 Flight Solo is a combination of tools, process and knowledge with the aim of providing a streamlined solution to launching HPC systems. It broadly consists of:
 
-- HPC-Optimised Rocky 8 OS
+- HPC-Optimised Rocky 9 OS
 - Cloud-Init Integration
 - Flight Environment
 
-## HPC Optimised Rocky 8 OS
+## HPC Optimised Rocky 9 OS
 
-Flight Solo is built of a clean Rocky EL8 image. This image has been tweaked to be ready to do HPC through:
+Flight Solo is built of a clean Rocky EL9 image. This image has been tweaked to be ready to do HPC through:
 
 - Kernel drivers set to support most virtualisation platforms
 - Suitable security settings
