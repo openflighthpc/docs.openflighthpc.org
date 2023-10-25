@@ -119,6 +119,28 @@ mike deploy --push --update-aliases 20XX.Y latest
 mike delete --push 20XX.Y
 ```
 
+## Adding Warehouse Items
+
+- Add metadata for the item to `docs/javascripts/warehouse.js`
+- Create corresponding files:
+    - `docs/warehouse/TEMPLATE_ID.md`: This is the full template page, it should include launch, admin and user documentation for the cluster. This must start with:
+        ```markdown
+        ---
+        hide:
+          - navigation
+          - toc
+        title: "<template title>"
+        search:
+          exclude: true
+        ---
+
+        {% with id="<template-id>" %}
+          {% include "warehouse/template-page.html" %}
+        {% endwith %}
+        ```
+    - `partials/warehouse/templates/TEMPLATE_ID.yml`: The actual cloud template
+    
+
 ## Content Things to Look Into
 
 - Code Annotations (adds pop-ups with notes on commands/info) 
