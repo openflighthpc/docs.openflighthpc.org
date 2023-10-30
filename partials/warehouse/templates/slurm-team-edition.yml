@@ -45,6 +45,11 @@ parameters:
     type: string
     label: Secure password for nodes to join IPA with
 
+  storage-size:
+    type: number
+    label: Size of the shared storage disk for NFS
+    default: 1024
+
 resources:
   external-route:
     type: OS::Neutron::Router
@@ -197,7 +202,7 @@ resources:
   gateway-vol-shared-storage: 
     type: OS::Cinder::Volume
     properties: 
-      size: 100
+      size: { get_param: storage-size }
 
   gateway-vol-shared-storage-attach: 
     type: OS::Cinder::VolumeAttachment
