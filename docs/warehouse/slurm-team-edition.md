@@ -11,6 +11,8 @@ search:
   {% include "warehouse/template-page.html" %}
 {% endwith %}
 
+## Use
+
 === "Launch Instructions"
 
     _This template requires that you have access to an OpenStack Private Cloud Environment which has the latest
@@ -31,7 +33,7 @@ search:
             "mycluster1" --wait
         ```
 
-    It will take about 20 minutes for the cluster to launch and fully configure itself to be ready for usage. Progress of the application can be verified as complete when `flight profile list` on `gateway1` shows all nodes with a status of `complete`.
+    It will take about 30 minutes for the cluster to launch and fully configure itself to be ready for usage. Progress of the application can be verified as complete when `flight profile list` on `gateway1` shows all nodes with a status of `complete`.
 
     Once launched, you can access the cluster via ssh to the public IP of `gateway1` as the user `flight` with the private key that corresponds with the `ssh-key` parameter.
 
@@ -57,6 +59,7 @@ search:
     To add a new user:
 
     1. Login to `infra01` as the root user
+        1. This can be done by logging into `gateway1` as the user `flight` then switching to the root user (`sudo su -`) and then logging into `infra01`
     1. Authorise as the IPA admin user (using the secure password specified at deployment)
         ```bash
         kinit admin
@@ -72,10 +75,6 @@ search:
     3. Add the user to the cluster users group to enable access
         ```bash
         ipa group-add-member cluster-users --users newuser
-        ```
-    1. Optionally, add a trusted SSH public key to the user (this should be one that corresponds with a private key that the user has outside of the system)
-        ```bash
-        ipa user-mod --sshpubkey="ssh-rsa TheirPublicKey" newuser
         ```
 
     Once the user has successfully logged in, they will need to set a password for themselves to be able to access the 
