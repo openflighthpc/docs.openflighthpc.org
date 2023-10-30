@@ -154,6 +154,7 @@ theme:
   favicon: assets/images/bumcloud.svg
   features:
     - content.code.annotate
+    - content.code.copy
     - navigation.sections
     - navigation.indexes # Allows adding overview pages to sections, name them index.md
     - navigation.tabs
@@ -197,8 +198,8 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true 
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.snippets:
       auto_append:
         - includes/abbreviations.md
@@ -210,3 +211,4 @@ extra_css:
   - stylesheets/extra.css
 extra_javascript:
   - javascripts/extra.js
+  - javascripts/warehouse.js

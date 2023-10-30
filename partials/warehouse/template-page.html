@@ -1,0 +1,104 @@
+<script src="https://kit.fontawesome.com/5d76af6daa.js" crossorigin="anonymous"></script>
+<script src="../../javascripts/warehouse.js"></script>
+
+
+<div class="no-tabs">
+  <div class="warehouse-header template-page-header full-width-container">
+    <a class="template-back-link" href="..">Back to Warehouse</a>
+    <img
+      alt=""
+      class="template-icon"
+      src="../../assets/images/template-icons/{{ id }}.svg"
+    >
+    <div class="template-title-container">
+      <h1 class="template-title"></h1>
+      <p class="tagline"></p>
+    </div>
+  </div>
+
+  <div id="template-content" data-template="{{ id }}">
+    <div class="stats-card card">
+      <ul class="template-stats card-text">
+        <li>
+          <i class="template-stats-icon fa-solid fa-users"></i>
+          <div>
+            <strong>Max number of users:</strong>
+            <span class="num_users"></span>
+          </div>
+        </li>
+        <li>
+          <i class="template-stats-icon fa-solid fa-clock"></i>
+          <div>
+            <strong>Max recommended lifetime:</strong>
+            <span class="lifetime"></span>
+          </div>
+        </li>
+        <li>
+          <i class="template-stats-icon fa-solid fa-database"></i>
+          <div>
+            <strong>Storage:</strong>
+            <span class="storage"></span>
+          </div>
+        </li>
+        <li>
+          <i class="template-stats-icon fa-solid fa-credit-card"></i>
+          <div>
+            <strong>
+              Estimated running costs<sup
+              class="tooltip"
+              title="Estimated running costs based on our internal cloud platform - yours may vary based on hardware configuration and energy prices for your private cloud server.">?</sup>:
+            </strong>
+            <span class="cost"></span>
+          </div>
+        </li>
+        <li>
+          <i class="template-stats-icon fa-solid fa-dumbbell"></i>
+          <div class="muscly-arm-container">
+            <strong class="capability-label">
+              Capability<sup
+                class="tooltip"
+                title="Indicates the strength of the cluster in terms of scale of the service. This is a combination of recommended users, lifetime, storage and compute capacity.">?</sup>:
+            </strong>
+            <span class="capability">
+              <div class="muscly-arm-container">
+                <img
+                  alt=""
+                  class="muscly-arm"
+                  src="../../assets/images/template-icons/muscly-arm.svg"
+                >
+                <img
+                  alt=""
+                  class="muscly-arm"
+                  src="../../assets/images/template-icons/muscly-arm.svg"
+                >
+                <img
+                  alt=""
+                  class="muscly-arm"
+                  src="../../assets/images/template-icons/muscly-arm.svg"
+                >
+              </div>
+            </span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <h2>Download</h2>
+    <p class="tagline">
+      Start building your cluster by downloading the <span class="template-title"></span> template.
+    </p>
+    <div class="highlight">
+      <a
+        title="Download {{ id }}.yml"
+        href="../../assets/templates/{{ id }}.yml"
+        class="filename card link"
+        download
+      >
+        <span class="tagline card-text">{{ id }}.yml</span>
+        <i class="fa-solid fa-download"></i>
+      </a>
+    </div>
+```
+{% include "warehouse/templates/" + id + ".yml" %}
+```
+  </div>
+</div>

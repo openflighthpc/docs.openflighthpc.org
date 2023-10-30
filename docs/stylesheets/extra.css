@@ -3,6 +3,7 @@
 @import '_nav.css';
 @import '_home.css';
 @import '_solo.css';
+@import '_warehouse.css';
 @import '_footer.css';
 
 html {
@@ -13,16 +14,16 @@ html {
   background-color: var(--alces-blue);
   border-radius: 2px;
   padding: 0.5rem 1rem;
+  text-align: center;
   color: white !important;
   width: fit-content;
   transition: none !important;
+  cursor: pointer;
 }
 
 .button:hover {
   color: white !important;
   background-color: var(--alces-blue);
-  filter: brightness(0.8);
-  transition: background-color 125ms;
 }
 
 .button:visited {
@@ -51,8 +52,64 @@ html {
   margin: 0;
 }
 
+.full-width-container {
+  position: relative;
+  left: -1.2rem;
+  top: -1rem;
+  width: 100vw;
+}
+
 .narrow {
   display: none;
+}
+
+.tagline {
+  font-size: 0.85rem;
+}
+
+.card {
+  border-radius: 2px;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: white;
+  border: solid var(--light-blue) 1px;
+}
+
+.card.link:hover {
+  background-color: var(--alces-blue) !important;
+  border: solid var(--alces-blue) 1px;
+  transition: background-color 0.5s, border 0.5s, filter 0.5s;
+  filter: none !important;
+}
+
+.card.link:hover img, .card.link:hover i {
+  filter: brightness(0) invert(1);
+}
+
+.card.link:hover .card-text {
+  color: white;
+}
+
+.card-text {
+  margin: 0 !important;
+  color: var(--alces-grey);
+}
+
+.card h2 {
+  margin-top: 0.5rem;
+}
+
+.md-typeset :target {
+  --md-scroll-margin: 4.3rem;
+}
+
+.md-typeset a {
+  color: var(--alces-blue);
+  cursor: pointer;
+}
+
+.md-typeset a:hover {
+  filter: brightness(0.8);
 }
 
 @media screen and (min-width: 76.25em) {
