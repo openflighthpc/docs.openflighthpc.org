@@ -11,19 +11,8 @@ const templateData = [
     "sort_priority": 1, // defines 'recommended' sort order, e.g. 1 has first priority and appears first
   },
   {
-    "id": "big-data",
-    "title": "Big data: Bootstrap",
-    "tagline": "Enough power and storage for crunching your big datasets.",
-    "num_users": 1,
-    "lifetime": 12,
-    "storage": 5000,
-    "cost": 15,
-    "capability": 2,
-    "sort_priority": 3,
-  },
-  {
     "id": "container-cruncher-small",
-    "title": "Container Cruncher (small)",
+    "title": "Container Cruncher (Small)",
     "tagline": "A small single-user Kubernetes environment, suitable for evaluating workflows and running a few microservices.",
     "num_users": 1,
     "lifetime": 3,
