@@ -36,6 +36,11 @@ parameters:
   node-flavour:
     type: string
     label: Compute node flavour
+
+  storage-size:
+    type: number
+    label: Size of the shared storage disk for NFS
+    default: 100
 resources:
   external-route:
     type: OS::Neutron::Router
@@ -176,7 +181,7 @@ resources:
   gateway-vol-shared-storage:
     type: OS::Cinder::Volume
     properties:
-      size: 100
+      size: { get_param: storage-size }
 
   gateway-vol-shared-storage-attach:
     type: OS::Cinder::VolumeAttachment
@@ -231,24 +236,6 @@ resources:
                 path: /opt/flight/cloudinit.in
                 permissions: '0600'
                 owner: root:root
-              - content: |
-                  if [ -f /opt/flight/cloudinit.in ] ; then
-                      source /opt/flight/cloudinit.in
-                      if [ ! -z ${SERVER} ] ; then
-                          count=120
-                          until socat -u TCP:$SERVER:1234 STDOUT >> /root/.ssh/authorized_keys ; do
-                              sleep 1
-                              count=$((count - 1))
-                              if [[ $count == 0 ]] ; then
-                                  echo "Failed to receive SSH Public Key from $SERVER"
-                                  break
-                              fi
-                          done
-                      fi
-                  fi
-                path: /var/lib/firstrun/scripts/04_getpubkey.bash
-                permissions: '0600'
-                owner: root:root
           params:
             $key: { get_param: ssh-key }
             $clustername: { get_param: clustername }
@@ -299,24 +286,6 @@ resources:
                   SERVER=$gateway-pri-ip
                   PREFIX=node
                 path: /opt/flight/cloudinit.in
-                permissions: '0600'
-                owner: root:root
-              - content: |
-                  if [ -f /opt/flight/cloudinit.in ] ; then
-                      source /opt/flight/cloudinit.in
-                      if [ ! -z ${SERVER} ] ; then
-                          count=120
-                          until socat -u TCP:$SERVER:1234 STDOUT >> /root/.ssh/authorized_keys ; do
-                              sleep 1
-                              count=$((count - 1))
-                              if [[ $count == 0 ]] ; then
-                                  echo "Failed to receive SSH Public Key from $SERVER"
-                                  break
-                              fi
-                          done
-                      fi
-                  fi
-                path: /var/lib/firstrun/scripts/04_getpubkey.bash
                 permissions: '0600'
                 owner: root:root
           params:
