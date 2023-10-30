@@ -1,16 +1,329 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Redirecting</title>
-  <noscript>
-    <meta http-equiv="refresh" content="1; url=../../../2023.6/warehouse/container-cruncher-small/" />
-  </noscript>
-  <script>
-    window.location.replace("../../../2023.6/warehouse/container-cruncher-small/" + window.location.hash);
-  </script>
-</head>
-<body>
-  Redirecting to <a href="../../../2023.6/warehouse/container-cruncher-small/">../../../2023.6/warehouse/container-cruncher-small/</a>...
-</body>
-</html>
+<!doctype html><html lang=en class=no-js> <head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><link rel=icon href=../../assets/images/bumcloud.svg><meta name=generator content="mkdocs-1.5.3, mkdocs-material-9.4.6"><title>Container Cruncher (small) - OpenFlightHPC</title><link rel=stylesheet href=../../assets/stylesheets/main.35e1ed30.min.css><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback"><style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style><link rel=stylesheet href=../../stylesheets/extra.css><script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script></head> <body dir=ltr> <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script> <input class=md-toggle data-md-toggle=drawer type=checkbox id=__drawer autocomplete=off> <input class=md-toggle data-md-toggle=search type=checkbox id=__search autocomplete=off> <label class=md-overlay for=__drawer></label> <div data-md-component=skip> <a href=#use class=md-skip> Skip to content </a> </div> <div data-md-component=announce> </div> <div data-md-color-scheme=default data-md-component=outdated hidden> <aside class="md-banner md-banner--warning"> <div class="md-banner__inner md-grid md-typeset"> You're not viewing the latest stable version of the documentation. <a href=../../..> <strong>Click here to go to latest.</strong> </a> </div> <script>var el=document.querySelector("[data-md-component=outdated]"),outdated=__md_get("__outdated",sessionStorage);!0===outdated&&el&&(el.hidden=!1)</script> </aside> </div> <!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+--> <!-- Determine base classes --> <!-- Header --> <header class=md-header data-md-component=header> <nav class="md-header__inner md-grid" aria-label=Header> <!-- Link to home --> <a href=../.. title=OpenFlightHPC class="md-header__button md-header__logo" aria-label=OpenFlightHPC data-md-component=logo> <img alt="Openflight HPC" class="header-image logo" src=../../assets/images/openflighthpc_white.svg> </a> <div id=header-nav-links> <a href=../../solo> FLIGHT SOLO </a> <a href=../../warehouse> FLIGHT WAREHOUSE </a> <a href=../../docs> DOCUMENTATION </a> </div> <div class=top-right-links> <!-- Color palette --> <!-- Site language selector --> <a href=https://github.com/openflighthpc title="Go to the OpenflightHPC Github repo" target=_blank> <img id=github-logo alt class=md-header__button src=../../assets/images/github-mark-white.svg> </a> <a id=alces-link href=https://alces-flight.com target=_blank> <img alt="Powered by Alces Flight Ltd" class=header-image src=../../assets/images/poweredby_white.svg> </a> </div> <div class="top-right-links narrow"> <div class=search-container> <label class="md-header__button md-icon" for=__search> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg> </label> <div class=md-search data-md-component=search role=dialog> <label class=md-search__overlay for=__search></label> <div class=md-search__inner role=search> <form class=md-search__form name=search> <input type=text class=md-search__input name=query aria-label=Search placeholder=Search autocapitalize=off autocorrect=off autocomplete=off spellcheck=false data-md-component=search-query required> <label class="md-search__icon md-icon" for=__search> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg> </label> <nav class=md-search__options aria-label=Search> <button type=reset class="md-search__icon md-icon" title=Clear aria-label=Clear tabindex=-1> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg> </button> </nav> <div class=md-search__suggest data-md-component=search-suggest></div> </form> <div class=md-search__output> <div class=md-search__scrollwrap data-md-scrollfix> <div class=md-search-result data-md-component=search-result> <div class=md-search-result__meta> Initializing search </div> <ol class=md-search-result__list role=presentation></ol> </div> </div> </div> </div> </div> </div> <!-- Button to open drawer --> <label id=burger class="md-header__button md-icon" for=__drawer> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg> </label> </div> <!-- Navigation tabs (sticky) --> </header> <div class=md-container data-md-component=container> <div id=tabs> <label class="md-header__button md-icon" for=__drawer> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M5.59 7.41 7 6l6 6-6 6-1.41-1.41L10.17 12 5.59 7.41m6 0L13 6l6 6-6 6-1.41-1.41L16.17 12l-4.58-4.59Z"/></svg> </label> <nav class=md-tabs aria-label=Tabs data-md-component=tabs> <div class=md-grid> <ul class=md-tabs__list> <li class=md-tabs__item> <a href=../../docs/ class=md-tabs__link> Overview </a> </li> <li class=md-tabs__item> <a href=../../docs/hpc-concepts/ class=md-tabs__link> HPC Concepts </a> </li> <li class=md-tabs__item> <a href=../../docs/hpc-environment-basics/ class=md-tabs__link> HPC Environment Basics </a> </li> <li class=md-tabs__item> <a href=../../docs/flight-environment/ class=md-tabs__link> Flight Environment </a> </li> <li class=md-tabs__item> <a href=../../docs/flight-solo/ class=md-tabs__link> Flight Solo </a> </li> <li class=md-tabs__item> <a href=../../docs/hpc-workflows/ class=md-tabs__link> HPC Workflows </a> </li> </ul> </div> </nav> <div class=search-container> <label class="md-header__button md-icon" for=__search> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg> </label> <div class=md-search data-md-component=search role=dialog> <label class=md-search__overlay for=__search></label> <div class=md-search__inner role=search> <form class=md-search__form name=search> <input type=text class=md-search__input name=query aria-label=Search placeholder=Search autocapitalize=off autocorrect=off autocomplete=off spellcheck=false data-md-component=search-query required> <label class="md-search__icon md-icon" for=__search> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg> </label> <nav class=md-search__options aria-label=Search> <button type=reset class="md-search__icon md-icon" title=Clear aria-label=Clear tabindex=-1> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg> </button> </nav> <div class=md-search__suggest data-md-component=search-suggest></div> </form> <div class=md-search__output> <div class=md-search__scrollwrap data-md-scrollfix> <div class=md-search-result data-md-component=search-result> <div class=md-search-result__meta> Initializing search </div> <ol class=md-search-result__list role=presentation></ol> </div> </div> </div> </div> </div> </div> </div> <label id=search-overlay class=md-search__overlay for=__search></label> <div id=blue-bar></div> <main class=md-main data-md-component=main> <div class="md-main__inner md-grid"> <div class="md-sidebar md-sidebar--primary" data-md-component=sidebar data-md-type=navigation hidden> <div class=md-sidebar__scrollwrap> <div class=md-sidebar__inner> <!-- Main navigation --> <nav class="md-nav md-nav--primary md-nav--lifted" aria-label=Navigation data-md-level=0> <!-- Site title --> <label class=md-nav__title for=__drawer> <a href=../.. title=OpenFlightHPC class="md-nav__button md-logo md-nav-logo" aria-label=OpenFlightHPC data-md-component=logo> <img alt="Openflight HPC" src=../../assets/images/openflighthpc_grey.svg> </a> </label> <!-- Render item list --> <ul class="md-nav__list top-level" hidden=hidden> <li> <a href=../../solo> FLIGHT SOLO </a> </li> <li> <a href=../../warehouse> FLIGHT WAREHOUSE </a> </li> <li> <a href=../../docs> DOCUMENTATION </a> </li> </ul> <ul class="md-nav__list sub-level" data-md-scrollfix> </ul> <!-- Version selector --> <div id=version-container class="md-nav__list md-header__title" data-md-component=header-title> <div class=md-header__ellipsis> <div class=md-header__topic>Version: </div> </div> </div> <a class=alces-link href=https://alces-flight.com target=_blank hidden=hidden> <img alt="Powered by Alces Flight Ltd" class=header-image src=../../assets/images/poweredby.svg> </a> </nav> </div> </div> </div> <div class="md-sidebar md-sidebar--secondary" data-md-component=sidebar data-md-type=toc hidden> <div class=md-sidebar__scrollwrap> <div class=md-sidebar__inner> <nav class="md-nav md-nav--secondary" aria-label="On this page"> <label class=md-nav__title for=__toc> <span class="md-nav__icon md-icon"></span> On this page </label> <ul class=md-nav__list data-md-component=toc data-md-scrollfix> <li class=md-nav__item> <a href=#use class=md-nav__link> Use </a> <nav class=md-nav aria-label=Use> <ul class=md-nav__list> <li class=md-nav__item> <a href=#accessing-system class=md-nav__link> Accessing System </a> </li> <li class=md-nav__item> <a href=#copying-data-across class=md-nav__link> Copying Data Across </a> </li> </ul> </nav> </li> </ul> </nav> </div> </div> </div> <div class=md-content data-md-component=content> <article class="md-content__inner md-typeset"> <script src=https://kit.fontawesome.com/5d76af6daa.js crossorigin=anonymous></script> <script src=../../javascripts/warehouse.js></script> <div class=no-tabs> <div class="warehouse-header template-page-header full-width-container"> <a class=template-back-link href=..>Back to Warehouse</a> <img alt class=template-icon src=../../assets/images/template-icons/container-cruncher-small.svg> <div class=template-title-container> <h1 class=template-title></h1> <p class=tagline></p> </div> </div> <div id=template-content data-template=container-cruncher-small> <div class="stats-card card"> <ul class="template-stats card-text"> <li> <i class="template-stats-icon fa-solid fa-users"></i> <div> <strong>Max number of users:</strong> <span class=num_users></span> </div> </li> <li> <i class="template-stats-icon fa-solid fa-clock"></i> <div> <strong>Max recommended lifetime:</strong> <span class=lifetime></span> </div> </li> <li> <i class="template-stats-icon fa-solid fa-database"></i> <div> <strong>Storage:</strong> <span class=storage></span> </div> </li> <li> <i class="template-stats-icon fa-solid fa-credit-card"></i> <div> <strong> Estimated running costs<sup class=tooltip title="Estimated running costs based on our internal cloud platform - yours may vary based on hardware configuration and energy prices for your private cloud server.">?</sup>: </strong> <span class=cost></span> </div> </li> <li> <i class="template-stats-icon fa-solid fa-dumbbell"></i> <div class=muscly-arm-container> <strong class=capability-label> Capability<sup class=tooltip title="Indicates the strength of the cluster in terms of scale of the service. This is a combination of recommended users, lifetime, storage and compute capacity.">?</sup>: </strong> <span class=capability> <div class=muscly-arm-container> <img alt class=muscly-arm src=../../assets/images/template-icons/muscly-arm.svg> <img alt class=muscly-arm src=../../assets/images/template-icons/muscly-arm.svg> <img alt class=muscly-arm src=../../assets/images/template-icons/muscly-arm.svg> </div> </span> </div> </li> </ul> </div> <h2>Download</h2> <p class=tagline> Start building your cluster by downloading the <span class=template-title></span> template. </p> <div class=highlight> <a title="Download container-cruncher-small.yml" href=../../assets/templates/container-cruncher-small.yml class="filename card link" download> <span class="tagline card-text">container-cruncher-small.yml</span> <i class="fa-solid fa-download"></i> </a> </div> <div class=highlight><pre><span></span><code>heat_template_version: 2021-04-16
+parameters:
+  clustername:
+    type: string
+    label: Cluster Name
+    description: The name to give the cluster
+
+  external-network:
+    type: string
+    label: External Network Name
+    description: The name of the external network to bridge network to
+
+  network-cidr-pri:
+    type: string
+    label: Primary Nework CIDR
+    description: Network CIDR to be used for primary network
+    default: &#39;10.100.0.0/16&#39;
+
+  ssh-key:
+    type: string
+    label: SSH Key for Access
+
+  solo-image:
+    type: string
+    label: Flight Solo Image ID
+
+  gateway-pri-ip:
+    type: string
+    label: Gateway Primary IP Address
+    default: &#39;10.100.0.101&#39;
+
+  gateway-flavour:
+    type: string
+    label: Gateway node flavour
+
+  node-flavour:
+    type: string
+    label: Compute node flavour
+
+  storage-size:
+    type: number
+    label: Size of the shared storage disk for NFS
+    default: 100
+resources:
+  external-route:
+    type: OS::Neutron::Router
+    depends_on: cluster-network-pri
+    properties:
+      name: { list_join: [&#39;-&#39;, [ {get_param: clustername}, &#39;ext-route&#39;]] }
+      external_gateway_info:
+        network: { get_param: external-network }
+
+  external-route-iface:
+    type: OS::Neutron::RouterInterface
+    properties:
+      router: { get_resource: external-route }
+      subnet: { get_resource: cluster-network-pri }
+
+  cluster-network:
+    type: OS::Neutron::Net
+    properties:
+      name: { list_join: [&#39;-&#39;, [{ get_param: clustername }, &#39;network&#39;]] }
+      dns_domain: { list_join: [&#39;.&#39;, [{ get_param: clustername }, &#39;alces.network.&#39;]] }
+
+  cluster-network-pri:
+    type: OS::Neutron::Subnet
+    properties:
+      name: { list_join: [&#39;-&#39;, [ {get_param: clustername}, &#39;network-pri&#39;]] }
+      network: { get_resource: cluster-network }
+      cidr: { get_param: network-cidr-pri }
+      ip_version: 4
+
+  cluster-sg:
+    type: OS::Neutron::SecurityGroup
+    properties:
+      name: { list_join: [&#39;-&#39;, [ {get_param: clustername}, &#39;network-pri-sg&#39;]] }
+      rules:
+        - direction: egress
+          remote_ip_prefix: 0.0.0.0/0
+        - direction: ingress
+          remote_ip_prefix: { get_param: network-cidr-pri }
+        - direction: ingress
+          protocol: icmp
+          remote_ip_prefix: 0.0.0.0/0
+        - direction: ingress
+          port_range_min: 22
+          port_range_max: 22
+          protocol: tcp
+          remote_ip_prefix: 0.0.0.0/0
+        - direction: ingress
+          port_range_min: 80
+          port_range_max: 80
+          protocol: tcp
+          remote_ip_prefix: 0.0.0.0/0
+        - direction: ingress
+          port_range_min: 443
+          port_range_max: 443
+          protocol: tcp
+          remote_ip_prefix: 0.0.0.0/0
+        - direction: ingress
+          port_range_min: 5901
+          port_range_max: 5911
+          protocol: tcp
+          remote_ip_prefix: 0.0.0.0/0
+        - direction: ingress
+          port_range_min: 8888
+          port_range_max: 8888
+          protocol: tcp
+          remote_ip_prefix: 0.0.0.0/0
+        - direction: ingress
+          port_range_min: 8888
+          port_range_max: 8888
+          protocol: udp
+          remote_ip_prefix: 0.0.0.0/0
+
+  gateway-pri-port:
+    type: OS::Neutron::Port
+    depends_on: cluster-network-pri
+    properties:
+      name: { list_join: [&#39;-&#39;, [&#39;gateway1&#39;, &#39;pri&#39;, { get_param: clustername }]] }
+      network: { get_resource: cluster-network }
+      security_groups:
+        - { get_resource: cluster-sg }
+      fixed_ips:
+        - subnet: { get_resource: cluster-network-pri }
+          ip_address: { get_param: gateway-pri-ip }
+
+  gw:
+    type: OS::Nova::Server
+    properties:
+      name: { list_join: [&#39;.&#39;, [&#39;gateway1&#39;, { get_param: clustername }, &#39;alces.network&#39;]] }
+      flavor: { get_param: gateway-flavour }
+      admin_user: flight
+      networks:
+          - port: { get_resource: gateway-pri-port }
+      block_device_mapping_v2:
+        - volume_id: { get_resource: gateway-vol }
+          boot_index: 0
+      user_data_format: RAW
+      user_data:
+        str_replace:
+          template: |
+            #cloud-config
+            fqdn: gateway1.$clustername.alces.network
+            users:
+              - default
+              - name: flight
+                sudo: ALL=(ALL) NOPASSWD:ALL
+                ssh-authorized-keys:
+                  - $key
+            write_files:
+              - content: |
+                  SHAREPUBKEY=true
+                  AUTOPARSEMATCH=$clustername
+                  PROFILE_ANSWERS=&#39;{ &quot;cluster_type&quot;: &quot;openflight-kubernetes-multinode&quot;, &quot;cluster_name&quot;: &quot;$clustername&quot;, &quot;nfs_server&quot;: &quot;gateway1&quot;}&#39;
+                  AUTOAPPLY=&quot;gateway: master, node: worker&quot;
+                path: /opt/flight/cloudinit.in
+                permissions: &#39;0600&#39;
+                owner: root:root
+              - content: |
+                  DISKID=&quot;$sharedstorageid&quot;
+                  DEVICE=&quot;/dev/disk/by-id/virtio-$(echo $DISKID |cut -c -20)&quot;
+                  mkfs.xfs $DEVICE
+                  mkdir -p /export
+                  echo &quot;$DEVICE  /export  xfs  defaults  0 0&quot; &gt;&gt; /etc/fstab
+                  mount /export
+                path: /var/lib/firstrun/scripts/00-sharedstoragemount.bash
+                permissions: &#39;0600&#39;
+                owner: root:root
+          params:
+            $key: { get_param: ssh-key }
+            $clustername: { get_param: clustername }
+            $sharedstorageid: { get_resource: gateway-vol-shared-storage }
+
+  gateway-vol:
+    type: OS::Cinder::Volume
+    properties:
+      image: { get_param: solo-image }
+      size: 16
+
+  gateway-vol-shared-storage:
+    type: OS::Cinder::Volume
+    properties:
+      size: { get_param: storage-size }
+
+  gateway-vol-shared-storage-attach:
+    type: OS::Cinder::VolumeAttachment
+    properties:
+      instance_uuid: { get_resource: gw }
+      volume_id: { get_resource: gateway-vol-shared-storage }
+
+  gateway-ip:
+     type: &quot;OS::Neutron::FloatingIP&quot;
+     properties:
+        floating_network_id: {get_param: external-network}
+        port_id: {get_resource: gateway-pri-port}
+
+  node01-pri-port:
+    type: OS::Neutron::Port
+    properties:
+      name: { list_join: [&#39;-&#39;, [&#39;node01&#39;, &#39;pri&#39;, { get_param: clustername }]] }
+      network: { get_resource: cluster-network }
+      security_groups:
+        - { get_resource: cluster-sg }
+      fixed_ips:
+        - subnet: { get_resource: cluster-network-pri }
+          ip_address: 10.100.1.1
+
+  node01:
+    type: OS::Nova::Server
+    properties:
+      name: { list_join: [&#39;.&#39;, [ &#39;node01&#39;, { get_param: clustername }, &#39;alces.network&#39;]] }
+      flavor: { get_param: node-flavour }
+      admin_user: flight
+      networks:
+          - port: { get_resource: node01-pri-port }
+      block_device_mapping_v2:
+        - volume_id: { get_resource: node01-vol }
+          boot_index: 0
+      user_data_format: RAW
+      user_data:
+        str_replace:
+          template: |
+            #cloud-config
+            fqdn: node01.$clustername.alces.network
+            users:
+              - default
+              - name: flight
+                sudo: ALL=(ALL) NOPASSWD:ALL
+                ssh-authorized-keys:
+                  - $key
+            write_files:
+              - content: |
+                  SERVER=$gateway-pri-ip
+                  PREFIX=node
+                path: /opt/flight/cloudinit.in
+                permissions: &#39;0600&#39;
+                owner: root:root
+          params:
+            $key: { get_param: ssh-key }
+            $clustername: { get_param: clustername }
+            $gateway-pri-ip: { get_param: gateway-pri-ip }
+
+  node01-vol:
+    type: OS::Cinder::Volume
+    properties:
+      image: { get_param: solo-image }
+      size: 16
+
+  node02-pri-port:
+    type: OS::Neutron::Port
+    properties:
+      name: { list_join: [&#39;-&#39;, [&#39;node02&#39;, &#39;pri&#39;, { get_param: clustername }]] }
+      network: { get_resource: cluster-network }
+      security_groups:
+        - { get_resource: cluster-sg }
+      fixed_ips:
+        - subnet: { get_resource: cluster-network-pri }
+          ip_address: 10.100.1.2
+
+  node02:
+    type: OS::Nova::Server
+    properties:
+      name: { list_join: [&#39;.&#39;, [ &#39;node02&#39;, { get_param: clustername }, &#39;alces.network&#39;]] }
+      flavor: { get_param: node-flavour }
+      admin_user: flight
+      networks:
+          - port: { get_resource: node02-pri-port }
+      block_device_mapping_v2:
+        - volume_id: { get_resource: node02-vol }
+          boot_index: 0
+      user_data_format: RAW
+      user_data:
+        str_replace:
+          template: |
+            #cloud-config
+            fqdn: node02.$clustername.alces.network
+            users:
+              - default
+              - name: flight
+                sudo: ALL=(ALL) NOPASSWD:ALL
+                ssh-authorized-keys:
+                  - $key
+            write_files:
+              - content: |
+                  SERVER=$gateway-pri-ip
+                  PREFIX=node
+                path: /opt/flight/cloudinit.in
+                permissions: &#39;0600&#39;
+                owner: root:root
+          params:
+            $key: { get_param: ssh-key }
+            $clustername: { get_param: clustername }
+            $gateway-pri-ip: { get_param: gateway-pri-ip }
+
+  node02-vol:
+    type: OS::Cinder::Volume
+    properties:
+      image: { get_param: solo-image }
+      size: 16
+</code></pre></div> </div> </div> <h2 id=use>Use</h2> <div class="tabbed-set tabbed-alternate" data-tabs=1:2><input checked=checked id=__tabbed_1_1 name=__tabbed_1 type=radio><input id=__tabbed_1_2 name=__tabbed_1 type=radio><div class=tabbed-labels><label for=__tabbed_1_1>Launch Instructions</label><label for=__tabbed_1_2>Usage Instructions</label></div> <div class=tabbed-content> <div class=tabbed-block> <p><em>This template requires that you have access to an OpenStack Private Cloud Environment which has the latest <a href=../../docs/flight-solo/get-solo/ >Flight Solo</a> image available.</em></p> <ol> <li>Download the template provided above</li> <li>Launch the cluster (replacing <code>mycluster1</code> with your desired cluster name) <div class=highlight><pre><span></span><code>openstack<span class=w> </span>stack<span class=w> </span>create<span class=w> </span>-t<span class=w> </span>container-cruncher-small.yml<span class=w> </span><span class=se>\</span>
+<span class=w>    </span>--parameter<span class=w> </span><span class=nv>clustername</span><span class=o>=</span>mycluster1<span class=w> </span><span class=se>\</span>
+<span class=w>    </span>--parameter<span class=w> </span>external-network<span class=o>=</span>dmz<span class=w> </span><span class=se>\</span>
+<span class=w>    </span>--parameter<span class=w> </span>ssh-key<span class=o>=</span><span class=s2>&quot;ssh-rsa MyPublicKey&quot;</span><span class=w> </span><span class=se>\</span>
+<span class=w>    </span>--parameter<span class=w> </span>solo-image<span class=o>=</span><span class=s2>&quot;Flight Solo 2023.6&quot;</span><span class=w> </span><span class=se>\</span>
+<span class=w>    </span>--parameter<span class=w> </span>gateway-flavour<span class=o>=</span>m1.medium<span class=w> </span><span class=se>\</span>
+<span class=w>    </span>--parameter<span class=w> </span>node-flavour<span class=o>=</span>m1.small<span class=w> </span><span class=se>\</span>
+<span class=w>    </span><span class=s2>&quot;mycluster1&quot;</span><span class=w> </span>--wait
+</code></pre></div></li> </ol> <p>It will take about 10 minutes for the cluster to launch and fully configure itself to be ready for usage. Progress of the application can be verified as complete when <code>flight profile list</code> on <code>gateway1</code> shows all nodes with a status of <code>complete</code>.</p> <p>Once launched, you can access the cluster via ssh to the public IP of <code>gateway1</code> as the user <code>flight</code> with the private key that corresponds with the <code>ssh-key</code> parameter.</p> </div> <div class=tabbed-block> <h3 id=accessing-system>Accessing System</h3> <p>Once launched, you can access the cluster via ssh to the public IP of <code>gateway1</code> as the user <code>flight</code> with the private key that corresponds with the <code>ssh-key</code> parameter.</p> <h3 id=copying-data-across>Copying Data Across</h3> <p>The IP address of the <code>gateway1</code> node should be shared with you by the system administrator for this cluster. Once received, see the <a href=../../docs/hpc-environment-basics/linux-usage/working-with-data/ ><abbr title="High Performance Computing">HPC</abbr> Environment Basics guide to Working with Data and Files</a>.</p> <p>The cluster has shared storage configured for the following directories:</p> <ul> <li><code>/home</code>: For user home directories. Note that this directory does not utilise the shared storage disk of <code>gateway1</code> and therefore should not be used for project data</li> <li><code>/opt/apps</code>: For installing shared applications</li> <li><code>/opt/data</code>: For user project data</li> <li><code>/opt/service</code>: For admin data and shared system configuration scripts</li> <li><code>/opt/site</code>: For any other shared data or information on the cluster or site</li> </ul> <div class="admonition warning"> <p class=admonition-title>Warning</p> <p>Note that, while the <code>/home</code> directory is shared across the cluster, it does not utilise the shared storage disk of <code>gateway1</code> and therefore should not be used for project data</p> </div> <p>Additionally, data can be copied to the cluster using the <a href=../../docs/flight-environment/use-flight/flight-web-suite/file-manager/ >Flight File Manager</a> in Flight Web Suite.</p> </div> </div> </div> </article> </div> </div> <button type=button class="md-top md-icon" data-md-component=top hidden> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg> Back to top </button> </main> <div class=footer-container id=footer-container> <div class=footer> <?xml version="1.0" encoding="UTF-8" standalone="no"?> <!-- Created with Inkscape (http://www.inkscape.org/) --> <svg width=132.72162mm height=43.223042mm viewbox="0 0 132.72162 43.223042" version=1.1 id=cloud-l class=cloud aria-label xml:space=preserve inkscape:version="1.2.2 (b0a8486, 2022-12-01)" sodipodi:docname=low_cloud_l.svg xmlns:inkscape=http://www.inkscape.org/namespaces/inkscape xmlns:sodipodi=http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd xmlns=http://www.w3.org/2000/svg xmlns:svg=http://www.w3.org/2000/svg><sodipodi:namedview id=namedview7 pagecolor=#505050 bordercolor=#eeeeee borderopacity=1 inkscape:showpageshadow=0 inkscape:pageopacity=0 inkscape:pagecheckerboard=0 inkscape:deskcolor=#505050 inkscape:document-units=mm showgrid=false inkscape:zoom=0.5946522 inkscape:cx=56.335451 inkscape:cy=143.78152 inkscape:window-width=1846 inkscape:window-height=1136 inkscape:window-x=74 inkscape:window-y=27 inkscape:window-maximized=1 inkscape:current-layer=layer1><inkscape:grid type=xygrid id=grid1543 originx=-151.09258 originy=-25.57914 /></sodipodi:namedview><defs id=defs2><inkscape:path-effect effect=powermask id=path-effect5711 is_visible=true lpeversion=1 uri=#mask-powermask-path-effect5711 invert=false hide_mask=false background=false background_color=#ffffffff /><inkscape:path-effect effect=powermask id=path-effect5706 is_visible=true lpeversion=1 uri=#mask-powermask-path-effect5706 invert=false hide_mask=false background=false background_color=#ffffffff /><inkscape:path-effect effect=powermask id=path-effect5701 is_visible=true lpeversion=1 uri=#mask-powermask-path-effect5701 invert=false hide_mask=false background=false background_color=#ffffffff /><inkscape:path-effect effect=powermask id=path-effect5696 is_visible=true lpeversion=1 uri=#mask-powermask-path-effect5696 invert=false hide_mask=false background=false background_color=#ffffffff /><inkscape:path-effect effect=powermask id=path-effect5685 is_visible=true lpeversion=1 uri=#mask-powermask-path-effect5685 invert=false hide_mask=false background=false background_color=#ffffffff /><inkscape:path-effect effect=powermask id=path-effect5654 is_visible=true lpeversion=1 uri=#mask-powermask-path-effect5654 invert=false hide_mask=false background=false background_color=#ffffffff /><inkscape:path-effect effect=powermask id=path-effect5649 is_visible=true lpeversion=1 uri=#mask-powermask-path-effect5649 invert=false hide_mask=false background=false background_color=#ffffffff /><inkscape:path-effect effect=powermask id=path-effect5644 is_visible=true lpeversion=1 uri=#mask-powermask-path-effect5644 invert=false hide_mask=false background=false background_color=#ffffffff /><inkscape:path-effect effect=powerclip id=path-effect1986 is_visible=true lpeversion=1 inverse=true flatten=false hide_clip=false message="Use fill-rule evenodd on <b>fill and stroke</b> dialog if no flatten result after convert clip to paths."/><inkscape:path-effect effect=powerclip id=path-effect1982 is_visible=true lpeversion=1 inverse=true flatten=false hide_clip=false message="Use fill-rule evenodd on <b>fill and stroke</b> dialog if no flatten result after convert clip to paths."/><inkscape:path-effect effect=powerclip id=path-effect569 is_visible=true lpeversion=1 inverse=true flatten=false hide_clip=false message="Use fill-rule evenodd on <b>fill and stroke</b> dialog if no flatten result after convert clip to paths."/><clippath clippathunits=userSpaceOnUse id=clipPath559><g inkscape:label=Clip id=use561><ellipse style=fill:#bde7f9;fill-opacity:1;stroke-width:0.308793 id=ellipse1579 clip-path=url(#clipPath565) inkscape:label=path300-6 cx=-42.661259 cy=125.21539 rx=18.995796 ry=11.882337 /></g></clippath><clippath clippathunits=userSpaceOnUse id=clipPath565><rect style=display:block;fill:#000000;stroke-width:0.264583 id=rect567 width=15.524405 height=28.723793 x=-63.550354 y=111.13319 /></clippath><clippath clippathunits=userSpaceOnUse id=clipPath1974><rect style=display:block;fill:#000000;fill-opacity:1;stroke-width:0.264583 id=rect1976 width=58.197968 height=18.658361 x=26.516808 y=176.25484 /></clippath><clippath clippathunits=userSpaceOnUse id=clipPath1978><rect style=display:block;fill:#000000;fill-opacity:1;stroke-width:0.264583 id=rect1980 width=58.197968 height=18.658361 x=26.516808 y=176.25484 /></clippath><mask maskunits=userSpaceOnUse id=mask-powermask-path-effect5644><rect style=fill:#000000;fill-opacity:1;stroke-width:0.266558 id=rect5634 width=12.733641 height=42.391792 x=-35.957672 y=209.65794 ry=0 transform=matrix(0.99315317,-0.11681947,-0.00432156,0.99999066,0,0) /></mask><mask maskunits=userSpaceOnUse id=mask-powermask-path-effect5649><rect style=fill:#000000;fill-opacity:1;stroke-width:0.266558 id=rect5638 width=12.733641 height=42.391792 x=-35.957672 y=209.65794 ry=0 transform=matrix(0.99315317,-0.11681947,-0.00432156,0.99999066,0,0) /></mask><mask maskunits=userSpaceOnUse id=mask-powermask-path-effect5654><rect style=fill:#000000;fill-opacity:1;stroke-width:0.26562 id=rect5642 width=13.378579 height=40.064793 x=-37.77887 y=198.14925 ry=0 transform=matrix(0.77072186,-0.63717173,0.61689792,0.78704317,0,0) /></mask><mask maskunits=userSpaceOnUse id=mask-powermask-path-effect5685><rect style=fill:#000000;fill-opacity:1;stroke-width:0.853977 id=rect5667 width=79.647484 height=16.420591 x=-50.440907 y=176.33417 /></mask><mask maskunits=userSpaceOnUse id=mask-powermask-path-effect5696><rect style=fill:#000000;fill-opacity:1;stroke-width:0.853977 id=rect5671 width=79.647484 height=16.420591 x=-50.440907 y=176.33417 /></mask><mask maskunits=userSpaceOnUse id=mask-powermask-path-effect5701><rect style=fill:#000000;fill-opacity:1;stroke-width:0.858368 id=rect5675 width=76.435257 height=17.287088 x=-48.406597 y=185.63913 transform=matrix(0.92190181,0.3874236,-0.45743477,0.88924318,0,0) /></mask><mask maskunits=userSpaceOnUse id=mask-powermask-path-effect5706><rect style=fill:#000000;fill-opacity:1;stroke-width:0.854121 id=rect5679 width=79.13665 height=16.532152 x=-50.117397 y=177.53218 transform=matrix(0.9426907,-0.33366787,0.348518,0.93730209,0,0) /></mask><mask maskunits=userSpaceOnUse id=mask-powermask-path-effect5711><rect style=fill:#000000;fill-opacity:1;stroke-width:0.860482 id=rect5683 width=73.615921 height=18.037678 x=-23.369637 y=269.9267 transform=matrix(-0.75034015,0.66105193,-0.67482624,-0.73797666,0,0) /></mask></defs><g inkscape:label="Layer 1" inkscape:groupmode=layer id=layer1 transform=translate(-103.01103,-134.73852)><g id=g2248 style=fill:#bde7f9;fill-opacity:1><path id=path2210 style=fill:#bde7f9;fill-opacity:1;stroke-width:0.513797 d="M 137.90037 134.74007 L 137.90037 134.74059 A 23.018244 25.290871 0 0 0 134.47268 135.06563 A 23.018244 25.290871 0 0 0 117.7631 148.31392 A 17.776695 20.229555 0 0 0 112.62336 147.5088 A 17.776695 20.229555 0 0 0 109.9765 147.76873 A 17.776695 20.229555 0 0 0 103.01103 150.88534 L 103.01103 177.96172 L 128.1635 177.96172 A 17.776695 20.229555 0 0 0 128.16402 177.9612 L 144.99038 177.9612 A 20.227589 16.131868 0 0 0 144.99141 177.96172 L 165.58809 177.96172 A 20.227589 16.131868 0 0 0 165.67232 177.91883 L 165.67232 177.96172 L 202.56361 177.96172 L 219.04839 177.96172 L 235.73264 177.96172 A 16.663172 14.14655 0 0 0 235.59053 177.01759 A 16.663172 14.14655 0 0 0 218.84014 165.14235 A 16.663172 14.14655 0 0 0 217.26917 165.22968 A 27.146624 26.745104 0 0 0 191.74825 148.3749 A 27.146624 26.745104 0 0 0 187.70612 148.71906 A 27.146624 26.745104 0 0 0 172.90651 156.19716 A 20.227589 16.131868 0 0 0 158.47483 148.16354 A 23.018244 25.290871 0 0 0 137.90037 134.74007 z "/></g></g> </svg> <?xml version="1.0" encoding="UTF-8" standalone="no"?> <!-- Created with Inkscape (http://www.inkscape.org/) --> <svg width=138.31305mm height=35.494507mm viewbox="0 0 138.31305 35.494507" version=1.1 id=cloud-r class=cloud xml:space=preserve inkscape:version="1.2.2 (b0a8486, 2022-12-01)" sodipodi:docname=low_cloud_r.svg xmlns:inkscape=http://www.inkscape.org/namespaces/inkscape xmlns:sodipodi=http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd xmlns=http://www.w3.org/2000/svg xmlns:svg=http://www.w3.org/2000/svg><sodipodi:namedview id=namedview7 pagecolor=#505050 bordercolor=#eeeeee borderopacity=1 inkscape:showpageshadow=0 inkscape:pageopacity=0 inkscape:pagecheckerboard=0 inkscape:deskcolor=#505050 inkscape:document-units=mm showgrid=false inkscape:zoom=0.5946522 inkscape:cx=44.563864 inkscape:cy=105.10345 inkscape:window-width=1846 inkscape:window-height=1136 inkscape:window-x=74 inkscape:window-y=27 inkscape:window-maximized=1 inkscape:current-layer=layer1><inkscape:grid type=xygrid id=grid1543 originx=-324.70777 originy=-35.943173 /></sodipodi:namedview><defs id=defs2><inkscape:path-effect effect=powermask id=path-effect5711 is_visible=true lpeversion=1 uri=#mask-powermask-path-effect5711 invert=false hide_mask=false background=false background_color=#ffffffff /><inkscape:path-effect effect=powermask id=path-effect5706 is_visible=true lpeversion=1 uri=#mask-powermask-path-effect5706 invert=false hide_mask=false background=false background_color=#ffffffff /><inkscape:path-effect effect=powermask id=path-effect5701 is_visible=true lpeversion=1 uri=#mask-powermask-path-effect5701 invert=false hide_mask=false background=false background_color=#ffffffff /><inkscape:path-effect effect=powermask id=path-effect5696 is_visible=true lpeversion=1 uri=#mask-powermask-path-effect5696 invert=false hide_mask=false background=false background_color=#ffffffff /><inkscape:path-effect effect=powermask id=path-effect5685 is_visible=true lpeversion=1 uri=#mask-powermask-path-effect5685 invert=false hide_mask=false background=false background_color=#ffffffff /><inkscape:path-effect effect=powermask id=path-effect5654 is_visible=true lpeversion=1 uri=#mask-powermask-path-effect5654 invert=false hide_mask=false background=false background_color=#ffffffff /><inkscape:path-effect effect=powermask id=path-effect5649 is_visible=true lpeversion=1 uri=#mask-powermask-path-effect5649 invert=false hide_mask=false background=false background_color=#ffffffff /><inkscape:path-effect effect=powermask id=path-effect5644 is_visible=true lpeversion=1 uri=#mask-powermask-path-effect5644 invert=false hide_mask=false background=false background_color=#ffffffff /><inkscape:path-effect effect=powerclip id=path-effect1986 is_visible=true lpeversion=1 inverse=true flatten=false hide_clip=false message="Use fill-rule evenodd on <b>fill and stroke</b> dialog if no flatten result after convert clip to paths."/><inkscape:path-effect effect=powerclip id=path-effect1982 is_visible=true lpeversion=1 inverse=true flatten=false hide_clip=false message="Use fill-rule evenodd on <b>fill and stroke</b> dialog if no flatten result after convert clip to paths."/><inkscape:path-effect effect=powerclip id=path-effect569 is_visible=true lpeversion=1 inverse=true flatten=false hide_clip=false message="Use fill-rule evenodd on <b>fill and stroke</b> dialog if no flatten result after convert clip to paths."/><clippath clippathunits=userSpaceOnUse id=clipPath559><g inkscape:label=Clip id=use561><ellipse style=fill:#bde7f9;fill-opacity:1;stroke-width:0.308793 id=ellipse1579 clip-path=url(#clipPath565) inkscape:label=path300-6 cx=-42.661259 cy=125.21539 rx=18.995796 ry=11.882337 /></g></clippath><clippath clippathunits=userSpaceOnUse id=clipPath565><rect style=display:block;fill:#000000;stroke-width:0.264583 id=rect567 width=15.524405 height=28.723793 x=-63.550354 y=111.13319 /></clippath><clippath clippathunits=userSpaceOnUse id=clipPath1974><rect style=display:block;fill:#000000;fill-opacity:1;stroke-width:0.264583 id=rect1976 width=58.197968 height=18.658361 x=26.516808 y=176.25484 /></clippath><clippath clippathunits=userSpaceOnUse id=clipPath1978><rect style=display:block;fill:#000000;fill-opacity:1;stroke-width:0.264583 id=rect1980 width=58.197968 height=18.658361 x=26.516808 y=176.25484 /></clippath><mask maskunits=userSpaceOnUse id=mask-powermask-path-effect5644><rect style=fill:#000000;fill-opacity:1;stroke-width:0.266558 id=rect5634 width=12.733641 height=42.391792 x=-35.957672 y=209.65794 ry=0 transform=matrix(0.99315317,-0.11681947,-0.00432156,0.99999066,0,0) /></mask><mask maskunits=userSpaceOnUse id=mask-powermask-path-effect5649><rect style=fill:#000000;fill-opacity:1;stroke-width:0.266558 id=rect5638 width=12.733641 height=42.391792 x=-35.957672 y=209.65794 ry=0 transform=matrix(0.99315317,-0.11681947,-0.00432156,0.99999066,0,0) /></mask><mask maskunits=userSpaceOnUse id=mask-powermask-path-effect5654><rect style=fill:#000000;fill-opacity:1;stroke-width:0.26562 id=rect5642 width=13.378579 height=40.064793 x=-37.77887 y=198.14925 ry=0 transform=matrix(0.77072186,-0.63717173,0.61689792,0.78704317,0,0) /></mask><mask maskunits=userSpaceOnUse id=mask-powermask-path-effect5685><rect style=fill:#000000;fill-opacity:1;stroke-width:0.853977 id=rect5667 width=79.647484 height=16.420591 x=-50.440907 y=176.33417 /></mask><mask maskunits=userSpaceOnUse id=mask-powermask-path-effect5696><rect style=fill:#000000;fill-opacity:1;stroke-width:0.853977 id=rect5671 width=79.647484 height=16.420591 x=-50.440907 y=176.33417 /></mask><mask maskunits=userSpaceOnUse id=mask-powermask-path-effect5701><rect style=fill:#000000;fill-opacity:1;stroke-width:0.858368 id=rect5675 width=76.435257 height=17.287088 x=-48.406597 y=185.63913 transform=matrix(0.92190181,0.3874236,-0.45743477,0.88924318,0,0) /></mask><mask maskunits=userSpaceOnUse id=mask-powermask-path-effect5706><rect style=fill:#000000;fill-opacity:1;stroke-width:0.854121 id=rect5679 width=79.13665 height=16.532152 x=-50.117397 y=177.53218 transform=matrix(0.9426907,-0.33366787,0.348518,0.93730209,0,0) /></mask><mask maskunits=userSpaceOnUse id=mask-powermask-path-effect5711><rect style=fill:#000000;fill-opacity:1;stroke-width:0.860482 id=rect5683 width=73.615921 height=18.037678 x=-23.369637 y=269.9267 transform=matrix(-0.75034015,0.66105193,-0.67482624,-0.73797666,0,0) /></mask></defs><g inkscape:label="Layer 1" inkscape:groupmode=layer id=layer1 transform=translate(-276.62623,-145.10255)><g id=g1963 style=fill:#d4f0fd;fill-opacity:1><path id=path1931 style=fill:#d4f0fd;fill-opacity:1;stroke-width:0.44969 inkscape:label=path1931 d="M 402.15138 145.1041 A 31.468817 33.707973 0 0 0 397.46537 145.53767 A 31.468817 33.707973 0 0 0 380.00442 155.27867 A 26.966724 31.3346 0 0 0 364.31855 149.83146 A 26.966724 31.3346 0 0 0 360.48674 150.23144 A 26.966724 31.3346 0 0 0 353.4572 152.75945 A 18.40235 19.104909 27.129779 0 0 348.2384 148.06103 A 18.40235 19.104909 27.129779 0 0 339.02604 145.58159 A 18.40235 19.104909 27.129779 0 0 322.74279 155.16498 L 322.73969 155.17067 A 18.40235 19.104909 27.129779 0 0 320.63698 160.33211 C 316.20245 157.63768 310.92772 156.11473 305.32887 156.17526 C 303.94333 156.19026 302.56091 156.3034 301.19321 156.51374 C 289.33152 158.76968 278.91994 168.31503 276.62623 180.59702 L 278.99043 180.59702 L 333.34887 180.59702 L 347.94384 180.59702 L 371.10728 180.59702 L 391.77062 180.59702 L 414.93923 180.59702 L 414.93923 147.86776 A 31.468817 33.707973 0 0 0 402.15138 145.1041 z "/></g></g> </svg> </div> </div> </div> <div class=md-dialog data-md-component=dialog> <div class="md-dialog__inner md-typeset"></div> </div> <script id=__config type=application/json>{"base": "../..", "features": ["content.code.annotate", "content.code.copy", "navigation.sections", "navigation.indexes", "navigation.tabs", "navigation.top", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script> <script src=../../assets/javascripts/bundle.aecac24b.min.js></script> <script src=../../javascripts/extra.js></script> <script src=../../javascripts/warehouse.js></script> </body> </html>
