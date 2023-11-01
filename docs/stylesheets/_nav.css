@@ -27,12 +27,8 @@
     box-shadow: none !important;
 }
 
-.md-nav__list:last-child {
+.md-nav__list.sub-level {
     margin-bottom: 2rem;
-}
-
-#version-container .md-header__ellipsis {
-    padding-inline: 0.6rem;
 }
 
 #version-container .md-header__topic {
