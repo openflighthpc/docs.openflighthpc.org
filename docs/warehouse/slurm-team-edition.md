@@ -29,7 +29,6 @@ search:
             --parameter gateway-flavour=m1.medium \
             --parameter infra-flavour=m1.small \
             --parameter node-flavour=m1.small \
-            --parameter secure-ipa-pass=MyIPAPassword \
             "mycluster1" --wait
         ```
 
@@ -60,7 +59,7 @@ search:
 
     1. Login to `infra01` as the root user
         1. This can be done by logging into `gateway1` as the user `flight` then switching to the root user (`sudo su -`) and then logging into `infra01`
-    1. Authorise as the IPA admin user (using the secure password specified at deployment)
+    1. Authorise as the IPA admin user (using the generated admin password available in `/root/ipa_admin_pass.txt` on `gateway1`)
         ```bash
         kinit admin
         ```
