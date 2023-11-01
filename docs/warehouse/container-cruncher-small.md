@@ -2,7 +2,7 @@
 hide:
   - navigation
   - toc 
-title: "Container Cruncher (small)"
+title: "Container Cruncher (Small)"
 search:
   exclude: true
 ---
