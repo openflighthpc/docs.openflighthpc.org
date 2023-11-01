@@ -41,15 +41,10 @@ parameters:
     type: string
     label: Compute node flavour
 
-  secure-ipa-pass:
-    type: string
-    label: Secure password for nodes to join IPA with
-
   storage-size:
     type: number
     label: Size of the shared storage disk for NFS
     default: 1024
-
 resources:
   external-route:
     type: OS::Neutron::Router
@@ -161,7 +156,7 @@ resources:
               - content: |
                   SHAREPUBKEY=true
                   AUTOPARSEMATCH=$clustername
-                  PROFILE_ANSWERS='{ "cluster_type": "openflight-slurm-multinode", "cluster_name": "$clustername", "nfs_server": "gateway1", "slurm_server": "gateway1", "ipa_use": "true", "ipa_server": "infra01", "ipa_domain": "$clustername.alces.network", "secure_admin_password": "$securepass" }'
+                  PROFILE_ANSWERS='{ "cluster_type": "openflight-slurm-multinode", "cluster_name": "$clustername", "nfs_server": "gateway1", "slurm_server": "gateway1", "ipa_use": "true", "ipa_server": "infra01", "ipa_domain": "$clustername.alces.network" }'
                 path: /opt/flight/cloudinit.in
                 permissions: '0600'
                 owner: root:root
@@ -173,6 +168,18 @@ resources:
                   echo "$DEVICE  /export  xfs  defaults  0 0" >> /etc/fstab
                   mount /export
                 path: /var/lib/firstrun/scripts/00-sharedstoragemount.bash
+                permissions: '0600'
+                owner: root:root
+              - content: |
+                  # Generate password for flight user
+                  FLIGHTPASS=$(cat /dev/urandom |tr -dc _A-Z-a-z-0-9 |head -c 8)
+                  echo "$FLIGHTPASS" > /root/flight_user_pass.txt
+                  # Generate secure password for IPA
+                  IPAPASS=$(cat /dev/urandom |tr -dc _A-Z-a-z-0-9 |head -c 8)
+                  echo "$IPAPASS" > /root/ipa_admin_pass.txt
+                  # Ensure Flight Profile uses generated passwords
+                  /opt/flight/bin/flight profile configure --answers "{ \"cluster_type\": \"openflight-slurm-multinode\", \"default_password\": \"$FLIGHTPASS\", \"secure_admin_password\": \"$IPAPASS\"}" --accept-defaults
+                path: /var/lib/firstrun/scripts/00-generate-passwords.bash
                 permissions: '0600'
                 owner: root:root
               - content: | 
@@ -190,7 +197,6 @@ resources:
           params:
             $key: { get_param: ssh-key }
             $clustername: { get_param: clustername }
-            $securepass: { get_param: secure-ipa-pass } 
             $sharedstorageid: { get_resource: gateway-vol-shared-storage }
 
   gateway-vol:

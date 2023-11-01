@@ -1,0 +1,170 @@
+heat_template_version: 2021-04-16
+parameters:
+  clustername:
+    type: string
+    label: Cluster Name
+    description: The name to give the cluster
+
+  external-network:
+    type: string
+    label: External Network Name
+    description: The name of the external network to bridge network to
+
+  network-cidr-pri:
+    type: string
+    label: Primary Nework CIDR
+    description: Network CIDR to be used for primary network
+    default: '10.100.0.0/16'
+
+  ssh-key:
+    type: string
+    label: SSH Key for Access
+
+  access-password:
+    type: string
+    label: Password used to access Flight Web Suite as the user "flight"
+
+  solo-image:
+    type: string
+    label: Flight Solo Image ID
+
+  gateway-pri-ip:
+    type: string
+    label: Gateway Primary IP Address
+    default: '10.100.0.101'
+
+  gateway-flavour:
+    type: string
+    label: Gateway node flavour
+
+resources:
+  external-route:
+    type: OS::Neutron::Router
+    depends_on: cluster-network-pri
+    properties:
+      name: { list_join: ['-', [ {get_param: clustername}, 'ext-route']] }
+      external_gateway_info:
+        network: { get_param: external-network }
+
+  external-route-iface:
+    type: OS::Neutron::RouterInterface
+    properties:
+      router: { get_resource: external-route }
+      subnet: { get_resource: cluster-network-pri }
+
+  cluster-network:
+    type: OS::Neutron::Net
+    properties:
+      name: { list_join: ['-', [{ get_param: clustername }, 'network']] }
+      dns_domain: { list_join: ['.', [{ get_param: clustername }, 'alces.network.']] }
+
+  cluster-network-pri:
+    type: OS::Neutron::Subnet
+    properties:
+      name: { list_join: ['-', [ {get_param: clustername}, 'network-pri']] }
+      network: { get_resource: cluster-network }
+      cidr: { get_param: network-cidr-pri }
+      ip_version: 4
+
+  cluster-sg:
+    type: OS::Neutron::SecurityGroup
+    properties:
+      name: { list_join: ['-', [ {get_param: clustername}, 'network-pri-sg']] }
+      rules:
+        - direction: egress
+          remote_ip_prefix: 0.0.0.0/0
+        - direction: ingress
+          remote_ip_prefix: { get_param: network-cidr-pri }
+        - direction: ingress
+          protocol: icmp
+          remote_ip_prefix: 0.0.0.0/0
+        - direction: ingress
+          port_range_min: 22
+          port_range_max: 22
+          protocol: tcp
+          remote_ip_prefix: 0.0.0.0/0
+        - direction: ingress
+          port_range_min: 80
+          port_range_max: 80
+          protocol: tcp
+          remote_ip_prefix: 0.0.0.0/0
+        - direction: ingress
+          port_range_min: 443
+          port_range_max: 443
+          protocol: tcp
+          remote_ip_prefix: 0.0.0.0/0
+        - direction: ingress
+          port_range_min: 5901
+          port_range_max: 5911
+          protocol: tcp
+          remote_ip_prefix: 0.0.0.0/0
+        - direction: ingress
+          port_range_min: 8888
+          port_range_max: 8888
+          protocol: tcp
+          remote_ip_prefix: 0.0.0.0/0
+        - direction: ingress
+          port_range_min: 8888
+          port_range_max: 8888
+          protocol: udp
+          remote_ip_prefix: 0.0.0.0/0
+
+  gateway-pri-port:
+    type: OS::Neutron::Port
+    depends_on: cluster-network-pri
+    properties:
+      name: { list_join: ['-', ['gateway1', 'pri', { get_param: clustername }]] }
+      network: { get_resource: cluster-network }
+      security_groups:
+        - { get_resource: cluster-sg }
+      fixed_ips:
+        - subnet: { get_resource: cluster-network-pri }
+          ip_address: { get_param: gateway-pri-ip }
+
+  gw:
+    type: OS::Nova::Server
+    properties:
+      name: { list_join: ['.', ['gateway1', { get_param: clustername }, 'alces.network']] }
+      flavor: { get_param: gateway-flavour }
+      admin_user: flight
+      networks:
+          - port: { get_resource: gateway-pri-port }
+      block_device_mapping_v2:
+        - volume_id: { get_resource: gateway-vol }
+          boot_index: 0
+      user_data_format: RAW
+      user_data:
+        str_replace:
+          template: |
+            #cloud-config
+            fqdn: gateway1.$clustername.alces.network
+            users:
+              - default
+              - name: flight
+                sudo: ALL=(ALL) NOPASSWD:ALL
+                ssh-authorized-keys:
+                  - $key
+            write_files:
+              - content: |
+                  AUTOPARSEMATCH=$clustername
+                  PROFILE_ANSWERS='{ "cluster_type": "openflight-jupyter-standalone", "cluster_name": "$clustername", "default_password": "$access_password" }'
+                  AUTOAPPLY="gateway: all-in-one"
+                path: /opt/flight/cloudinit.in
+                permissions: '0600'
+                owner: root:root
+          params:
+            $key: { get_param: ssh-key }
+            $clustername: { get_param: clustername }
+            $access_password: { get_param: access-password }
+
+  gateway-vol:
+    type: OS::Cinder::Volume
+    properties:
+      image: { get_param: solo-image }
+      size: 100
+
+  gateway-ip:
+     type: "OS::Neutron::FloatingIP"
+     properties:
+        floating_network_id: {get_param: external-network}
+        port_id: {get_resource: gateway-pri-port}

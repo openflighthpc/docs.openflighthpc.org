@@ -61,15 +61,10 @@ parameters:
     type: string
     label: Compute node flavour
 
-  secure-ipa-pass:
-    type: string
-    label: Secure password for nodes to join IPA with
-
   storage-size:
     type: number
     label: Size of the shared storage disk for NFS
     default: 1024
-
 resources:
   external-route:
     type: OS::Neutron::Router
@@ -181,7 +176,7 @@ resources:
               - content: |
                   SHAREPUBKEY=true
                   AUTOPARSEMATCH=$clustername
-                  PROFILE_ANSWERS=&#39;{ &quot;cluster_type&quot;: &quot;openflight-slurm-multinode&quot;, &quot;cluster_name&quot;: &quot;$clustername&quot;, &quot;nfs_server&quot;: &quot;gateway1&quot;, &quot;slurm_server&quot;: &quot;gateway1&quot;, &quot;ipa_use&quot;: &quot;true&quot;, &quot;ipa_server&quot;: &quot;infra01&quot;, &quot;ipa_domain&quot;: &quot;$clustername.alces.network&quot;, &quot;secure_admin_password&quot;: &quot;$securepass&quot; }&#39;
+                  PROFILE_ANSWERS=&#39;{ &quot;cluster_type&quot;: &quot;openflight-slurm-multinode&quot;, &quot;cluster_name&quot;: &quot;$clustername&quot;, &quot;nfs_server&quot;: &quot;gateway1&quot;, &quot;slurm_server&quot;: &quot;gateway1&quot;, &quot;ipa_use&quot;: &quot;true&quot;, &quot;ipa_server&quot;: &quot;infra01&quot;, &quot;ipa_domain&quot;: &quot;$clustername.alces.network&quot; }&#39;
                 path: /opt/flight/cloudinit.in
                 permissions: &#39;0600&#39;
                 owner: root:root
@@ -193,6 +188,18 @@ resources:
                   echo &quot;$DEVICE  /export  xfs  defaults  0 0&quot; &gt;&gt; /etc/fstab
                   mount /export
                 path: /var/lib/firstrun/scripts/00-sharedstoragemount.bash
+                permissions: &#39;0600&#39;
+                owner: root:root
+              - content: |
+                  # Generate password for flight user
+                  FLIGHTPASS=$(cat /dev/urandom |tr -dc _A-Z-a-z-0-9 |head -c 8)
+                  echo &quot;$FLIGHTPASS&quot; &gt; /root/flight_user_pass.txt
+                  # Generate secure password for IPA
+                  IPAPASS=$(cat /dev/urandom |tr -dc _A-Z-a-z-0-9 |head -c 8)
+                  echo &quot;$IPAPASS&quot; &gt; /root/ipa_admin_pass.txt
+                  # Ensure Flight Profile uses generated passwords
+                  /opt/flight/bin/flight profile configure --answers &quot;{ \&quot;cluster_type\&quot;: \&quot;openflight-slurm-multinode\&quot;, \&quot;default_password\&quot;: \&quot;$FLIGHTPASS\&quot;, \&quot;secure_admin_password\&quot;: \&quot;$IPAPASS\&quot;}&quot; --accept-defaults
+                path: /var/lib/firstrun/scripts/00-generate-passwords.bash
                 permissions: &#39;0600&#39;
                 owner: root:root
               - content: | 
@@ -210,7 +217,6 @@ resources:
           params:
             $key: { get_param: ssh-key }
             $clustername: { get_param: clustername }
-            $securepass: { get_param: secure-ipa-pass } 
             $sharedstorageid: { get_resource: gateway-vol-shared-storage }
 
   gateway-vol:
@@ -556,9 +562,8 @@ resources:
 <span class=w>    </span>--parameter<span class=w> </span>gateway-flavour<span class=o>=</span>m1.medium<span class=w> </span><span class=se>\</span>
 <span class=w>    </span>--parameter<span class=w> </span>infra-flavour<span class=o>=</span>m1.small<span class=w> </span><span class=se>\</span>
 <span class=w>    </span>--parameter<span class=w> </span>node-flavour<span class=o>=</span>m1.small<span class=w> </span><span class=se>\</span>
-<span class=w>    </span>--parameter<span class=w> </span>secure-ipa-pass<span class=o>=</span>MyIPAPassword<span class=w> </span><span class=se>\</span>
 <span class=w>    </span><span class=s2>&quot;mycluster1&quot;</span><span class=w> </span>--wait
-</code></pre></div></li> </ol> <p>It will take about 30 minutes for the cluster to launch and fully configure itself to be ready for usage. Progress of the application can be verified as complete when <code>flight profile list</code> on <code>gateway1</code> shows all nodes with a status of <code>complete</code>.</p> <p>Once launched, you can access the cluster via ssh to the public IP of <code>gateway1</code> as the user <code>flight</code> with the private key that corresponds with the <code>ssh-key</code> parameter.</p> </div> <div class=tabbed-block> <h3 id=storage-management>Storage Management</h3> <p>The cluster configures <abbr title="Network File System">NFS</abbr> for shared storage across the login and compute nodes. The directories shared are as follows:</p> <ul> <li><code>/home</code>: For user home directories</li> <li><code>/opt/apps</code>: For installing shared applications</li> <li><code>/opt/data</code>: For user project data</li> <li><code>/opt/service</code>: For admin data and shared system configuration scripts</li> <li><code>/opt/site</code>: For any other shared data or information on the cluster or site</li> </ul> <div class="admonition warning"> <p class=admonition-title>Warning</p> <p>Note that, while the <code>/home</code> directory is shared across the cluster, it does not utilise the shared storage disk of <code>gateway1</code> and therefore should not be used for project data</p> </div> <h3 id=adding-users>Adding Users</h3> <p>A test user is automatically created to verify the installation of IPA is successful. This user can be logged into from the <code>infra01</code> machine as the root user with the key generated for the <code>testuser</code> (<code>ssh -i /root/.ssh/id_testuser testuser@gateway1</code>).</p> <p>To add a new user:</p> <ol> <li>Login to <code>infra01</code> as the root user<ol> <li>This can be done by logging into <code>gateway1</code> as the user <code>flight</code> then switching to the root user (<code>sudo su -</code>) and then logging into <code>infra01</code></li> </ol> </li> <li>Authorise as the IPA admin user (using the secure password specified at deployment) <div class=highlight><pre><span></span><code>kinit<span class=w> </span>admin
+</code></pre></div></li> </ol> <p>It will take about 30 minutes for the cluster to launch and fully configure itself to be ready for usage. Progress of the application can be verified as complete when <code>flight profile list</code> on <code>gateway1</code> shows all nodes with a status of <code>complete</code>.</p> <p>Once launched, you can access the cluster via ssh to the public IP of <code>gateway1</code> as the user <code>flight</code> with the private key that corresponds with the <code>ssh-key</code> parameter.</p> </div> <div class=tabbed-block> <h3 id=storage-management>Storage Management</h3> <p>The cluster configures <abbr title="Network File System">NFS</abbr> for shared storage across the login and compute nodes. The directories shared are as follows:</p> <ul> <li><code>/home</code>: For user home directories</li> <li><code>/opt/apps</code>: For installing shared applications</li> <li><code>/opt/data</code>: For user project data</li> <li><code>/opt/service</code>: For admin data and shared system configuration scripts</li> <li><code>/opt/site</code>: For any other shared data or information on the cluster or site</li> </ul> <div class="admonition warning"> <p class=admonition-title>Warning</p> <p>Note that, while the <code>/home</code> directory is shared across the cluster, it does not utilise the shared storage disk of <code>gateway1</code> and therefore should not be used for project data</p> </div> <h3 id=adding-users>Adding Users</h3> <p>A test user is automatically created to verify the installation of IPA is successful. This user can be logged into from the <code>infra01</code> machine as the root user with the key generated for the <code>testuser</code> (<code>ssh -i /root/.ssh/id_testuser testuser@gateway1</code>).</p> <p>To add a new user:</p> <ol> <li>Login to <code>infra01</code> as the root user<ol> <li>This can be done by logging into <code>gateway1</code> as the user <code>flight</code> then switching to the root user (<code>sudo su -</code>) and then logging into <code>infra01</code></li> </ol> </li> <li>Authorise as the IPA admin user (using the generated admin password available in <code>/root/ipa_admin_pass.txt</code> on <code>gateway1</code>) <div class=highlight><pre><span></span><code>kinit<span class=w> </span>admin
 </code></pre></div></li> <li>Add the user along with a trusted <abbr title="Secure Shell">SSH</abbr> public key (this should be one that corresponds with a private key that the user has outside of the system) <div class=highlight><pre><span></span><code>ipa<span class=w> </span>user-add<span class=w> </span>--cn<span class=o>=</span><span class=s2>&quot;New User&quot;</span><span class=w> </span>--first<span class=o>=</span>New<span class=w> </span>--last<span class=o>=</span>User<span class=w> </span>newuser
 </code></pre></div></li> <li>Set a temporary password for the user (this will later be changed by the user once they've accessed the system, <strong>this temporary password will need to be shared with the new user</strong>) <div class=highlight><pre><span></span><code>ipa<span class=w> </span>passwd<span class=w> </span>newuser
 </code></pre></div></li> <li>Add the user to the cluster users group to enable access <div class=highlight><pre><span></span><code>ipa<span class=w> </span>group-add-member<span class=w> </span>cluster-users<span class=w> </span>--users<span class=w> </span>newuser
