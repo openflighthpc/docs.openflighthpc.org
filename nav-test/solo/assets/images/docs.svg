@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg230"
+   width="545"
+   height="545"
+   viewBox="0 0 545 545"
+   sodipodi:docname="docs.svg"
+   inkscape:version="1.2.2 (b0a8486, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs234">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient1443">
+      <stop
+         style="stop-color:#aa80e7;stop-opacity:1;"
+         offset="0"
+         id="stop1439" />
+      <stop
+         style="stop-color:#355899;stop-opacity:1;"
+         offset="1"
+         id="stop1441" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1443"
+       id="linearGradient1445"
+       x1="0"
+       y1="273.83493"
+       x2="546.1333"
+       y2="273.83493"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.78170045,0,0,1.1506265,59.610339,-588.14834)" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath9001">
+      <path
+         id="path9003"
+         style="color:#000000;fill:#000000;stroke-linecap:square;stroke-linejoin:round;-inkscape-stroke:none"
+         d="m 59.652018,-462.38111 a 17.009551,17.009551 0 0 0 0.236328,4.24219 l 33.90625,185.07226 -33.90625,185.072272 a 17.009551,17.009551 0 0 0 16.748047,20.072266 l 16.716797,-0.01758 -5.730469,36.015625 a 17.009551,17.009551 0 0 0 16.832029,19.68164 l 319.53126,-0.675781 a 17.009551,17.009551 0 0 0 16.67968,-13.859375 l 45.79688,-243.140627 a 17.007851,17.007851 0 0 0 -0.0312,-3.19531 17.007851,17.007851 0 0 0 0.0312,-3.10156 l -45.79688,-243.14258 a 17.009551,17.009551 0 0 0 -16.67968,-13.85938 l -319.53126,-0.67382 a 17.009551,17.009551 0 0 0 -16.974607,15.48828 17.009551,17.009551 0 0 0 0.142578,4.1914 l 5.730469,36.01758 -16.716797,-0.0176 a 17.009551,17.009551 0 0 0 -16.984375,15.8301 z m 37.376953,360.42188 28.228519,-154.08985 269.5332,0.19727 -30.34179,153.61523 z m 0,-342.21485 267.419929,0.27539 30.34179,153.61719 -269.5332,0.19727 z m 27.326179,397.873052 3.44922,-21.673828 250.64062,-0.259766 a 17.009551,17.009551 0 0 0 16.66797,-13.712891 L 432.1696,-269.54713 a 17.009551,17.009551 0 0 0 -0.0898,-3.51953 17.009551,17.009551 0 0 0 0.0898,-3.51953 l -37.05664,-187.60156 a 17.009551,17.009551 0 0 0 -16.66797,-13.71094 l -250.64062,-0.25976 -3.44922,-21.67383 285.48632,0.60156 42.59961,226.16406 -42.59961,226.164069 z" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="namedview232"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     showgrid="false"
+     inkscape:zoom="1.1536234"
+     inkscape:cx="273.48613"
+     inkscape:cy="235.34543"
+     inkscape:window-width="1846"
+     inkscape:window-height="1136"
+     inkscape:window-x="74"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g236" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Image"
+     id="g236"
+     transform="translate(-0.56665039,-0.56666481)">
+    <rect
+       style="fill:url(#linearGradient1445);fill-opacity:1;stroke:none;stroke-width:32.2601;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1361"
+       width="426.91266"
+       height="521.64844"
+       x="59.61034"
+       y="-533.89087"
+       transform="rotate(90)"
+       clip-path="url(#clipPath9001)" />
+    <rect
+       style="fill:#9f9f9f;fill-opacity:0.014292;stroke-width:33.7064;stroke-linecap:round;stroke-linejoin:round"
+       id="rect20479"
+       width="545"
+       height="545"
+       x="0.56665039"
+       y="0.56666481" />
+  </g>
+</svg>
