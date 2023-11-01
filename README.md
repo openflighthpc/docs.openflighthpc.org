@@ -139,6 +139,7 @@ mike delete --push 20XX.Y
         {% endwith %}
         ```
     - `partials/warehouse/templates/TEMPLATE_ID.yml`: The actual cloud template
+    - `docs/assets/images/template-icons/TEMPLATE_ID.svg`: The icon to be used in the warehouse display
     
 
 ## Content Things to Look Into
