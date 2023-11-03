@@ -40,7 +40,7 @@ parameters:
   storage-size:
     type: number
     label: Size of the shared storage disk for NFS
-    default: 100
+    default: 500
 resources:
   external-route:
     type: OS::Neutron::Router
@@ -165,6 +165,13 @@ resources:
                   echo "$DEVICE  /export  xfs  defaults  0 0" >> /etc/fstab
                   mount /export
                 path: /var/lib/firstrun/scripts/00-sharedstoragemount.bash
+                permissions: '0600'
+                owner: root:root
+              - content: |
+                  date +%s.%N | sha256sum | cut -c 1-40 > /opt/flight/etc/shared-secret.conf
+                  chmod 0400 /opt/flight/etc/shared-secret.conf
+                  /opt/flight/bin/flight service stack restart
+                path: /var/lib/firstrun/scripts/00_flightpatches.bash
                 permissions: '0600'
                 owner: root:root
               - content: |
@@ -303,6 +310,162 @@ resources:
             $gateway-pri-ip: { get_param: gateway-pri-ip }
 
   node02-vol:
+    type: OS::Cinder::Volume
+    properties:
+      image: { get_param: solo-image }
+      size: 16
+
+  node03-pri-port:
+    type: OS::Neutron::Port
+    properties:
+      name: { list_join: ['-', ['node03', 'pri', { get_param: clustername }]] }
+      network: { get_resource: cluster-network }
+      security_groups:
+        - { get_resource: cluster-sg }
+      fixed_ips:
+        - subnet: { get_resource: cluster-network-pri }
+          ip_address: 10.100.1.3
+
+  node03:
+    type: OS::Nova::Server
+    properties:
+      name: { list_join: ['.', [ 'node03', { get_param: clustername }, 'alces.network']] }
+      flavor: { get_param: node-flavour }
+      admin_user: flight
+      networks:
+          - port: { get_resource: node03-pri-port }
+      block_device_mapping_v2:
+        - volume_id: { get_resource: node03-vol }
+          boot_index: 0
+      user_data_format: RAW
+      user_data:
+        str_replace:
+          template: |
+            #cloud-config
+            fqdn: node03.$clustername.alces.network
+            users:
+              - default
+              - name: flight
+                sudo: ALL=(ALL) NOPASSWD:ALL
+                ssh-authorized-keys:
+                  - $key
+            write_files:
+              - content: |
+                  SERVER=$gateway-pri-ip
+                  PREFIX=node
+                path: /opt/flight/cloudinit.in
+                permissions: '0600'
+                owner: root:root
+          params:
+            $key: { get_param: ssh-key }
+            $clustername: { get_param: clustername }
+            $gateway-pri-ip: { get_param: gateway-pri-ip }
+
+  node03-vol:
+    type: OS::Cinder::Volume
+    properties:
+      image: { get_param: solo-image }
+      size: 16
+
+  node04-pri-port:
+    type: OS::Neutron::Port
+    properties:
+      name: { list_join: ['-', ['node04', 'pri', { get_param: clustername }]] }
+      network: { get_resource: cluster-network }
+      security_groups:
+        - { get_resource: cluster-sg }
+      fixed_ips:
+        - subnet: { get_resource: cluster-network-pri }
+          ip_address: 10.100.1.4
+
+  node04:
+    type: OS::Nova::Server
+    properties:
+      name: { list_join: ['.', [ 'node04', { get_param: clustername }, 'alces.network']] }
+      flavor: { get_param: node-flavour }
+      admin_user: flight
+      networks:
+          - port: { get_resource: node04-pri-port }
+      block_device_mapping_v2:
+        - volume_id: { get_resource: node04-vol }
+          boot_index: 0
+      user_data_format: RAW
+      user_data:
+        str_replace:
+          template: |
+            #cloud-config
+            fqdn: node04.$clustername.alces.network
+            users:
+              - default
+              - name: flight
+                sudo: ALL=(ALL) NOPASSWD:ALL
+                ssh-authorized-keys:
+                  - $key
+            write_files:
+              - content: |
+                  SERVER=$gateway-pri-ip
+                  PREFIX=node
+                path: /opt/flight/cloudinit.in
+                permissions: '0600'
+                owner: root:root
+          params:
+            $key: { get_param: ssh-key }
+            $clustername: { get_param: clustername }
+            $gateway-pri-ip: { get_param: gateway-pri-ip }
+
+  node04-vol:
+    type: OS::Cinder::Volume
+    properties:
+      image: { get_param: solo-image }
+      size: 16
+
+  node05-pri-port:
+    type: OS::Neutron::Port
+    properties:
+      name: { list_join: ['-', ['node05', 'pri', { get_param: clustername }]] }
+      network: { get_resource: cluster-network }
+      security_groups:
+        - { get_resource: cluster-sg }
+      fixed_ips:
+        - subnet: { get_resource: cluster-network-pri }
+          ip_address: 10.100.1.5
+
+  node05:
+    type: OS::Nova::Server
+    properties:
+      name: { list_join: ['.', [ 'node05', { get_param: clustername }, 'alces.network']] }
+      flavor: { get_param: node-flavour }
+      admin_user: flight
+      networks:
+          - port: { get_resource: node05-pri-port }
+      block_device_mapping_v2:
+        - volume_id: { get_resource: node05-vol }
+          boot_index: 0
+      user_data_format: RAW
+      user_data:
+        str_replace:
+          template: |
+            #cloud-config
+            fqdn: node05.$clustername.alces.network
+            users:
+              - default
+              - name: flight
+                sudo: ALL=(ALL) NOPASSWD:ALL
+                ssh-authorized-keys:
+                  - $key
+            write_files:
+              - content: |
+                  SERVER=$gateway-pri-ip
+                  PREFIX=node
+                path: /opt/flight/cloudinit.in
+                permissions: '0600'
+                owner: root:root
+          params:
+            $key: { get_param: ssh-key }
+            $clustername: { get_param: clustername }
+            $gateway-pri-ip: { get_param: gateway-pri-ip }
+
+  node05-vol:
     type: OS::Cinder::Volume
     properties:
       image: { get_param: solo-image }

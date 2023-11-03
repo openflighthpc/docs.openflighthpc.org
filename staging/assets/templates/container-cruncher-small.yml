@@ -167,6 +167,15 @@ resources:
                 path: /var/lib/firstrun/scripts/00-sharedstoragemount.bash
                 permissions: '0600'
                 owner: root:root
+              - content: |
+                  # Generate password for flight user
+                  FLIGHTPASS=$(cat /dev/urandom |tr -dc _A-Z-a-z-0-9 |head -c 8)
+                  echo "$FLIGHTPASS" > /root/flight_user_pass.txt
+                  # Ensure Flight Profile uses generated passwords
+                  /opt/flight/bin/flight profile configure --answers "{ \"cluster_type\": \"openflight-kubernetes-multinode\", \"default_password\": \"$FLIGHTPASS\"}" --accept-defaults
+                path: /var/lib/firstrun/scripts/00-generate-passwords.bash
+                permissions: '0600'
+                owner: root:root
           params:
             $key: { get_param: ssh-key }
             $clustername: { get_param: clustername }
