@@ -33,14 +33,6 @@ parameters:
     type: string
     label: Gateway node flavour
 
-  node-flavour:
-    type: string
-    label: Compute node flavour
-
-  storage-size:
-    type: number
-    label: Size of the shared storage disk for NFS
-    default: 100
 resources:
   external-route:
     type: OS::Neutron::Router
@@ -150,21 +142,10 @@ resources:
                   - $key
             write_files:
               - content: |
-                  SHAREPUBKEY=true
                   AUTOPARSEMATCH=$clustername
-                  PROFILE_ANSWERS='{ "cluster_type": "openflight-kubernetes-multinode", "cluster_name": "$clustername", "nfs_server": "gateway1"}'
-                  AUTOAPPLY="gateway: master, node: worker"
+                  PROFILE_ANSWERS='{ "cluster_type": "openflight-jupyter-standalone", "cluster_name": "$clustername" }'
+                  AUTOAPPLY="gateway: all-in-one"
                 path: /opt/flight/cloudinit.in
-                permissions: '0600'
-                owner: root:root
-              - content: |
-                  DISKID="$sharedstorageid"
-                  DEVICE="/dev/disk/by-id/virtio-$(echo $DISKID |cut -c -20)"
-                  mkfs.xfs $DEVICE
-                  mkdir -p /export
-                  echo "$DEVICE  /export  xfs  defaults  0 0" >> /etc/fstab
-                  mount /export
-                path: /var/lib/firstrun/scripts/00-sharedstoragemount.bash
                 permissions: '0600'
                 owner: root:root
               - content: |
@@ -172,138 +153,22 @@ resources:
                   FLIGHTPASS=$(cat /dev/urandom |tr -dc _A-Z-a-z-0-9 |head -c 8)
                   echo "$FLIGHTPASS" > /root/flight_user_pass.txt
                   # Ensure Flight Profile uses generated passwords
-                  /opt/flight/bin/flight profile configure --answers "{ \"cluster_type\": \"openflight-kubernetes-multinode\", \"default_password\": \"$FLIGHTPASS\"}" --accept-defaults
+                  /opt/flight/bin/flight profile configure --answers "{ \"cluster_type\": \"openflight-jupyter-standalone\", \"default_password\": \"$FLIGHTPASS\"}" --accept-defaults
                 path: /var/lib/firstrun/scripts/00-generate-passwords.bash
                 permissions: '0600'
                 owner: root:root
           params:
             $key: { get_param: ssh-key }
             $clustername: { get_param: clustername }
-            $sharedstorageid: { get_resource: gateway-vol-shared-storage }
 
   gateway-vol:
     type: OS::Cinder::Volume
     properties:
       image: { get_param: solo-image }
-      size: 16
-
-  gateway-vol-shared-storage:
-    type: OS::Cinder::Volume
-    properties:
-      size: { get_param: storage-size }
-
-  gateway-vol-shared-storage-attach:
-    type: OS::Cinder::VolumeAttachment
-    properties:
-      instance_uuid: { get_resource: gw }
-      volume_id: { get_resource: gateway-vol-shared-storage }
+      size: 100
 
   gateway-ip:
      type: "OS::Neutron::FloatingIP"
      properties:
         floating_network_id: {get_param: external-network}
         port_id: {get_resource: gateway-pri-port}
-
-  node01-pri-port:
-    type: OS::Neutron::Port
-    properties:
-      name: { list_join: ['-', ['node01', 'pri', { get_param: clustername }]] }
-      network: { get_resource: cluster-network }
-      security_groups:
-        - { get_resource: cluster-sg }
-      fixed_ips:
-        - subnet: { get_resource: cluster-network-pri }
-          ip_address: 10.100.1.1
-
-  node01:
-    type: OS::Nova::Server
-    properties:
-      name: { list_join: ['.', [ 'node01', { get_param: clustername }, 'alces.network']] }
-      flavor: { get_param: node-flavour }
-      admin_user: flight
-      networks:
-          - port: { get_resource: node01-pri-port }
-      block_device_mapping_v2:
-        - volume_id: { get_resource: node01-vol }
-          boot_index: 0
-      user_data_format: RAW
-      user_data:
-        str_replace:
-          template: |
-            #cloud-config
-            fqdn: node01.$clustername.alces.network
-            users:
-              - default
-              - name: flight
-                sudo: ALL=(ALL) NOPASSWD:ALL
-                ssh-authorized-keys:
-                  - $key
-            write_files:
-              - content: |
-                  SERVER=$gateway-pri-ip
-                  PREFIX=node
-                path: /opt/flight/cloudinit.in
-                permissions: '0600'
-                owner: root:root
-          params:
-            $key: { get_param: ssh-key }
-            $clustername: { get_param: clustername }
-            $gateway-pri-ip: { get_param: gateway-pri-ip }
-
-  node01-vol:
-    type: OS::Cinder::Volume
-    properties:
-      image: { get_param: solo-image }
-      size: 16
-
-  node02-pri-port:
-    type: OS::Neutron::Port
-    properties:
-      name: { list_join: ['-', ['node02', 'pri', { get_param: clustername }]] }
-      network: { get_resource: cluster-network }
-      security_groups:
-        - { get_resource: cluster-sg }
-      fixed_ips:
-        - subnet: { get_resource: cluster-network-pri }
-          ip_address: 10.100.1.2
-
-  node02:
-    type: OS::Nova::Server
-    properties:
-      name: { list_join: ['.', [ 'node02', { get_param: clustername }, 'alces.network']] }
-      flavor: { get_param: node-flavour }
-      admin_user: flight
-      networks:
-          - port: { get_resource: node02-pri-port }
-      block_device_mapping_v2:
-        - volume_id: { get_resource: node02-vol }
-          boot_index: 0
-      user_data_format: RAW
-      user_data:
-        str_replace:
-          template: |
-            #cloud-config
-            fqdn: node02.$clustername.alces.network
-            users:
-              - default
-              - name: flight
-                sudo: ALL=(ALL) NOPASSWD:ALL
-                ssh-authorized-keys:
-                  - $key
-            write_files:
-              - content: |
-                  SERVER=$gateway-pri-ip
-                  PREFIX=node
-                path: /opt/flight/cloudinit.in
-                permissions: '0600'
-                owner: root:root
-          params:
-            $key: { get_param: ssh-key }
-            $clustername: { get_param: clustername }
-            $gateway-pri-ip: { get_param: gateway-pri-ip }
-
-  node02-vol:
-    type: OS::Cinder::Volume
-    properties:
-      image: { get_param: solo-image }
-      size: 16
