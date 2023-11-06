@@ -1,5 +1,6 @@
 keypair
 jupyter
+jupyterlab
 master
 slave
 knowledgebase
@@ -97,3 +98,4 @@ uptime
 tmp
 systemd
 cidr
+jumpstart
