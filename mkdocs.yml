@@ -147,6 +147,10 @@ nav:
         - MPI Workflow: docs/hpc-workflows/openfoam/mpi.md
         - Simple Workflow: docs/hpc-workflows/openfoam/simple.md
       - Tensorflow: docs/hpc-workflows/tensorflow.md
+not_in_nav: |
+  /index.md
+  /solo/index.md
+  /warehouse
 theme:
   name: material
   custom_dir: custom_theme/
