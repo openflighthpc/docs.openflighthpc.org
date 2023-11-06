@@ -52,3 +52,6 @@ search:
 
     Additionally, data can be copied to the cluster using the [Flight File Manager](../docs/flight-environment/use-flight/flight-web-suite/file-manager.md) in Flight Web Suite.
 
+## Watch
+
+<iframe width="100%" src="https://www.youtube.com/embed/ltvcBHIBArI?si=6I5pMkNvKid4xAoi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="aspect-ratio: 16/9;"></iframe>
