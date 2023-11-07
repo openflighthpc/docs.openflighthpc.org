@@ -267,7 +267,6 @@ resources:
             $key: { get_param: ssh-key }
             $clustername: { get_param: clustername }
             $gateway-pri-ip: { get_param: gateway-pri-ip }
-            $securepass: { get_param: secure-ipa-pass } 
 
   infra01-vol:
     type: OS::Cinder::Volume
