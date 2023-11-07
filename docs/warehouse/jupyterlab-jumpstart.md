@@ -25,7 +25,6 @@ search:
             --parameter clustername=mycluster1 \
             --parameter external-network=dmz \
             --parameter ssh-key="ssh-rsa MyPublicKey" \
-            --parameter access-password="MySecureLoginPassword" \
             --parameter solo-image="Flight Solo 2023.6" \
             --parameter gateway-flavour=m1.medium \
             "mycluster1" --wait
