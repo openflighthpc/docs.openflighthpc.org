@@ -53,4 +53,4 @@ When the job status is Completed then check the S3/minio console to verify resul
 
 
 !!! note
-    For More Information about scripts, Dockerfile and yaml files, Follow Link: [TensorFlow](https://github.com/shubhamdang/hpc-on-k8s/tree/main/workloads/tensorflow)
+    For More Information about scripts, Dockerfile and yaml files, Follow Link: [TensorFlow](https://github.com/openflighthpc/hpc-on-k8s/tree/main/workloads/tensorflow)

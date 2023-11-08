@@ -84,4 +84,4 @@ kubectl create -f job.yaml
 When the job status is Completed then check the S3/minio console to verify results.
 
 !!! note
-    For More Information about scripts, Dockerfile and yaml files, Follow Link: [PyTorch](https://github.com/shubhamdang/hpc-on-k8s/tree/main/workloads/pytorch)
+    For More Information about scripts, Dockerfile and yaml files, Follow Link: [PyTorch](https://github.com/openflighthpc/hpc-on-k8s/tree/main/workloads/pytorch)
