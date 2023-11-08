@@ -41,8 +41,9 @@ spec:
             memory: "2000Mi"
       restartPolicy: Never
 ```
+
 !!! note
-        We are assuming here Kubernetes cluster is active with Minio(or any S3), Kueue and Longhorn(or any storage class) installed.
+    We are assuming here Kubernetes cluster is active with Minio(or any S3), Kueue and Longhorn(or any storage class) installed.
 
 Command to execute genome in kubernetes cluster using Kueue.
 
