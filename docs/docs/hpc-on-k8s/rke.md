@@ -27,7 +27,7 @@ Go to `node1` and install the RKE package:
 ```bash
 mkdir rke
 cd rke
-wget https://github.com/rancher/rke/releases/download/v1.3.17/rke_linux-amd64 -O rke
+wget https://github.com/rancher/rke/releases/download/v1.4.10/rke_linux-amd64 -O rke
 sudo chmod +x rke
 ```
 
