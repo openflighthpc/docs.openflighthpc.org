@@ -3,6 +3,7 @@
 To deploy Minio in our Kubernetes cluster, we utilize Helm charts. Prior to installation, it's crucial to ensure that the Helm CLI is properly set up and the kubeconfig file is located in the designated directory.
 
 For this installation, we've opted for the default namespace, employing the following configurations:
+
 - storageClass:  
 - Minio rootUser
 - Minio rootPassword
@@ -23,3 +24,9 @@ It's important to note that all Kubernetes workloads will employ the Minio API p
 
 !!! note
     For more details, follow link: [Minio](https://artifacthub.io/packages/helm/bitnami/minio)
+
+
+## Create Access Key and Secret Key
+
+- Login to minio console, then click on 'Access Keys' in the User Section.
+- Click on 'Create Access Key', it will show Access Key and Secret Key and then click on Create to create keys. 

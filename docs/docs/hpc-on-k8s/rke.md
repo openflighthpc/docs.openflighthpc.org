@@ -70,10 +70,8 @@ mkdir ~/.kube/config
 cp kube_config_cluster.yml ~/.kube/config
 ```
 
-Install kubectl to connect to k8s cluster
-```bash
-sudo snap install kubectl --classic
-```
+Install kubectl to connect k8s cluster, follow the link below
+[Install Kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)
 
 
 Verification of k8s cluster, if status of nodes are in READY state then k8s is ready to use.

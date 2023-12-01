@@ -23,7 +23,7 @@ spec:
         spec:
           containers:
             - name: pytorch
-              image: shubhamdang/my_pytorch_image:latest
+              image: openflighthpc/pytorch:latest
               imagePullPolicy: Always
               command:
                 - "python3"
@@ -34,15 +34,17 @@ spec:
                   memory: "1000Mi"
               env:
                 - name: MINIO_IP
-                  value: "10.151.15.78"
+                  value: <minio ip like "10.151.15.78">
                 - name: MINIO_PORT
-                  value: "31252"
+                  value: <minio port like "31100">
+                # Minio Access Key   
                 - name: MINIO_AKEY
-                  value: "Mq6wmeNk0NOc0vD9Efut"
+                  value: <minio-access-key>
+                # Minio Secret Key   
                 - name: MINIO_SKEY
-                  value: "Z3ETBqC3GuIiU9PomjBbmmC5h8I5I7WgN1wNWlCG"
+                  value: <minio-secret-key>
                 - name: BUCKET_NAME
-                  value: "pytorch"
+                  value: <minio bucket name like "pytorch">
 
     Worker:
       replicas: 1
@@ -51,7 +53,7 @@ spec:
         spec:
           containers:
             - name: pytorch
-              image: shubhamdang/my_pytorch_image:latest
+              image: openflighthpc/pytorch:latest
               imagePullPolicy: Always
               command:
                 - "python3"
@@ -62,16 +64,23 @@ spec:
                   memory: "1000Mi"
               env:
                 - name: MINIO_IP
-                  value: "10.151.15.78"
+                  value: <minio ip like "10.151.15.78">
                 - name: MINIO_PORT
-                  value: "31252"
+                  value: <minio port like "31100">
+                # Minio Access Key   
                 - name: MINIO_AKEY
-                  value: "Mq6wmeNk0NOc0vD9Efut"
+                  value: <minio-access-key>
+                # Minio Secret Key   
                 - name: MINIO_SKEY
-                  value: "Z3ETBqC3GuIiU9PomjBbmmC5h8I5I7WgN1wNWlCG"
+                  value: <minio-secret-key>
                 - name: BUCKET_NAME
-                  value: "pytorch"
+                  value: <minio bucket name like "pytorch">
+
 ```
+
+!!! note
+    Steps to create minio access key and secret key can be found in minio docs, Follow Link: [minio](./minio.md#create-access-key-and-secret-key).
+
 !!! note
     We are assuming here Kubernetes cluster is active with Minio(or any S3), Kueue and Longhorn(or any storage class) installed.
 

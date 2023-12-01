@@ -22,25 +22,30 @@ spec:
     spec:
       containers:
       - name: dummy-job
-        image: shubhamdang/fastqc_python_image:latest
+        image: openflighthpc/genome:latest
         command: [ "/bin/bash", "-c", "python3 /app/script.py && echo '' && ls / && ls /app/ &&cat /app/sample_data_fastqc.html " ]
         env:
           - name: MINIO_IP
-            value: "10.151.15.78"
+            value: <minio ip like "10.151.15.78">
           - name: MINIO_PORT
-            value: "31252"
+            value: <minio port like "31100">
+          # Minio Access Key   
           - name: MINIO_AKEY
-            value: "Mq6wmeNk0NOc0vD9Efut"
+            value: <minio-access-key>
+          # Minio Secret Key   
           - name: MINIO_SKEY
-            value: "Z3ETBqC3GuIiU9PomjBbmmC5h8I5I7WgN1wNWlCG"
+            value: <minio-secret-key>
           - name: BUCKET_NAME
-            value: "genome"
+            value: <minio bucket name like "genome">
         resources:
           requests:
             cpu: 500m
             memory: "2000Mi"
       restartPolicy: Never
 ```
+
+!!! note
+    Steps to create minio access key and secret key can be found in minio docs, Follow Link: [minio](./minio.md#create-access-key-and-secret-key).
 
 !!! note
     We are assuming here Kubernetes cluster is active with Minio(or any S3), Kueue and Longhorn(or any storage class) installed.

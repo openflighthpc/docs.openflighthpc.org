@@ -22,25 +22,32 @@ spec:
     spec:
       containers:
       - name: dummy-job
-        image: shubhamdang/my_hadoop_image:latest
+        image: openflighthpc/hadoop:latest
         command: [ "python3", "/opt/main.py" ]
         env:
           - name: MINIO_IP
-            value: "10.151.15.78"
+            value: <minio ip like "10.151.15.78">
           - name: MINIO_PORT
-            value: "31252"
+            value: <minio port like "31100">
+          # Minio Access Key   
           - name: MINIO_AKEY
-            value: "Mq6wmeNk0NOc0vD9Efut"
+            value: <minio-access-key>
+          # Minio Secret Key   
           - name: MINIO_SKEY
-            value: "Z3ETBqC3GuIiU9PomjBbmmC5h8I5I7WgN1wNWlCG"
+            value: <minio-secret-key>
           - name: BUCKET_NAME
-            value: "hadoop"
+            value: <minio bucket name like "hadoop">
         resources:
           requests:
             cpu: 500m
             memory: "1000Mi"
       restartPolicy: Never
 ```
+
+!!! note
+    Steps to create minio access key and secret key can be found in minio docs, Follow Link: [minio](./minio.md#create-access-key-and-secret-key).
+
+
 !!! note
     We are assuming here Kubernetes cluster is active with Minio(or any S3), Kueue and Longhorn(or any storage class) installed.
 
