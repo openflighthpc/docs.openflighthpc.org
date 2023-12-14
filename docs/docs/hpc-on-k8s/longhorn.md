@@ -2,7 +2,7 @@
 Install Longhorn on any Kubernetes cluster using this command:
 
 ```bash
-kubectl apply -f https://raw.githubusercontent.com/longhorn/longhorn/v1.5.2/deploy/longhorn.yaml
+kubectl apply -f https://raw.githubusercontent.com/longhorn/longhorn/v1.2.3/deploy/longhorn.yaml
 ```
 
 !!! note
