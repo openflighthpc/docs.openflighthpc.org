@@ -22,7 +22,7 @@ spec:
       containers:
       - name: dummy-job
         image: openflighthpc/tensorflow:latest
-        command: [ "/bin/sh", "-c", "python " ]
+        command: [ "/bin/sh", "-c", "python /app/main.py" ]
         env:
           - name: MINIO_IP
             value: <minio ip like "10.151.15.78">

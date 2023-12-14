@@ -22,7 +22,7 @@ metadata:
     namespace: bio
     name: bio-role
 rules:
-- apiGroups: ["*"]
+  - apiGroups: ["*"]
     resources: ["*"]
     verbs: ["*"]
 ---
@@ -32,7 +32,7 @@ metadata:
     namespace: bio
     name: bio-rolebinding
 subjects:
-- kind: ServiceAccount
+  - kind: ServiceAccount
     name: bio-user
     namespace: bio
 roleRef:

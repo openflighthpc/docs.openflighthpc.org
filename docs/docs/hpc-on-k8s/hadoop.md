@@ -3,6 +3,13 @@ Hadoop is an open-source framework that efficiently processes and stores vast am
 
 
 ## Steps to Execute Job
+Before running workload it is required to setup hadoop cluster.
+```bash
+
+helm repo add pfisterer-hadoop https://pfisterer.github.io/apache-hadoop-helm/
+helm install hadoop --set persistence.nameNode.storageClass=longhorn --set persistence.dataNode.storageClass=longhorn --set persistence.dataNode.size=2Gi --set persistence.nameNode.size=2Gi   pfisterer-hadoop/hadoop
+```
+
 Below is the example manifest file for Hadoop Mapreduce workload in a Kubernetes cluster.
 ```yaml
 # job.yaml

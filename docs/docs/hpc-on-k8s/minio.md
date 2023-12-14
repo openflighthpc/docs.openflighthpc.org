@@ -12,7 +12,9 @@ For this installation, we've opted for the default namespace, employing the foll
 - Minio console port
 
 ```bash
-helm install -n default  --set global.storageClass=longhorn --set auth.rootUser=admin --set auth.rootPassword=test123456 --set service.type=NodePort --set service.nodePorts.api=31100 --set service.nodePorts.console=31101 my-release oci://registry-1.docker.io/bitnamicharts/minio
+helm repo add bitnami https://charts.bitnami.com/bitnami
+
+helm install -n default  --set global.storageClass=longhorn --set auth.rootUser=admin --set auth.rootPassword=test123456 --set service.type=NodePort --set service.nodePorts.api=31100 --set service.nodePorts.console=31101 --set persistence.size=2Gi my-minio bitnami/minio --version 12.9.4
 ```
 
 ## Accessing Minio Console

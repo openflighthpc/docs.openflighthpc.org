@@ -15,6 +15,8 @@ We are using RKE (Rancher Kubernetes Engine) to install a Kubernetes cluster.
 ```bash
 curl https://releases.rancher.com/install-docker/20.10.sh | sh
 sudo usermod -aG docker $USER
+sudo systemctl start docker
+sudo systemctl enable docker
 ```
 
 
@@ -66,13 +68,15 @@ Next we need to run below command for the provision of k8s clusters from the rke
 After the completion of k8s cluster, then copy the kubeconfig to ~/.kube/config folder
 
 ```bash
-mkdir ~/.kube/config
+mkdir ~/.kube
 cp kube_config_cluster.yml ~/.kube/config
 ```
 
 Install kubectl to connect k8s cluster, follow the link below
 [Install Kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)
 
+Install helm cli to deploy applications on kubernetes cluster using helm, follow the link below
+[Install helm](https://helm.sh/docs/intro/install/)
 
 Verification of k8s cluster, if status of nodes are in READY state then k8s is ready to use.
 ```bash

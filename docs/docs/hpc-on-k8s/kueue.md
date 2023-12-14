@@ -3,7 +3,7 @@
 To install a released version of Kueue in your cluster, run the following command:
 
 ```bash
-VERSION=v0.4.2
+VERSION=v0.5.1
 kubectl apply --server-side -f https://github.com/kubernetes-sigs/kueue/releases/download/$VERSION/manifests.yaml
 ```
 
