@@ -24,6 +24,7 @@
     1. Open `motorBike/motorbike-example.sh`.
         1. Set `-n X` to the number of processes to run across.
         1. Set `source` to point to the location of OpenFOAM.
+        1. Set `$HOME/motorBike` to the location of the motorBike job.
 
 ## Run Job
 
