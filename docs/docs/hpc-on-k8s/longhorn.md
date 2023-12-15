@@ -11,9 +11,13 @@ kubectl apply -f https://raw.githubusercontent.com/longhorn/longhorn/v1.2.3/depl
     ```bash
     # rhel based systems
     sudo dnf install iscsi-initiator-utils
+    sudo systemctl start iscsid
+    sudo systemctl enable iscsid
 
     # debian bases system
     sudo apt-get install open-iscsi
+    sudo systemctl start iscsid
+    sudo systemctl enable iscsid
     ```
 
     
