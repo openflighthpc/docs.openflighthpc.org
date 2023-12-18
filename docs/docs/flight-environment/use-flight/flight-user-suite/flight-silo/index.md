@@ -4,9 +4,9 @@ Flight Silo allows users to connect to "silos" - cloud storage systems designed 
 
 This section details the various commands used to manage silos, files and software.
 
-## Setting up
+## Setting up platforms
 
-Use `flight silo type avail` to list all available platform types. e.g.
+Use `flight silo type avail` to list all available platform types and their current state. e.g.
 ```bash
 [flight@chead1 ~]$ flight silo type avail
 ┌───────────┬───────────────────────────────┬──────────┐
