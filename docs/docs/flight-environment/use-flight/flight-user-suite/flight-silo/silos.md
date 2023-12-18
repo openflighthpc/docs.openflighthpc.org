@@ -2,6 +2,10 @@
 
 A silo is a storage space that is the same regardless of platform used. Even though a silo may appear as a directory in your cloud storage, it is highly recommended that a silo should **only** be managed by the command line tool.
 
+## OpenFlight Silo
+
+The Flight Silo tool comes with the `openflight` silo, this is a read-only silo that provides some example files & software. So long as the [AWS platform](index.md#setting-up-platforms) is prepared then the `openflight` repository can be interacted with to pull files and software. 
+
 ## Creating and Adding Silos
 
 To create a silo use the command `flight silo repo create`. This will take you through a series of questions:
