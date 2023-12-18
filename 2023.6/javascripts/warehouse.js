@@ -54,6 +54,17 @@ const templateData = [
     "capability": 2,
     "sort_priority": 5,
   },
+  {
+    "id": "cfd-jumpstart",
+    "title": "CFD Jumpstart",
+    "tagline": "A multinode, single-user SLURM environment with OpenFOAM 22.12, Paraview & OpenMPI ready to go",
+    "num_users": 1,
+    "lifetime": 6,
+    "storage": 1024,
+    "cost": 10,
+    "capability": 3,
+    "sort_priority": 6,
+  },
 ];
 
 const filterData = [

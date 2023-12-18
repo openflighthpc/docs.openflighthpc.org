@@ -122,16 +122,6 @@ resources:
           port_range_max: 5911
           protocol: tcp
           remote_ip_prefix: 0.0.0.0/0
-        - direction: ingress
-          port_range_min: 8888
-          port_range_max: 8888
-          protocol: tcp
-          remote_ip_prefix: 0.0.0.0/0
-        - direction: ingress
-          port_range_min: 8888
-          port_range_max: 8888
-          protocol: udp
-          remote_ip_prefix: 0.0.0.0/0
 
   gateway-pri-port:
     type: OS::Neutron::Port
@@ -268,7 +258,6 @@ resources:
             write_files:
               - content: |
                   SERVER=$gateway-pri-ip
-                  PREFIX=node
                 path: /opt/flight/cloudinit.in
                 permissions: &#39;0600&#39;
                 owner: root:root
@@ -320,7 +309,6 @@ resources:
             write_files:
               - content: |
                   SERVER=$gateway-pri-ip
-                  PREFIX=node
                 path: /opt/flight/cloudinit.in
                 permissions: &#39;0600&#39;
                 owner: root:root
@@ -372,7 +360,6 @@ resources:
             write_files:
               - content: |
                   SERVER=$gateway-pri-ip
-                  PREFIX=node
                 path: /opt/flight/cloudinit.in
                 permissions: &#39;0600&#39;
                 owner: root:root
@@ -424,7 +411,6 @@ resources:
             write_files:
               - content: |
                   SERVER=$gateway-pri-ip
-                  PREFIX=node
                 path: /opt/flight/cloudinit.in
                 permissions: &#39;0600&#39;
                 owner: root:root
@@ -476,7 +462,6 @@ resources:
             write_files:
               - content: |
                   SERVER=$gateway-pri-ip
-                  PREFIX=node
                 path: /opt/flight/cloudinit.in
                 permissions: &#39;0600&#39;
                 owner: root:root
