@@ -2,6 +2,20 @@
 
 Silo provides simple file management, this allows users to save and restore their files 
 
+## `file list <silo>:<directory>`
+
+List the files in the given silo and directory. If no silo is specified then the default will be used. If no directory is given then the top-level of the silo file storage will be shown. 
+
+**Example 1**
+:
+    ```bash
+    [flight@chead1 ~]$ flight silo file list openflight:/openfoam
+    cavity-example.sh
+    motorBike.tar.gz
+    ```
+
+---
+
 ## `file push <source> <silo>:<destination>`
 
 Upload a file to a silo.If no silo is specified then the default will be used.
