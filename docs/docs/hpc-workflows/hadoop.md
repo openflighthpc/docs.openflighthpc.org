@@ -2,7 +2,7 @@
 
 Hadoop is a scalable, distributed computing solution provided by Apache. Similar to queuing systems, Hadoop allows for distributed processing of large data sets.
 
-## Installing Hadoop Manually to Shared Filesystem
+## Installing & Running Hadoop
 
 !!! note
     The flight environment will need to be activated before the environments can be created so be sure to run `flight start` or [setup your environment to automatically activate the flight environment](../flight-environment/use-flight/environment-basics.md#activating-the-flight-system).
@@ -16,9 +16,26 @@ Hadoop is a scalable, distributed computing solution provided by Apache. Similar
     [flight@chead1 (mycluster1) ~]$ flight silo software pull --repo openflight hadoop 3.2.1
     ```
 
-!!! tip
-    If you are using a different version of java, the version may be changed on line 54 in `hadoop-3.2.1/etc/hadoop/hadoop-env.sh`
+    !!! tip
+        If you are using a version of java other than 1.8.0 then the version will need to be changed on line 54 in `SILO_SOFTWARE_DIR/hadoop/3.2.1/etc/hadoop/hadoop-env.sh`
 
+- Add the hadoop installation to the user's path along with the Java home (replacing `SILO_SOFTWARE_DIR` with the software directory used by silo in the download above, this can be done temporarily in the CLI or by adding to the user's `~/.bashrc`):
+    ```bash
+    export PATH="$PATH:SILO_SOFTWARE_DIR/hadoop/3.2.1/bin/:SILO_SOFTWARE_DIR/hadoop/3.2.1/sbin/"
+    export JAVA_HOME="/usr/lib/jvm/java-1.8.0/jre"
+    ```
+
+    !!! note
+        If the above has been set in the `~/.bashrc` then a new session for the user will need to be started for the environment changes to take effect, otherwise the below commands will not be located
+
+- Start the Hadoop distributed file system service:
+    ```bash
+    [flight@chead1 (mycluster1) MapReduceTutorial]$ start-dfs.sh
+    ```
+- Start the resource manager, node manager and app manager service:
+    ```bash
+    [flight@chead1 (mycluster1) MapReduceTutorial]$ start-yarn.sh
+    ```
 
 ## Downloading the Hadoop Job
 
@@ -31,7 +48,7 @@ These steps help setup the Hadoop environment and download a spreadsheet of data
     ```
 
 !!! tip
-    Be sure to update line 1 in `hadoopenv` if you are setting this up in a different location.
+    Be sure to update line 1 in `hadoopenv` to match the installation location of hadoop.
     If using a different version of java, update line 3.
 
 - Create job directory:
@@ -66,16 +83,8 @@ These steps help setup the Hadoop environment and download a spreadsheet of data
     [flight@chead1 (mycluster1) MapReduceTutorial]$ jar cfm ProductSalePerCountry.jar Manifest.txt SalesCountry/*.class
     ```
 
-## Starting the Hadoop Environment
+## Loading Data into Hadoop
 
-- Start the Hadoop distributed file system service:
-    ```bash
-    [flight@chead1 (mycluster1) MapReduceTutorial]$ $HADOOP_HOME/sbin/start-dfs.sh
-    ```
-- Start the resource manager, node manager and app manager service:
-    ```bash
-    [flight@chead1 (mycluster1) MapReduceTutorial]$ $HADOOP_HOME/sbin/start-yarn.sh
-    ```
 - Create directory for processing data and copy sales results in:
     ```bash
     [flight@chead1 (mycluster1) MapReduceTutorial]$ mkdir ~/inputMapReduce
