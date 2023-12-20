@@ -21,8 +21,10 @@ Hadoop is a scalable, distributed computing solution provided by Apache. Similar
 
 - Add the hadoop installation to the user's path along with the Java home (replacing `SILO_SOFTWARE_DIR` with the software directory used by silo in the download above, this can be done temporarily in the CLI or by adding to the user's `~/.bashrc`):
     ```bash
-    export PATH="$PATH:SILO_SOFTWARE_DIR/hadoop/3.2.1/bin/:SILO_SOFTWARE_DIR/hadoop/3.2.1/sbin/"
+    export HADOOP_HOME=SILO_SOFTWARE_DIR/hadoop/3.2.1
+    export PATH="$PATH:$HADOOP_HOME/bin/:$HADOOP_HOME/sbin/"
     export JAVA_HOME="/usr/lib/jvm/java-1.8.0/jre"
+    export CLASSPATH="$HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-client-core-3.2.1.jar:$HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-client-common-3.2.1.jar:$HADOOP_HOME/share/hadoop/common/hadoop-common-3.2.1.jar:~/MapReduceTutorial/SalesCountry/*:$HADOOP_HOME/lib/*"
     ```
 
     !!! note
