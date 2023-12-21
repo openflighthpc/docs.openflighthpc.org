@@ -4,18 +4,22 @@ To deploy Minio in our Kubernetes cluster, we utilize Helm charts. Prior to inst
 
 For this installation, we've opted for the default namespace, employing the following configurations:
 
-- storageClass:  
-- Minio rootUser
-- Minio rootPassword
-- Minio ServiceType
-- Minio API port
-- Minio console port
+- `global.storageClass:` The Storage Class for the Persistent Volume Claim (PVC) associated with MinIO's data volume.
+- `auth.rootUser:` The root username for MinIO.
+- `auth.rootPassword:` The root password for MinIO.
+- `service.type:` The service type for MinIO.
+- `service.nodePorts.api:` Specify the MinIO API nodePort value for both LoadBalancer and NodePort service types.
+- `service.nodePorts.console:` Specify the MinIO Console nodePort value for the LoadBalancer and NodePort service types.
+- `persistence.size:` The Persistent Volume Claim (PVC) storage size request for MinIO's data volume.
 
 ```bash
 helm repo add bitnami https://charts.bitnami.com/bitnami
 
 helm install -n default  --set global.storageClass=longhorn --set auth.rootUser=admin --set auth.rootPassword=test123456 --set service.type=NodePort --set service.nodePorts.api=31100 --set service.nodePorts.console=31101 --set persistence.size=2Gi my-minio bitnami/minio --version 12.9.4
 ```
+
+!!! note
+    The `persistence.size` parameter is configured with a value of 2Gi. It's advisable to set the size of the persistence volume considering the requirements of the file system storage.
 
 ## Accessing Minio Console
 

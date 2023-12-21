@@ -3,6 +3,8 @@ FastQC is a widely used tool for assessing the quality of genome sequence data. 
 
 
 ## Steps to Execute Job
+Assuming that the user possesses only the `bio-users-kubeconfig.yaml` for workload execution, the kubeconfig is configured to exclusively access the `bio` namespace. Consequently, the namespace value has been set to `bio` and queue-name is set to `bio-queue`.
+
 Below is the example manifest file for performing genome quality checks in a Kubernetes cluster.
 ```yaml
 # job.yaml
@@ -11,9 +13,9 @@ apiVersion: batch/v1
 kind: Job
 metadata:
   generateName: fastqc-
-  namespace: default
+  namespace: bio
   labels:
-    kueue.x-k8s.io/queue-name: user-queue
+    kueue.x-k8s.io/queue-name: bio-queue
 spec:
   parallelism: 1
   completions: 1
@@ -31,10 +33,10 @@ spec:
             value: <minio port like "31100">
           # Minio Access Key   
           - name: MINIO_AKEY
-            value: <minio-access-key>
+            value: <minio-access-key like "afdfAdsfslWssedsfsdjE">
           # Minio Secret Key   
           - name: MINIO_SKEY
-            value: <minio-secret-key>
+            value: <minio-secret-key like "Zsfdslfjaslffafddfj">
           - name: BUCKET_NAME
             value: <minio bucket name like "genome">
         resources:
@@ -53,7 +55,7 @@ spec:
 Command to execute genome in kubernetes cluster using Kueue.
 
 ```bash
-kubectl create -f job.yaml
+kubectl --kubeconfig=bio-users-kubeconfig.yaml create -f job.yaml
 ```
 
 When the job status is Completed then check the S3/minio console to verify results.

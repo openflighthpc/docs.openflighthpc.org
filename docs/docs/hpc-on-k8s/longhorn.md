@@ -6,10 +6,10 @@ kubectl apply -f https://raw.githubusercontent.com/longhorn/longhorn/v1.2.3/depl
 ```
 
 !!! note
-    Sometimes open-iscsi is not installed on the nodes, so we can run below command to install on rhel and debian based systems.
+    Sometimes `open-iscsi` is not installed on the nodes, so we can run below command to install on red hat and debian based systems.
 
     ```bash
-    # rhel based systems
+    # red hat based systems
     sudo dnf install iscsi-initiator-utils
     sudo systemctl start iscsid
     sudo systemctl enable iscsid

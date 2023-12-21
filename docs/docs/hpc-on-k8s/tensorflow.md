@@ -30,10 +30,10 @@ spec:
             value: <minio port like "31100">
           # Minio Access Key   
           - name: MINIO_AKEY
-            value: <minio-access-key>
+            value: <minio-access-key like "afdfAdsfslWssedsfsdjE">
           # Minio Secret Key   
           - name: MINIO_SKEY
-            value: <minio-secret-key>
+            value: <minio-secret-key like "Zsfdslfjaslffafddfj">
           - name: BUCKET_NAME
             value: <minio bucket name like "tensorflow">
         resources:

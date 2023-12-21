@@ -19,6 +19,8 @@ sudo systemctl start docker
 sudo systemctl enable docker
 ```
 
+!!! notes
+    When adjusting the status of firewalld, whether enabling or disabling, it is necessary to restart the Docker service.
 
 ## Installing Kubernetes Cluster with RKE
 
@@ -75,7 +77,7 @@ cp kube_config_cluster.yml ~/.kube/config
 Install kubectl to connect k8s cluster, follow the link below
 [Install Kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)
 
-Install helm cli to deploy applications on kubernetes cluster using helm, follow the link below
+Install helm to deploy applications on kubernetes cluster using helm, follow the link below
 [Install helm](https://helm.sh/docs/intro/install/)
 
 Verification of k8s cluster, if status of nodes are in READY state then k8s is ready to use.

@@ -3,7 +3,7 @@ PyTorch is an open-source machine learning library based on the Torch library, u
 
 
 ## Steps to Execute Job
-Before running the worklaod we need to make sure kubeflow operators and CRDs are in place, if they are present then use the below command.
+Before running the workload we need to make sure kubeflow operators and CRDs are in place, if they are present then use the below command.
 ```bash
 kubectl apply -k "github.com/kubeflow/training-operator/manifests/overlays/standalone?ref=v1.5.0"
 ```
@@ -44,10 +44,10 @@ spec:
                   value: <minio port like "31100">
                 # Minio Access Key   
                 - name: MINIO_AKEY
-                  value: <minio-access-key>
+                  value:<minio-access-key like "afdfAdsfslWssedsfsdjE">
                 # Minio Secret Key   
                 - name: MINIO_SKEY
-                  value: <minio-secret-key>
+                  value: <minio-secret-key like "Zsfdslfjaslffafddfj">
                 - name: BUCKET_NAME
                   value: <minio bucket name like "pytorch">
 

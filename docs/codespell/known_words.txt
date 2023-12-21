@@ -111,7 +111,7 @@ devops
 namespace
 datasets
 mapreduce
-rootpassword
-rootuser
 kube
 kubectl
+nodeport
+kubeflow
