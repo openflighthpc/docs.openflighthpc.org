@@ -36,8 +36,6 @@ When `flight profile configure` is run, the user will be guided through a series
         {
           "cluster_type": "openflight-slurm-multinode",
           "cluster_name": "my-cluster",
-          "nfs_server": "login1",
-          "slurm_server": "login1",
           "ipa_use": "false",
           "ipa_server": "infra01",
           "ipa_domain": "cluster.example.com",
@@ -55,7 +53,6 @@ When `flight profile configure` is run, the user will be guided through a series
           "cluster_name": "my-cluster",
           "default_username": "flight",
           "default_password": "0penfl1ght",
-          "nfs_server": "login1",
           "access_host": "51.104.217.61",
           "compute_ip_range": "10.10.0.0/16",
           "pod_ip_range": "192.168.0.0/16"
