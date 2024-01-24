@@ -147,6 +147,24 @@ nav:
         - MPI Workflow: docs/hpc-workflows/openfoam/mpi.md
         - Simple Workflow: docs/hpc-workflows/openfoam/simple.md
       - Tensorflow: docs/hpc-workflows/tensorflow.md
+      - HPC with Kubernetes:
+        - docs/hpc-on-k8s/index.md
+        - Installation:
+          - K8s Cluster (RKE): docs/hpc-on-k8s/rke.md
+          - Longhorn: docs/hpc-on-k8s/longhorn.md
+          - Kueue: docs/hpc-on-k8s/kueue.md
+          - Minio: docs/hpc-on-k8s/minio.md
+          - Users: docs/hpc-on-k8s/user.md
+        - Workloads Example:
+          - Genome: docs/hpc-on-k8s/genome.md
+          - Hadoop: docs/hpc-on-k8s/hadoop.md
+          - PyTorch: docs/hpc-on-k8s/pytorch.md
+          - SimPy: docs/hpc-on-k8s/simpy.md
+          - Tensorflow: docs/hpc-on-k8s/tensorflow.md
+
+
+
+
 not_in_nav: |
   /index.md
   /solo/index.md
