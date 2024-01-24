@@ -6,7 +6,7 @@ A test of `mkdocs` for hosting the OpenFlight docs
 
 ### Linux Machine/VM
 - Prerequisite
-  `gcc, g++, python3 and python-pip`
+  `gcc, g++, python3 and python-pip AND python3-devel`
 
 - Create python virtualenv and activate virtualenv
   ```bash
