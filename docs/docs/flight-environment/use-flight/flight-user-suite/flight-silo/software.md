@@ -27,6 +27,11 @@ Delete a software binary from the default silo.
 Download and extract a software binary from the default silo.
 
 - `--repo <silo>` - Instead of using the default silo, specify which one to pull from.
+- `--dir <path>` - Install software within `<path>` instead of the standard location. The order in which the destination path is decided is based on the following (in priority order):
+    1. The value of the environment variable `flight_SILO_software_dir`
+    1. The `--dir` argument
+    1. The value of `software_dir` in `~/.config/flight/silo/config.yml`
+    1. The value of `software_dir` in `/opt/flight/opt/silo/config.yml` (this path may differ if a non-standard installation location has been chosen or if the source code has been cloned elsewhere) 
 - `--overwrite` - Overwrite local software if it exists.
 
 **Example 1**
