@@ -1,6 +1,6 @@
 # Managing Migrations
 
-Migration provide a method for replicating [Silo software](./software.md) installations on new clusters. This supports quicker time-to-science by reducing the admin work required to create duplicate environments in ephemeral cloud situations. 
+Migrations provide a method for replicating [Silo software](./software.md) installations on new clusters. This supports quicker time-to-science by reducing the admin work required to create duplicate environments in ephemeral cloud situations. 
 
 Every [software pull](./software.md#software-pull-name-version) made by the user will be recorded in an "archive". This will detail what software version was installed from what silos and to which directories it was installed. 
 
