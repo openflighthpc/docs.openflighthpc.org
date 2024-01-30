@@ -89,6 +89,7 @@ nav:
           - Silos: docs/flight-environment/use-flight/flight-user-suite/flight-silo/silos.md
           - Files: docs/flight-environment/use-flight/flight-user-suite/flight-silo/files.md
           - Software: docs/flight-environment/use-flight/flight-user-suite/flight-silo/software.md
+          - Migrations: docs/flight-environment/use-flight/flight-user-suite/flight-silo/migrations.md
       - Flight Web Suite:
         - docs/flight-environment/use-flight/flight-web-suite/index.md
         - Setup: docs/flight-environment/use-flight/flight-web-suite/setup.md
