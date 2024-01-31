@@ -44,6 +44,8 @@ Launch the Flight Solo image in AWS marketplace
         path: /opt/flight/cloudinit.in
         permissions: '0644'
         owner: root:root
+    runcmd:
+      - /opt/flight/bin/flight profile prepare openflight-kubernetes-multinode
     ```
 
 !!! note
@@ -103,6 +105,8 @@ Launch the Flight Solo image in AWS marketplace
             path: /opt/flight/cloudinit.in
             permissions: '0644'
             owner: root:root
+        runcmd:
+          - /opt/flight/bin/flight profile prepare openflight-kubernetes-multinode
         ```
 1. Repeat the above to create more nodes, changing the `LABEL=` field in the cloud-init data to be a unique label.
 

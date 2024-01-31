@@ -4,7 +4,7 @@
 
 ### Prepare User Data
 
-{% include 'flight-solo/creating-clusters/prepare-user-data-login.md' %}
+{% include 'flight-solo/creating-clusters/prepare-user-data-login-kubernetes.md' %}
 
 ### Deploy
 
@@ -24,7 +24,7 @@
 
 ### Prepare User Data
 
-{% include 'flight-solo/creating-clusters/prepare-user-data-compute.md' %}
+{% include 'flight-solo/creating-clusters/prepare-user-data-compute-kubernetes.md' %}
 
 ### Deploy
 
