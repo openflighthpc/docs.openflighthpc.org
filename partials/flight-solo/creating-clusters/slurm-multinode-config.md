@@ -8,12 +8,9 @@
     1. This brings up a UI, where several options need to be set. Use up and down arrow keys to scroll through options and enter to move to the next option. Options in brackets coloured yellow are the default options that will be applied if nothing is entered.
         - Cluster type: The type of cluster setup needed, in this case `Slurm Multinode`.
         - Cluster name: The name of the cluster.
-        - NFS server: The hostname or flight-hunter label of the node that will act as the NFS server.
-        - SLURM server: The hostname or flight-hunter label of the node that will act as the SLURM server.
-        - Setup Multi User Environment with IPA?: Boolean value to determine whether to configure a multi-user environment with IPA.
-        - IPA server: The short hostname (or flight-hunter label) for the node to be used as the IPA server.
-        - IPA domain: The domain for the IPA server to use.
-        - IPA secure admin password: The password to be used by the `admin` user of the IPA installation to manage the server.
+        - Setup Multi User Environment with IPA?: Boolean value to determine whether to configure a multi-user environment with IPA. If set to true then the following will need to be filled in
+            - IPA domain: The domain for the IPA server to use.
+            - IPA secure admin password: The password to be used by the `admin` user of the IPA installation to manage the server.
         - Default user: The user that you log in with.
         - Set user password: Set a password to be used for the chosen default user.
         - IP or FQDN for Web Access: As described [here](../../flight-environment/use-flight/flight-web-suite/setup.md#setting-domain-name), this could be the public IP or public hostname.
