@@ -148,6 +148,9 @@ Allows for adding or removing of groups to a node.
 - `--buffer` - Modifies groups in the buffer list instead.
 - `--regex` - The nodename is parsed as regex instead, and group changes are made to all nodes that match.
 
+!!! tip
+    You can select multiple nodes at once by writing a comma separated list, or with square bracket expansion (like [genders syntax](../../../hpc-environment-basics/linux-usage/genders-pdsh.md#creating-a-genders-file)). For example, `remove node[01-02] compute` would remove `node01` and `node02`
+
 ---
 
 ### `modify-label <old> <new>`
@@ -162,6 +165,9 @@ Remove a node from the parsed list.
 
 - `--buffer` - Remove from the buffer list, and used the node id instead.
 - `--name` - Specify the node by regex matching the hostname instead.
+
+!!! tip
+    You can select multiple nodes at once by writing a comma separated list, or with square bracket expansion (like [genders syntax](../../../hpc-environment-basics/linux-usage/genders-pdsh.md#creating-a-genders-file)). For example, `remove node[01-02] compute` would remove `node01` and `node02`
 
 ---
 
