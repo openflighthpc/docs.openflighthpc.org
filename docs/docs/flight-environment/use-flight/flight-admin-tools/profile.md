@@ -37,9 +37,6 @@ When `flight profile configure` is run, the user will be guided through a series
           "cluster_type": "openflight-slurm-multinode",
           "cluster_name": "my-cluster",
           "ipa_use": "false",
-          "ipa_server": "infra01",
-          "ipa_domain": "cluster.example.com",
-          "secure_admin_password": "MySecurePassword",
           "default_username": "flight",
           "default_password": "0penfl1ght",
           "access_host": "51.104.217.61",
@@ -71,7 +68,7 @@ When `flight profile configure` is run, the user will be guided through a series
 
 An example of using `answers` to configure a slurm multinode cluster would be:
 ```bash
-flight profile configure --answers '{  "cluster_type": "openflight-slurm-standalone",  "cluster_name": "my-cluster",  "default_username": "flight",  "default_password": "0penfl1ght",  "access_host": "{{ access_host }}"}'
+flight profile configure --answers '{  "cluster_type": "openflight-slurm-standalone",  "cluster_name": "my-cluster",  "default_username": "flight",  "default_password": "0penfl1ght",  "access_host": "51.104.217.61"}'
 ```
 
 !!! tip
