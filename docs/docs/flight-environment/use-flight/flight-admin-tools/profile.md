@@ -83,6 +83,9 @@ Applies an identity to one or more nodes. e.g. `flight profile apply node01,node
 - `--force` - Overwrite the identity of a node that has already been applied to.
 - `--remove-on-shutdown` - Adds a systemd hook to the node which will trigger removal from the cluster on shutdown if the node's identity supports removal.
 - `--wait` - Don't background the process of removal 
+- `--groups` - Select nodes to apply to based on [hunter groups](./hunter.md#modify-groups-node)
+- `--detect-identity` - Attempt to automatically determine the identity to apply based on the [hunter groups](./hunter.md#modify-groups-node) of the node. If any group matches that of the available identities for the current cluster type, it will be applied. 
+- `--dry-run` - Show which identities would be applied to which nodes without actually performing apply process
 
 !!! tip
     You can select multiple nodes at once by writing a comma separated list, or with square bracket expansion (like [genders syntax](../../../hpc-environment-basics/linux-usage/genders-pdsh.md#creating-a-genders-file)). For example, `apply node[01-02] compute` would apply `compute` to `node01` and `node02`
