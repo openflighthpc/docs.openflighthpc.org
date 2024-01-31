@@ -46,6 +46,7 @@ Successful transmission
 - `--label <label>` - Defines a label to use when parsing this node.
 - `--prefix <prefix>` - Defines a prefix, which will be numbered, and used as a label.
 - `--command <command>` - Runs the given console command and sends the output as the payload of the send.
+- `--retry-interval <interval>` - The number of seconds to wait before attempting to send again 
 
 !!! tip
     All the above options can be set in the Flight Hunter config file located within `etc/config.yml` in the installation directory (if installed through the package this will be at `/opt/flight/opt/hunter/etc/config.yml`). For more information on configuring Flight Tools see the [configuration document](../../get-flight/configure.md#filesystem-structure)
