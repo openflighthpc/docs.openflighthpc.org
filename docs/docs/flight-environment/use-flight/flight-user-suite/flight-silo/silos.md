@@ -6,6 +6,23 @@ A silo is a storage space that is the same regardless of platform used. Even tho
 
 The Flight Silo tool comes with the `openflight` silo, this is a read-only silo that provides some example files & software. So long as the [AWS platform](index.md#setting-up-platforms) is prepared then the `openflight` repository can be interacted with to pull files and software. 
 
+## Viewing Silos
+
+To see the available silos on the system use the command `flight silo repo list`. 
+
+```bash
+[flight@chead1 ~]$ flight silo repo list
+┌────────────┬───────────────────────────────────┬──────────┬─────────┬────────────┐
+│ Name       │ Description                       │ Platform │ Public? │ ID         │
+├────────────┼───────────────────────────────────┼──────────┼─────────┼────────────┤
+│ mysilo1    │                                   │ aws      │ false   │ ABCDE123   │
+│ openflight │ Openflight software and resources │ aws      │ true    │ OPENFLIGHT │
+└────────────┴───────────────────────────────────┴──────────┴─────────┴────────────┘
+```
+
+!!! note
+    Silos that are defined locally and no longer exist upstream will be marked in yellow. This can occur when a silo has been deleted from a different system.
+
 ## Creating and Adding Silos
 
 To create a silo use the command `flight silo repo create`. This will take you through a series of questions:
