@@ -10,8 +10,7 @@ List the files in the given silo and directory. If no silo is specified then the
 : 
     ```bash
     [flight@chead1 ~]$ flight silo file list openflight:/openfoam
-    cavity-example.sh
-    motorBike.tar.gz
+    cavity-example.sh  motorBike.tar.gz  OpenFOAM-v2212.tar.gz
     ```
 
 ---
