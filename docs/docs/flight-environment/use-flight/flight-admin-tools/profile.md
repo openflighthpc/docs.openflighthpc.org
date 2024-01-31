@@ -157,7 +157,7 @@ Removes the identity of a node, so that it is no longer works as part of the clu
 
 Shows the setup/removal progress of a node and its current status
 - `--raw` - Shows the entire ansible log output.
-
+- `--watch` - View the process "live", regularly updates the output on the screen to show current status
 
 ---
 
