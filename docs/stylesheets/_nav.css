@@ -22,7 +22,7 @@
     position: static !important;
 }
 
-.md-nav__link, .md-nav__title {
+.md-nav__link:not(.md-nav__link--active), .md-nav__title {
     background: none !important;
     box-shadow: none !important;
 }
@@ -64,6 +64,13 @@
 
 [dir="ltr"] .md-header__title {
     margin-left: 0;
+}
+
+@media screen and (min-width: 76.1875em) {
+    .md-nav__link--active {
+        background-color: var(--sky-blue-grey);
+        box-shadow: 0 0 .4rem .4rem var(--sky-blue-grey);
+    }
 }
 
 @media screen and (max-width: 76.1875em) {
