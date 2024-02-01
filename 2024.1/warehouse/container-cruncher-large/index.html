@@ -162,9 +162,14 @@ resources:
               - content: |
                   SHAREPUBKEY=true
                   AUTOPARSEMATCH=$clustername
-                  PROFILE_ANSWERS=&#39;{ &quot;cluster_type&quot;: &quot;openflight-kubernetes-multinode&quot;, &quot;cluster_name&quot;: &quot;$clustername&quot;, &quot;nfs_server&quot;: &quot;gateway1&quot;}&#39;
+                  PROFILE_ANSWERS=&#39;{ &quot;cluster_type&quot;: &quot;openflight-kubernetes-multinode&quot;, &quot;cluster_name&quot;: &quot;$clustername&quot;}&#39;
                   AUTOAPPLY=&quot;gateway: master, node: worker&quot;
                 path: /opt/flight/cloudinit.in
+                permissions: &#39;0600&#39;
+                owner: root:root
+              - content: |
+                  /opt/flight/bin/flight profile prepare openflight-kubernetes-multinode
+                path: /var/lib/firstrun/scripts/00-prepare-profile.bash
                 permissions: &#39;0600&#39;
                 owner: root:root
               - content: |
@@ -261,6 +266,11 @@ resources:
                 path: /opt/flight/cloudinit.in
                 permissions: &#39;0600&#39;
                 owner: root:root
+              - content: |
+                  /opt/flight/bin/flight profile prepare openflight-kubernetes-multinode
+                path: /var/lib/firstrun/scripts/00-prepare-profile.bash
+                permissions: &#39;0600&#39;
+                owner: root:root
           params:
             $key: { get_param: ssh-key }
             $clustername: { get_param: clustername }
@@ -310,6 +320,11 @@ resources:
               - content: |
                   SERVER=$gateway-pri-ip
                 path: /opt/flight/cloudinit.in
+                permissions: &#39;0600&#39;
+                owner: root:root
+              - content: |
+                  /opt/flight/bin/flight profile prepare openflight-kubernetes-multinode
+                path: /var/lib/firstrun/scripts/00-prepare-profile.bash
                 permissions: &#39;0600&#39;
                 owner: root:root
           params:
@@ -363,6 +378,11 @@ resources:
                 path: /opt/flight/cloudinit.in
                 permissions: &#39;0600&#39;
                 owner: root:root
+              - content: |
+                  /opt/flight/bin/flight profile prepare openflight-kubernetes-multinode
+                path: /var/lib/firstrun/scripts/00-prepare-profile.bash
+                permissions: &#39;0600&#39;
+                owner: root:root
           params:
             $key: { get_param: ssh-key }
             $clustername: { get_param: clustername }
@@ -412,6 +432,11 @@ resources:
               - content: |
                   SERVER=$gateway-pri-ip
                 path: /opt/flight/cloudinit.in
+                permissions: &#39;0600&#39;
+                owner: root:root
+              - content: |
+                  /opt/flight/bin/flight profile prepare openflight-kubernetes-multinode
+                path: /var/lib/firstrun/scripts/00-prepare-profile.bash
                 permissions: &#39;0600&#39;
                 owner: root:root
           params:
@@ -465,6 +490,11 @@ resources:
                 path: /opt/flight/cloudinit.in
                 permissions: &#39;0600&#39;
                 owner: root:root
+              - content: |
+                  /opt/flight/bin/flight profile prepare openflight-kubernetes-multinode
+                path: /var/lib/firstrun/scripts/00-prepare-profile.bash
+                permissions: &#39;0600&#39;
+                owner: root:root
           params:
             $key: { get_param: ssh-key }
             $clustername: { get_param: clustername }
@@ -514,6 +544,11 @@ resources:
               - content: |
                   SERVER=$gateway-pri-ip
                 path: /opt/flight/cloudinit.in
+                permissions: &#39;0600&#39;
+                owner: root:root
+              - content: |
+                  /opt/flight/bin/flight profile prepare openflight-kubernetes-multinode
+                path: /var/lib/firstrun/scripts/00-prepare-profile.bash
                 permissions: &#39;0600&#39;
                 owner: root:root
           params:
@@ -567,6 +602,11 @@ resources:
                 path: /opt/flight/cloudinit.in
                 permissions: &#39;0600&#39;
                 owner: root:root
+              - content: |
+                  /opt/flight/bin/flight profile prepare openflight-kubernetes-multinode
+                path: /var/lib/firstrun/scripts/00-prepare-profile.bash
+                permissions: &#39;0600&#39;
+                owner: root:root
           params:
             $key: { get_param: ssh-key }
             $clustername: { get_param: clustername }
@@ -616,6 +656,11 @@ resources:
               - content: |
                   SERVER=$gateway-pri-ip
                 path: /opt/flight/cloudinit.in
+                permissions: &#39;0600&#39;
+                owner: root:root
+              - content: |
+                  /opt/flight/bin/flight profile prepare openflight-kubernetes-multinode
+                path: /var/lib/firstrun/scripts/00-prepare-profile.bash
                 permissions: &#39;0600&#39;
                 owner: root:root
           params:
@@ -669,6 +714,11 @@ resources:
                 path: /opt/flight/cloudinit.in
                 permissions: &#39;0600&#39;
                 owner: root:root
+              - content: |
+                  /opt/flight/bin/flight profile prepare openflight-kubernetes-multinode
+                path: /var/lib/firstrun/scripts/00-prepare-profile.bash
+                permissions: &#39;0600&#39;
+                owner: root:root
           params:
             $key: { get_param: ssh-key }
             $clustername: { get_param: clustername }
@@ -718,6 +768,11 @@ resources:
               - content: |
                   SERVER=$gateway-pri-ip
                 path: /opt/flight/cloudinit.in
+                permissions: &#39;0600&#39;
+                owner: root:root
+              - content: |
+                  /opt/flight/bin/flight profile prepare openflight-kubernetes-multinode
+                path: /var/lib/firstrun/scripts/00-prepare-profile.bash
                 permissions: &#39;0600&#39;
                 owner: root:root
           params:

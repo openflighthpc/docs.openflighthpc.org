@@ -166,8 +166,8 @@ resources:
               - content: |
                   SHAREPUBKEY=true
                   AUTOPARSEMATCH=$clustername
-                  PROFILE_ANSWERS=&#39;{ &quot;cluster_type&quot;: &quot;openflight-slurm-multinode&quot;, &quot;cluster_name&quot;: &quot;$clustername&quot;, &quot;nfs_server&quot;: &quot;gateway1&quot;, &quot;slurm_server&quot;: &quot;gateway1&quot;, &quot;ipa_use&quot;: &quot;true&quot;, &quot;ipa_server&quot;: &quot;infra01&quot;, &quot;ipa_domain&quot;: &quot;$clustername.alces.network&quot; }&#39;
-                  AUTOAPPLY=&quot;node: compute&quot;
+                  PROFILE_ANSWERS=&#39;{ &quot;cluster_type&quot;: &quot;openflight-slurm-multinode&quot;, &quot;cluster_name&quot;: &quot;$clustername&quot;, &quot;ipa_use&quot;: true, &quot;ipa_domain&quot;: &quot;$clustername.alces.network&quot; }&#39;
+                  AUTOAPPLY=&quot;infra: ipa, gateway: login, node: compute&quot;
                 path: /opt/flight/cloudinit.in
                 permissions: &#39;0600&#39;
                 owner: root:root
@@ -189,23 +189,21 @@ resources:
                   IPAPASS=$(cat /dev/urandom |tr -dc _A-Z-a-z-0-9 |head -c 8)
                   echo &quot;$IPAPASS&quot; &gt; /root/ipa_admin_pass.txt
                   # Ensure Flight Profile uses generated passwords
-                  /opt/flight/bin/flight profile configure --answers &quot;{ \&quot;cluster_type\&quot;: \&quot;openflight-slurm-multinode\&quot;, \&quot;default_password\&quot;: \&quot;$FLIGHTPASS\&quot;, \&quot;secure_admin_password\&quot;: \&quot;$IPAPASS\&quot;}&quot; --accept-defaults
+                  /opt/flight/bin/flight profile configure --answers &quot;{ \&quot;cluster_type\&quot;: \&quot;openflight-slurm-multinode\&quot;, \&quot;default_password\&quot;: \&quot;$FLIGHTPASS\&quot;, \&quot;ipa_use\&quot;: true, \&quot;secure_admin_password\&quot;: \&quot;$IPAPASS\&quot;}&quot; --accept-defaults
                 path: /var/lib/firstrun/scripts/00-generate-passwords.bash
                 permissions: &#39;0600&#39;
                 owner: root:root
               - content: | 
-                  until /opt/flight/bin/flight hunter list --plain |grep -q infra01 ; do
-                    echo &quot;Waiting for infra01 to appear before applying&quot; 
-                    sleep 5
+                  until /opt/flight/bin/flight profile list |grep gateway1 |grep -q &#39;complete&#39; ; do
+                    echo &quot;Waiting for gateway1 to complete before running...&quot; 
+                    sleep 30
                   done
-                  /opt/flight/bin/flight profile apply infra01 ipa --wait
-                  /opt/flight/bin/flight profile apply gateway1 login --wait
                   # Ensure write access to user NFS mounts for cluster users
                   chgrp cluster-users /opt/{apps,data}
                   chmod 775 /opt/{apps,data}
                   # Make Flight Silo use /opt/apps/
-                  pdsh -g all &quot;sed -i &#39;s,^software_dir:.*,software_dir: /opt/apps,g&#39; /opt/flight/opt/silo/etc/config.yml&quot;
-                path: /var/lib/firstrun/scripts/99-apply-identities.bash
+                  /opt/flight/opt/pdsh/bin/pdsh -g all &quot;sed -i &#39;s,^software_dir:.*,software_dir: /opt/apps,g&#39; /opt/flight/opt/silo/etc/config.yml&quot;
+                path: /var/lib/firstrun/scripts/99-post-apply-tweaks.bash
                 permissions: &#39;0600&#39;
                 owner: root:root
           params:

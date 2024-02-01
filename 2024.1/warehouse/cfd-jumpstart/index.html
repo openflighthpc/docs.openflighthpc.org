@@ -163,7 +163,7 @@ resources:
               - content: |
                   SHAREPUBKEY=true
                   AUTOPARSEMATCH=$clustername
-                  PROFILE_ANSWERS=&#39;{ &quot;cluster_type&quot;: &quot;openflight-slurm-multinode&quot;, &quot;cluster_name&quot;: &quot;$clustername&quot;, &quot;nfs_server&quot;: &quot;gateway1&quot;, &quot;slurm_server&quot;: &quot;gateway1&quot;, &quot;ipa_use&quot;: &quot;false&quot;, &quot;ipa_domain&quot;: &quot;$clustername.alces.network&quot; }&#39;
+                  PROFILE_ANSWERS=&#39;{ &quot;cluster_type&quot;: &quot;openflight-slurm-multinode&quot;, &quot;cluster_name&quot;: &quot;$clustername&quot;, &quot;ipa_use&quot;: false }&#39;
                   AUTOAPPLY=&quot;gateway: login, node: compute&quot;
                 path: /opt/flight/cloudinit.in
                 permissions: &#39;0600&#39;
@@ -197,7 +197,7 @@ resources:
                   chgrp flight /opt/{apps,data,service,site}
                   chmod 775 /opt/{apps,data,service,site}
                   # Install OpenFOAM to /opt/apps
-                  su - flight -c &#39;flight_SILO_software_dir=/opt/apps/ /opt/flight/bin/flight silo software pull OpenFOAM 22.12 --repo openflight&#39;
+                  su - flight -c &#39;/opt/flight/bin/flight silo software pull OpenFOAM 22.12 --repo openflight --dir /opt/apps/&#39;
                   # Install Paraview
                   dnf -y install paraview
                   # Install openmpi on all nodes
