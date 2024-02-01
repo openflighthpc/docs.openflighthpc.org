@@ -61,3 +61,17 @@ If a default silo has been set, then commands that require a silo to be specifie
 [flight@chead1 ~]$ flight silo set-default openflight
 Default silo set to: openflight
 ```
+
+## Editing Silo Information
+
+When a silo is created it is named and the description is left blank. Both the name and description can be modified using the `flight silo repo edit` command. For example:
+```bash
+[flight@chead1 ~]$ flight silo repo edit mysilo1
+Silo name: myfilesilo1
+Silo description: This is my silo for sharing files between ephemeral cloud systems!
+Updating silo details...
+Silo details updated
+```
+
+!!! note
+    Any other systems that have a silo added locally will detect upstream changes and will require `flight silo repo refresh` to be run to ensure names and descriptions are synchronised with the upstream silo.
