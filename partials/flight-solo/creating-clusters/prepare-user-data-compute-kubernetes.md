@@ -30,17 +30,20 @@ write_files:
     path: /opt/flight/cloudinit.in
     permissions: '0644'
     owner: root:root
+  - content: |
+      /opt/flight/bin/flight profile prepare openflight-kubernetes-multinode
+    path: /var/lib/firstrun/scripts/00-prepare-profile.bash
+    permissions: '0600'
+    owner: root:root
 users:
   - default
   - name: root
     ssh_authorized_keys:
       - <Content of ~/.ssh/id_alcescluster.pub from root user on login node>
-runcmd:
-  - /opt/flight/bin/flight profile prepare openflight-kubernetes-multinode
 ```
 
 !!! note
-    The `runcmd` section sets up the necessary dependencies for Kubernetes headlessly when the compute node is launched
+    The section that writes the `/var/lib/firstrun/scripts/00-prepare-profile.bash` file sets up the necessary dependencies for Kubernetes automatically when the compute node is launched
 
 !!! info
     More information on available user data options for Flight Solo via the [user data documentation](../understand-solo/user-data.md)
