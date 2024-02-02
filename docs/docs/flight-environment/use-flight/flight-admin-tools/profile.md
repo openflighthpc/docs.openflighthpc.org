@@ -7,6 +7,10 @@ Flight profile is a tool that manages the profiles of cluster nodes. In this con
 Generally speaking, the process of utilising Flight Profile is to:
 
 - Prepare the type you wish to use
+
+    !!! info
+        The type you wish to use will need to be prepared on all nodes that are to be included in the cluster, this is because the preparation process installs the required dependencies for the cluster type for the current system only
+
 - Run through the configure prompt to customise the type
 - Apply identities from within the profile to hosts
 
@@ -135,8 +139,9 @@ Displays the identity and status of every node available to profile. e.g.
 ### `prepare <type>`
 
 Prepares a cluster type, completing dependencies. If no cluster type is specified then the currently configured one is used.
-!!! note
-    A cluster type must be prepared before it can be used.
+
+!!! info
+    The type you wish to use will need to be prepared on all nodes that are to be included in the cluster, this is because the preparation process installs the required dependencies for the cluster type for the current system only
 
 ---
 
