@@ -29,14 +29,14 @@ The command can be run as follows:
 flight set OPTION [on|off]
 ```
 
-Where the `OPTION` can be:
+Some common options are:
 
 - `hints`-  Show or hide command hints on login
 - `welcome` - Show or hide the welcome splash screen on login
 - `secondary` - Toggle whether the flight environment should be loaded in subshells
 - `always` - Toggle whether the flight environment is activated 
 
-Further information can be found with the command `flight info`.
+Further information an options can be found with the command `flight info`.
 
 !!! tip
     If you have [root permissions](../../hpc-environment-basics/linux-usage/cli-basics/becoming-root.md) then the option `--global` can be appended to the `flight set` command to modify the default settings for all users
