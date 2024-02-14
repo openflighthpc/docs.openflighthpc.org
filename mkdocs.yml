@@ -148,6 +148,8 @@ nav:
         - MPI Workflow: docs/hpc-workflows/openfoam/mpi.md
         - Simple Workflow: docs/hpc-workflows/openfoam/simple.md
       - Tensorflow: docs/hpc-workflows/tensorflow.md
+  - Greener HPC:
+    - docs/greener-hpc/index.md
 not_in_nav: |
   /index.md
   /solo/index.md
