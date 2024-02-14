@@ -15,6 +15,8 @@ The impacts of resources on the environment come from two areas:
 
 Manufacturers are becoming more transparent with reporting the embedded impacts of their servers which allows for evaluation of the latest HPC compute resources before a HPC solution is purchased. Alternatively, cloud platforms provide access to resources and utilising these when resources are required will share the impact of the embedded costs as the responsibility of the underlying hardware is elsewhere.
 
+Understanding the resource requirements will allow for resources to be specified to suit the workloads that will be run on them. Having a system with far more resources than needed leads to unnecessary manufacture and also wasted power.
+
 ### Usage Impacts
 
 The usage of the resources is mainly effected by the power consumed by the server. More power is drawn by the system when the utilisation of it is higher. It is therefore vital to have understanding of the workload efficiency and power source for the HPC solution.
