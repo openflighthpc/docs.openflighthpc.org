@@ -45,4 +45,6 @@ Use the tabs below to assist in selection of the correct cluster build document.
                         [Build Jupyter Lab Standalone on Azure](jupyter-lab-standalone-azure.md){ .md-button .md-button--primary }
                     === ":simple-openstack: OpenStack" 
                         [Build Jupyter Lab Standalone on OpenStack](jupyter-lab-standalone-openstack.md){ .md-button .md-button--primary }
+                    === ":custom-alces-cloud: Alces Cloud" 
+                        [Build Jupyter Lab Standalone on Alces Cloud](jupyter-lab-standalone-alces-cloud.md){ .md-button .md-button--primary }
 

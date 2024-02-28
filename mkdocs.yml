@@ -127,6 +127,7 @@ nav:
           - AWS: docs/flight-solo/cluster-build-methods/slurm-standalone-aws.md
           - Azure: docs/flight-solo/cluster-build-methods/slurm-standalone-azure.md
           - OpenStack: docs/flight-solo/cluster-build-methods/slurm-standalone-openstack.md
+          - Alces Cloud: docs/flight-solo/cluster-build-methods/slurm-standalone-alces-cloud.md
         - SLURM Multinode:
           - AWS: docs/flight-solo/cluster-build-methods/slurm-multinode-aws.md
           - Azure: docs/flight-solo/cluster-build-methods/slurm-multinode-azure.md
@@ -139,6 +140,7 @@ nav:
           - AWS: docs/flight-solo/cluster-build-methods/jupyter-lab-standalone-aws.md
           - Azure: docs/flight-solo/cluster-build-methods/jupyter-lab-standalone-azure.md
           - OpenStack: docs/flight-solo/cluster-build-methods/jupyter-lab-standalone-openstack.md
+          - Alces Cloud: docs/flight-solo/cluster-build-methods/jupyter-lab-standalone-alces-cloud.md
   - HPC Workflows:
     - docs/hpc-workflows/index.md
     - Benchmarking:
