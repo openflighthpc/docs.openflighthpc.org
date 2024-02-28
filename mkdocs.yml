@@ -123,18 +123,22 @@ nav:
         - Kubernetes on AWS with Auto-Applying: docs/flight-solo/cluster-build-methods/workflows/kubernetes-aws-auto-apply.md
         - SLURM Standalone on OpenStack with Auto-Configure: docs/flight-solo/cluster-build-methods/workflows/slurm-openstack-autoconfig.md
       - General Methods:
-        - SLURM Standalone AWS: docs/flight-solo/cluster-build-methods/slurm-standalone-aws.md
-        - SLURM Standalone Azure: docs/flight-solo/cluster-build-methods/slurm-standalone-azure.md
-        - SLURM Standalone OpenStack: docs/flight-solo/cluster-build-methods/slurm-standalone-openstack.md
-        - SLURM Multinode AWS: docs/flight-solo/cluster-build-methods/slurm-multinode-aws.md
-        - SLURM Multinode Azure: docs/flight-solo/cluster-build-methods/slurm-multinode-azure.md
-        - SLURM Multinode OpenStack: docs/flight-solo/cluster-build-methods/slurm-multinode-openstack.md
-        - Kubernetes Multinode AWS: docs/flight-solo/cluster-build-methods/kubernetes-multinode-aws.md
-        - Kubernetes Multinode Azure: docs/flight-solo/cluster-build-methods/kubernetes-multinode-azure.md
-        - Kubernetes Multinode OpenStack: docs/flight-solo/cluster-build-methods/kubernetes-multinode-openstack.md
-        - Jupyter Lab Standalone AWS: docs/flight-solo/cluster-build-methods/jupyter-lab-standalone-aws.md
-        - Jupyter Lab Standalone Azure: docs/flight-solo/cluster-build-methods/jupyter-lab-standalone-azure.md
-        - Jupyter Lab Standalone OpenStack: docs/flight-solo/cluster-build-methods/jupyter-lab-standalone-openstack.md
+        - SLURM Standalone:
+          - AWS: docs/flight-solo/cluster-build-methods/slurm-standalone-aws.md
+          - Azure: docs/flight-solo/cluster-build-methods/slurm-standalone-azure.md
+          - OpenStack: docs/flight-solo/cluster-build-methods/slurm-standalone-openstack.md
+        - SLURM Multinode:
+          - AWS: docs/flight-solo/cluster-build-methods/slurm-multinode-aws.md
+          - Azure: docs/flight-solo/cluster-build-methods/slurm-multinode-azure.md
+          - OpenStack: docs/flight-solo/cluster-build-methods/slurm-multinode-openstack.md
+        - Kubernetes: 
+          - AWS: docs/flight-solo/cluster-build-methods/kubernetes-multinode-aws.md
+          - Azure: docs/flight-solo/cluster-build-methods/kubernetes-multinode-azure.md
+          - OpenStack: docs/flight-solo/cluster-build-methods/kubernetes-multinode-openstack.md
+        - Jupyter Lab:
+          - AWS: docs/flight-solo/cluster-build-methods/jupyter-lab-standalone-aws.md
+          - Azure: docs/flight-solo/cluster-build-methods/jupyter-lab-standalone-azure.md
+          - OpenStack: docs/flight-solo/cluster-build-methods/jupyter-lab-standalone-openstack.md
   - HPC Workflows:
     - docs/hpc-workflows/index.md
     - Benchmarking:
