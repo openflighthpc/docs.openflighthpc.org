@@ -2,9 +2,6 @@
 title: Modular Cluster Workflow
 ---
 
-## This page is experimenting with reducing the amount of noise from other platform info all being embedded in one place
-
-
 Use the tabs below to assist in selection of the correct cluster build document.
 
 ???+ question "Which cluster type?"
@@ -18,6 +15,8 @@ Use the tabs below to assist in selection of the correct cluster build document.
                         [Build SLURM Standalone on Azure](slurm-standalone-azure.md){ .md-button .md-button--primary }
                     === ":simple-openstack: OpenStack" 
                         [Build SLURM Standalone on OpenStack](slurm-standalone-openstack.md){ .md-button .md-button--primary }
+                    === ":custom-alces-cloud: Alces Cloud" 
+                        [Build SLURM Standalone on Alces Cloud](slurm-standalone-alces-cloud.md){ .md-button .md-button--primary }
             === "Multinode"
                 ???+ question "Which platform?"
                     === ":fontawesome-brands-aws: AWS"
