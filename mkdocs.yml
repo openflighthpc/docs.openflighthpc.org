@@ -114,6 +114,7 @@ nav:
       - Import to AWS: docs/flight-solo/get-solo/aws.md
       - Import to Azure: docs/flight-solo/get-solo/azure.md
       - Import to OpenStack: docs/flight-solo/get-solo/openstack.md
+      - Import to Alces Cloud: docs/flight-solo/get-solo/alces-cloud.md
     - Cluster Build Methods:
       - docs/flight-solo/cluster-build-methods/index.md
       - Choose Your Own Adventure: docs/flight-solo/cluster-build-methods/modular.md
