@@ -4,7 +4,7 @@
 
 ### Prerequisites
 
-1. To set this up, you will need access to the [Alces Cloud platform](http://alces-cloud-docs.alces-flight.com/starter/)
+1. To set this up, you will need access to the [Alces Cloud platform](https://alces-cloud-docs.alces-flight.com/starter/)
 
 ## Upload Image
 
