@@ -7,7 +7,7 @@ Before setting up a cluster on Openstack, there are several required prerequisit
 - A network
 - A router
     - With an interface both on the External Gateway network and an Internal Interface on the previously created network
-- A security group that allows traffic is given below (if creating the security group through the web interface then the "Any" protocol will need to be 3 separate rules for "All ICMP", "All TCP" and "All UDP")
+- A security group that allows traffic is given below (if creating the security group through the web interface then the "Any" protocol will need to be an "Other Protocol" rule with "IP Protocol" of `-1`)
 
 | Protocol   |      Direction      |  CIDR | Port Range |
 |:----------:|:-------------:|:------:|:------:|
@@ -18,7 +18,6 @@ Before setting up a cluster on Openstack, there are several required prerequisit
 | TCP | ingress |  0.0.0.0/0 | 80 |
 | TCP | ingress |  0.0.0.0/0 | 443 |
 | TCP | ingress |  0.0.0.0/0 | 5900-5903 |
-| TCP | ingress |  0.0.0.0/0 | 8888 |
 
 !!! note
     The "Virtual Network CIDR" is the subnet and netmask for the network that the nodes are using. For example, a node on the 11.11.11.0 network with a netmask of 255.255.255.0 would have a network CIDR of 11.11.11.0/24.
