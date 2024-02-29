@@ -21,7 +21,7 @@
 
     ![](img/openstack_instance_network.png)
 
-1. Choose a security group in the same way as an image or instance size. Note that **this should be the same network as the login node**.
+1. Choose a security group in the same way as an image or instance size. Note that **this should be the same security group as the login node**.
 
     ![](img/openstack_instance_security.png)
 
