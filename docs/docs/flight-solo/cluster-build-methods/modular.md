@@ -25,6 +25,8 @@ Use the tabs below to assist in selection of the correct cluster build document.
                         [Build SLURM Multinode on Azure](slurm-multinode-azure.md){ .md-button .md-button--primary }
                     === ":simple-openstack: OpenStack"
                         [Build SLURM Multinode on OpenStack](slurm-multinode-openstack.md){ .md-button .md-button--primary }
+                    === ":custom-alces-cloud: Alces Cloud" 
+                        [Build SLURM Multinode on Alces Cloud](slurm-multinode-alces-cloud.md){ .md-button .md-button--primary }
     === "Kubernetes"
         ???+ question "Which cluster size?" 
             === "Multinode"

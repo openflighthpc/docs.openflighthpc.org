@@ -132,6 +132,7 @@ nav:
           - AWS: docs/flight-solo/cluster-build-methods/slurm-multinode-aws.md
           - Azure: docs/flight-solo/cluster-build-methods/slurm-multinode-azure.md
           - OpenStack: docs/flight-solo/cluster-build-methods/slurm-multinode-openstack.md
+          - Alces Cloud: docs/flight-solo/cluster-build-methods/slurm-multinode-alces-cloud.md
         - Kubernetes: 
           - AWS: docs/flight-solo/cluster-build-methods/kubernetes-multinode-aws.md
           - Azure: docs/flight-solo/cluster-build-methods/kubernetes-multinode-azure.md
