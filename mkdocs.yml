@@ -137,6 +137,7 @@ nav:
           - AWS: docs/flight-solo/cluster-build-methods/kubernetes-multinode-aws.md
           - Azure: docs/flight-solo/cluster-build-methods/kubernetes-multinode-azure.md
           - OpenStack: docs/flight-solo/cluster-build-methods/kubernetes-multinode-openstack.md
+          - Alces Cloud: docs/flight-solo/cluster-build-methods/kubernetes-multinode-alces-cloud.md
         - Jupyter Lab:
           - AWS: docs/flight-solo/cluster-build-methods/jupyter-lab-standalone-aws.md
           - Azure: docs/flight-solo/cluster-build-methods/jupyter-lab-standalone-azure.md

@@ -37,6 +37,8 @@ Use the tabs below to assist in selection of the correct cluster build document.
                         [Build Kubernetes Multinode on Azure](kubernetes-multinode-azure.md){ .md-button .md-button--primary }
                     === ":simple-openstack: OpenStack" 
                         [Build Kubernetes Multinode on OpenStack](kubernetes-multinode-openstack.md){ .md-button .md-button--primary }
+                    === ":custom-alces-cloud: Alces Cloud"
+                        [Build Kubernetes Multinode on Alces Cloud](kubernetes-multinode-alces-cloud.md){ .md-button .md-button--primary }
     === "Jupyter Lab"
         ???+ question "Which cluster size?" 
             === "Standalone"
