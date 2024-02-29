@@ -42,7 +42,7 @@ Launch the Flight Solo image in AWS marketplace
           AUTOPARSEMATCH=".*"
           AUTH_KEY=kubecluster1
         path: /opt/flight/cloudinit.in
-        permissions: '0644'
+        permissions: '0600'
         owner: root:root
       - content: |
           /opt/flight/bin/flight profile prepare openflight-kubernetes-multinode
@@ -106,7 +106,7 @@ Launch the Flight Solo image in AWS marketplace
               LABEL=node01
               AUTH_KEY=kubecluster1
             path: /opt/flight/cloudinit.in
-            permissions: '0644'
+            permissions: '0600'
             owner: root:root
           - content: |
               /opt/flight/bin/flight profile prepare openflight-kubernetes-multinode

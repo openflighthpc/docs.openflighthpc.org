@@ -93,7 +93,7 @@ search:
     <div id="green-text">
       <h1>Greener HPC</h1>
       <p class="tagline">
-        The project aims to inform the community of methods for defining their 
+        The project aims to <a href="docs/greener-hpc/">inform the community</a> of methods for defining their 
         computational requirements. This can reduce computational waste, resulting 
         in a greener workflow.
       </p>

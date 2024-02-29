@@ -28,7 +28,7 @@ write_files:
       SERVER=10.10.0.1
       AUTH_KEY=banana
     path: /opt/flight/cloudinit.in
-    permissions: '0644'
+    permissions: '0600'
     owner: root:root
   - content: |
       /opt/flight/bin/flight profile prepare openflight-kubernetes-multinode

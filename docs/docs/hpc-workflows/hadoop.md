@@ -2,7 +2,7 @@
 
 Hadoop is a scalable, distributed computing solution provided by Apache. Similar to queuing systems, Hadoop allows for distributed processing of large data sets.
 
-This example sets up hadoop on a single node and processes an example dataset. 
+This example sets up hadoop on a single node and processes an example data set. 
 
 ## Installing & Running Hadoop
 
