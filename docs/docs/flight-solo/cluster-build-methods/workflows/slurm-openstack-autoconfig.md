@@ -43,7 +43,7 @@ Preparing the network, router and subnet is out of scope for this documentation,
                 PROFILE_ANSWERS='{"cluster_type": "openflight-slurm-standalone",  "cluster_name": "my-cluster",  "default_username": "flight",  "default_password": "0penfl1ght"}'
                 AUTOAPPLY="standalone: all-in-one"
               path: /opt/flight/cloudinit.in
-              permissions: '0644'
+              permissions: '0600'
               owner: root:root
             users:
               - default

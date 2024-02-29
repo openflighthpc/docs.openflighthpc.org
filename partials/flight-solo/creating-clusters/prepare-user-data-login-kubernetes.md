@@ -15,7 +15,7 @@ write_files:
       SHAREPUBKEY=true
       AUTH_KEY=banana
     path: /opt/flight/cloudinit.in
-    permissions: '0644'
+    permissions: '0600'
     owner: root:root
   - content: |
       /opt/flight/bin/flight profile prepare openflight-kubernetes-multinode
