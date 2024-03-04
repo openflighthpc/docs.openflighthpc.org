@@ -2,7 +2,7 @@
 
 This section provides guidance for managing a cluster on Alces Cloud.
 
-Alces Cloud delivers direct access to cloud HPC resources without oversubscribing resources to ensure maximum performance from the underlying resources. 
+Alces Cloud delivers direct access to cloud HPC resources without over-subscribing resources to ensure maximum performance from the underlying resources. 
 
 ## Quotas 
 
