@@ -32,7 +32,7 @@ To remove a compute node from a cluster:
 
 - Shut it down from the Alces Cloud CLI
     ```bash
-    $ openstack server shutdown node001.mycluster1.alces.network
+    $ openstack server stop node001.mycluster1.alces.network
     ```
 - Wait for the node to turn off
 
