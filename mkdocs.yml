@@ -143,6 +143,11 @@ nav:
           - Azure: docs/flight-solo/cluster-build-methods/jupyter-lab-standalone-azure.md
           - OpenStack: docs/flight-solo/cluster-build-methods/jupyter-lab-standalone-openstack.md
           - Alces Cloud: docs/flight-solo/cluster-build-methods/jupyter-lab-standalone-alces-cloud.md
+    - Admin Guides:
+      - Alces Cloud: 
+        - docs/flight-solo/admin-guides/alces-cloud/index.md
+        - Launch Core Infrastructure: docs/flight-solo/admin-guides/alces-cloud/launch-core-infra.md
+        - Add, Remove & Resize Nodes: docs/flight-solo/admin-guides/alces-cloud/manage-nodes.md
   - HPC Workflows:
     - docs/hpc-workflows/index.md
     - Benchmarking:
