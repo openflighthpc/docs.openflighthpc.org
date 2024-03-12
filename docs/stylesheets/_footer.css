@@ -7,7 +7,7 @@
 }
 
 .cloud {
-    width: 20vw;
+    width: 17rem;
     min-width: 17rem;
     position: absolute;
     bottom: 0;
@@ -16,7 +16,7 @@
 }
 
 .parting-cloud {
-    width: 35vw;
+    width: min(35vw, 32rem);
 }
 
 #cloud-l {
