@@ -1,0 +1,100 @@
+heat_template_version: 2021-04-16
+parameters:
+  clustername:
+    type: string
+    label: Cluster Name
+    description: The name to give the cluster
+
+  solo-image:
+    type: string
+    label: Flight Solo Image ID
+    default: 'Flight Solo 2024.1'
+
+  storage-number:
+    type: string
+    label: Number of storage node
+
+  storage-size:
+    type: number
+    label: Size of the shared storage disk for NFS
+    default: 500
+resources:
+  storage-pad:
+    type: OS::Heat::Value
+    properties:
+      type: string
+      value:
+        yaql:
+          expression: concat(str(int(int($.data.padding) - int(len(str($.data.num)))) * "0"), str($.data.num))
+          data:
+            num: { get_param: storage-number }
+            padding: 2
+
+  storage-pri-port:
+    type: OS::Neutron::Port
+    properties:
+      name: { list_join: ['-', ['storage', { get_attr: [ storage-pad, value ] }, 'pri', { get_param: clustername }]] }
+      network: { list_join: ['-', [{ get_param: clustername }, 'network']] }
+      security_groups:
+        - { list_join: ['-', [{ get_param: clustername }, 'network-pri-sg']] }
+      fixed_ips:
+        - subnet: { list_join: ['-', [{ get_param: clustername }, 'network-pri' ]] }
+          ip_address: { list_join: ['.', [ '10.100.2', { get_param: storage-number } ]] }
+
+  storage:
+    type: OS::Nova::Server
+    properties:
+      name: { list_join: ['.', [ { list_join: [ '', ['storage', {get_attr: [storage-pad, value]} ]]}, { get_param: clustername }, 'alces.network']] }
+      flavor: c1.small
+      admin_user: flight
+      networks:
+          - port: { get_resource: storage-pri-port }
+      block_device_mapping_v2:
+        - volume_id: { get_resource: storage-vol }
+          boot_index: 0
+      user_data_format: RAW
+      user_data:
+        str_replace:
+          template: |
+            #cloud-config
+            fqdn: storage$pad.$clustername.alces.network
+            write_files:
+              - content: |
+                  SERVER=$gateway-pri-ip
+                  LABEL=storage$pad
+                path: /opt/flight/cloudinit.in
+                permissions: '0600'
+                owner: root:root
+              - content: |
+                  DISKID="$sharedstorageid"
+                  DEVICE="/dev/disk/by-id/virtio-$(echo $DISKID |cut -c -20)"
+                  mkfs.xfs $DEVICE
+                  mkdir -p /export
+                  echo "$DEVICE  /export  xfs  defaults  0 0" >> /etc/fstab
+                  mount /export
+                path: /var/lib/firstrun/scripts/00-sharedstoragemount.bash
+                permissions: '0600'
+                owner: root:root
+          params:
+            $clustername: { get_param: clustername }
+            $gateway-pri-ip: '10.100.0.101'
+            $pad: { get_attr: [ storage-pad, value ] }
+            $sharedstorageid: { get_resource: storage-vol-shared-storage }
+
+  storage-vol:
+    type: OS::Cinder::Volume
+    properties:
+      name: { list_join: ['-', ['storage', { get_attr: [ storage-pad, value ] }, { get_param: clustername }, 'disk']] }
+      image: { get_param: solo-image }
+      size: 16
+
+  storage-vol-shared-storage:
+    type: OS::Cinder::Volume
+    properties:
+      size: { get_param: storage-size }
+
+  storage-vol-shared-storage-attach:
+    type: OS::Cinder::VolumeAttachment
+    properties:
+      instance_uuid: { get_resource: storage }
+      volume_id: { get_resource: storage-vol-shared-storage }

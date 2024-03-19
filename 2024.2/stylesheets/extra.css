@@ -1,0 +1,140 @@
+@import '_search.css';
+@import '_topbar.css';
+@import '_nav.css';
+@import '_home.css';
+@import '_solo.css';
+@import '_warehouse.css';
+@import '_footer.css';
+
+html {
+  scroll-behavior: smooth;
+}
+
+.button {
+  background-color: var(--alces-blue);
+  border-radius: 2px;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  color: white !important;
+  width: fit-content;
+  transition: none !important;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: white !important;
+  background-color: var(--alces-blue);
+}
+
+.button:visited {
+  color: white !important;
+}
+
+.blue-text {
+  color: var(--alces-blue);
+}
+
+.big-text {
+  font-size: 1rem;
+}
+
+.md-content {
+  flex-basis: 65%;
+}
+
+.md-content__inner {
+  margin: 0;
+  padding-inline: 1.2rem;
+}
+
+.md-main__inner {
+  max-width: 100% !important;
+  margin: 0;
+}
+
+.full-width-container {
+  position: relative;
+  left: -1.2rem;
+  top: -1rem;
+  width: 100vw;
+}
+
+.narrow {
+  display: none;
+}
+
+.tagline {
+  font-size: 0.85rem;
+}
+
+.card {
+  border-radius: 2px;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: white;
+  border: solid var(--light-blue) 1px;
+}
+
+.card.link:hover {
+  background-color: var(--alces-blue) !important;
+  border: solid var(--alces-blue) 1px;
+  transition: background-color 0.5s, border 0.5s, filter 0.5s;
+  filter: none !important;
+}
+
+.card.link:hover img, .card.link:hover i {
+  filter: brightness(0) invert(1);
+}
+
+.card.link:hover .card-text {
+  color: white;
+}
+
+.card-text {
+  margin: 0 !important;
+  color: var(--alces-grey);
+}
+
+.card h2 {
+  margin-top: 0.5rem;
+}
+
+.md-typeset :target {
+  --md-scroll-margin: 4.3rem;
+}
+
+.md-typeset a {
+  color: var(--alces-blue);
+  cursor: pointer;
+}
+
+.md-typeset a:hover {
+  filter: brightness(0.8);
+}
+
+@media screen and (min-width: 76.25em) {
+  .md-content__inner {
+    margin: 0 !important;
+  }
+}
+
+@media screen and (max-width: 59.9375em) {
+  .narrow {
+    display: flex !important;
+  }
+}
+
+:root {
+  --alces-blue: #2693D7;
+  --alces-grey: #4e5a66;
+  --title-grey: #687888;
+  --header-grey: #191919;
+  --button-navy: #2B3966;
+  --sky-blue-grey: #DCEEF5;
+  --light-blue: #CDEFFF;
+  --home-sky-dark: #E1F2FA;
+  --md-primary-fg-color: var(--header-grey);
+  --md-accent-fg-color: var(--alces-blue);
+  --md-typeset-color: var(--alces-grey);
+  --md-default-fg-color--light: var(--title-grey);
+}
