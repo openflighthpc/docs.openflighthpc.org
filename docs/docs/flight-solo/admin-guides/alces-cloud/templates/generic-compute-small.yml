@@ -40,7 +40,7 @@ resources:
     type: OS::Nova::Server
     properties:
       name: { list_join: ['.', [ { list_join: [ '', ['node', {get_attr: [node-pad, value]} ]]}, { get_param: clustername }, 'alces.network']] }
-      flavor: p1.small
+      flavor: c1.small
       admin_user: flight
       networks:
           - port: { get_resource: node-pri-port }
