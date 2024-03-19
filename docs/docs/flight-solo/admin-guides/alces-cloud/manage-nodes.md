@@ -14,7 +14,10 @@ These templates can be quickly launched through the CLI to add new compute nodes
 
 For example, to launch a small compute node that's the first for a cluster, run the following from the Alces Cloud CLI: 
 ```bash
-$ openstack stack create -t generic-compute-small.yml --parameter node-number=1 --parameter clustername=mycluster1 mycluster1-node1 --wait
+$ openstack stack create -t generic-compute-small.yml \
+        --parameter node-number=1 \
+        --parameter clustername=mycluster1 \
+        "mycluster1-node1" --wait
 ```
 
 Where:

@@ -24,7 +24,10 @@ All of the above will prepare the system automatically for running a SLURM clust
         ```
     1. Launch the template (replace `MYKEYPAIRNAME` with the name of your Alces Cloud key-pair, optionally replace `mycluster1` with your desired cluster name) 
         ```bash
-        $ openstack stack create -t core-infra-small.yml --parameter key-name=MYKEYPAIRNAME --parameter clustername=mycluster1 "mycluster1-coreinfra" --wait
+        $ openstack stack create -t core-infra-small.yml \
+                --parameter key-name=MYKEYPAIRNAME \
+                --parameter clustername=mycluster1 \
+                "mycluster1-coreinfra" --wait
         ```
     1. Once completed, you can get the IP to access the login node with the following command (the floating IP is the one on the `10.199` network):
         ```bash
