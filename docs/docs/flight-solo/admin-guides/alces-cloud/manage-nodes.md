@@ -49,9 +49,9 @@ To resize a node:
     $ scontrol update NodeName=node001 State=DRAIN Reason="For Resize"
     ```
 - Ensure that no jobs or active processes are running on the node
-- Perform the resize action from the Alces Cloud CLI. For example, to resize `node001` in `mycluster1` from a `p1.small` to a `p1.large` with the CLI
+- Perform the resize action from the Alces Cloud CLI. For example, to resize `node001` in `mycluster1` from a `c1.small` to a `c1.large` with the CLI
     ```bash
-    $ openstack server resize --flavor p1.large node001.mycluster1.alces.network --wait
+    $ openstack server resize --flavor c1.large node001.mycluster1.alces.network --wait
     ```
 
     !!! warning
