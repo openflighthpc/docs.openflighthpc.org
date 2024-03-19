@@ -1,17 +1,17 @@
-# Jupyter Lab Standalone on Alces Cloud
+# Jupyter Lab Standalone on Concertim Cloud
 
 ## Launch Login Node
 
 === "CLI"
 
     {%filter indent(width=4) %}
-    {% include 'flight-solo/creating-clusters/launching-login-node-alces-cloud-cli.md' %}
+    {% include 'flight-solo/creating-clusters/launching-login-node-concertim-cloud-cli.md' %}
     {% endfilter %}
 
 === "GUI"
 
     {%filter indent(width=4) %}
-    {% include 'flight-solo/creating-clusters/launching-login-node-alces-cloud-gui.md' %}
+    {% include 'flight-solo/creating-clusters/launching-login-node-concertim-cloud-gui.md' %}
     {% endfilter %}
 
 ## General Configuration

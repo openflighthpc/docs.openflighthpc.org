@@ -1,7 +1,7 @@
 
 To set up a cluster, you will need to [import a Flight Solo image](../get-solo/index.md).
 
-Before setting up a cluster on Alces Cloud, there are several required prerequisites:
+Before setting up a cluster on Concertim Cloud, there are several required prerequisites:
 
 - [Your own keypair](https://alces-cloud-docs.alces-flight.com/starter/key/)
 - [A network with a subnet and a router bridging the subnet to the external network](https://alces-cloud-docs.alces-flight.com/networking/networks/)
@@ -36,7 +36,7 @@ Before setting up a cluster on Alces Cloud, there are several required prerequis
     - Where:
 
         - `flavor` - Is the desired size of the instance
-        - `image` - Is the Flight Solo image imported to Alces Cloud
+        - `image` - Is the Flight Solo image imported to Concertim Cloud
         - `boot-from-volume` - Is the size of the system disk in GB
         - `network` - Is the name or ID of the network created for the cluster
         - `key-name` - Is the name of the SSH key to use
@@ -78,4 +78,4 @@ Before setting up a cluster on Alces Cloud, there are several required prerequis
             $ openstack server add floating ip login1 10.199.31.212
             ```
 
-Further detail on collecting the information from the above can be found in the [Alces Cloud documentation](https://alces-cloud-docs.alces-flight.com/starter/instance/).
+Further detail on collecting the information from the above can be found in the [Concertim Cloud documentation](https://alces-cloud-docs.alces-flight.com/starter/instance/).

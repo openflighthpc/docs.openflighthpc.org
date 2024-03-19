@@ -1,14 +1,14 @@
-# Import Flight Solo Image to Alces Cloud
+# Import Flight Solo Image to Concertim Cloud
 
 ## Prepare for Image Import 
 
 ### Prerequisites
 
-1. To set this up, you will need access to the [Alces Cloud platform](https://alces-cloud-docs.alces-flight.com/starter/)
+1. To set this up, you will need access to the [Concertim Cloud platform](https://alces-cloud-docs.alces-flight.com/starter/)
 
 ## Upload Image
 
-1. Login to your Alces Cloud account
+1. Login to your Concertim Cloud account
 1. Download the Flight Solo OpenStack image [here](https://repo.openflighthpc.org/?prefix=images/FlightSolo/) (example command below, replace `VERSION` with the desired version of Flight Solo)
     ```bash
     wget https://repo.openflighthpc.org/images/FlightSolo/VERSION/Flight_Solo_VERSION_generic-cloudinit.raw

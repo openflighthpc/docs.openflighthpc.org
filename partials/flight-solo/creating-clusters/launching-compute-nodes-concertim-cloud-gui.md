@@ -1,5 +1,5 @@
 
-1. Go to the Alces Cloud instances page.
+1. Go to the Concertim Cloud instances page.
 
     ![](img/alces-cloud_instances.png)
 

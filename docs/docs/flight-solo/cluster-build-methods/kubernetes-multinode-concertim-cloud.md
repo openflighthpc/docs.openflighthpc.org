@@ -1,4 +1,4 @@
-# Kubernetes Multinode on Alces Cloud
+# Kubernetes Multinode on Concertim Cloud
 
 ## Launch Login Node
 
@@ -11,13 +11,13 @@
 === "CLI"
 
     {%filter indent(width=4) %}
-    {% include 'flight-solo/creating-clusters/launching-login-node-alces-cloud-cli.md' %}
+    {% include 'flight-solo/creating-clusters/launching-login-node-concertim-cloud-cli.md' %}
     {% endfilter %}
 
 === "GUI"
 
     {%filter indent(width=4) %}
-    {% include 'flight-solo/creating-clusters/launching-login-node-alces-cloud-gui.md' %}
+    {% include 'flight-solo/creating-clusters/launching-login-node-concertim-cloud-gui.md' %}
     {% endfilter %}
 
 ## Launch Compute Nodes
@@ -31,13 +31,13 @@
 === "CLI"
 
     {%filter indent(width=4) %}
-    {% include 'flight-solo/creating-clusters/launching-compute-nodes-alces-cloud-cli.md' %}
+    {% include 'flight-solo/creating-clusters/launching-compute-nodes-concertim-cloud-cli.md' %}
     {% endfilter %}
 
 === "GUI"
 
     {%filter indent(width=4) %}
-    {% include 'flight-solo/creating-clusters/launching-compute-nodes-alces-cloud-gui.md' %}
+    {% include 'flight-solo/creating-clusters/launching-compute-nodes-concertim-cloud-gui.md' %}
     {% endfilter %}
 
 ## General Configuration

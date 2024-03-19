@@ -1,7 +1,7 @@
 
 To set up a cluster, you will need to [import a Flight Solo image](../get-solo/index.md).
 
-Before setting up a cluster on Alces Cloud, there are several required prerequisites:
+Before setting up a cluster on Concertim Cloud, there are several required prerequisites:
 
 - [Your own keypair](https://alces-cloud-docs.alces-flight.com/starter/key/)
 - [A network with a subnet and a router bridging the subnet to the external network](https://alces-cloud-docs.alces-flight.com/networking/networks/)
@@ -22,7 +22,7 @@ Before setting up a cluster on Alces Cloud, there are several required prerequis
 
 To set up a cluster:
 
-1. Go to the Alces Cloud instances page.
+1. Go to the Concertim Cloud instances page.
 
     ![](img/alces-cloud_instances.png)
 
@@ -93,4 +93,4 @@ To set up a cluster:
 
 1. Click "Associate" to finish associating an IP.
 
-Further detail on collecting the information from the above can be found in the [Alces Cloud documentation](https://alces-cloud-docs.alces-flight.com/starter/instance/).
+Further detail on collecting the information from the above can be found in the [Concertim Cloud documentation](https://alces-cloud-docs.alces-flight.com/starter/instance/).

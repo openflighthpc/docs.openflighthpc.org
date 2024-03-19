@@ -17,7 +17,7 @@
     - Where:
 
         - `flavor` - Is the desired size of the instance
-        - `image` - Is the Flight Solo image imported to Alces Cloud
+        - `image` - Is the Flight Solo image imported to Concertim Cloud
         - `boot-from-volume` - Is the size of the system disk in GB
         - `network` - Is the name or ID of the network created for the cluster
         - `key-name` - Is the name of the SSH key to use
@@ -26,4 +26,4 @@
         - `min` and `max` - Is the number of nodes to launch
         - `node` - Is the name of the deployment to have numbers appended to (e.g. this example creates `node-1` and `node-2`)
 
-Further detail on collecting the information from the above can be found in the [Alces Cloud documentation](https://alces-cloud-docs.alces-flight.com/starter/instance/).
+Further detail on collecting the information from the above can be found in the [Concertim Cloud documentation](https://alces-cloud-docs.alces-flight.com/starter/instance/).

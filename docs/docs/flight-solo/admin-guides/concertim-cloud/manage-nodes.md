@@ -12,7 +12,7 @@ To add to the [SLURM Core Infrastructure](launch-core-infra.md) there are templa
 
 These templates can be quickly launched through the CLI to add new compute nodes to the cluster. 
 
-For example, to launch a small compute node that's the first for a cluster, run the following from the Alces Cloud CLI: 
+For example, to launch a small compute node that's the first for a cluster, run the following from the Concertim Cloud CLI: 
 ```bash
 $ openstack stack create -t generic-compute-small.yml \
         --parameter node-number=1 \
@@ -33,7 +33,7 @@ For more information on checking the progress, see the documentation for [Flight
 
 To remove a compute node from a cluster:
 
-- Shut it down from the Alces Cloud CLI
+- Shut it down from the Concertim Cloud CLI
     ```bash
     $ openstack server stop node001.mycluster1.alces.network
     ```
@@ -52,7 +52,7 @@ To resize a node:
     $ scontrol update NodeName=node001 State=DRAIN Reason="For Resize"
     ```
 - Ensure that no jobs or active processes are running on the node
-- Perform the resize action from the Alces Cloud CLI. For example, to resize `node001` in `mycluster1` from a `c1.small` to a `c1.large` with the CLI
+- Perform the resize action from the Concertim Cloud CLI. For example, to resize `node001` in `mycluster1` from a `c1.small` to a `c1.large` with the CLI
     ```bash
     $ openstack server resize --flavor c1.large node001.mycluster1.alces.network --wait
     ```

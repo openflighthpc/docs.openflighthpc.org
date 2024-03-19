@@ -16,13 +16,13 @@ All of the above will prepare the system automatically for running a SLURM clust
 
     [Download Small Core Infra Template](templates/core-infra-small.yml){ :download .md-button }
 
-    1. Login to your Alces Cloud account via CLI 
-    1. Download the above template to your account on Alces Cloud 
+    1. Login to your Concertim Cloud account via CLI 
+    1. Download the above template to your account on Concertim Cloud 
     1. Source your OpenStack settings file
         ```bash
         $ source ~/openrc
         ```
-    1. Launch the template (replace `MYKEYPAIRNAME` with the name of your Alces Cloud key-pair, optionally replace `mycluster1` with your desired cluster name) 
+    1. Launch the template (replace `MYKEYPAIRNAME` with the name of your Concertim Cloud key-pair, optionally replace `mycluster1` with your desired cluster name) 
         ```bash
         $ openstack stack create -t core-infra-small.yml \
                 --parameter key-name=MYKEYPAIRNAME \
@@ -47,7 +47,7 @@ All of the above will prepare the system automatically for running a SLURM clust
         $ ssh flight@10.199.31.20
         ```
 
-    The template will automatically configure the login node as a SLURM controller, NFS server and provide web access to the cluster with [Flight User Suite](../../../flight-environment/use-flight/flight-web-suite/index.md) (accessible via the floating IP in a web browser when connected to the [Alces Cloud VPN](http://alces-cloud-docs.alces-flight.com/latest/docs/starter/access/#secure-vpn))
+    The template will automatically configure the login node as a SLURM controller, NFS server and provide web access to the cluster with [Flight User Suite](../../../flight-environment/use-flight/flight-web-suite/index.md) (accessible via the floating IP in a web browser when connected to the [Concertim Cloud VPN](http://alces-cloud-docs.alces-flight.com/latest/docs/starter/access/#secure-vpn))
 
 === "Medium"
 

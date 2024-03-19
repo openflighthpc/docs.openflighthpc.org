@@ -4,7 +4,7 @@ Following this guide will add a `c1.small` instance with a 500GB storage disk mo
 
 [Download Storage Node Template](templates/storage.yml){ :download .md-button }
 
-1. Create storage node from Alces Cloud CLI 
+1. Create storage node from Concertim Cloud CLI 
     ```bash
     $ openstack stack create -t storage.yml \
             --parameter storage-number=1 \

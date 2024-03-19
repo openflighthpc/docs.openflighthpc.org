@@ -114,7 +114,7 @@ nav:
       - Import to AWS: docs/flight-solo/get-solo/aws.md
       - Import to Azure: docs/flight-solo/get-solo/azure.md
       - Import to OpenStack: docs/flight-solo/get-solo/openstack.md
-      - Import to Alces Cloud: docs/flight-solo/get-solo/alces-cloud.md
+      - Import to Concertim Cloud: docs/flight-solo/get-solo/concertim-cloud.md
     - Cluster Build Methods:
       - docs/flight-solo/cluster-build-methods/index.md
       - Choose Your Own Adventure: docs/flight-solo/cluster-build-methods/modular.md
@@ -127,28 +127,32 @@ nav:
           - AWS: docs/flight-solo/cluster-build-methods/slurm-standalone-aws.md
           - Azure: docs/flight-solo/cluster-build-methods/slurm-standalone-azure.md
           - OpenStack: docs/flight-solo/cluster-build-methods/slurm-standalone-openstack.md
-          - Alces Cloud: docs/flight-solo/cluster-build-methods/slurm-standalone-alces-cloud.md
+          - Concertim Cloud: docs/flight-solo/cluster-build-methods/slurm-standalone-concertim-cloud.md
         - SLURM Multinode:
           - AWS: docs/flight-solo/cluster-build-methods/slurm-multinode-aws.md
           - Azure: docs/flight-solo/cluster-build-methods/slurm-multinode-azure.md
           - OpenStack: docs/flight-solo/cluster-build-methods/slurm-multinode-openstack.md
-          - Alces Cloud: docs/flight-solo/cluster-build-methods/slurm-multinode-alces-cloud.md
+          - Concertim Cloud: docs/flight-solo/cluster-build-methods/slurm-multinode-concertim-cloud.md
         - Kubernetes: 
           - AWS: docs/flight-solo/cluster-build-methods/kubernetes-multinode-aws.md
           - Azure: docs/flight-solo/cluster-build-methods/kubernetes-multinode-azure.md
           - OpenStack: docs/flight-solo/cluster-build-methods/kubernetes-multinode-openstack.md
-          - Alces Cloud: docs/flight-solo/cluster-build-methods/kubernetes-multinode-alces-cloud.md
+          - Concertim Cloud: docs/flight-solo/cluster-build-methods/kubernetes-multinode-concertim-cloud.md
         - Jupyter Lab:
           - AWS: docs/flight-solo/cluster-build-methods/jupyter-lab-standalone-aws.md
           - Azure: docs/flight-solo/cluster-build-methods/jupyter-lab-standalone-azure.md
           - OpenStack: docs/flight-solo/cluster-build-methods/jupyter-lab-standalone-openstack.md
-          - Alces Cloud: docs/flight-solo/cluster-build-methods/jupyter-lab-standalone-alces-cloud.md
+          - Concertim Cloud: docs/flight-solo/cluster-build-methods/jupyter-lab-standalone-concertim-cloud.md
     - Admin Guides:
-      - Alces Cloud: 
-        - docs/flight-solo/admin-guides/alces-cloud/index.md
-        - Launch Core Infrastructure: docs/flight-solo/admin-guides/alces-cloud/launch-core-infra.md
-        - Add Storage Server: docs/flight-solo/admin-guides/alces-cloud/add-storage.md
-        - Add, Remove & Resize Nodes: docs/flight-solo/admin-guides/alces-cloud/manage-nodes.md
+      - Concertim Cloud: 
+        - docs/flight-solo/admin-guides/concertim-cloud/index.md
+        - Launch Core Infrastructure: docs/flight-solo/admin-guides/concertim-cloud/launch-core-infra.md
+        - Add Storage Server: docs/flight-solo/admin-guides/concertim-cloud/add-storage.md
+        - Add, Remove & Resize Nodes: docs/flight-solo/admin-guides/concertim-cloud/manage-nodes.md
+        - Managing SLURM Queues: docs/flight-solo/admin-guides/concertim-cloud/manage-slurm.md
+        - Working with GPUs: docs/flight-solo/admin-guides/concertim-cloud/gpu-nodes.md
+        - Managing Users: docs/flight-solo/admin-guides/concertim-cloud/manage-users.md
+        - Understanding Quota Usage: docs/flight-solo/admin-guides/concertim-cloud/understanding-quotas.md
   - HPC Workflows:
     - docs/hpc-workflows/index.md
     - Benchmarking:
