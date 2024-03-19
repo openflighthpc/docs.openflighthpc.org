@@ -26,7 +26,6 @@ resources:
   external-route-iface:
     type: OS::Neutron::RouterInterface
     properties:
-      name: { list_join: ['-', [ {get_param: clustername}, 'ext-route-iface']] }
       router: { get_resource: external-route }
       subnet: { get_resource: cluster-network-pri }
 
@@ -92,7 +91,7 @@ resources:
     type: OS::Nova::Server
     properties:
       name: { list_join: ['.', ['login1', { get_param: clustername }, 'alces.network']] }
-      flavor: p1.small
+      flavor: c1.small
       key_name: { get_param: key-name }
       admin_user: flight
       networks:
