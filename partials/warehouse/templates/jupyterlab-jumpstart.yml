@@ -52,7 +52,6 @@ resources:
     type: OS::Neutron::Net
     properties:
       name: { list_join: ['-', [{ get_param: clustername }, 'network']] }
-      dns_domain: { list_join: ['.', [{ get_param: clustername }, 'alces.network.']] }
 
   cluster-network-pri:
     type: OS::Neutron::Subnet
