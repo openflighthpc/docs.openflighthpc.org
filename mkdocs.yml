@@ -147,6 +147,7 @@ nav:
       - Alces Cloud: 
         - docs/flight-solo/admin-guides/alces-cloud/index.md
         - Launch Core Infrastructure: docs/flight-solo/admin-guides/alces-cloud/launch-core-infra.md
+        - Add Storage Server: docs/flight-solo/admin-guides/alces-cloud/add-storage.md
         - Add, Remove & Resize Nodes: docs/flight-solo/admin-guides/alces-cloud/manage-nodes.md
   - HPC Workflows:
     - docs/hpc-workflows/index.md
