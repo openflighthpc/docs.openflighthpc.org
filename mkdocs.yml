@@ -1,4 +1,5 @@
 site_name: OpenFlightHPC
+site_url: 'https://www.openflighthpc.org/'
 repo_url: https://github.com/openflighthpc/docs.openflighthpc.org
 nav:
   - Overview:
