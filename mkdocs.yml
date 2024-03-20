@@ -153,8 +153,8 @@ nav:
           - Add Storage Server: docs/flight-solo/admin-guides/concertim-cloud/slurm-multinode/add-storage.md
           - Add, Remove & Resize Nodes: docs/flight-solo/admin-guides/concertim-cloud/slurm-multinode/manage-nodes.md
           - Managing SLURM Queues: docs/flight-solo/admin-guides/concertim-cloud/slurm-multinode/manage-slurm.md
-          - Working with GPUs: docs/flight-solo/admin-guides/concertim-cloud/slurm-multinode/gpu-nodes.md
           - Managing Users: docs/flight-solo/admin-guides/concertim-cloud/slurm-multinode/manage-users.md
+          - Working with GPUs: docs/flight-solo/admin-guides/concertim-cloud/slurm-multinode/gpu-nodes.md
   - HPC Workflows:
     - docs/hpc-workflows/index.md
     - Benchmarking:
