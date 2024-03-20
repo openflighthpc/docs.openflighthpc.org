@@ -50,7 +50,7 @@ Following this guide will add a `c1.small` instance with a 500GB storage disk mo
         - `mountpoint` is the location on clients for the directory to mount the export to
         - `export_permissions` is the mode of the export directory 
         - `mount_opts` are the NFS mount options for clients to use 
-        - `export_opts` (OPTIONAL) is the subnet range and export options for the directory, in the example above the `{{ compute_ip_range }}` translates to the subnet that the cluster resides on (this can be seen in the [Flight Profile](../../../flight-environment/use-flight/flight-admin-tools/profile.md) configuration)
+        - `export_opts` (OPTIONAL) is the subnet range and export options for the directory, in the example above the `{{ compute_ip_range }}` translates to the subnet that the cluster resides on (this can be seen in the [Flight Profile](../../../../flight-environment/use-flight/flight-admin-tools/profile.md) configuration)
         - `export_owner` (OPTIONAL) is the username to own the export directory (giving them ownership permissions on client mounts)
         - `export_group` (OPTIONAL) is the group to own the export directory
 

@@ -31,7 +31,7 @@ Where:
 
 Once launched the node will take a couple of minutes to boot before automatically joining the cluster and provisioning itself as a compute node. The progress if this can be checked with `flight profile list`. 
 
-For more information on checking the progress, see the documentation for [Flight Profile](../../../flight-environment/use-flight/flight-admin-tools/profile.md)
+For more information on checking the progress, see the documentation for [Flight Profile](../../../../flight-environment/use-flight/flight-admin-tools/profile.md)
 
 ## Remove Node
 

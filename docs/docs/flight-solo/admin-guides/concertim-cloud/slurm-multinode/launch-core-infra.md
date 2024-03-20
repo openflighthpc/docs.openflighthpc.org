@@ -4,7 +4,7 @@
 - **Difficulty:** :material-star: :material-star-outline: :material-star-outline: :material-star-outline: :material-star-outline:
 </div>
 
-The core infrastructure relates to the concepts described in the [HPC Concepts section](../../../hpc-concepts/infrastructure.md) whereby a section of dedicated services creates the framework for the cluster. Compute nodes can then be connected to the services in this infrastructure to provide resources for workload execution.
+The core infrastructure relates to the concepts described in the [HPC Concepts section](../../../../hpc-concepts/infrastructure.md) whereby a section of dedicated services creates the framework for the cluster. Compute nodes can then be connected to the services in this infrastructure to provide resources for workload execution.
 
 Depending on your requirements and use case you may want a different size of core infrastructure. This documentation covers the following sizes:
 
@@ -51,7 +51,7 @@ All of the above will prepare the system automatically for running a SLURM clust
         $ ssh flight@10.199.31.20
         ```
 
-    The template will automatically configure the login node as a SLURM controller, NFS server and provide web access to the cluster with [Flight User Suite](../../../flight-environment/use-flight/flight-web-suite/index.md) (accessible via the floating IP in a web browser when connected to the [Concertim Cloud VPN](http://alces-cloud-docs.alces-flight.com/latest/docs/starter/access/#secure-vpn))
+    The template will automatically configure the login node as a SLURM controller, NFS server and provide web access to the cluster with [Flight User Suite](../../../../flight-environment/use-flight/flight-web-suite/index.md) (accessible via the floating IP in a web browser when connected to the [Concertim Cloud VPN](http://alces-cloud-docs.alces-flight.com/latest/docs/starter/access/#secure-vpn))
 
 === "Medium"
 
