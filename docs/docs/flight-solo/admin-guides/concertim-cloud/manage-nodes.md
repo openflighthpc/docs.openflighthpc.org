@@ -4,6 +4,10 @@ When building a cluster there will come times where the compute resource will ne
 
 ## Add Node
 
+<div class="grid cards" markdown>
+- **Difficulty:** :material-star: :material-star-outline: :material-star-outline: :material-star-outline: :material-star-outline:
+</div>
+
 To add to the [SLURM Core Infrastructure](launch-core-infra.md) there are templates available for 2 different kinds of compute nodes - small and large. These can be downloaded below:
 
 [Download Small Compute Node Template](templates/generic-compute-small.yml){ :download .md-button }
@@ -31,6 +35,10 @@ For more information on checking the progress, see the documentation for [Flight
 
 ## Remove Node
 
+<div class="grid cards" markdown>
+- **Difficulty:** :material-star: :material-star-outline: :material-star-outline: :material-star-outline: :material-star-outline:
+</div>
+
 To remove a compute node from a cluster:
 
 - Shut it down from the Concertim Cloud CLI
@@ -44,6 +52,10 @@ There are triggers in place (from the core infrastructure template) that will pe
 Once the node has completely shut down (`openstack server show node001.mycluster1.alces.network -c status` shows `SHUTOFF`) you are safe to terminate the node to free up resources.
 
 ## Resize Node 
+
+<div class="grid cards" markdown>
+- **Difficulty:** :material-star: :material-star-outline: :material-star-outline: :material-star-outline: :material-star-outline:
+</div>
 
 To resize a node:
 

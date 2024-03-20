@@ -1,5 +1,9 @@
 # Launch Core Infrastructure (SLURM)
 
+<div class="grid cards" markdown>
+- **Difficulty:** :material-star: :material-star-outline: :material-star-outline: :material-star-outline: :material-star-outline:
+</div>
+
 The core infrastructure relates to the concepts described in the [HPC Concepts section](../../../hpc-concepts/infrastructure.md) whereby a section of dedicated services creates the framework for the cluster. Compute nodes can then be connected to the services in this infrastructure to provide resources for workload execution.
 
 Depending on your requirements and use case you may want a different size of core infrastructure. This documentation covers the following sizes:

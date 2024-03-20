@@ -1,5 +1,9 @@
 # Add a Storage Node
 
+<div class="grid cards" markdown>
+- **Difficulty:** :material-star: :material-star: :material-star-outline: :material-star-outline: :material-star-outline:
+</div>
+
 Following this guide will add a `c1.small` instance with a 500GB storage disk mounted to `/export` which will share directories over NFS with the rest of the cluster.
 
 [Download Storage Node Template](templates/storage.yml){ :download .md-button }
