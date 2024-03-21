@@ -151,7 +151,7 @@ nav:
           - docs/flight-solo/admin-guides/concertim-cloud/slurm-multinode/index.md
           - Launch Core Infrastructure: docs/flight-solo/admin-guides/concertim-cloud/slurm-multinode/launch-core-infra.md
           - Add Storage Server: docs/flight-solo/admin-guides/concertim-cloud/slurm-multinode/add-storage.md
-          - Add, Remove & Resize Nodes: docs/flight-solo/admin-guides/concertim-cloud/slurm-multinode/manage-nodes.md
+          - Manage Nodes: docs/flight-solo/admin-guides/concertim-cloud/slurm-multinode/manage-nodes.md
           - Managing SLURM Queues: docs/flight-solo/admin-guides/concertim-cloud/slurm-multinode/manage-slurm.md
           - Managing Users: docs/flight-solo/admin-guides/concertim-cloud/slurm-multinode/manage-users.md
           - Working with GPUs: docs/flight-solo/admin-guides/concertim-cloud/slurm-multinode/gpu-nodes.md
