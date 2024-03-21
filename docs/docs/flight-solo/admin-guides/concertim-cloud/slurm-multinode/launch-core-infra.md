@@ -90,6 +90,8 @@ All of the above will prepare the system automatically for running a SLURM clust
 
     The template will automatically configure `login1` as a SLURM controller and web access to the cluster with [Flight User Suite](../../../../flight-environment/use-flight/flight-web-suite/index.md) (accessible via the floating IP in a web browser when connected to the [Concertim Cloud VPN](http://alces-cloud-docs.alces-flight.com/latest/docs/starter/access/#secure-vpn)). Additionally `nfs01` will be the NFS server sharing default mounts from a 500GB storage disk and `infra01` will be an IPA server for user management. 
 
+    For more information on creating IPA users for this environment see the [relevant admin guide](manage-users.md).
+
 === "Large" 
 
     [Download Large Core Infra Template](templates/core-infra-large.yml){ :download .md-button }
