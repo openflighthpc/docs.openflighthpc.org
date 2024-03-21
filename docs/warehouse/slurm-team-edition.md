@@ -63,7 +63,7 @@ search:
         ```bash
         kinit admin
         ```
-    1. Add the user along with a trusted SSH public key (this should be one that corresponds with a private key that the user has outside of the system)
+    1. Add the user 
         ```bash
         ipa user-add --cn="New User" --first=New --last=User newuser
         ```
