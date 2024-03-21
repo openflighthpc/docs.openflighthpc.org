@@ -182,8 +182,8 @@ extra:
     provider: mike
     default: latest
 plugins:
-  - macros:
-      include_dir: partials
+  - include-markdown:
+      heading_offset: 1
   - search
   - minify:
       minify_html: true
