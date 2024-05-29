@@ -25,6 +25,15 @@ When `flight profile configure` is run, the user will be guided through a series
 - `--accept-defaults` - When using `--answers`, take the default values for any answers not given.
 - `--answers` - Pass json text as the answers instead of using the menu. This could be done either by pasting text or passing the contents of a file (e.g. `flight profile configure --answers "$(cat /path/file.json)"` ). Below are some examples of what the json could look like be:
 
+    === "Web Access"
+        ```json
+        {
+          "cluster_type": "openflight-web-access",
+          "default_username": "flight",
+          "default_password": "0penfl1ght",
+          "access_host": "51.104.217.61"
+        }
+        ```
     === "Slurm Standalone"
         ```json
         {
@@ -44,7 +53,9 @@ When `flight profile configure` is run, the user will be guided through a series
           "default_username": "flight",
           "default_password": "0penfl1ght",
           "access_host": "51.104.217.61",
-          "compute_ip_range": "10.10.0.0/16"
+          "compute_ip_range": "10.10.0.0/16",
+          "nfs_server": "login1",
+          "configure_rack_view": "true"
         }
         ```
     === "Kubernetes Multinode"
@@ -56,7 +67,8 @@ When `flight profile configure` is run, the user will be guided through a series
           "default_password": "0penfl1ght",
           "access_host": "51.104.217.61",
           "compute_ip_range": "10.10.0.0/16",
-          "pod_ip_range": "192.168.0.0/16"
+          "pod_ip_range": "192.168.0.0/16",
+          "nfs_server": "login1"
         }
         ```
     === "Jupyter"
