@@ -41,18 +41,18 @@ The Flight Web Suite runs it's own Nginx server. This allows for services runnin
 A brief outline of what is required to add your local service to Flight Web Suite is below.
 
 - Install and run your application strictly on localhost on an available port
-- Add link to application to the web-suite applications page by placing a file under `/opt/flight/opt/www/landing-page/default/content/apps/` named along the lines of `myapp.md` with content like (note: icons are [FontAwesome v4](https://fontawesome.com/v4/icons/)):
+- Add link to application to the web-suite applications page by placing a file under `/opt/flight/opt/www/landing-page/default/content/apps/` named along the lines of `myapp.md` with content like:
 	```markdown
 	---
 	title: My App Name
 	short_title: App
 	subtitle: Do Things The App Does
 	path: /route/to/server/location
-	fa_icon: FontAwesomeIconName
 	---
 	My App Name allows you to do app things in the app place and this is the description
 	of what it does.
 	```
+- Create an app image (to be used in the app menu of Flight Landing page) located at `/opt/flight/opt/www/landing-page/default/content/images/` named with the same name as the app file from the previous step (e.g. `myapp.png`)
 - The application server can be defined as part of the `flight-www` webserver by installing an Nginx config file for the service to `/opt/flight/etc/www/server-https.d/` which could look something like the following
 	```nginx
 	location ^~ /route/to/server/location {
