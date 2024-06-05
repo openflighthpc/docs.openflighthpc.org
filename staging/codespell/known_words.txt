@@ -6,7 +6,6 @@ backend
 bowtie
 ceph
 cidr
-concertim
 conda
 config
 copr
@@ -16,6 +15,7 @@ ctrl
 cyberduck
 dev
 dnf
+easybuild
 easybuild
 ecoli
 entrypoint
