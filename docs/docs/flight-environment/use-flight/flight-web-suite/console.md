@@ -15,5 +15,7 @@ If it's the first time connecting to Flight Console then the will be prompted to
 
 Once the key is installed the user will be presented with a terminal window mirroring the environment.
 
+![](img/flight_web_console.png)
+
 There are a few options for the terminal view, such as, making it _Full Screen_, changing to _Zen Mode_ (terminal focused with less widgets and buttons polluting the screen) and disconnecting the terminal session.
 
