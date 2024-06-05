@@ -18,6 +18,13 @@ Selecting the `LOG IN` button in the top right of the landing page will present 
   <figcaption markdown>Example login form on [Flight Solo](../../../flight-solo/index.md)</figcaption>
 </figure>
 
+Once logged in the available applications will be presented. 
+
+<figure markdown>
+  ![](img/flight_web_landing_apps.png)
+  <figcaption markdown>Example landing page (logged in) on [Flight Solo](../../../flight-solo/index.md)</figcaption>
+</figure>
+
 ## Customising the Landing Page
 
 The styling, content and assets used by the landing page can be customised and overridden. For more information on modifying the landing page see the [landing page repository](https://github.com/openflighthpc/flight-landing-page#configuration). 
