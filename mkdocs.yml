@@ -107,6 +107,7 @@ nav:
   - Flight Solo:
     - docs/flight-solo/index.md
     - Getting Started: docs/flight-solo/quickstart-guide.md
+    - Release Notes: docs/flight-solo/release-notes.md
     - Understanding Flight Solo:
       - docs/flight-solo/understand-solo/index.md
       - User Data: docs/flight-solo/understand-solo/user-data.md
