@@ -2,652 +2,657 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://www.openflighthpc.org/2024.2/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-environment/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-environment/get-flight/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-environment/get-flight/configure/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-environment/get-flight/install/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-environment/use-flight/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-environment/use-flight/environment-basics/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-environment/use-flight/flight-admin-tools/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-environment/use-flight/flight-admin-tools/gather/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-environment/use-flight/flight-admin-tools/hunter/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-environment/use-flight/flight-admin-tools/pdsh/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-environment/use-flight/flight-admin-tools/profile/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-environment/use-flight/flight-user-suite/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-environment/use-flight/flight-user-suite/flight-desktop/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-environment/use-flight/flight-user-suite/flight-desktop/launch/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-environment/use-flight/flight-user-suite/flight-desktop/port-forward/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-environment/use-flight/flight-user-suite/flight-desktop/prepare/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-environment/use-flight/flight-user-suite/flight-desktop/resize/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-environment/use-flight/flight-user-suite/flight-desktop/secure/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-environment/use-flight/flight-user-suite/flight-desktop/viewing-terminating/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-environment/use-flight/flight-user-suite/flight-env/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-environment/use-flight/flight-user-suite/flight-env/usage/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-environment/use-flight/flight-user-suite/flight-env/ecosystems/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-environment/use-flight/flight-user-suite/flight-env/ecosystems/conda/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-environment/use-flight/flight-user-suite/flight-env/ecosystems/easybuild/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-environment/use-flight/flight-user-suite/flight-env/ecosystems/modules/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-environment/use-flight/flight-user-suite/flight-env/ecosystems/singularity/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-environment/use-flight/flight-user-suite/flight-env/ecosystems/spack/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-environment/use-flight/flight-user-suite/flight-silo/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-environment/use-flight/flight-user-suite/flight-silo/files/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-environment/use-flight/flight-user-suite/flight-silo/migrations/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-environment/use-flight/flight-user-suite/flight-silo/silos/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-environment/use-flight/flight-user-suite/flight-silo/software/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-environment/use-flight/flight-web-suite/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-environment/use-flight/flight-web-suite/console/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-environment/use-flight/flight-web-suite/desktop/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-environment/use-flight/flight-web-suite/file-manager/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-environment/use-flight/flight-web-suite/landing-page/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-environment/use-flight/flight-web-suite/setup/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-solo/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-solo/quickstart-guide/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.openflighthpc.org/2024.2/docs/flight-solo/release-notes/</loc>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-solo/cluster-build-methods/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-solo/cluster-build-methods/jupyter-lab-standalone-alces-cloud/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-solo/cluster-build-methods/jupyter-lab-standalone-aws/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-solo/cluster-build-methods/jupyter-lab-standalone-azure/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-solo/cluster-build-methods/jupyter-lab-standalone-openstack/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-solo/cluster-build-methods/kubernetes-multinode-alces-cloud/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-solo/cluster-build-methods/kubernetes-multinode-aws/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-solo/cluster-build-methods/kubernetes-multinode-azure/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-solo/cluster-build-methods/kubernetes-multinode-openstack/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-solo/cluster-build-methods/modular/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-solo/cluster-build-methods/slurm-multinode-alces-cloud/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-solo/cluster-build-methods/slurm-multinode-aws/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-solo/cluster-build-methods/slurm-multinode-azure/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-solo/cluster-build-methods/slurm-multinode-openstack/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-solo/cluster-build-methods/slurm-standalone-alces-cloud/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-solo/cluster-build-methods/slurm-standalone-aws/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-solo/cluster-build-methods/slurm-standalone-azure/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-solo/cluster-build-methods/slurm-standalone-openstack/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-solo/cluster-build-methods/workflows/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-solo/cluster-build-methods/workflows/kubernetes-aws-auto-apply/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-solo/cluster-build-methods/workflows/slurm-openstack-autoconfig/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-solo/get-solo/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-solo/get-solo/alces-cloud/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-solo/get-solo/aws/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-solo/get-solo/azure/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-solo/get-solo/openstack/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-solo/understand-solo/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/flight-solo/understand-solo/user-data/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/greener-hpc/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/hpc-concepts/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/hpc-concepts/base-system/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/hpc-concepts/hpc-environment/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/hpc-concepts/infrastructure/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/hpc-concepts/monitoring/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/hpc-concepts/network-hardware/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/hpc-concepts/storage/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/hpc-concepts/user-management/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/hpc-concepts/verification/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/hpc-environment-basics/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/hpc-environment-basics/hpc-usage/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/hpc-environment-basics/hpc-usage/job-schedulers/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/hpc-environment-basics/hpc-usage/job-schedulers/jobs/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/hpc-environment-basics/hpc-usage/slurm/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/hpc-environment-basics/hpc-usage/slurm/further-docs/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/hpc-environment-basics/hpc-usage/slurm/running-jobs/array/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/hpc-environment-basics/hpc-usage/slurm/running-jobs/batch/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/hpc-environment-basics/hpc-usage/slurm/running-jobs/dynamic-vars/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/hpc-environment-basics/hpc-usage/slurm/running-jobs/interactive/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/hpc-environment-basics/hpc-usage/slurm/running-jobs/job-configuration/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/hpc-environment-basics/hpc-usage/slurm/running-jobs/requesting-resources/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/hpc-environment-basics/hpc-usage/slurm/using-scheduler/default_resources/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/hpc-environment-basics/hpc-usage/slurm/using-scheduler/host-status/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/hpc-environment-basics/hpc-usage/slurm/using-scheduler/view-control/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/hpc-environment-basics/linux-usage/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/hpc-environment-basics/linux-usage/genders-pdsh/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/hpc-environment-basics/linux-usage/cli-basics/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/hpc-environment-basics/linux-usage/cli-basics/becoming-root/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/hpc-environment-basics/linux-usage/cli-basics/logging-in/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/hpc-environment-basics/linux-usage/cli-basics/moving-between-hosts/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/hpc-environment-basics/linux-usage/cli-basics/understanding-the-cli/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/hpc-environment-basics/linux-usage/working-with-data/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/hpc-environment-basics/linux-usage/working-with-data/copy-between-hosts/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/hpc-environment-basics/linux-usage/working-with-data/storage-types/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/hpc-environment-basics/linux-usage/working-with-data/your-home-directory/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/hpc-environment-basics/linux-usage/working-with-data/copying-data/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/hpc-environment-basics/linux-usage/working-with-data/copying-data/object-storage-archiving-data/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/hpc-environment-basics/linux-usage/working-with-data/copying-data/using-cli/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/hpc-environment-basics/linux-usage/working-with-data/copying-data/using-graphical-client/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/hpc-workflows/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/hpc-workflows/bowtie/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/hpc-workflows/hadoop/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/hpc-workflows/hpl/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/hpc-workflows/imb/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/hpc-workflows/tensorflow/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/hpc-workflows/openfoam/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/hpc-workflows/openfoam/install/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/hpc-workflows/openfoam/mpi/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/hpc-workflows/openfoam/simple/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/overview/get-help/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/docs/overview/prerequisites/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/solo/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/warehouse/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/warehouse/cfd-jumpstart/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/warehouse/container-cruncher-large/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/warehouse/container-cruncher-medium/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/warehouse/container-cruncher-small/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/warehouse/jupyterlab-jumpstart/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.openflighthpc.org/2024.2/warehouse/slurm-team-edition/</loc>
-         <lastmod>2024-06-05</lastmod>
+         <lastmod>2024-06-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
