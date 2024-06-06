@@ -52,7 +52,7 @@ Improvements:
 Known Issues: 
 
 - Azure: Kubernetes container DNS network does not resolve
-- Flight Hunter: Interactive parse textbox can scroll up the terminal window in sessions with few columns (low width)
+- Flight Hunter: Interactive parse text-box can scroll up the terminal window in sessions with few columns (low width)
 
 
 ## 2023.5
