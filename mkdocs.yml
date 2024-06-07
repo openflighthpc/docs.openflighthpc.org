@@ -116,7 +116,6 @@ nav:
       - Import to AWS: docs/flight-solo/get-solo/aws.md
       - Import to Azure: docs/flight-solo/get-solo/azure.md
       - Import to OpenStack: docs/flight-solo/get-solo/openstack.md
-      - Import to Alces Cloud: docs/flight-solo/get-solo/alces-cloud.md
     - Cluster Build Methods:
       - docs/flight-solo/cluster-build-methods/index.md
       - Choose Your Own Adventure: docs/flight-solo/cluster-build-methods/modular.md
@@ -129,22 +128,18 @@ nav:
           - AWS: docs/flight-solo/cluster-build-methods/slurm-standalone-aws.md
           - Azure: docs/flight-solo/cluster-build-methods/slurm-standalone-azure.md
           - OpenStack: docs/flight-solo/cluster-build-methods/slurm-standalone-openstack.md
-          - Alces Cloud: docs/flight-solo/cluster-build-methods/slurm-standalone-alces-cloud.md
         - SLURM Multinode:
           - AWS: docs/flight-solo/cluster-build-methods/slurm-multinode-aws.md
           - Azure: docs/flight-solo/cluster-build-methods/slurm-multinode-azure.md
           - OpenStack: docs/flight-solo/cluster-build-methods/slurm-multinode-openstack.md
-          - Alces Cloud: docs/flight-solo/cluster-build-methods/slurm-multinode-alces-cloud.md
         - Kubernetes: 
           - AWS: docs/flight-solo/cluster-build-methods/kubernetes-multinode-aws.md
           - Azure: docs/flight-solo/cluster-build-methods/kubernetes-multinode-azure.md
           - OpenStack: docs/flight-solo/cluster-build-methods/kubernetes-multinode-openstack.md
-          - Alces Cloud: docs/flight-solo/cluster-build-methods/kubernetes-multinode-alces-cloud.md
         - Jupyter Lab:
           - AWS: docs/flight-solo/cluster-build-methods/jupyter-lab-standalone-aws.md
           - Azure: docs/flight-solo/cluster-build-methods/jupyter-lab-standalone-azure.md
           - OpenStack: docs/flight-solo/cluster-build-methods/jupyter-lab-standalone-openstack.md
-          - Alces Cloud: docs/flight-solo/cluster-build-methods/jupyter-lab-standalone-alces-cloud.md
   - HPC Workflows:
     - docs/hpc-workflows/index.md
     - Benchmarking:
@@ -218,9 +213,6 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-      options:
-        custom_icons:
-          - custom_theme/.icons
   - pymdownx.snippets:
       auto_append:
         - includes/abbreviations.md
