@@ -156,6 +156,7 @@ nav:
       - Tensorflow: docs/hpc-workflows/tensorflow.md
   - Greener HPC:
     - docs/greener-hpc/index.md
+    - Carbon Leaderboard: docs/greener-hpc/carbon-leaderboard.md
 not_in_nav: |
   /index.md
   /solo/index.md

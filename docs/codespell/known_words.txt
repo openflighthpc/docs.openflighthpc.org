@@ -45,6 +45,7 @@ keypair
 knowledgebase
 kubernetes
 ldconfig
+leaderboard
 linpack
 localhost
 localperl
