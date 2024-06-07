@@ -18,6 +18,11 @@
 
 1. Apply identities by running the command `flight profile apply`
 
+    1. **If IPA has been enabled** then the `ipa` identity will need to be applied to a server first, for example:
+        ```bash
+        flight profile apply infra01 ipa
+        ```
+
     1. First apply an identity to the login node
         ```bash
         flight profile apply login1 login

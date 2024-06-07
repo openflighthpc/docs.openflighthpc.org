@@ -51,3 +51,7 @@
 ## Verifying Functionality
 
 {% include 'flight-solo/creating-clusters/slurm-testing.md' %}
+
+## Management Info
+
+{% include 'flight-solo/managing-clusters/slurm-multinode-admin.md' %}
